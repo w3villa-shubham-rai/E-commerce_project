@@ -1,0 +1,272 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container
+{  
+   padding-left: 50px;
+   padding-right: 50px;
+   max-width: 1900px;
+   margin: auto;
+}
+/* ******************************Header part css************************************** */
+.usertoolbarcolor
+{
+    background-color: #e2e7e7;
+}
+.about_navbar
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.websitename h1
+{
+    font-size: 45px;
+    font-weight: bold;
+}
+.contact{
+    display: flex;
+    column-gap: 10px;
+
+}
+
+.language_dollar {
+    display: flex;
+    column-gap: 10px;
+}
+
+.delivery_moremenu
+{
+    display: flex;
+    column-gap: 10px;
+}
+select{
+    outline: none;
+    border: none;
+}
+
+/* user Toolbar  */
+.usertoolbar
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+.search
+{
+    display: flex;
+}
+#item
+{
+  height: 30px;
+  color: white;
+  background: blue;
+  width: 50px;
+}
+.search_bar input
+{
+   
+    height: 30px;
+    width: 490px;
+    outline: none;
+    border: none;
+}
+.search i{
+    font-size: 15px;
+    color: white;
+    position: relative;
+    top: 4px;
+   
+}
+.search_glass
+{
+    height: 30px;
+    width: 26px;
+    background: blue;
+    text-align: center;
+}
+.logo
+{
+    display: flex;
+    column-gap: 10px;
+}
+.logo p
+{
+    font-size: 10px;
+}
+.logo i {
+    background: rgb(66, 66, 241);
+    border-radius: 50%;
+    padding: 7px;
+}
+.add_to_cart i{
+    border-radius: 50%;
+    padding: 7px;
+    background: rgb(5, 5, 197);
+    color: white;
+   
+}
+
+
+/* All Department part last part of header */
+
+.alldepartment_Blog
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    height: 10px;
+   
+}
+.alldepartment
+{
+    display: flex;
+    column-gap: 52px;
+    position: relative;
+    align-items: center;
+}
+.alldepartment i{
+    padding-left: 8px;
+}
+.dpt
+{
+    background-color: rgb(235, 213, 20);
+    width: 215px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    column-gap: 10px;
+}
+#sale_lgo
+{
+    position: absolute;
+    top: -8px;
+    left: 177px;
+    background-color: red;
+    font-size: smaller;
+    border-radius: 2px;
+    width: 31px;
+    color: white;
+    text-align: center;
+}
+.multilevel{
+    display: flex;
+    column-gap: 30px;
+    position: relative;
+    color: #e2e7e7;
+}
+#new
+{
+    position: absolute;
+    top: -23px;
+    left: 202px;
+    background: hsl(60, 100%, 50%);
+    font-size: smaller;
+    color: black;
+    border-radius: 2px;
+    width: 31px;
+    text-align: center;
+}
+
+.blog_phone
+{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.alldepartment_menu
+{
+    background-color: blue;
+}
+
+.call
+{
+    color: #e2e7e7;
+    display: flex;
+}
+.blog
+{
+    background-color: rgb(235, 213, 20);
+    width: 100px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    
+}
+
+
+/* media query for footer part */
+
+@media screen and (max-width:1150px)
+{
+    .search_bar input{
+        width: 300px;
+    }
+    .search{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .call
+    {
+        padding-left: 30px;
+    }
+    .blog
+    {
+        padding-right: 30px;
+    }
+
+    
+}
+/* mobile responsive */
+
+@media screen and (max-width:983px)
+{
+    .container,.usertoolbarcolor,.alldepartment_menu
+    {
+        display: none;
+    }
+    
+}
+
+
+ 
+
+/* mobile navigation bar  code */
+.mobilenavigation_color
+{
+    background: blue;
+    border: 2px solid red;
+}
+.mobilenavigation
+{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+}
+.navlogin_register
+{
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav_doller_language
+{
+    display: flex;
+    column-gap: 10px;
+}
+.nav_doller_language img{
+    width: 20px;
+    height: 15px;
+}
