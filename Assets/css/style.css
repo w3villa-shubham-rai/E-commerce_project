@@ -419,4 +419,57 @@ select{
 
 
 
-   
+/************************************** Hero section start********************************** */
+/* ***************************************************************************************** */
+
+.herosection{
+    display: flex;
+    border: 2px solid red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.leftpart_herosection
+{
+    width: 71%;
+    border: 2px solid rgb(102, 255, 0);
+    height: 500px;
+    border-radius: 30px;
+}
+.leftpart_herosection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.rightpart_herosection{
+    width: 27%;
+    border: 2px solid rgb(0, 89, 255);
+    height: 500px;
+
+}
+.rightwatch_tv
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 15px;   
+    border-radius: 8px;
+
+}
+.watch
+{
+    width: 300px;
+    height:225px;
+    border-radius: 30px ;
+    border: 2px solid green;
+}
+.tv
+{
+    width: 300px;
+    height: 250px;
+    border-radius: 30px ;
+    border: 2px solid green;
+}
