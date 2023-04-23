@@ -424,7 +424,7 @@ select{
 
 .herosection{
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: space-between;
@@ -432,19 +432,21 @@ select{
 .leftpart_herosection
 {
     width: 71%;
-    border: 2px solid rgb(102, 255, 0);
+    /* border: 2px solid rgb(102, 255, 0); */
     height: 500px;
     border-radius: 30px;
+    position: relative;
 }
 .leftpart_herosection img{
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
     border-radius: 30px;
+
 }
 .rightpart_herosection{
     width: 27%;
-    border: 2px solid rgb(0, 89, 255);
+    /* border: 2px solid rgb(0, 89, 255); */
     height: 500px;
 
 }
@@ -452,9 +454,7 @@ select{
 {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-between;
-    align-items: center;
     row-gap: 15px;   
     border-radius: 8px;
 
@@ -462,9 +462,22 @@ select{
 .watch
 {
     width: 300px;
-    height:225px;
-    border-radius: 30px ;
+    height: 225px;
+    border-radius: 30px;
     border: 2px solid green;
+    display: flex;
+    align-items: center;
+}
+.watch img{
+    width: 83%;
+    height: 78%;
+    padding-left: 30px;
+}
+.p1{
+    color: #2b28f1;
+}
+.rightwatch_tv p{
+    
 }
 .tv
 {
@@ -472,4 +485,91 @@ select{
     height: 250px;
     border-radius: 30px ;
     border: 2px solid green;
+}
+.leftpart_herosection .owl-theme .owl-nav.disabled+.owl-dots{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 19px;
+    height: 4px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
+
+}
+
+/* all service logo */
+.service_first{
+    background-color: rgb(15, 11, 11);
+}
+.service_all_logo
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.freeshipng{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.shiping_logo{
+    border-radius: 51%;
+    padding: 20px;
+    border: 2px solid rgb(16, 16, 190);
+}
+.free_return
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.free-return_logo
+{
+    border-radius: 51%;
+    padding: 20px;
+    border: 2px solid rgb(16, 16, 190);
+}
+
+.secure_shoping
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secureshoping_logo
+{
+    border-radius: 51%;
+    padding: 20px;
+    border: 2px solid rgb(16, 16, 190);
+}
+.unlimeted_block
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.unlimitedblock_logo{
+    border-radius: 51%;
+    padding: 20px;
+    border: 2px solid rgb(16, 16, 190);
+}
+.service_all_logo i{ 
+    color: orangered;
+}
+.log_description .p1
+{
+    color: white;
+}
+.log_description p{
+    color: #adb1b1;
 }
