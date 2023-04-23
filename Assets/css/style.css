@@ -464,8 +464,8 @@ select{
     width: 300px;
     height: 225px;
     border-radius: 30px;
-    border: 2px solid green;
     display: flex;
+    background-color: #e2e7e7;
     align-items: center;
 }
 .watch img{
@@ -475,17 +475,38 @@ select{
 }
 .p1{
     color: #2b28f1;
+    margin-left: 13px;
 }
-.rightwatch_tv p{
-    
-}
+
 .tv
 {
     width: 300px;
-    height: 250px;
-    border-radius: 30px ;
-    border: 2px solid green;
+    height: 225px;
+    border-radius: 30px;
+    background-color: #e2e7e7;
+    display: flex;
+    align-items: center;
 }
+.tv img{
+    width: 83%;
+    height: 78%;
+    padding-left: 30px;
+}
+.tv .p1{
+    color: #2b28f1;
+    margin-left: 13px;
+}
+.tv .p2{
+    font-weight: bold;
+    margin-left: 13px;
+}
+.rightwatch_tv .p2{
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+
+/* owl crowesel css */
 .leftpart_herosection .owl-theme .owl-nav.disabled+.owl-dots{
     position: absolute;
     left: 5%;
@@ -502,6 +523,11 @@ select{
     background-color: orangered;
 
 }
+
+
+
+
+
 
 /* all service logo */
 .service_first{
