@@ -990,8 +990,51 @@ select{
 {
     width: 211pxpx;
     height: 270px;
-    border: 2px solid red;
+    border-radius: 10px;
 }
 .whyus_crowsel{
     margin-top: 50px;
+}
+
+.img-topcategories img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.whyus_crowsel p{
+    position: relative;
+    top: -24px;
+    z-index: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    color: rgb(14, 13, 13);
+    background-color: #ebf3f3;
+    text-align: center;
+    width: 128px;
+    border-radius: 3px;
+    margin-left: 50px;
+}
+
+
+/* *********************************product-Us****************************************** */
+
+.product-us{
+
+    background: #eaf0f0;
+    margin-top: 15px;  
+
+}
+.product-us-headphone-camera{
+    text-align: center;
+}
+.product-us-headphone-camera h1{
+    margin-top: 10px;
+}
+
+.headphone
+{
+    border: 2px solid red;
+    
 }
