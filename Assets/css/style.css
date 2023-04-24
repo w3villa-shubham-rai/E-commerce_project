@@ -929,3 +929,69 @@ select{
 }
     
 
+/* why us section start */
+
+.why-us
+{
+    margin-top: 50px;
+}
+.text_desk{
+    width: 75px;
+    height: 4px;
+    background: #f5591c;
+    margin: auto;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+.whyustopcategorieshomedecore{
+    text-align: center;
+     
+}
+.journa_has_anchartag{
+    color: #a7b1b1;
+    margin-top: 8px;
+}
+.topcategoreis_fashion {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 25px;
+    /* text-align: center; */
+    margin-bottom: 20px;
+     text-align: center;
+    column-gap: 1px;
+    text-align: center;
+}
+.rectangle{
+    background: #2b28f1;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: -6px;
+    right: 701px;
+    rotate: -59deg;
+}
+.topcategories{
+    background: #2b28f1;
+    padding: 8px 10px;
+    font-size: small;
+    color: #ebf3f3;
+}
+.electronics,.beauty ,.fashion{
+    padding: 8px 10px;
+    background: #aeb8b8;
+    font-size: small;
+   
+    color: #505555;
+}
+
+/* owl crosel why us part */
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8
+{
+    width: 211pxpx;
+    height: 270px;
+    border: 2px solid red;
+}
+.whyus_crowsel{
+    margin-top: 50px;
+}
