@@ -1035,6 +1035,126 @@ select{
 
 .headphone
 {
-    border: 2px solid red;
-    
+    height: 400px;
+    width: 250px;
+}
+.image{
+        height: 240px;
+        object-fit: cover;
+        position: relative;
+        overflow: hidden;
+}
+.image img{
+    height: 240px;
+    border-radius: 4px;
+}
+.erykson{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    color: #ccc7c7;
+    background: #a7a0a0;
+}
+.headphone-txt
+{
+    text-align: center;
+    padding: 5px;
+    background: #fff;
+    /* color: white; */
+    padding-right: 130px;
+}
+.htxt{
+    margin-right: 21px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+.favcart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 54px;
+}
+#browser{
+    width: 41px;
+    height: 16px;
+    /* font-size: 9px; */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.favcart button{
+    width: 76px;
+    height: 20px;
+    font-size: 9px;
+    margin-right: 62px;
+    background: blue;
+    color: white;
+    border-radius: 4px;
+}
+.whislist{
+    gap: 10px;
+    display: flex;
+    padding-right: 5px;
+}
+#compare-product
+{
+    border: 2px solid #7f7878;
+    border-radius: 50%;
+}
+.strike{
+    color: #706767;
+}
+.buy-now{
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 61px;
+    font-size: smaller;
+}
+.buy-now i{
+    font-size: 8px;
+    border: 1px solid red;
+    padding: 2px;
+    border-radius: 50%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.customlabels
+{
+    position: absolute;
+    rotate: -37deg;
+    top: 33px;
+    font-size: 12px;
+    width: 150px;
+    overflow: hidden;
+    left: -28px;
+    background: #0032ff;
+    border-radius: 4px;
+}
+.hot_per
+{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.prcent,.hot
+{
+    border-radius: 5px;
+}
+.prcent{
+ background-color: red;
+ color: #faf6f6;
+ font-size: small;
+}
+.hot{
+    background-color: rgb(248, 226, 27);
+    color: #070606;
+    font-size: small;
+    margin-top: 5px;
 }
