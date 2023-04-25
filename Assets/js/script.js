@@ -27,7 +27,7 @@ $('#whyus').owlCarousel({
 $('#feature-product').owlCarousel({
     loop:true,
     margin:20,
-    nav:false,
+    nav:true,
     // autoplay:true,
     responsive:{
         0:{

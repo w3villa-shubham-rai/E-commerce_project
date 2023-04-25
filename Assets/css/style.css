@@ -1022,12 +1022,14 @@ select{
 
 .product-us{
 
-    background: #eaf0f0;
+    background: #fff;
     margin-top: 15px;  
+    padding-top: 27px;
 
 }
 .product-us-headphone-camera{
     text-align: center;
+    background: #eaf0f0;
 }
 .product-us-headphone-camera h1{
     margin-top: 10px;
@@ -1157,4 +1159,40 @@ input[type=number]::-webkit-outer-spin-button {
     color: #070606;
     font-size: small;
     margin-top: 5px;
+}
+.free
+{
+    position: absolute;
+    rotate: -37deg;
+    top: 14px;
+    font-size: 12px;
+    width: 170px;
+    overflow: hidden;
+    left: -56px;
+    background: #ff001e;
+    border-radius: 4px;
+}
+
+.seeallproducd-btn button{
+    border: none;
+    color: #e3e5ed;
+    text-align: center;
+    height: 36px;
+    width: 155px;
+    position: relative;
+    margin-top: 71px;
+    left: 550px;
+    border-radius: 5px;
+    background: blue;
+}
+
+
+
+/* Feature Categories start */
+
+.featuresection{
+    text-align: center;
+}
+.featuresectioncategories{
+    margin-top: 30px;
 }
