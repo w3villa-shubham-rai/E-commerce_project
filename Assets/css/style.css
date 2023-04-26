@@ -1434,9 +1434,51 @@ color: #ebf3f3;
     content: rectangle-blog;
 }
 
-
+.ourblog-jurnal-book-section{
+    text-align: center;
+    text-align: center;
+    background: #f9f5f5;
+    padding-top: 30px;
+}
 .blog_img_1
 {
-    height: 450px;
+    height: 500px;
     
 }
+.jornalblog_img{
+    height: 250px;
+    border-radius: 8px;
+}
+.jornalblog_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.adminmessage{
+    background: #9c9a9a;
+    color: #565858;
+}
+.jurnal-blog-p{
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+}
+.junrnal-blog-longpara{
+   color:  #767171;
+}
+.jurnal-p-long-para{
+    background: #fff;
+}
+.blog-anchar{
+padding: 10px;
+color:  #767171;
+}
+.blog-anchar i{
+    color:  #767171;
+}
+
+
+/************************People Saying about us section Start*****************************/
+/* *************************************************************************************** */
+/* *************************************************************************************** */
