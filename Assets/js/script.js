@@ -24,7 +24,7 @@ $('#whyus').owlCarousel({
 })
 
 
-$('.feature-product').owlCarousel({
+$('#feature-product').owlCarousel({
     loop:true,
     margin:20,
     nav:false,

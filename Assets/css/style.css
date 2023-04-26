@@ -539,12 +539,12 @@ select{
 
 
 /* owl crowesel css */
-/* .leftpart_herosection .owl-theme .owl-nav.disabled+.owl-dots{
+.leftpart_herosection .owl-theme .owl-nav.disabled+.owl-dots{
     position: absolute;
     left: 5%;
     bottom: 5%;
-} */
-/* #cr.owl-theme .owl-dots .owl-dot span {
+}
+#cr.owl-theme .owl-dots .owl-dot span {
     width: 19px;
     height: 4px;
     margin: 1px 7px;
@@ -554,7 +554,7 @@ select{
     border-radius: 30px;
     background-color: orangered;
 
-} */
+}
 
 /************************************media query of hero-section************************* */
 /* *************************************************************************************** */
@@ -935,7 +935,7 @@ select{
 {
     margin-top: 50px;
 }
-/* #whyus.owl-theme .owl-dots .owl-dot span {
+#whyus.owl-theme .owl-dots .owl-dot span {
     width: 6px;
     height: 6px;
     margin: 1px 7px;
@@ -945,7 +945,7 @@ select{
     border-radius: 30px;
     background-color: orangered;
 
-} */
+}
 
 .text_desk{
     width: 75px;
@@ -1434,13 +1434,13 @@ color: #ebf3f3;
     content: rectangle-blog;
 }
 
-/* #blog .owl-theme .owl-dots .owl-dot span {
-    width: 19px;
-    height: 4px;
+#blog .owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
     margin: 1px 7px;
     background: #D6D6D6;
-    display: block;
     transition: opacity .2s ease;
     border-radius: 30px;
     background-color: orangered;
-} */
+
+}
