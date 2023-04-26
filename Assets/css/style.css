@@ -539,12 +539,12 @@ select{
 
 
 /* owl crowesel css */
-.leftpart_herosection .owl-theme .owl-nav.disabled+.owl-dots{
+/* .leftpart_herosection .owl-theme .owl-nav.disabled+.owl-dots{
     position: absolute;
     left: 5%;
     bottom: 5%;
-}
-.owl-theme .owl-dots .owl-dot span {
+} */
+/* #cr.owl-theme .owl-dots .owl-dot span {
     width: 19px;
     height: 4px;
     margin: 1px 7px;
@@ -554,7 +554,7 @@ select{
     border-radius: 30px;
     background-color: orangered;
 
-}
+} */
 
 /************************************media query of hero-section************************* */
 /* *************************************************************************************** */
@@ -935,6 +935,18 @@ select{
 {
     margin-top: 50px;
 }
+/* #whyus.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
+
+} */
+
 .text_desk{
     width: 75px;
     height: 4px;
@@ -967,21 +979,33 @@ select{
     width: 18px;
     height: 18px;
     position: absolute;
-    bottom: -6px;
-    right: 701px;
+    bottom: -5px;
+    right: 695px;
     rotate: -59deg;
+}
+.topcategories::after{
+    content: rectangle;
+    /* background: #2b28f1;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: -5px;
+    right: 695px;
+    rotate: -59deg; */
+
 }
 .topcategories{
     background: #2b28f1;
     padding: 8px 10px;
     font-size: small;
+    z-index: 2;
+    position: relative;
     color: #ebf3f3;
 }
-.electronics,.beauty ,.fashion{
+.electronics,.beauty ,.fashion_topcategories{
     padding: 8px 10px;
     background: #aeb8b8;
-    font-size: small;
-   
+    font-size: small;   
     color: #505555;
 }
 
@@ -1004,15 +1028,15 @@ select{
 }
 .whyus_crowsel p{
     position: relative;
-    top: -24px;
-    z-index: 10px;
-    z-index: 10;
+    top: -28px;
     display: flex;
+    padding: 2px;
+    font-size: small;
     justify-content: center;
     color: rgb(14, 13, 13);
     background-color: #ebf3f3;
     text-align: center;
-    width: 128px;
+    width: 104px;
     border-radius: 3px;
     margin-left: 50px;
 }
@@ -1031,14 +1055,18 @@ select{
     text-align: center;
     background: #eaf0f0;
 }
+.product-us-headphone-camera {
+ padding-top: 20px;
+ padding-bottom: 15px;
+}
 .product-us-headphone-camera h1{
     margin-top: 10px;
 }
 
 .headphone
 {
-    height: 400px;
-    width: 250px;
+    height: 411px;
+    width: 276px;
 }
 .image{
         height: 240px;
@@ -1055,6 +1083,7 @@ select{
     justify-content: space-around;
     align-items: center;
     height: 30px;
+    column-gap: 98px;
     color: #ccc7c7;
     background: #a7a0a0;
 }
@@ -1064,7 +1093,7 @@ select{
     padding: 5px;
     background: #fff;
     /* color: white; */
-    padding-right: 130px;
+    padding-right: 159px;
 }
 .htxt{
     margin-right: 21px;
@@ -1088,38 +1117,58 @@ select{
     border-radius: 4px;
 }
 .favcart button{
-    width: 76px;
-    height: 20px;
-    font-size: 9px;
-    margin-right: 62px;
+    width: 83px;
+    height: 31px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 46px;
     background: blue;
     color: white;
     border-radius: 4px;
+
 }
+#input-number-favcart input
+{
+    width: 43px;
+    height: 27px;
+    border: 2px solid #cfcbcb;
+    outline: none;
+    margin-left: 10px;
+}
+
 .whislist{
-    gap: 10px;
+    gap: 15px;
     display: flex;
-    padding-right: 5px;
+    padding-right: 13px;
+    color: #c0bbbb;
+}
+#fav-whislist{
+    font-size: 24px;
+    color: #c0bbbb;
 }
 #compare-product
 {
-    border: 2px solid #7f7878;
+    border: 2px solid #c0bbbb;
     border-radius: 50%;
+    padding: 3px;
+    font-size: 14px;
+    
 }
 .strike{
     color: #706767;
 }
 .buy-now{
     display: flex;
-    display: flex;
     justify-content: space-around;
-    column-gap: 61px;
+    column-gap: 105px;
     font-size: smaller;
+    margin-top: 10px;
 }
 .buy-now i{
-    font-size: 8px;
+    font-size: 10px;
+    padding: 34px;
     border: 1px solid red;
-    padding: 2px;
+    padding: 3px;
     border-radius: 50%;
 }
 input[type=number]::-webkit-inner-spin-button, 
@@ -1147,7 +1196,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .prcent,.hot
 {
-    border-radius: 5px;
+    border-radius: 3px;
 }
 .prcent{
  background-color: red;
@@ -1158,6 +1207,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgb(248, 226, 27);
     color: #070606;
     font-size: small;
+    width: 47px;
     margin-top: 5px;
 }
 .free
@@ -1175,7 +1225,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .seeallproducd-btn button{
     border: none;
-    color: #e3e5ed;
+    color: #f4f6fc;
     text-align: center;
     height: 36px;
     width: 155px;
@@ -1192,7 +1242,205 @@ input[type=number]::-webkit-outer-spin-button {
 
 .featuresection{
     text-align: center;
+    padding-top: 45px;
 }
 .featuresectioncategories{
     margin-top: 30px;
+    padding-bottom: 60px;
+    background-color: #eaecec;
 }
+.crouselpartfeaturecategories
+{
+    display: flex;
+    padding-top: 35px;
+}
+.imgfashion {
+    width: 200px;
+    height: 210px;
+    padding: 6px;
+}
+.fashiondesk{
+    width: 75px;
+    height: 4px;
+    background: #f5591c;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.imgfashion img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fashion   
+{
+    width: 217px;
+    background-color: #cfcbcb;
+}
+
+.newfashion{
+    width: 923px;
+    margin-left: 13px;
+    background-color: rgb(252, 243, 243);
+}
+.fash{
+    font-size: large;
+    padding-bottom: -27px;
+    /* padding-top: 10px; */
+    font-weight: bold;
+    margin-left: 5px;
+}
+.acc_dress_pants_T_shirts{
+    padding: 10px;
+}
+.newfashion p{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 6px;
+}
+.newfashioncrowesl{
+    padding-top: 6px;
+    position: relative;
+    overflow: hidden;
+
+}
+.customlabels_newfashion{
+    position: absolute;
+    rotate: -37deg;
+    top: 17px;
+    font-size: 12px;
+    width: 181px;
+    overflow: hidden;
+    left: -42px;
+    text-align: center;
+    background: rgb(236, 11, 22);
+    border-radius: 4px;
+}
+.item_fashin_crowesl {
+    width: 177px;
+    height: 315px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+}
+.fashion1{
+    background: #e8dddd;
+}
+.bdncross{
+    padding-top: 9px;
+    margin-left: 10px;
+    color: blue;
+  
+}
+.bdn-doller{
+    margin-left: 10px;
+    color: #8c8787;
+    padding-top: 2px;
+}
+.btn_addcart_fashion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+.btn_addcart_fashion button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* *************************Shop by brand  section start**********************************/
+/* ************************************************************************************* */
+
+.palm{
+    width: 105px;
+    height: 105px;
+    border-radius: 8px;
+    border: 2px solid rgb(160, 156, 156);
+}
+.palm img{
+    padding-top: 22px;
+    width: 100px;
+    height: 63%;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
+.shop_by_brand_crowser{
+    margin-top: 38px;
+}
+
+
+/**************** improved gallery  module section  css design start***********************************/
+/* ************************************************************************************** */
+.improved-gallery{
+    background-color: rgb(51, 50, 50);
+    margin-top: 30px;
+    padding-bottom: 37px;
+}
+
+.featuresection #ig{
+    color: white;
+}
+.featuresection-improved-gallery{
+    text-align: center;
+    padding-top: 15px;
+}
+.image-gallery-module-box{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#image-gallery-image-module img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#img-gallery-sizing{
+    width: 105px;
+    height: 105px;
+    border-radius: 8px;
+    border: 2px solid rgb(160, 156, 156);
+}
+#img-gallery-sizing img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.topcategories-blog
+{
+background: #2b28f1;
+padding: 8px 10px;
+font-size: small;
+z-index: 2;
+position: relative;
+color: #ebf3f3;
+}
+
+
+.rectangle-blog{
+    background: #2b28f1;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: -5px;
+    right: 627px;
+    rotate: -59deg;
+}
+.topcategories-blog::after{
+    content: rectangle-blog;
+}
+
+/* #blog .owl-theme .owl-dots .owl-dot span {
+    width: 19px;
+    height: 4px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
+} */

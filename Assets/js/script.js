@@ -1,5 +1,5 @@
 
-    $('#cr').owlCarousel({
+$('#cr').owlCarousel({
     loop:true,
     margin:20,
     nav:false,
@@ -24,10 +24,10 @@ $('#whyus').owlCarousel({
 })
 
 
-$('#feature-product').owlCarousel({
+$('.feature-product').owlCarousel({
     loop:true,
     margin:20,
-    nav:true,
+    nav:false,
     // autoplay:true,
     responsive:{
         0:{
@@ -35,3 +35,41 @@ $('#feature-product').owlCarousel({
         }
     }
 })
+
+$('#feature-categories').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:4
+        }
+    }
+})
+
+
+$('#shop_brand').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    // autoplay:true,
+    responsive:{
+        0:{
+            items:9
+        }
+    }
+})
+
+$('#blog').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:3
+        }
+    }
+})
+
