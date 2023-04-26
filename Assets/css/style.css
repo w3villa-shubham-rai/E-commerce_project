@@ -1434,13 +1434,9 @@ color: #ebf3f3;
     content: rectangle-blog;
 }
 
-#blog .owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    background-color: orangered;
 
+.blog_img_1
+{
+    height: 450px;
+    
 }
