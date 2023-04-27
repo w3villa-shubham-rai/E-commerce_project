@@ -444,7 +444,7 @@ select{
     position: absolute;
     top: 37%;
     left: 3%;
-    z-index: 10;
+    /* z-index: 10; */
 }
 .mobile_learn_more h1{
     font-size: 38px;
@@ -965,11 +965,11 @@ select{
 }
 .topcategoreis_fashion {
     display: flex;
-    position: relative;
     justify-content: center;
     margin-top: 25px;
     /* text-align: center; */
     margin-bottom: 20px;
+    z-index: 2;
      text-align: center;
     column-gap: 1px;
     text-align: center;
@@ -980,18 +980,17 @@ select{
     height: 18px;
     position: absolute;
     bottom: -5px;
-    right: 705px;
+    z-index:1;
+    right: 55px;
     rotate: -48deg;
 }
 .topcategories::after{
     content: rectangle;
-
 }
 .topcategories{
     background: #2b28f1;
     padding: 8px 10px;
     font-size: small;
-    z-index: 2;
     position: relative;
     color: #ebf3f3;
 }
@@ -1706,3 +1705,16 @@ footer{
 }
 
 
+/* arrow symbol */
+
+.fixed-arrow {
+    width: 30px;
+    height: 27px;
+    background-color: #0032ff;
+    position: fixed;
+    bottom: 18px;
+    font-size: 24px;
+    color: white;
+    right: 6px;
+    text-align: center;
+}

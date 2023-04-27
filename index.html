@@ -1,1294 +1,1337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce project</title>
-  
+
     <!-- fontawesome CDN link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- ows crowsel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- owl crosel end -->
-    <link rel="stylesheet" href="./Assets/css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
         <div class="about_navbar">
-            <div class="contact">
-                <div class="home">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
-                </div>
-                <div class="about_us">
-                    <i class="fa-regular fa-user"></i>
-                    <span>About us</span>
-                </div>
-                <div class="contact_part">
-                    <i class="fa-solid fa-envelope"></i>
-                     <span>Contact</span>
-                </div>
-                
-                <div class="faq">
-                    <i class="fa-regular fa-circle-question"></i>
-                    <select id="faq">
-                        <option value="FAQ">FAQ</option>
-                        <option value="FAQ1">FAQ1</option>
-                        <option value="FAQ2">FAQ2</option>
-                        <option value="FAQ3">FAQ3</option>
-                      </select>
-                </div>
+          <div class="contact">
+            <div class="home">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
             </div>
-            <div class="language_dollar">
-                <div class="language">
-                    <i class="fa-solid fa-flag-usa"></i>
-                    <select id="lanuage">
-                    <option value="English">English</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Bhojpuri">Bhojpuri</option>
-                    <option value="French">French</option>
-                    </select>
-                </div>
-                <div class="dollar">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <select id="dollar">
-                        <option value="dollar1">US Dollar</option>
-                        <option value="dollar2">Rupiya</option>
-                        <option value="dollar3">currency</option>
-                        <option value="dollar4">bit quin</option>
-                        </select>
-                </div>
-                
+            <div class="about_us">
+              <i class="fa-regular fa-user"></i>
+              <span>About us</span>
+            </div>
+            <div class="contact_part">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
             </div>
 
-            <div class="delivery_moremenu">
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-bars"></i>
-                <select id="menu">
-                    <option value="menu1">More menu</option>
-                    <option value="menu2">menu1</option>
-                    <option value="menu3">menu2</option>
-                    <option value="menu4">menu3</option>
-                </select>
-
-                <div class="delivery">
-                    <i class="fa-solid fa-truck"></i>
-                   <span>Delivery</span>
-                </div>
+            <div class="faq">
+              <i class="fa-regular fa-circle-question"></i>
+              <select id="faq">
+                <option value="FAQ">FAQ</option>
+                <option value="FAQ1">FAQ1</option>
+                <option value="FAQ2">FAQ2</option>
+                <option value="FAQ3">FAQ3</option>
+              </select>
             </div>
+          </div>
+          <div class="language_dollar">
+            <div class="language">
+              <i class="fa-solid fa-flag-usa"></i>
+              <select id="lanuage">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Bhojpuri">Bhojpuri</option>
+                <option value="French">French</option>
+              </select>
+            </div>
+            <div class="dollar">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <select id="dollar">
+                <option value="dollar1">US Dollar</option>
+                <option value="dollar2">Rupiya</option>
+                <option value="dollar3">currency</option>
+                <option value="dollar4">bit quin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="delivery_moremenu">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-bars"></i>
+            <select id="menu">
+              <option value="menu1">More menu</option>
+              <option value="menu2">menu1</option>
+              <option value="menu3">menu2</option>
+              <option value="menu4">menu3</option>
+            </select>
+
+            <div class="delivery">
+              <i class="fa-solid fa-truck"></i>
+              <span>Delivery</span>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-
-     <!-- secand header part Start  journal part-->
-     <!--************ user toolbar *****************************-->
-<div class="usertoolbarcolor">
-     <div class="container">
-        <div class="usertoolbar">
+      <!-- secand header part Start  journal part-->
+      <!--************ user toolbar *****************************-->
+      <div class="usertoolbarcolor">
+        <div class="container">
+          <div class="usertoolbar">
             <div class="websitename">
-                <h1>Journal</h1>
+              <h1>Journal</h1>
             </div>
             <div class="search">
-                <select id="item">
-                    <option value="ALL">ALL</option>
-                    <option value="item1">item1</option>
-                    <option value="item2">item2</option>
-                    <option value="item3">item3</option>
-                </select>
-                <div class="search_bar">
-                    <input type="search" name="search" id="serch_item" placeholder="Search Here...">
-                </div>
-                <div class="search_glass"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <select id="item">
+                <option value="ALL">ALL</option>
+                <option value="item1">item1</option>
+                <option value="item2">item2</option>
+                <option value="item3">item3</option>
+              </select>
+              <div class="search_bar">
+                <input
+                  type="search"
+                  name="search"
+                  id="serch_item"
+                  placeholder="Search Here..."
+                />
+              </div>
+              <div class="search_glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
             </div>
 
             <div class="logo">
-                <div class="login">
-                    <i class="fa-regular fa-user"></i>
-                    <p>login</p>
+              <div class="login">
+                <i class="fa-regular fa-user"></i>
+                <p>login</p>
+              </div>
+              <div class="Register">
+                <i class="fa-solid fa-pencil"></i>
+                <p>Register</p>
+              </div>
+              <div class="whishlist">
+                <i class="fa-regular fa-heart"></i>
+                <p>whishlist</p>
+              </div>
+              <div class="compare">
+                <div class="compare_circle">
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 </div>
-                <div class="Register">
-                    <i class="fa-solid fa-pencil"></i>
-                    <p>Register</p>
-                </div>
-                <div class="whishlist">
-                    <i class="fa-regular fa-heart"></i>
-                    <p>whishlist</p>
-                </div>
-                <div class="compare">
-                    <div class="compare_circle">
-                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                    </div>                   
-                    <p>compare</p>
-                </div>
+                <p>compare</p>
+              </div>
             </div>
 
             <div class="add_to_cart">
-                <span>
-                    0 item(s)-$0.00
-                </span>
-                <i class="fa-solid fa-cart-shopping"></i>
+              <span> 0 item(s)-$0.00 </span>
+              <i class="fa-solid fa-cart-shopping"></i>
             </div>
+          </div>
         </div>
-     </div>
-</div>
- 
-<!-- All Department last part Header -->
+      </div>
 
-<div class="alldepartment_menu">
-    <div class="container">
-        <div class="alldepartment_Blog">
+      <!-- All Department last part Header -->
+
+      <div class="alldepartment_menu">
+        <div class="container">
+          <div class="alldepartment_Blog">
             <div class="alldepartment">
-                <div class="dpt">
-                    <i class="fa-solid fa-bars"></i>
-                    <span>ALL DEPARTMENTS</span>
-                    <span id="sale_lgo">Sale</span>
-                </div>               
-                
-                <div class="multilevel">
-                    <p>MULTILEVEL</p>
-                    <div>
-                        <p>MEGAMENU</p>
-                       <span id="new"> New</span>
-                    </div>
-                    <p>FULLWIDTH</p>
+              <div class="dpt">
+                <i class="fa-solid fa-bars"></i>
+                <span>ALL DEPARTMENTS</span>
+                <span id="sale_lgo">Sale</span>
+              </div>
+
+              <div class="multilevel">
+                <p>MULTILEVEL</p>
+                <div>
+                  <p>MEGAMENU</p>
+                  <span id="new"> New</span>
                 </div>
-                
+                <p>FULLWIDTH</p>
+              </div>
             </div>
             <div class="blog_phone">
-                <div class="call">
+              <div class="call">
                 <i class="fa-solid fa-phone-volume"></i>
-                 <span>1.2445.557678.78</span>
-                </div>
-                 <div class="blog">
-                    <i class="fa-regular fa-message"></i>
-                    <span>BLOG</span>
-                 </div>
+                <span>1.2445.557678.78</span>
+              </div>
+              <div class="blog">
+                <i class="fa-regular fa-message"></i>
+                <span>BLOG</span>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<!-- mobile Screen Navigation -->
-<div class="mobilenavigation_color">
-<div class="container">
-    <div class="mobilenavigation">
-        <div class="mobile_login_register">
-            <div class="navlogin_register">
+      <!-- mobile Screen Navigation -->
+      <div class="mobilenavigation_color">
+        <div class="container">
+          <div class="mobilenavigation">
+            <div class="mobile_login_register">
+              <div class="navlogin_register">
                 <div class="login_mobile">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="txt">Login</span>
+                  <i class="fa-solid fa-user"></i>
+                  <span class="txt">Login</span>
                 </div>
 
                 <div class="register_mobile">
-                    <i class="fa-solid fa-pencil"></i>
-                    <span class="txt">Register</span>
-                </div>               
-
+                  <i class="fa-solid fa-pencil"></i>
+                  <span class="txt">Register</span>
+                </div>
+              </div>
             </div>
-
-        </div>
-        <div class="nav_doller_language">
-            <div class="mobile_doller">
-                    <span>$</span>
-                   <select id="m-dollar">
-                    <option value="m-dollar1">US Dollar</option>
-                    <option value="m-dollar2">Rupiya</option>
-                    <option value="m-dollar3">currency</option>
-                    <option value="m-dollar4">bit quin</option>
-                    </select>
-            </div>  
-            <div class="mobile_language">
-                <img src="./Assets/images/flag.png" alt="">
+            <div class="nav_doller_language">
+              <div class="mobile_doller">
+                <span>$</span>
+                <select id="m-dollar">
+                  <option value="m-dollar1">US Dollar</option>
+                  <option value="m-dollar2">Rupiya</option>
+                  <option value="m-dollar3">currency</option>
+                  <option value="m-dollar4">bit quin</option>
+                </select>
+              </div>
+              <div class="mobile_language">
+                <img src="./Assets/images/flag.png" alt="" />
                 <select id="m-lanuage">
-                    <option value="English">English</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Bhojpuri">Bhojpuri</option>
-                    <option value="French">French</option>
-                    </select>
-            </div>         
-
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Bhojpuri">Bhojpuri</option>
+                  <option value="French">French</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</div>
-<div class="mobile_jurnal">
-    <div class="container">
-        <div class="mobile_jurnal_cart">
-                    <div class="jurnal_m">
-                    <h1>JOURNAL</h1>
-                     </div>
-                    <div class="cart_search">
-                     <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-         </div>
-    </div>
-</div>
-</header>
+      </div>
+      <div class="mobile_jurnal">
+        <div class="container">
+          <div class="mobile_jurnal_cart">
+            <div class="jurnal_m">
+              <h1>JOURNAL</h1>
+            </div>
+            <div class="cart_search">
+              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
+    <!--********************* Hero section start************************************* -->
+    <!-- ***************************************************************************** -->
 
-
-
-<!--********************* Hero section start************************************* -->
-<!-- ***************************************************************************** -->
-
-<section>
-   <div class="container">
-    <div class="herosection">
-        <div class="leftpart_herosection ">
+    <section>
+      <div class="container">
+        <div class="herosection">
+          <div class="leftpart_herosection">
             <div class="mobile_learn_more">
-                <div class="mobile">
-                    mobile
-                </div>
-                <h1>Best Mobile options <br>
-                at any resulation</h1>
-                <div class="learn_more">
-                    <button>
-                        learnmore <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
+              <div class="mobile">mobile</div>
+              <h1>
+                Best Mobile options <br />
+                at any resulation
+              </h1>
+              <div class="learn_more">
+                <button>
+                  learnmore <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
-            <div class="owl-carousel  owl-theme" id="cr">
-              
-                <div class="item"><img src="./Assets/images/imgcrunp1.jpeg" alt=""></div>
-                <div class="item"><img src="./Assets/images/imgcrpp.jpg" alt=""></div>
-                <div class="item"><img src="./Assets/images/cimg4.jpg" alt=""></div>
+            <div class="owl-carousel owl-theme" id="cr">
+              <div class="item">
+                <img src="./Assets/images/imgcrunp1.jpeg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./Assets/images/imgcrpp.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="./Assets/images/cimg4.jpg" alt="" />
+              </div>
             </div>
-        </div>
-        <div class="rightpart_herosection">
+          </div>
+          <div class="rightpart_herosection">
             <div class="rightwatch_tv">
-                <div class="watch">
-                    <div>
-                        <p class="p1">WEARABLES</p>
-                        <P class="p2">intelligent <br> & Durable <br> Design</P>
-                    </div>
-                   
-                    <div>
-                        <img src="./Assets/images/Smartwatch.png" alt="">
-                    </div>
+              <div class="watch">
+                <div>
+                  <p class="p1">WEARABLES</p>
+                  <p class="p2">
+                    intelligent <br />
+                    & Durable <br />
+                    Design
+                  </p>
                 </div>
-                <div class="tv">
-                    <div>
-                        <p class="p1">COMPUTERS</p>
-                        <P class="p2">Build your<br>own high <br>Powered PC</P>
-                    </div>
-                   
-                    <div>
-                        <img src="./Assets/images/tv.png" alt="">
-                    </div>
+
+                <div>
+                  <img src="./Assets/images/Smartwatch.png" alt="" />
                 </div>
-               
+              </div>
+              <div class="tv">
+                <div>
+                  <p class="p1">COMPUTERS</p>
+                  <p class="p2">Build your<br />own high <br />Powered PC</p>
+                </div>
+
+                <div>
+                  <img src="./Assets/images/tv.png" alt="" />
+                </div>
+              </div>
             </div>
+          </div>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          ></script>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+          ></script>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </div>
-   </div>
-</section>
+      </div>
+    </section>
 
-<section class="service_first">
-    <div class="service">
+    <section class="service_first">
+      <div class="service">
         <div class="container">
-            <div class="service_all_logo">
-                <!-- <div class="freeshiping_freereturn"> -->
-                    <div class="freeshipng">
-                        <div class="shiping_logo">
-                            <i class="fa-solid fa-truck-fast"></i>
-                        </div>
-                        <div class="log_description">
-                            <p class="p1">Free shiping</p>
-                            <p>Free delivery over $100</p>
-                        </div>
-                    </div>  
-    
-                    <div class="free_return">
-                        <div class="free-return_logo">
-                            <i class="fa-solid fa-share"></i>
-                        </div>
-                        <div class="log_description">
-                            <p class="p1">Free shiping</p>
-                            <p>Free delivery over $100</p>
-                        </div>
-    
-                    <!-- </div> -->
-                </div>
-              
-                <!-- <div class="securshiping_unlimited"> -->
-                    <div class="secure_shoping">
-                        <div class="secureshoping_logo">
-                            <i class="fa-solid fa-shield-heart"></i>
-                        </div>
-                        <div class="log_description">
-                            <p class="p1">Free shiping</p>
-                            <p>Free delivery over $100</p>
-                        </div>
-    
-                    </div>
-    
-                    <div class="unlimeted_block">
-                        <div class="unlimitedblock_logo">
-                            <i class="fa-solid fa-cube"></i>
-                        </div>
-                        <div class="log_description">
-                            <p class="p1">Free shiping</p>
-                            <p>Free delivery over $100</p>
-                        </div>
-    
-                    </div>
-                <!-- </div> -->
-              
+          <div class="service_all_logo">
+            <!-- <div class="freeshiping_freereturn"> -->
+            <div class="freeshipng">
+              <div class="shiping_logo">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div class="log_description">
+                <p class="p1">Free shiping</p>
+                <p>Free delivery over $100</p>
+              </div>
             </div>
-           
 
+            <div class="free_return">
+              <div class="free-return_logo">
+                <i class="fa-solid fa-share"></i>
+              </div>
+              <div class="log_description">
+                <p class="p1">Free shiping</p>
+                <p>Free delivery over $100</p>
+              </div>
+
+              <!-- </div> -->
+            </div>
+
+            <!-- <div class="securshiping_unlimited"> -->
+            <div class="secure_shoping">
+              <div class="secureshoping_logo">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <div class="log_description">
+                <p class="p1">Free shiping</p>
+                <p>Free delivery over $100</p>
+              </div>
+            </div>
+
+            <div class="unlimeted_block">
+              <div class="unlimitedblock_logo">
+                <i class="fa-solid fa-cube"></i>
+              </div>
+              <div class="log_description">
+                <p class="p1">Free shiping</p>
+                <p>Free delivery over $100</p>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!-- why for us Section start -->
 
-<!-- why for us Section start -->
-
-<section>
-    <div class="why-us">
+    <section>
+      <div class="why-us">
         <div class="container">
-            <div class="whyustopcategorieshomedecore">
-                <h1>Why buy form us ?</h1>
-                <hr class="text_desk" >
-                <p class="journa_has_anchartag">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae commodi quas consequuntur <br> distinctio dolorum earum impedit autem ipsam animi quam, accusamus modi ab!<a href="">learn more</a>
-               </p>
-               <div class="topcategoreis_fashion">
-                 <div class="topcategories">
-                   <p>TOP CATEGORIES</p> 
-                 </div>
-                 <div class="rectangle">                    
-                 </div>
-                 <div class="electronics">
-                    <p>ELECTRONICS</p>
-                 </div>
-                 <div class="beauty">
-                    <p>BEAUTY</p>
-                 </div>
-                 <div class="fashion_topcategories">
-                    <p>FASHION</p>
-                 </div>
-                </div>
-                <div class="whyus_crowsel">
-                    <div class="owl-carousel owl-theme" id="whyus">
-                        <div class="item1 img-topcategories">                            
-                            <img src="./Assets/images/girlcapim2.jpeg" alt="">
-                            <p>FASHION</p>
-                        </div>
-                        <div class="item2 img-topcategories">
-                            <img src="./Assets/images/bags.jpg" alt="">
-                            <p>BAGS</p>
-                        </div>
-                        <div class="item3 img-topcategories">
-                            <img src="./Assets/images/healthbeauty.jpeg" alt="">
-                            <P>Health & BEAUTY</P>
-                        </div>
-                        <div class="item4 img-topcategories">
-                            <img src="./Assets/images/footwear.jpeg" alt="">
-                            <p>FOOTWEAR</p>
-                        </div>
-                        <div class="item5 img-topcategories">
-                            <img src="./Assets/images/homedecor.jpeg" alt="">
-                            <p>HOME DECORE</p>
-                        </div>
-                        <div class="item6 img-topcategories">
-                            <img src="./Assets/images/bags.jpg" alt="">
-                            <p>FOOTWEAR</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="whyustopcategorieshomedecore">
+            <h1>Why buy form us ?</h1>
+            <hr class="text_desk" />
+            <p class="journa_has_anchartag">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae
+              commodi quas consequuntur <br />
+              distinctio dolorum earum impedit autem ipsam animi quam, accusamus
+              modi ab!<a href="">learn more</a>
+            </p>
+            <div class="topcategoreis_fashion">
+              <div class="topcategories">
+                <p>TOP CATEGORIES</p>
+                <div class="rectangle"></div>
+              </div>
+
+              <div class="electronics">
+                <p>ELECTRONICS</p>
+              </div>
+              <div class="beauty">
+                <p>BEAUTY</p>
+              </div>
+              <div class="fashion_topcategories">
+                <p>FASHION</p>
+              </div>
             </div>
+
+            <div class="whyus_crowsel">
+              <div class="owl-carousel owl-theme" id="whyus">
+                <div class="item1 img-topcategories">
+                  <img src="./Assets/images/girlcapim2.jpeg" alt="" />
+                  <p>FASHION</p>
+                </div>
+                <div class="item2 img-topcategories">
+                  <img src="./Assets/images/bags.jpg" alt="" />
+                  <p>BAGS</p>
+                </div>
+                <div class="item3 img-topcategories">
+                  <img src="./Assets/images/healthbeauty.jpeg" alt="" />
+                  <p>Health & BEAUTY</p>
+                </div>
+                <div class="item4 img-topcategories">
+                  <img src="./Assets/images/footwear.jpeg" alt="" />
+                  <p>FOOTWEAR</p>
+                </div>
+                <div class="item5 img-topcategories">
+                  <img src="./Assets/images/homedecor.jpeg" alt="" />
+                  <p>HOME DECORE</p>
+                </div>
+                <div class="item6 img-topcategories">
+                  <img src="./Assets/images/bags.jpg" alt="" />
+                  <p>FOOTWEAR</p>
+                </div>
+              </div>
             </div>
-            
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section>
-    <div class="product-us">
+    <section>
+      <div class="product-us">
         <div class="container">
-            <div class="product-us-headphone-camera">
-                <h1>Feature Products</h1>
-                <hr class="text_desk" >
-                <p class="journa_has_anchartag">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae commodi quas consequuntur <br> distinctio dolorum earum impedit autem ipsam animi quam, accusamus modi ab!<a href="">learn more</a>
-               </p>
-               <div class="topcategoreis_fashion">
-                 <div class="topcategories">
-                   <p>TOP CATEGORIES</p> 
-                 </div>
-                 <div class="rectangle">                    
-                 </div>
-                 <div class="electronics">
-                    <p>ELECTRONICS</p>
-                 </div>
-                 <div class="beauty">
-                    <p>BEAUTY</p>
-                 </div>
-                 <div class="fashion_topcategories">
-                    <p>FASHION</p>
-                 </div>
+          <div class="product-us-headphone-camera">
+            <h1>Feature Products</h1>
+            <hr class="text_desk" />
+            <p class="journa_has_anchartag">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae
+              commodi quas consequuntur <br />
+              distinctio dolorum earum impedit autem ipsam animi quam, accusamus
+              modi ab!<a href="">learn more</a>
+            </p>
+            <div class="topcategoreis_fashion">
+              <div class="topcategories">
+                <p>TOP CATEGORIES</p>
+                <div class="rectangle"></div>
+              </div>
+              <div class="electronics">
+                <p>ELECTRONICS</p>
+              </div>
+              <div class="beauty">
+                <p>BEAUTY</p>
+              </div>
+              <div class="fashion_topcategories">
+                <p>FASHION</p>
+              </div>
+            </div>
+            <div class="whyus_crowsel">
+              <div class="owl-carousel owl-theme" id="feature-product">
+                <div class="headphone">
+                  <div class="image">
+                    <img src="./Assets/images/headphone.jpg" alt="" />
+                    <div class="customlabels">CUSTOM LABELS</div>
+                    <div class="hot_per">
+                      <div class="prcent">-70%</div>
+                      <div class="hot">hot</div>
+                    </div>
+                  </div>
+                  <div class="erykson">
+                    <div>Erickson</div>
+                    <div>Modal 519</div>
+                  </div>
+                  <div class="headphone-txt">
+                    <div class="htxt">Headphone</div>
+                    <div class="strike">$999.0 <strike>$3299.0</strike></div>
+                  </div>
+                  <div class="favcart">
+                    <div class="section" id="input-number-favcart">
+                      <input type="number" max="10" min="1" value="1" />
+                    </div>
+                    <button>ADD TO CART</button>
+                    <div class="whislist">
+                      <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                      <i
+                        id="compare-product"
+                        class="fa-solid fa-arrow-right-arrow-left"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <div class="buy-now">
+                    <div class="byu-now-doller">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                      <span>buy now</span>
+                    </div>
+                    <div class="question">
+                      <i class="fa-solid fa-question"></i>
+                      <span>Question</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="whyus_crowsel">
-                    <div class="owl-carousel owl-theme" id="feature-product">
-                        <div class="headphone">
-                        
-                            <div class="image">
-                                <img src="./Assets/images/headphone.jpg" alt="">  
-                                <div class="customlabels">
-                                    CUSTOM LABELS
-                                </div>   
-                                <div class="hot_per">
+
+                <div class="headphone">
+                  <div class="image">
+                    <img src="./Assets/images/ladiesshoes.jpg" alt="" />
+                    <div class="customlabels">CUSTOM LABELS</div>
+                    <div class="hot_per">
+                      <div class="prcent">-70%</div>
+                      <div class="hot">hot</div>
+                    </div>
+                  </div>
+                  <div class="erykson">
+                    <div>Erickson</div>
+                    <div>Modal 519</div>
+                  </div>
+                  <div class="headphone-txt">
+                    <div class="htxt">Headphone</div>
+                    <div class="strike">$999.0 <strike>$3299.0</strike></div>
+                  </div>
+                  <div class="favcart">
+                    <div class="section" id="input-number-favcart">
+                      <input type="number" max="10" min="1" value="1" />
+                    </div>
+                    <button>ADD TO CART</button>
+                    <div class="whislist">
+                      <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                      <i
+                        id="compare-product"
+                        class="fa-solid fa-arrow-right-arrow-left"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <div class="buy-now">
+                    <div class="byu-now-doller">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                      <span>buy now</span>
+                    </div>
+                    <div class="question">
+                      <i class="fa-solid fa-question"></i>
+                      <span>Question</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="headphone">
+                  <div class="image">
+                    <img src="./Assets/images/smarttv.jpg" alt="" />
+                    <div class="customlabels">2-3 DAYS</div>
+                    <div class="free">FREE</div>
+                    <!-- <div class="hot_per">
                                 
                                     <div class="prcent">
                                         -70%
                                     </div>
                                     <div class="hot">
                                         hot
-                                    </div>
-                                </div>                           
-                            </div>
-                            <div class="erykson">
-                                <div>Erickson</div>
-                                <div>Modal 519</div>
-                            </div>
-                            <div class="headphone-txt">
-                                <div class="htxt">Headphone</div>
-                                <div class="strike">$999.0 <strike>$3299.0</strike></div>
-                            </div>
-                            <div class="favcart">  
-                                <div class="section" id="input-number-favcart">
-                                    <input type="number" max="10" min="1" value="1">
-                                </div> 
-                                <button>ADD TO CART</button>
-                                <div class="whislist">
-                                    <i id="fav-whislist" class="fa-regular fa-heart"></i>
-                                    <i id="compare-product" class="fa-solid fa-arrow-right-arrow-left"></i>
-                                </div>                       
-                              
-                             </div>
-
-                             <div class="buy-now">
-                                <div class="byu-now-doller">
-                                    <i class="fa-solid fa-dollar-sign"></i>
-                                    <span>buy now</span>
-                                </div>
-                                <div class="question">
-                                    <i class="fa-solid fa-question"></i>
-                                    <span>Question</span>
-                                </div>
-                            </div>
-
-                        </div>
-                     
-                        <div class="headphone">
-                        
-                            <div class="image">
-                                <img src="./Assets/images/ladiesshoes.jpg" alt="">  
-                                <div class="customlabels">
-                                    CUSTOM LABELS
-                                </div>   
-                                <div class="hot_per">
-                                
-                                    <div class="prcent">
-                                        -70%
-                                    </div>
-                                    <div class="hot">
-                                        hot
-                                    </div>
-                                </div>                           
-                            </div>
-                            <div class="erykson">
-                                <div>Erickson</div>
-                                <div>Modal 519</div>
-                            </div>
-                            <div class="headphone-txt">
-                                <div class="htxt">Headphone</div>
-                                <div class="strike">$999.0 <strike>$3299.0</strike></div>
-                            </div>
-                            <div class="favcart">  
-                                <div class="section" id="input-number-favcart">
-                                    <input type="number" max="10" min="1" value="1">
-                                </div> 
-                                <button>ADD TO CART</button>
-                                <div class="whislist">
-                                    <i id="fav-whislist"class="fa-regular fa-heart"></i>
-                                    <i  id="compare-product" class="fa-solid fa-arrow-right-arrow-left"></i>
-                                </div>                       
-                              
-                             </div>
-
-                             <div class="buy-now">
-                                <div class="byu-now-doller">
-                                    <i class="fa-solid fa-dollar-sign"></i>
-                                    <span>buy now</span>
-                                </div>
-                                <div class="question">
-                                    <i class="fa-solid fa-question"></i>
-                                    <span>Question</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="headphone">
-                        
-                            <div class="image">
-                                <img src="./Assets/images/smarttv.jpg" alt="">  
-                                <div class="customlabels">
-                                    2-3 DAYS
-                                </div> 
-                                <div class="free">
-                                    FREE
-                                </div>  
-                                <!-- <div class="hot_per">
-                                
-                                    <div class="prcent">
-                                        -70%
-                                    </div>
-                                    <div class="hot">
-                                        hot
-                                    </div>
+                Why buy                    </div>
                                 </div>                            -->
-                            </div>
-                            <div class="erykson">
-                                <div>Erickson</div>
-                                <div>Modal 519</div>
-                            </div>
-                            <div class="headphone-txt">
-                                <div class="htxt">Headphone</div>
-                                <div class="strike">$999.0 <strike>$3299.0</strike></div>
-                            </div>
-                            <div class="favcart">  
-                                <div class="section" id="input-number-favcart">
-                                    <input type="number" max="10" min="1" value="1">
-                                </div> 
-                                <button>ADD TO CART</button>
-                                <div class="whislist">
-                                    <i id="fav-whislist" class="fa-regular fa-heart"></i>
-                                    <i  id="compare-product" class="fa-solid fa-arrow-right-arrow-left"></i>
-                                </div>                       
-                              
-                             </div>
+                  </div>
+                  <div class="erykson">
+                    <div>Erickson</div>
+                    <div>Modal 519</div>
+                  </div>
+                  <div class="headphone-txt">
+                    <div class="htxt">Headphone</div>
+                    <div class="strike">$999.0 <strike>$3299.0</strike></div>
+                  </div>
+                  <div class="favcart">
+                    <div class="section" id="input-number-favcart">
+                      <input type="number" max="10" min="1" value="1" />
+                    </div>
+                    <button>ADD TO CART</button>
+                    <div class="whislist">
+                      <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                      <i
+                        id="compare-product"
+                        class="fa-solid fa-arrow-right-arrow-left"
+                      ></i>
+                    </div>
+                  </div>
 
-                             <div class="buy-now">
-                                <div class="byu-now-doller">
-                                    <i class="fa-solid fa-dollar-sign"></i>
-                                    <span>buy now</span>
-                                </div>
-                                <div class="question">
-                                    <i class="fa-solid fa-question"></i>
-                                    <span>Question</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="headphone">
-                        
-                            <div class="image">
-                                <img src="./Assets/images/camera.jpg" alt="">  
-                                <div class="customlabels">
-                                    PRE ORDER
-                                </div>   
-                                <div class="hot_per">
-                                
-                                    <!-- <div class="prcent">
+                  <div class="buy-now">
+                    <div class="byu-now-doller">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                      <span>buy now</span>
+                    </div>
+                    <div class="question">
+                      <i class="fa-solid fa-question"></i>
+                      <span>Question</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="headphone">
+                  <div class="image">
+                    <img src="./Assets/images/camera.jpg" alt="" />
+                    <div class="customlabels">PRE ORDER</div>
+                    <div class="hot_per">
+                      <!-- <div class="prcent">
                                         -70%
                                     </div> -->
-                                    <div class="hot">
-                                        hot
-                                    </div>
-                                </div>                           
-                            </div>
-                            <div class="erykson">
-                                <div>Erickson</div>
-                                <div>Modal 519</div>
-                            </div>
-                            <div class="headphone-txt">
-                                <div class="htxt">Headphone</div>
-                                <div class="strike">$999.0 <strike>$3299.0</strike></div>
-                            </div>
-                            <div class="favcart">  
-                                <div class="section" id="input-number-favcart">
-                                    <input type="number" max="10" min="1" value="1">
-                                </div> 
-                                <button>ADD TO CART</button>
-                                <div class="whislist">
-                                    <i id="fav-whislist"class="fa-regular fa-heart"></i>
-                                    <i  id="compare-product" class="fa-solid fa-arrow-right-arrow-left"></i>
-                                </div>                       
-                              
-                             </div>
-
-                             <div class="buy-now">
-                                <div class="byu-now-doller">
-                                    <i class="fa-solid fa-dollar-sign"></i>
-                                    <span>buy now</span>
-                                </div>
-                                <div class="question">
-                                    <i class="fa-solid fa-question"></i>
-                                    <span>Question</span>
-                                </div>
-                            </div>
-
-                        </div>
-                     
+                      <div class="hot">hot</div>
                     </div>
+                  </div>
+                  <div class="erykson">
+                    <div>Erickson</div>
+                    <div>Modal 519</div>
+                  </div>
+                  <div class="headphone-txt">
+                    <div class="htxt">Headphone</div>
+                    <div class="strike">$999.0 <strike>$3299.0</strike></div>
+                  </div>
+                  <div class="favcart">
+                    <div class="section" id="input-number-favcart">
+                      <input type="number" max="10" min="1" value="1" />
+                    </div>
+                    <button>ADD TO CART</button>
+                    <div class="whislist">
+                      <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                      <i
+                        id="compare-product"
+                        class="fa-solid fa-arrow-right-arrow-left"
+                      ></i>
+                    </div>
+                  </div>
 
-                    
-                    
+                  <div class="buy-now">
+                    <div class="byu-now-doller">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                      <span>buy now</span>
+                    </div>
+                    <div class="question">
+                      <i class="fa-solid fa-question"></i>
+                      <span>Question</span>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            </div>
-            <div class="seeallproducd-btn">
-                <button>
-                    SEE ALL PRODUCTS <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+        <div class="seeallproducd-btn">
+          <button>
+            SEE ALL PRODUCTS
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
-<section>
-    <div class="featuresectioncategories">
+    <section>
+      <div class="featuresectioncategories">
         <div class="container">
-            <div class="featuresection">
-                <h1>Featured Category</h1>
-                <hr class="text_desk" >
-                <p class="journa_has_anchartag">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae commodi quas consequuntur <br> distinctio dolorum earum impedit autem ipsam animi quam, accusamus modi ab!<a href="">learn more</a>
-                </p>
-            </div>
-           <div class="crouselpartfeaturecategories">
+          <div class="featuresection">
+            <h1>Featured Category</h1>
+            <hr class="text_desk" />
+            <p class="journa_has_anchartag">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae
+              commodi quas consequuntur <br />
+              distinctio dolorum earum impedit autem ipsam animi quam, accusamus
+              modi ab!<a href="">learn more</a>
+            </p>
+          </div>
+          <div class="crouselpartfeaturecategories">
             <div class="fashion1">
-                <div class="fash">
-                    Fashion
-                </div>
-                <div class="fashiondesk">
-
-                </div>
-                <div class="imgfashion">
-                    <img src="./Assets/images/girlcapimg.jpeg" alt="">
-                </div>
-                <div class="acc_dress_pants_T_shirts">
-                    <p>Accesories</p>
-                    <p>Dress</p>
-                    <p>Pants</p>
-                    <p>T-shirts</p>
-                    <p><a href="">See all in fashion</a></p>
-                </div>
-               
+              <div class="fash">Fashion</div>
+              <div class="fashiondesk"></div>
+              <div class="imgfashion">
+                <img src="./Assets/images/girlcapimg.jpeg" alt="" />
+              </div>
+              <div class="acc_dress_pants_T_shirts">
+                <p>Accesories</p>
+                <p>Dress</p>
+                <p>Pants</p>
+                <p>T-shirts</p>
+                <p><a href="">See all in fashion</a></p>
+              </div>
             </div>
             <div class="newfashion">
-                <p>New in Fashion</p>
-                <div class="fashiondesk">
-                </div>
-                <div class="newfashioncrowesl">
-                    <div class="owl-carousel owl-theme" id="feature-categories">
-                        <div class="item_fashin_crowesl img-dresssweter">                            
-                            <img src="./Assets/images/bodycondress.jpeg" alt="">
-                            <div class="customlabels_newfashion">
-                                2-3 DAYS
-                            </div>
-                            <div class="bodycorndressfirst">
-                                <div class="bdncross">
-                                    Bodycorn Dress
-                                </div>
-                                <div class="bdn-doller" >
-                                    $399.00
-                                </div>
-                                <hr>
-                                <div class="btnbd_addto_cart">
-                                    <div class="btn_addcart_fashion">
-                                        <button>Add to cart</button>
-                                        <div class="fashion_addcart_whislist">
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i  id="compare-product" class="fa-solid fa-arrow-right-arrow-left"></i>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>                          
-                                                        
+              <p>New in Fashion</p>
+              <div class="fashiondesk"></div>
+              <div class="newfashioncrowesl">
+                <div class="owl-carousel owl-theme" id="feature-categories">
+                  <div class="item_fashin_crowesl img-dresssweter">
+                    <img src="./Assets/images/bodycondress.jpeg" alt="" />
+                    <div class="customlabels_newfashion">2-3 DAYS</div>
+                    <div class="bodycorndressfirst">
+                      <div class="bdncross">Bodycorn Dress</div>
+                      <div class="bdn-doller">$399.00</div>
+                      <hr />
+                      <div class="btnbd_addto_cart">
+                        <div class="btn_addcart_fashion">
+                          <button>Add to cart</button>
+                          <div class="fashion_addcart_whislist">
+                            <i class="fa-regular fa-heart"></i>
+                            <i
+                              id="compare-product"
+                              class="fa-solid fa-arrow-right-arrow-left"
+                            ></i>
+                          </div>
                         </div>
-                        <div class="item_fashin_crowesl img-dresssweter">                            
-                            <img src="./Assets/images/bodycondress.jpeg" alt="">
-                            <div class="customlabels_newfashion">
-                                2-3 DAYS
-                            </div>
-                            <div class="bodycorndressfirst">
-                                <div class="bdncross">
-                                    Bodycorn Dress
-                                </div>
-                                <div class="bdn-doller" >
-                                    $399.00
-                                </div>
-                                <hr>
-                                <div class="btnbd_addto_cart">
-                                    <div class="btn_addcart_fashion">
-                                        <button>Add to cart</button>
-                                        <div class="fashion_addcart_whislist">
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i  id="compare-product" class="fa-solid fa-arrow-right-arrow-left"></i>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        
+                      </div>
                     </div>
-
-                    <div class="item_fashin_crowesl img-dresssweter">                            
-                        <img src="./Assets/images/bodycondress.jpeg" alt="">
-                        <div class="customlabels_newfashion">
-                            2-3 DAYS
+                  </div>
+                  <div class="item_fashin_crowesl img-dresssweter">
+                    <img src="./Assets/images/bodycondress.jpeg" alt="" />
+                    <div class="customlabels_newfashion">2-3 DAYS</div>
+                    <div class="bodycorndressfirst">
+                      <div class="bdncross">Bodycorn Dress</div>
+                      <div class="bdn-doller">$399.00</div>
+                      <hr />
+                      <div class="btnbd_addto_cart">
+                        <div class="btn_addcart_fashion">
+                          <button>Add to cart</button>
+                          <div class="fashion_addcart_whislist">
+                            <i class="fa-regular fa-heart"></i>
+                            <i
+                              id="compare-product"
+                              class="fa-solid fa-arrow-right-arrow-left"
+                            ></i>
+                          </div>
                         </div>
-                        <div class="bodycorndressfirst">
-                            <div class="bdncross">
-                                Bodycorn Dress
-                            </div>
-                            <div class="bdn-doller" >
-                                $399.00
-                            </div>
-                            <hr>
-                            <div class="btnbd_addto_cart">
-                                <div class="btn_addcart_fashion">
-                                    <button>Add to cart</button>
-                                    <div class="fashion_addcart_whislist">
-                                        <i class="fa-regular fa-heart"></i>
-                                        <i  id="compare-product" class="fa-solid fa-arrow-right-arrow-left"></i>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                        </div>                    
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item_fashin_crowesl img-dresssweter">
+                    <img src="./Assets/images/bodycondress.jpeg" alt="" />
+                    <div class="customlabels_newfashion">2-3 DAYS</div>
+                    <div class="bodycorndressfirst">
+                      <div class="bdncross">Bodycorn Dress</div>
+                      <div class="bdn-doller">$399.00</div>
+                      <hr />
+                      <div class="btnbd_addto_cart">
+                        <div class="btn_addcart_fashion">
+                          <button>Add to cart</button>
+                          <div class="fashion_addcart_whislist">
+                            <i class="fa-regular fa-heart"></i>
+                            <i
+                              id="compare-product"
+                              class="fa-solid fa-arrow-right-arrow-left"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
-           </div>
+          </div>
         </div>
-    </div>
-</section>
-<!--****************************************shop by trand******************************* -->
-<!--************************************************************************************* -->
+      </div>
+    </section>
+    <!--****************************************shop by trand******************************* -->
+    <!--************************************************************************************* -->
 
-
-<section>
-    <div class="shop_by_brand">
+    <section>
+      <div class="shop_by_brand">
         <div class="container">
-            <div class="shop_brand_logo">
-                <div class="featuresection">
-                    <h1>Featured Category</h1>
-                    <hr class="text_desk" >
-                    <!-- <p class="journa_has_anchartag">
+          <div class="shop_brand_logo">
+            <div class="featuresection">
+              <h1>Featured Category</h1>
+              <hr class="text_desk" />
+              <!-- <p class="journa_has_anchartag">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae commodi quas consequuntur <br> distinctio dolorum earum impedit autem ipsam animi quam, accusamus modi ab!<a href="">learn more</a>
                     </p> -->
-                </div>
-                <div class="shop_by_brand_crowser">
-                    <div class="owl-carousel owl-theme" id="shop_brand">
-                         <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/htc.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/htc.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/htc.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/htc.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/htc.jpg" alt="">
-                        </div>
-                        <div class="palm">
-                            <img src="./Assets/images/Palm-Logo-2000.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
             </div>
+            <div class="shop_by_brand_crowser">
+              <div class="owl-carousel owl-theme" id="shop_brand">
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/htc.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/htc.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/htc.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/htc.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/htc.jpg" alt="" />
+                </div>
+                <div class="palm">
+                  <img src="./Assets/images/Palm-Logo-2000.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-
-<!-- /**************** improved gallery  module section HTML design start***********************************/
+    <!-- /**************** improved gallery  module section HTML design start***********************************/
 /* ************************************************************************************** */-->
 
-<section>
-<div class="improved-gallery">
-    <div class="container">
-        <div class="gallery-improved_parent">
+    <section>
+      <div class="improved-gallery">
+        <div class="container">
+          <div class="gallery-improved_parent">
             <div class="featuresection-improved-gallery">
-                <h1 id="ig">Improved Gallery Module </h1>
-                <hr class="text_desk" >
-                <p class="journa_has_anchartag">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae commodi quas consequuntur <br> distinctio dolorum earum impedit autem ipsam animi quam, accusamus modi ab!<a href="">learn more</a>
-                </p>
+              <h1 id="ig">Improved Gallery Module</h1>
+              <hr class="text_desk" />
+              <p class="journa_has_anchartag">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                quibusdam Lorem ipsum dolor sit amet consectetur, Recusandae
+                commodi quas consequuntur <br />
+                distinctio dolorum earum impedit autem ipsam animi quam,
+                accusamus modi ab!<a href="">learn more</a>
+              </p>
             </div>
             <div class="image-gallery-module-box">
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/sunglassimg.jpg" alt="">
-                </div>
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/parrot.jpeg" alt="">
-                </div>
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/girlcapim2.jpeg" alt="">
-                </div>
-    
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/girlleve.jpg" alt="">
-                </div>
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/homedecor.jpeg" alt="">
-                </div>
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/girlcapim2.jpeg" alt="">
-                </div>
-    
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/shoes.jpg" alt="">
-                </div>
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/homedecor.jpeg" alt="">
-                </div>
-                <div id="img-gallery-sizing">
-                    <img src="./Assets/images/girlcapimg.jpeg" alt="">
-                </div>
-   
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/sunglassimg.jpg" alt="" />
+              </div>
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/parrot.jpeg" alt="" />
+              </div>
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/girlcapim2.jpeg" alt="" />
+              </div>
 
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/girlleve.jpg" alt="" />
+              </div>
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/homedecor.jpeg" alt="" />
+              </div>
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/girlcapim2.jpeg" alt="" />
+              </div>
+
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/shoes.jpg" alt="" />
+              </div>
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/homedecor.jpeg" alt="" />
+              </div>
+              <div id="img-gallery-sizing">
+                <img src="./Assets/images/girlcapimg.jpeg" alt="" />
+              </div>
             </div>
-            
-
+          </div>
         </div>
-    </div>
-</div>
-</section>
+      </div>
+    </section>
 
+    <!-- **********************************Form our Blog section start******************* -->
+    <!-- *********************************************************************************** -->
 
-
-
-<!-- **********************************Form our Blog section start******************* -->
-<!-- *********************************************************************************** -->
-
-<section>
-    <div class="bolg-section">
+    <section>
+      <div class="bolg-section">
         <div class="container">
-            <div class="bolg_cr_part">
-                <div class="ourblog-jurnal-book-section">
-                    <h1>Form our Blog</h1>
-                    <hr class="text_desk" >
-                    <p class="journa_has_anchartag">
-                    Dolor quibusdam Loredae commodi quas consequun distinctio dolorum earum impedit autem ipsam animi quam, accusamus modi ab
-                   </p>
-                   <div class="topcategoreis_fashion">
-                     <div class="topcategories-blog">
-                       <p>LATEST POSTS</p> 
-                     </div>
-                     <div class="rectangle-blog">                    
-                     </div>
-                     <div class="electronics">
-                        <p>MOST READ</p>
-                     </div>
-                    </div>
-                    
-                <div>
-                
-                    <div class="blog-crowsel">
-                        <div class="owl-carousel owl-theme blogcr_cr" >
-                            <div class="blog_img_1">
-                                <div class="jornalblog_img">
-                                    <img src="./Assets/images/bookgirl.jpg" alt="">
-                                </div>
-                                <div class="adminmessage">
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>admin</span>
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                    <span>38</span>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <span>19340</span>
-                                </div>
-                                <div class="jurnal-p-long-para">
-                                    <p class="jurnal-blog-p">Jornal Blog</p>
-                                    <p class="junrnal-blog-longpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloribus quaerat nostrum facilis itaque quasi, natus asperiores unde aliquid beatae officiis corporis voluptatum dicta possimus ipsam dolorem distinctio accusamus cum enim sed. Necessitatibus itaque vitae ex, corrupti officia perferendis asperiores consequatur quo beatae est.</p>
-                                    <div class="blog-anchar">
-                                        <a href="">Read More</a>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="blog_img_1"></h4>
-                                <div class="jornalblog_img">
-                                    <img src="./Assets/images/lather.avif" alt="">
-                                </div>
-                                <div class="adminmessage">
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>admin</span>
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                    <span>38</span>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <span>19340</span>
-                                </div>
-                                <div class="jurnal-p-long-para">
-                                    <p class="jurnal-blog-p">Jornal Blog</p>
-                                    <p class="junrnal-blog-longpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloribus quaerat nostrum facilis itaque quasi, natus asperiores unde aliquid beatae officiis corporis voluptatum dicta possimus ipsam dolorem distinctio accusamus cum enim sed. Necessitatibus itaque vitae ex, corrupti officia perferendis asperiores consequatur quo beatae est.</p>
-                                    <div class="blog-anchar">
-                                        <a href="">Read More</a>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog_img_1">
-                                <div class="jornalblog_img">
-                                    <img src="./Assets/images/bloggirl.avif" alt="">
-                                </div>
-                                <div class="adminmessage">
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>admin</span>
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                    <span>38</span>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <span>19340</span>
-                                </div>
-                                <div class="jurnal-p-long-para">
-                                    <p class="jurnal-blog-p">Jornal Blog</p>
-                                    <p class="junrnal-blog-longpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloribus quaerat nostrum facilis itaque quasi, natus asperiores unde aliquid beatae officiis corporis voluptatum dicta possimus ipsam dolorem distinctio accusamus cum enim sed. Necessitatibus itaque vitae ex, corrupti officia perferendis asperiores consequatur quo beatae est.</p>
-                                    <div class="blog-anchar">
-                                        <a href="">Read More</a>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>     
-                            
-                            <div class="blog_img_1">
-                                <div class="jornalblog_img">
-                                    <img src="./Assets/images/homedecor.jpeg" alt="">
-                                </div>
-                                <div class="adminmessage">
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>admin</span>
-                                    <i class="fa-solid fa-comment-dots"></i>
-                                    <span>38</span>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <span>19340</span>
-                                </div>
-                                <div class="jurnal-p-long-para">
-                                    <p class="jurnal-blog-p">Jornal Blog</p>
-                                    <p class="junrnal-blog-longpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloribus quaerat nostrum facilis itaque quasi, natus asperiores unde aliquid beatae officiis corporis voluptatum dicta possimus ipsam dolorem distinctio accusamus cum enim sed. Necessitatibus itaque vitae ex, corrupti officia perferendis asperiores consequatur quo beatae est.</p>
-                                    <div class="blog-anchar">
-                                        <a href="">Read More</a>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </div>
-                            </div>     
+          <div class="bolg_cr_part">
+            <div class="ourblog-jurnal-book-section">
+              <h1>Form our Blog</h1>
+              <hr class="text_desk" />
+              <p class="journa_has_anchartag">
+                Dolor quibusdam Loredae commodi quas consequun distinctio
+                dolorum earum impedit autem ipsam animi quam, accusamus modi ab
+              </p>
+              <div class="topcategoreis_fashion">
+                <div class="topcategories-blog">
+                  <p>LATEST POSTS</p>
+                </div>
+                <div class="rectangle-blog"></div>
+                <div class="electronics">
+                  <p>MOST READ</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="blog-crowsel">
+                  <div class="owl-carousel owl-theme blogcr_cr">
+                    <div class="blog_img_1">
+                      <div class="jornalblog_img">
+                        <img src="./Assets/images/bookgirl.jpg" alt="" />
+                      </div>
+                      <div class="adminmessage">
+                        <i class="fa-solid fa-user"></i>
+                        <span>admin</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>38</span>
+                        <i class="fa-solid fa-eye"></i>
+                        <span>19340</span>
+                      </div>
+                      <div class="jurnal-p-long-para">
+                        <p class="jurnal-blog-p">Jornal Blog</p>
+                        <p class="junrnal-blog-longpara">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore doloribus quaerat nostrum facilis itaque
+                          quasi, natus asperiores unde aliquid beatae officiis
+                          corporis voluptatum dicta possimus ipsam dolorem
+                          distinctio accusamus cum enim sed. Necessitatibus
+                          itaque vitae ex, corrupti officia perferendis
+                          asperiores consequatur quo beatae est.
+                        </p>
+                        <div class="blog-anchar">
+                          <a href="">Read More</a>
+                          <i class="fa-solid fa-arrow-right"></i>
                         </div>
+                      </div>
                     </div>
-                   
-                  
-            </div> 
-        </div>        
-    </div>
-</section>
+                    <div class="blog_img_1">
+                      <div class="jornalblog_img">
+                        <img src="./Assets/images/lather.avif" alt="" />
+                      </div>
+                      <div class="adminmessage">
+                        <i class="fa-solid fa-user"></i>
+                        <span>admin</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>38</span>
+                        <i class="fa-solid fa-eye"></i>
+                        <span>19340</span>
+                      </div>
+                      <div class="jurnal-p-long-para">
+                        <p class="jurnal-blog-p">Jornal Blog</p>
+                        <p class="junrnal-blog-longpara">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore doloribus quaerat nostrum facilis itaque
+                          quasi, natus asperiores unde aliquid beatae officiis
+                          corporis voluptatum dicta possimus ipsam dolorem
+                          distinctio accusamus cum enim sed. Necessitatibus
+                          itaque vitae ex, corrupti officia perferendis
+                          asperiores consequatur quo beatae est.
+                        </p>
+                        <div class="blog-anchar">
+                          <a href="">Read More</a>
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="blog_img_1">
+                      <div class="jornalblog_img">
+                        <img src="./Assets/images/bloggirl.avif" alt="" />
+                      </div>
+                      <div class="adminmessage">
+                        <i class="fa-solid fa-user"></i>
+                        <span>admin</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>38</span>
+                        <i class="fa-solid fa-eye"></i>
+                        <span>19340</span>
+                      </div>
+                      <div class="jurnal-p-long-para">
+                        <p class="jurnal-blog-p">Jornal Blog</p>
+                        <p class="junrnal-blog-longpara">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore doloribus quaerat nostrum facilis itaque
+                          quasi, natus asperiores unde aliquid beatae officiis
+                          corporis voluptatum dicta possimus ipsam dolorem
+                          distinctio accusamus cum enim sed. Necessitatibus
+                          itaque vitae ex, corrupti officia perferendis
+                          asperiores consequatur quo beatae est.
+                        </p>
+                        <div class="blog-anchar">
+                          <a href="">Read More</a>
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                      </div>
+                    </div>
 
-<section>
-    <div class="saying_about_us">
+                    <div class="blog_img_1">
+                      <div class="jornalblog_img">
+                        <img src="./Assets/images/homedecor.jpeg" alt="" />
+                      </div>
+                      <div class="adminmessage">
+                        <i class="fa-solid fa-user"></i>
+                        <span>admin</span>
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <span>38</span>
+                        <i class="fa-solid fa-eye"></i>
+                        <span>19340</span>
+                      </div>
+                      <div class="jurnal-p-long-para">
+                        <p class="jurnal-blog-p">Jornal Blog</p>
+                        <p class="junrnal-blog-longpara">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Tempore doloribus quaerat nostrum facilis itaque
+                          quasi, natus asperiores unde aliquid beatae officiis
+                          corporis voluptatum dicta possimus ipsam dolorem
+                          distinctio accusamus cum enim sed. Necessitatibus
+                          itaque vitae ex, corrupti officia perferendis
+                          asperiores consequatur quo beatae est.
+                        </p>
+                        <div class="blog-anchar">
+                          <a href="">Read More</a>
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="saying_about_us">
         <div class="container">
-            <div class="saying_about_us_heading_text_desk">
-                <div class="saying-anoutus-section">
-                    <h1>What are people saying about us </h1>
-                    <hr class="text_desk" >                    
-                <div>
+          <div class="saying_about_us_heading_text_desk">
+            <div class="saying-anoutus-section">
+              <h1>What are people saying about us</h1>
+              <hr class="text_desk" />
+              <div>
                 <div class="saying-about-carousel">
-                    <div class="owl-carousel owl-theme saying_about-us">
-                        <div class="item-saying-about-comma">
-                            <div class="comma">
-                                <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
-                                <p class="junrnal-blog-longpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe doloremque nam facere iure, cumque rem mollitia explicabo aut dolorem provident minus quisquam soluta? A qui nam nisi dolores, quidem voluptatem, dolore, provident maiores minus quod ullam nihil neque officia?</p>
+                  <div class="owl-carousel owl-theme saying_about-us">
+                    <div class="item-saying-about-comma">
+                      <div class="comma">
+                        <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
+                        <p class="junrnal-blog-longpara">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Temporibus saepe doloremque nam facere iure,
+                          cumque rem mollitia explicabo aut dolorem provident
+                          minus quisquam soluta? A qui nam nisi dolores, quidem
+                          voluptatem, dolore, provident maiores minus quod ullam
+                          nihil neque officia?
+                        </p>
 
-                                <p id="user">- Charlibaltimore</p>
-                            </div>
-                        </div>
-                        <div class="item-saying-about-comma">
-                            <div class="comma">
-                                <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
-                                <p class="junrnal-blog-longpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe doloremque nam facere iure, cumque rem mollitia explicabo aut dolorem provident minus quisquam soluta? A qui nam nisi dolores, quidem voluptatem, dolore, provident maiores minus quod ullam nihil neque officia?</p>
+                        <p id="user">- Charlibaltimore</p>
+                      </div>
+                    </div>
+                    <div class="item-saying-about-comma">
+                      <div class="comma">
+                        <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
+                        <p class="junrnal-blog-longpara">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Temporibus saepe doloremque nam facere iure,
+                          cumque rem mollitia explicabo aut dolorem provident
+                          minus quisquam soluta? A qui nam nisi dolores, quidem
+                          voluptatem, dolore, provident maiores minus quod ullam
+                          nihil neque officia?
+                        </p>
 
-                                <p id="user">- Charlibaltimore</p>
-                            </div>
-                        </div>
-                        <div class="item-saying-about-comma">
-                            <div class="comma">
-                                <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
-                                <p class="junrnal-blog-longpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe doloremque nam facere iure, cumque rem mollitia explicabo aut dolorem provident minus quisquam soluta? A qui nam nisi dolores, quidem voluptatem, dolore, provident maiores minus quod ullam nihil neque officia?</p>
+                        <p id="user">- Charlibaltimore</p>
+                      </div>
+                    </div>
+                    <div class="item-saying-about-comma">
+                      <div class="comma">
+                        <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
+                        <p class="junrnal-blog-longpara">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Temporibus saepe doloremque nam facere iure,
+                          cumque rem mollitia explicabo aut dolorem provident
+                          minus quisquam soluta? A qui nam nisi dolores, quidem
+                          voluptatem, dolore, provident maiores minus quod ullam
+                          nihil neque officia?
+                        </p>
 
-                                <p id="user">- Charlibaltimore</p>
-                            </div>
-                        </div>
-
-                        <div class="item-saying-about-comma">
-                            <div class="comma">
-                                <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
-                                <p class="junrnal-blog-longpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus saepe doloremque nam facere iure, cumque rem mollitia explicabo aut dolorem provident minus quisquam soluta? A qui nam nisi dolores, quidem voluptatem, dolore, provident maiores minus quod ullam nihil neque officia?</p>
-
-                                <p id="user">- Charlibaltimore</p>
-                            </div>
-                        </div>
+                        <p id="user">- Charlibaltimore</p>
+                      </div>
                     </div>
 
+                    <div class="item-saying-about-comma">
+                      <div class="comma">
+                        <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
+                        <p class="junrnal-blog-longpara">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Temporibus saepe doloremque nam facere iure,
+                          cumque rem mollitia explicabo aut dolorem provident
+                          minus quisquam soluta? A qui nam nisi dolores, quidem
+                          voluptatem, dolore, provident maiores minus quod ullam
+                          nihil neque officia?
+                        </p>
+
+                        <p id="user">- Charlibaltimore</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!--Most Viewd section start -->
+    <!--Most Viewd section start -->
 
-
-<section>
-    <div class="most-viewed">
+    <section>
+      <div class="most-viewed">
         <div class="container">
-            <div class="mostviewed-desk-section">
-                <h1>MOST VIWED</h1>
-                <hr class="text_desk_most_view" >   
-                             
+          <div class="mostviewed-desk-section">
+            <h1>MOST VIWED</h1>
+            <hr class="text_desk_most_view" />
+
             <div>
-            <div class="mostvied-main-section">
+              <div class="mostvied-main-section">
                 <div class="sunglasses">
-                    <div class="image-sunglass">
-                        <img src="./Assets/images/mostviewsunglass.jpg" alt="">
+                  <div class="image-sunglass">
+                    <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                  </div>
+                  <div class="oversized-sunglasses">
+                    <p class="aboutus-para">Oversized Sunglasees for Lon...</p>
+                    <p class="most-viewed-doller">$369.0</p>
+                    <div class="most-viewed-whishlist_add-tocart_comapare">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </div>
-                    <div class="oversized-sunglasses">
-                        <p class="aboutus-para">Oversized Sunglasees for Lon...</p>
-                         <p class="most-viewed-doller">$369.0</p>
-                        <div class="most-viewed-whishlist_add-tocart_comapare">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="sunglasses">
-                    <div class="image-sunglass">
-                        <img src="./Assets/images/mostviewheadphone.avif" alt="">
+                  <div class="image-sunglass">
+                    <img src="./Assets/images/mostviewheadphone.avif" alt="" />
+                  </div>
+                  <div class="oversized-sunglasses">
+                    <p class="aboutus-para">Headphone</p>
+                    <p class="most-viewed-doller">$369.0</p>
+                    <div class="most-viewed-whishlist_add-tocart_comapare">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </div>
-                    <div class="oversized-sunglasses">
-                        <p class="aboutus-para">Headphone</p>
-                         <p class="most-viewed-doller">$369.0</p>
-                        <div class="most-viewed-whishlist_add-tocart_comapare">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sunglasses">
-                    <div class="image-sunglass">
-                        <img src="./Assets/images/mostviewwatch.avif" alt="">
-                    </div>
-                    <div class="oversized-sunglasses">
-                        <p class="aboutus-para">Womens maria </p>
-                         <p class="most-viewed-doller">$369.0</p>
-                        <div class="most-viewed-whishlist_add-tocart_comapare">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        </div>
-                    </div>
+                  </div>
                 </div>
 
                 <div class="sunglasses">
-                    <div class="image-sunglass">
-                        <img src="./Assets/images/mostviewsunglass.jpg" alt="">
+                  <div class="image-sunglass">
+                    <img src="./Assets/images/mostviewwatch.avif" alt="" />
+                  </div>
+                  <div class="oversized-sunglasses">
+                    <p class="aboutus-para">Womens maria</p>
+                    <p class="most-viewed-doller">$369.0</p>
+                    <div class="most-viewed-whishlist_add-tocart_comapare">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     </div>
-                    <div class="oversized-sunglasses">
-                        <p class="aboutus-para">Sport Watch</p>
-                         <p class="most-viewed-doller">$369.0</p>
-                        <div class="most-viewed-whishlist_add-tocart_comapare">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+
+                <div class="sunglasses">
+                  <div class="image-sunglass">
+                    <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                  </div>
+                  <div class="oversized-sunglasses">
+                    <p class="aboutus-para">Sport Watch</p>
+                    <p class="most-viewed-doller">$369.0</p>
+                    <div class="most-viewed-whishlist_add-tocart_comapare">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- ************************Social media logo start Html desiging******************** -->
-<!-- *********************************************************************************** -->
+    <!-- ************************Social media logo start Html desiging******************** -->
+    <!-- *********************************************************************************** -->
 
-<section>
-    <div class="socialmediallog-footer">
+    <section>
+      <div class="socialmediallog-footer">
         <div class="container">
-            <div class="socialmedia-logo">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-skype"></i>
-                <i class="fa-brands fa-google"></i>
-            </div>
+          <div class="socialmedia-logo">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-skype"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-
-<!-- Footer part HTML  -->
-<footer>
-    <div class="container">
+    <!-- Footer part HTML  -->
+    <footer>
+      <div class="container">
         <div class="footer-main-part">
-            <div class="footer_about_us">
-                <div class="mostviewed-desk-footer">
-                    <p>About Us</p>
-                    <hr class="text_desk_footer">                                    
-                </div>
-                <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Delivery</a></li>
-                    <li><a href="">Privacy Police</a></li>
-                    <li><a href="">Term & Conditions</a></li>
-                    <li><a href="">Coustom Links</a></li>
-                </ul>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
             </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
 
-            <div class="footer_about_us">
-                <div class="mostviewed-desk-footer">
-                    <p>About Us</p>
-                    <hr class="text_desk_footer">                                    
-                </div>
-                <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Delivery</a></li>
-                    <li><a href="">Privacy Police</a></li>
-                    <li><a href="">Term & Conditions</a></li>
-                    <li><a href="">Coustom Links</a></li>
-                </ul>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
             </div>
-            <div class="footer_about_us">
-                <div class="mostviewed-desk-footer">
-                    <p>About Us</p>
-                    <hr class="text_desk_footer">                                    
-                </div>
-                <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Delivery</a></li>
-                    <li><a href="">Privacy Police</a></li>
-                    <li><a href="">Term & Conditions</a></li>
-                    <li><a href="">Coustom Links</a></li>
-                </ul>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
             </div>
-            <div class="footer_about_us">
-                <div class="mostviewed-desk-footer">
-                    <p>News leter</p>
-                    <hr class="text_desk_footer">                                    
-                </div>
-               <div class="newsletter">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam deleniti error iure dignissimos.</p>
-               </div>
-               <div class="input-footer-email">
-                <input type="email" name="" id="" placeholder="Your email">
-                <button><i class="fa-regular fa-envelope"></i> send</button>
-               </div>
-               <div class="checkbox-newsleter">
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1"> I have read and agree to the <a href="">privacy policy</a></label><br>
-               </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>News leter</p>
+              <hr class="text_desk_footer" />
             </div>
-
+            <div class="newsletter">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                quam deleniti error iure dignissimos.
+              </p>
+            </div>
+            <div class="input-footer-email">
+              <input type="email" name="" id="" placeholder="Your email" />
+              <button><i class="fa-regular fa-envelope"></i> send</button>
+            </div>
+            <div class="checkbox-newsleter">
+              <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike"
+              />
+              <label for="vehicle1">
+                I have read and agree to the
+                <a href="">privacy policy</a></label
+              ><br />
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-
-<section>
-    <div class="copywright">
+    <section>
+      <div class="copywright">
         <div class="container">
-            <div class="copyright-andlogo">
-                <div>
-                    <p>copy @ 2014,Your Store,All Rights Reserved</p>
-                </div>
-                <div class="payment_logo">
-                    <div class="visa">
-                        <img src="./Assets/images/visacard.jpg" alt="">
-                    </div>
-                    <div class="visa">
-                        <img src="./Assets/images/Mastercard_logo.jpg" alt="">
-                    </div>
-                    <div class="visa">
-                        <img src="./Assets/images/paypal.webp" alt="">
-                    </div>
-                    <div class="visa">
-                        <img src="./Assets/images/strip1.png" alt="">
-                    </div>
-                    <div class="visa">
-                        <img src="./Assets/images/Mastercard_logo.jpg" alt="">
-                    </div>
-                    <div class="visa">
-                        <img src="./Assets/images/strip1.png" alt="">
-                    </div>
-                </div>
-                
+          <div class="copyright-andlogo">
+            <div>
+              <p>copy @ 2014,Your Store,All Rights Reserved</p>
             </div>
-          
+            <div class="payment_logo">
+              <div class="visa">
+                <img src="./Assets/images/visacard.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/Mastercard_logo.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/paypal.webp" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/strip1.png" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/Mastercard_logo.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/strip1.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="toparrow-fixed">
-            <div class="fixed-arrow">
-                
-            </div>
+          <div class="fixed-arrow">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script src="./Assets/js/script.js"></script>
-</body>
+    <script src="./Assets/js/script.js"></script>
+  </body>
 </html>
