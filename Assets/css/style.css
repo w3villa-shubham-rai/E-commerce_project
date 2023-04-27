@@ -980,18 +980,11 @@ select{
     height: 18px;
     position: absolute;
     bottom: -5px;
-    right: 695px;
-    rotate: -59deg;
+    right: 705px;
+    rotate: -48deg;
 }
 .topcategories::after{
     content: rectangle;
-    /* background: #2b28f1;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    bottom: -5px;
-    right: 695px;
-    rotate: -59deg; */
 
 }
 .topcategories{
@@ -1510,6 +1503,132 @@ color:  #767171;
 /*********************************** most viewed section start ************************/
 /* ************************************************************************************* */
 
+
+.mostvied-main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
 .sunglasses{
-    
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 3px;
+}
+.image-sunglass{
+    width: 80px;
+    height: 80px;
+    display: flex;
+}
+.sunglasses img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 5px; */
+}
+.most-viewed{
+    background-color: #494545;
+}
+.aboutus-para{
+    font-size: small;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.most-viewed-doller{
+    padding-top: 3px;
+    color: #6d6868;
+    font-size: medium;
+}
+
+.most-viewed-whishlist_add-tocart_comapare{
+    padding-top: 10px;
+    column-gap: 18px;
+    display: flex;
+}
+.oversized-sunglasses{
+    padding-left: 3px;
+    width: 205px;
+}
+.mostviewed-desk-section{
+    padding-top: 30px;
+    font-size: medium;
+    padding-bottom: 32px;
+}
+.text_desk_most_view{
+    width: 75px;
+    height: 3px;
+    background: #f5591c;
+    /* margin: auto; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+
+
+/****************************** Social media logo section css Designing start ************/
+/* ********************************************************************************** */
+.socialmediallog-footer{
+    background: #ece4e4;
+}
+
+.socialmedia-logo {
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.socialmedia-logo i{
+    padding: 10px;
+    font-size: 20px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+}
+
+
+/* *************************Footer Part css ***************************************** */
+/* ********************************************************************************* */
+.text_desk_footer{
+    width: 42px;
+    height: 3px;
+    background: #f5591c;
+    margin-top: -2px;
+    padding-left: 8pxx;
+    padding-right: 5pxxx;
+    margin-left: 9px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.mostviewed-desk-footer{
+    font-size: medium;
+}
+
+.mostviewed-desk-footer p{
+    font-weight: 600;
+    padding: 8px;
+}
+
+.footer_about_us
+{
+    width: 285px;
+    border-right: 2px solid #dcd7d7;
+
+
+}
+.footer_about_us ul li{
+    list-style: none;
+    padding: 8px;
+}
+.footer_about_us ul li a{
+    text-decoration: none;
+    color: #2b28f1;
+} 
+.footer-main-part{
+    display: flex;
 }
