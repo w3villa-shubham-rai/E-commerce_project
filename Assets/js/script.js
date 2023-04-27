@@ -61,7 +61,7 @@ $('#shop_brand').owlCarousel({
     }
 })
 
-$('blogcr_cr').owlCarousel({
+$('.blogcr_cr').owlCarousel({
     loop:true,
     margin:20,
     nav:false,
@@ -73,7 +73,7 @@ $('blogcr_cr').owlCarousel({
     }
 })
 
-$('.owl-carousel').owlCarousel({
+$('.saying_about-us').owlCarousel({
     loop:true,
     margin:10,
     // nav:true,

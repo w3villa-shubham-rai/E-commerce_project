@@ -1436,7 +1436,6 @@ color: #ebf3f3;
 
 .ourblog-jurnal-book-section{
     text-align: center;
-    text-align: center;
     background: #f9f5f5;
     padding-top: 30px;
 }
@@ -1482,3 +1481,35 @@ color:  #767171;
 /************************People Saying about us section Start*****************************/
 /* *************************************************************************************** */
 /* *************************************************************************************** */
+
+.saying_about_us
+{
+    padding-top: 30px;
+}
+#comma-symbal {
+    font-size: 51px;
+    color: #e16421;
+}
+#user{
+    color:  #767171;
+    padding: 10px;
+}
+
+.saying-anoutus-section{
+    text-align: center;
+    /* background: #f9f5f5; */
+    padding-top: 10px;
+}
+.saying-about-carousel{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+
+/*********************************** most viewed section start ************************/
+/* ************************************************************************************* */
+
+.sunglasses{
+    
+}
