@@ -1616,11 +1616,18 @@ color:  #767171;
 
 .footer_about_us
 {
-    width: 285px;
+    width: 295px;
     border-right: 2px solid #dcd7d7;
 
 
 }
+footer{
+    background: white;
+    padding-bottom: 11px;
+}
+.footer_about_us:nth-child(4) {
+    border: none;
+  }
 .footer_about_us ul li{
     list-style: none;
     padding: 8px;
@@ -1632,3 +1639,70 @@ color:  #767171;
 .footer-main-part{
     display: flex;
 }
+.newsletter p{
+    color: #525050;
+    padding: 8px;
+}
+.input-footer-email input
+{
+    height: 30px;
+    width: 267px;
+    border: 3px solid #e5e1e1;
+    border-radius: 5px;
+}
+.input-footer-email{
+    padding-left: 8px;
+}
+.input-footer-email button
+{
+    background: #2a2aee;
+    position: relative;
+    height: 29px;
+    width: 56px;
+    color: white;
+    left: 210px;
+    bottom: 32px;
+    border: none;
+    border-radius: 3px;
+}
+.checkbox-newsleter{
+        margin-left: 8px;
+        padding-top: -154px;
+        margin-bottom: 32px;
+        font-size: 15px;
+}
+/************************copy write section start********************************/
+/* *************************************************************************************/
+
+.copywright{
+        background-color: #4d4545;       
+        margin-top: 12px;
+        padding-bottom: 10px;
+    }
+
+.copyright-andlogo{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.visa{
+    /* border: 2px solid red; */
+    width: 71px;
+    height: 30px;
+}
+.visa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.payment_logo{
+    display: flex;
+    column-gap: 8px;
+    padding-top: 5px;
+}
+.copyright-andlogo p{
+    color: white;
+    padding-top: 10px;
+}
+
+
