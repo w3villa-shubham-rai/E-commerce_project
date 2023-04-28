@@ -95,18 +95,30 @@ $("#shop_brand").owlCarousel({
     },
   },
 });
+// **********************************blog section**************************************
 
 $(".blogcr_cr").owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  autoplay: true,
+//   autoplay: true,
   responsive: {
     0: {
-      items: 3,
+      items: 1,
+    },
+    700:{
+        items: 2,
+    },
+    950:{
+        items: 3,
     },
   },
 });
+
+
+
+
+
 
 $(".saying_about-us").owlCarousel({
   loop: true,

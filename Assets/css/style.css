@@ -998,13 +998,16 @@ select{
     position: relative;
     color: #ebf3f3;
 }
+#tc-btn-grp{
+    background: #2b28f1;
+}
 
 .btn-group{
     padding: 8px 10px;
     background: #aeb8b8;
     font-size: small;   
     color: #ebf3f3;
-    background: #2b28f1;
+    /* background: #2b28f1; */
 }
 
 /* owl crosel why us part */
@@ -1107,6 +1110,7 @@ select{
     {
         width: 100%;
         column-gap: 0px;
+
     }
     .btn-group {
         padding: 11px 0px;
@@ -1503,74 +1507,6 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100%;
     object-fit: cover;
 }
-.topcategories-blog
-{
-    background: #2b28f1;
-    padding: 8px 10px;
-    font-size: small;
-    z-index: 2;
-    position: relative;
-    color: #ebf3f3;
-}
-
-
-.rectangle-blog{
-    background: #2b28f1;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    bottom: -5px;
-    z-index: -1;
-    right: 55px;
-    rotate: -48deg;
-}
-.topcategories-blog::after{
-    content: rectangle-blog;
-}
-
-.ourblog-jurnal-book-section{
-    text-align: center;
-    background: #f9f5f5;
-    padding-top: 30px;
-}
-.blog_img_1
-{
-    height: 500px;
-    
-}
-.jornalblog_img{
-    height: 250px;
-    border-radius: 8px;
-}
-.jornalblog_img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.adminmessage{
-    background: #9c9a9a;
-    color: #565858;
-}
-.jurnal-blog-p{
-    font-size: large;
-    font-weight: bold;
-    padding: 10px;
-}
-.junrnal-blog-longpara{
-   color:  #767171;
-}
-.jurnal-p-long-para{
-    background: #fff;
-}
-.blog-anchar{
-padding: 10px;
-color:  #767171;
-}
-.blog-anchar i{
-    color:  #767171;
-}
-
 
 /* media Query of improved gallery  module section  css design start*/
 
@@ -1615,10 +1551,14 @@ color:  #767171;
     .featuresection-improved-gallery 
     {
         padding-top: 15px;
+        text-align: start;
+
     }
     .text_desk {
-        margin-top: 8px;
+        /* margin-top: 8px; */
         border-radius: 5px;
+        margin: 0%;
+
     }
     #img-gallery-sizing{
         width: 183px;
@@ -1650,6 +1590,99 @@ color:  #767171;
         height: 86px;
     }
 }
+
+
+
+/* ************************Blog section css*************************************** */
+/* **************************************************************************************/
+
+.topcategories-blog
+{
+    background: #2b28f1;
+    padding: 8px 10px;
+    font-size: small;
+    z-index: 2;
+    position: relative;
+    color: #ebf3f3;
+}
+
+
+.rectangle-blog{
+    background: #2b28f1;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    bottom: -5px;
+    z-index: -1;
+    right: 55px;
+    rotate: -48deg;
+}
+.topcategories-blog::after{
+    content: rectangle-blog;
+}
+
+.ourblog-jurnal-book-section{
+    text-align: center;
+    background: #f9f5f5;
+    padding-top: 30px;
+}
+.blog_img_1
+{
+    height: 500px;
+    
+}
+.jornalblog_img{
+    height: 250px;
+    border-radius: 8px;
+}
+.jornalblog_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.adminmessage{
+    background: #9c9a9a;
+    color: #565858;
+}
+.jurnal-blog-p{
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+}
+.junrnal-blog-longpara{
+   color:  #767171;
+}
+.jurnal-p-long-para{
+    background: #fff;
+}
+.blog-anchar{
+padding: 10px;
+color:  #767171;
+}
+.blog-anchar i{
+    color:  #767171;
+}
+
+/********************** Blog section media Query *********************************/
+/* ************************************************************************************* * */
+
+
+@media screen and(max-width: 700px)
+{
+    #our_blog_id h1
+    {
+        text-align: start;
+    }
+    #text_desk_id
+    {
+        margin: 0%;
+    }
+    .ourblog-jurnal-book-section {
+        text-align: start;
+    }
+   
+}
+
 
 
 
@@ -1772,7 +1805,19 @@ color:  #767171;
     background-color: blue;
     color: white;
 }
+/* media query of social media logo */
+/* ******************************************************************************** */
 
+@media  screen and (max-width: 500px)
+{
+    .socialmedia-logo i {
+        font-size: 13px;
+    }
+    .socialmedia-logo 
+    {
+        column-gap: 9px;
+    }
+}
 
 /* *************************Footer Part css ***************************************** */
 /* ********************************************************************************* */
@@ -1781,8 +1826,8 @@ color:  #767171;
     height: 3px;
     background: #f5591c;
     margin-top: -2px;
-    padding-left: 8pxx;
-    padding-right: 5pxxx;
+    /* padding-left: 8pxx;
+    padding-right: 5pxxx; */
     margin-left: 9px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -1819,9 +1864,11 @@ footer{
     text-decoration: none;
     color: #2b28f1;
 } 
+
 .footer-main-part{
     display: flex;
 }
+
 .newsletter p{
     color: #525050;
     padding: 8px;
@@ -1838,22 +1885,125 @@ footer{
     position: relative;
 }
 .input-footer-email button
-{background: #2a2aee;
+{
+    background: #2a2aee;
     position: absolute;
     height: 29px;
     width: 56px;
     color: white;
-    right: 0px;
+    right: 6px;
     top: 3px;
     border: none;
     border-radius: 3px;
 }
 .checkbox-newsleter{
-        margin-left: 8px;
+        margin-left: -8px;
         padding-top: -154px;
-        margin-bottom: 32px;
-        font-size: 15px;
+        padding: 20px;
+        font-size: 13px;
+    }
+
+
+
+
+/* ******************************footer part media Query */
+@media screen and (max-width: 890px)
+{
+    .input-footer-email input
+    {
+        height: 24px;
+        width: 87%;
+        border: 2px solid #e5e1e1;
+
+    }
+    .input-footer-email button
+    {
+         height: 21px;
+        right: 24px;
+        top: 3px;
+    }  
+
 }
+@media screen and (max-width: 746px)
+{
+    .input-footer-email input
+    {
+        height: 21px;
+    width: 88%;
+    }
+    .input-footer-email button
+    {       
+        right: 18px;
+        height: 19px;
+        width: 49px;
+    }  
+    .checkbox-newsleter
+    {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 682px) 
+{
+    #sentbtn{
+        font-size:10px ;
+    }
+    .input-footer-email button i{
+        font-size: 10px;
+    }
+    .input-footer-email button {
+        right: 16px;
+       height: 19px;
+       width: 39px;
+    }
+}
+
+@media screen and (max-width: 639px) 
+{
+    .footer-main-part{
+        flex-direction: column;
+    }
+    .footer_about_us {
+        width: 53%;
+        border: none;
+    }
+    .input-footer-email input {
+        height: 30px;
+        width: 97%;
+        border: 3px solid #e5e1e1;
+        border-radius: 5px;
+    }
+    .input-footer-email button {
+        background: #2a2aee;
+        position: absolute;
+        height: 29px;
+        width: 56px;
+        color: white;
+        right: 6px;
+        top: 3px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    #sentbtn{
+        font-size:15px ;
+    }
+    .input-footer-email button i{
+        font-size: 15px;
+    }
+    .checkbox-newsleter {
+        font-size: 15px;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+    .footer-main-part{
+        flex-direction: column;
+    }
+    .newsletter p {       
+        padding: 8px;
+  }
+} */
 /************************copy write section start********************************/
 /* *************************************************************************************/
 
