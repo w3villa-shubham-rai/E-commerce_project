@@ -126,7 +126,17 @@ $(".saying_about-us").owlCarousel({
   // nav:true,
   responsive: {
     0: {
-      items: 3,
+      items: 1,
     },
+    300:{
+      items:1,
+    },
+
+    600:{
+      items:2,
+    },
+    700:{
+      items:3,
+    }
   },
 });

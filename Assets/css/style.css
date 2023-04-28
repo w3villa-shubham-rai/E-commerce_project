@@ -214,7 +214,7 @@ select{
     display: none;
 }
 
-/* media query for footer part */
+/* media query for header part */
 
 @media screen and (max-width:1150px)
 {
@@ -1060,6 +1060,14 @@ select{
         margin-left: 62px;
     }
 }
+@media  screen and (max-width: 741px)
+{
+    .whyus-heading
+    {
+        text-align: start;
+    }
+}
+
 @media screen and (max-width: 688px)
 {
    .whyus_crowsel p {
@@ -1464,6 +1472,13 @@ input[type=number]::-webkit-outer-spin-button {
 .shop_by_brand_crowser{
     margin-top: 38px;
 }
+@media screen and (max-width: 739px)
+{
+    .featuresection-para-carausel{
+        text-align: start;
+    }
+    
+}
 
 
 
@@ -1513,7 +1528,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media  screen and (max-width: 1138px)
 {
     #img-gallery-sizing {
-        width: 202px;
+        width: 138px;
         height: 127px;
         border-radius: 8px;
         border: 2px solid rgb(160, 156, 156);
@@ -1524,15 +1539,15 @@ input[type=number]::-webkit-outer-spin-button {
 {
     .image-gallery-module-box
     {
+
         padding-top: 40px;
-        gap: 13pxx;
         gap: 26px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     #img-gallery-sizing{
-        width: 183px;
+        width: 186px;
     }
 
 }
@@ -1554,6 +1569,7 @@ input[type=number]::-webkit-outer-spin-button {
         text-align: start;
 
     }
+    
     .text_desk {
         /* margin-top: 8px; */
         border-radius: 5px;
@@ -1564,6 +1580,8 @@ input[type=number]::-webkit-outer-spin-button {
         width: 183px;
     }
 }
+
+
 @media screen and (max-width: 686px)
 {
     #img-gallery-sizing{
@@ -1590,7 +1608,13 @@ input[type=number]::-webkit-outer-spin-button {
         height: 86px;
     }
 }
-
+@media screen and (max-width: 326px)
+{
+    #img-gallery-sizing{
+        width: 70px;
+        height: 70px;
+    }
+}
 
 
 /* ************************Blog section css*************************************** */
@@ -1667,24 +1691,17 @@ color:  #767171;
 /* ************************************************************************************* * */
 
 
-@media screen and(max-width: 700px)
+@media  screen and (max-width: 740px)
 {
-    #our_blog_id h1
+    .our_blog_para
     {
         text-align: start;
     }
-    #text_desk_id
-    {
-        margin: 0%;
-    }
-    .ourblog-jurnal-book-section {
-        text-align: start;
-    }
-   
 }
 
 
 
+hkklkjiojiuyhuhyuhgughghbhbh
 
 /************************People Saying about us section Start*****************************/
 /* *************************************************************************************** */
@@ -1708,10 +1725,31 @@ color:  #767171;
     /* background: #f9f5f5; */
     padding-top: 10px;
 }
+
 .saying-about-carousel{
     padding-top: 30px;
     padding-bottom: 10px;
 }
+
+
+/*****************media query about us section start ****************/
+@media  screen and (max-width: 740px)
+{
+    #saying-about-us
+    {
+        text-align: start;
+    }
+}
+
+@media  screen and (max-width: 438px)
+{
+    #saying-about-us
+    {
+        font-size: 15px;
+    }
+}
+
+
 
 
 
@@ -2038,7 +2076,38 @@ footer{
     padding-top: 10px;
 }
 
+/* media query copy write section */
 
+@media screen and (max-width: 682px) 
+{
+    
+    .visa{
+        width:36px;
+    }
+    
+    .copyright-andlogo p {
+       font-size: 14px;
+    }
+    .payment_logo {
+        column-gap: 6px;
+    }
+}
+@media screen and (max-width: 607px) 
+{
+    .copyright-andlogo{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+      
+    }
+   
+     
+}
+/* display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap; */
 /* arrow symbol */
 
 .fixed-arrow {
