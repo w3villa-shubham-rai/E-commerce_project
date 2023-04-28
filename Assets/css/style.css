@@ -930,6 +930,8 @@ select{
     
 
 /* why us section start */
+/* *************************************************************************** */
+/* *************************************************************************************** */
 
 .why-us
 {
@@ -967,6 +969,7 @@ select{
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    flex-wrap: wrap;
     /* text-align: center; */
     margin-bottom: 20px;
     z-index: 2;
@@ -1032,6 +1035,16 @@ select{
     width: 104px;
     border-radius: 3px;
     margin-left: 50px;
+}
+
+
+
+
+/* ***************************************************************************** */
+/************************** Why us part media Query*********************************** */
+@media  screen and (max-width: 1100px)
+{
+    
 }
 
 
@@ -1272,7 +1285,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .newfashion{
-    width: 923px;
+    width: 80%;
     margin-left: 13px;
     background-color: rgb(252, 243, 243);
 }
@@ -1320,6 +1333,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .fashion1{
     background: #e8dddd;
+    width: 19%;
 }
 .bdncross{
     padding-top: 9px;
@@ -1366,6 +1380,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+
 /**************** improved gallery  module section  css design start***********************************/
 /* ************************************************************************************** */
 .improved-gallery{
@@ -1384,6 +1399,7 @@ input[type=number]::-webkit-outer-spin-button {
 .image-gallery-module-box{
     padding-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 #image-gallery-image-module img{
@@ -1471,6 +1487,56 @@ color:  #767171;
 }
 
 
+/* media Query of improved gallery  module section  css design start*/
+
+@media  screen and (max-width: 1138px)
+{
+    #img-gallery-sizing {
+        width: 202px;
+        height: 127px;
+        border-radius: 8px;
+        border: 2px solid rgb(160, 156, 156);
+    }
+    
+}
+@media  screen and (max-width: 1138px)
+{
+    .image-gallery-module-box
+    {
+        padding-top: 40px;
+        gap: 13pxx;
+        gap: 26px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 990px)
+{
+    .image-gallery-module-box {
+        padding-top: 40px;        
+        gap: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 748px)
+{
+    .featuresection-improved-gallery 
+    {
+        padding-top: 15px;
+    }
+    .text_desk {
+        margin-top: 8px;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
 /************************People Saying about us section Start*****************************/
 /* *************************************************************************************** */
 /* *************************************************************************************** */
@@ -1515,9 +1581,10 @@ color:  #767171;
     justify-content: center;
     background-color: white;
     border-radius: 3px;
+    width: 100%;
 }
 .image-sunglass{
-    width: 80px;
+    width: 34%;
     height: 80px;
     display: flex;
 }
@@ -1549,7 +1616,7 @@ color:  #767171;
 }
 .oversized-sunglasses{
     padding-left: 3px;
-    width: 205px;
+    width: 70%;
 }
 .mostviewed-desk-section{
     padding-top: 30px;
@@ -1616,7 +1683,7 @@ color:  #767171;
 
 .footer_about_us
 {
-    width: 295px;
+    width: 25%;
     border-right: 2px solid #dcd7d7;
 
 
@@ -1646,22 +1713,22 @@ footer{
 .input-footer-email input
 {
     height: 30px;
-    width: 267px;
+    width: 97%;
     border: 3px solid #e5e1e1;
     border-radius: 5px;
 }
 .input-footer-email{
     padding-left: 8px;
+    position: relative;
 }
 .input-footer-email button
-{
-    background: #2a2aee;
-    position: relative;
+{background: #2a2aee;
+    position: absolute;
     height: 29px;
     width: 56px;
     color: white;
-    left: 210px;
-    bottom: 32px;
+    right: 0px;
+    top: 3px;
     border: none;
     border-radius: 3px;
 }
@@ -1687,7 +1754,7 @@ footer{
 }
 .visa{
     /* border: 2px solid red; */
-    width: 71px;
+    width: 17%;
     height: 30px;
 }
 .visa img{

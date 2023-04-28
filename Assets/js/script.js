@@ -18,8 +18,25 @@ $('#whyus').owlCarousel({
     autoplay:true,
     responsive:{
         0:{
+            items:1
+        },
+
+        500:{
+            items:2
+        },
+        1000:{
+            item:4
+        },
+        1200:{
             items:5
         }
+       
+
+      
+       
+
+
+        
     }
 })
 
@@ -56,8 +73,22 @@ $('#shop_brand').owlCarousel({
     // autoplay:true,
     responsive:{
         0:{
+            items:1
+        },
+        400:{
+            items:3
+        },
+        700:{
+            items:5
+        },
+        900:{
+            items:7
+        },
+        1000:{
             items:9
-        }
+        },
+      
+
     }
 })
 
