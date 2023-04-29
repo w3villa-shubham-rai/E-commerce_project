@@ -895,39 +895,108 @@ select{
 
 
 /* media query of serve part */
-@media  screen and (max-width: 1006px)
+@media  screen and (max-width: 1014px)
 {
-    .service_all_logo
+    /* .service_all_logo
     {
-        display: flex;   
-    }   
+        padding: 14px;
+    }    */
+    .log_description p {
+        font-size: 14px;
+    }
+    .shiping_logo{
+        padding: 14px;
+    }
+    .free-return_logo
+    {
+        padding: 14px;
+    }
+    .secureshoping_logo{
+        padding: 14px;
+    }
+    .unlimitedblock_logo{
+        padding: 14px;
+    }
 }
-
-@media  screen and (max-width: 768px)
+@media  screen and (max-width: 890px)
 {
     .service_all_logo
     {
-        display: flex;   
         flex-wrap: wrap;
-    }   
-    .secure_shoping {
-       padding-top: 16px;
-    }
-    .unlimeted_block{
-        padding-top: 16px;
-    }
-}
-
-@media  screen and (max-width: 554px)
-{
-    .free_return{
-        padding-top: 16px;
+        width: 100%;
+        row-gap: 10px;
     }
     .freeshipng{
-        padding-top: 16px;
+        width: 50%;
+    }
+    .free_return{
+        width: 50%;
+    }
+    .secure_shoping{
+        width: 50%;
+    }
+    .unlimeted_block
+    {
+        width: 50%;
     }
 }
-    
+
+@media  screen and (max-width: 500px)
+{
+    .log_description p {
+        font-size: 11px;
+    } 
+    .shiping_logo{
+        padding: 10px;
+    }
+    .free-return_logo
+    {
+        padding: 10px;
+    }
+    .secureshoping_logo{
+        padding: 10px;
+    }
+    .unlimitedblock_logo{
+        padding: 10px;
+    }  
+}
+
+@media  screen and (max-width: 438px)
+{
+    .shiping_logo{
+        padding: 5px;
+    }
+    .free-return_logo
+    {
+        padding: 5px;
+    }
+    .secureshoping_logo{
+        padding: 5px;
+    }
+    .unlimitedblock_logo{
+        padding: 5px;
+    }  
+}
+@media  screen and (max-width: 336px)
+{
+    .log_description p {
+        font-size: 9px;
+    } 
+    .shiping_logo{
+        padding: 4px;
+    }
+    .free-return_logo
+    {
+        padding: 4px;
+    }
+    .secureshoping_logo{
+        padding: 4px;
+    }
+    .unlimitedblock_logo{
+        padding: 4px;
+    }  
+}
+
 
 /* why us section start */
 /* *************************************************************************** */
@@ -1131,6 +1200,8 @@ select{
 
 
 /* *********************************product-Us****************************************** */
+/* Feature product */
+/* ##################################################################################### */
 
 .product-us{
 
@@ -1152,8 +1223,7 @@ select{
 
 .headphone
 {
-    height: 411px;
-    width: 276px;
+    height: 427px;
 }
 .image{
         height: 240px;
@@ -1185,7 +1255,7 @@ select{
 .htxt{
     margin-right: 21px;
     padding: 5px;
-    font-size: large;
+    font-size: 15px;
     font-weight: bold;
 }
 .favcart{
@@ -1204,23 +1274,26 @@ select{
     border-radius: 4px;
 }
 .favcart button{
-    width: 83px;
-    height: 31px;
+    width: 84px;
+    height: 29px;
     font-size: 10px;
     font-weight: bold;
     margin-right: 46px;
     background: blue;
     color: white;
+    border: none;
     border-radius: 4px;
 
 }
 #input-number-favcart input
 {
     width: 43px;
-    height: 27px;
+    height: 25px;
     border: 2px solid #cfcbcb;
     outline: none;
     margin-left: 10px;
+    border-radius: 4px;
+
 }
 
 .whislist{
@@ -1230,7 +1303,7 @@ select{
     color: #c0bbbb;
 }
 #fav-whislist{
-    font-size: 24px;
+    font-size: 22px;
     color: #c0bbbb;
 }
 #compare-product
@@ -1238,11 +1311,12 @@ select{
     border: 2px solid #c0bbbb;
     border-radius: 50%;
     padding: 3px;
-    font-size: 14px;
+    font-size: 11px;
     
 }
 .strike{
     color: #706767;
+    font-size: 15px;
 }
 .buy-now{
     display: flex;
@@ -1251,8 +1325,12 @@ select{
     font-size: smaller;
     margin-top: 10px;
 }
-.buy-now i{
+.buynow-doller-symbal
+{
     font-size: 10px;
+}
+.buy-now i{
+    font-size: 6px;
     padding: 34px;
     border: 1px solid red;
     padding: 3px;
@@ -1323,9 +1401,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-
-
-/* Feature Categories start */
 
 .featuresection{
     text-align: center;
@@ -1440,7 +1515,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-/* ***********************feature section media query************************ */
+
+/* ***********************feature product section media query************************ */
 /* ****************************************************************************** */
 @media screen and (max-width: 494px)
 {
@@ -1448,6 +1524,23 @@ input[type=number]::-webkit-outer-spin-button {
         text-align: start;
     }
     
+}
+
+@media screen and (max-width: 1206px)
+{
+    .favcart button
+    {
+        width: 84px;
+        font-size: 10px;
+    }
+    #input-number-favcart input 
+    {
+        width: 33px;
+    }
+    .strike
+    {
+        font-size: 12px;
+    }
 }
 
 

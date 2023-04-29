@@ -46,6 +46,11 @@ $("#feature-product").owlCarousel({
   },
 });
 
+
+
+// ******************************************feature Product *******************
+// *****************************************************************************************
+
 $("#feature-categories").owlCarousel({
   loop: true,
   margin: 20,
@@ -57,6 +62,11 @@ $("#feature-categories").owlCarousel({
     },
   },
 });
+
+
+
+
+
 
 $("#shop_brand").owlCarousel({
   loop: true,
