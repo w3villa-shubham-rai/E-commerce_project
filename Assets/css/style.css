@@ -1479,8 +1479,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 4px;
 }
 .item_fashin_crowesl {
-    width: 177px;
-    height: 315px;
+    height: 360px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -1530,8 +1529,8 @@ input[type=number]::-webkit-outer-spin-button {
 {
     .favcart button
     {
-        width: 84px;
-        font-size: 10px;
+        width: 74px;
+        font-size: 8px;
     }
     #input-number-favcart input 
     {
@@ -1542,6 +1541,17 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 12px;
     }
 }
+
+ @media screen and (max-width: 740px)
+{
+      
+    .feature-product-headline{
+        text-align: start;
+    }
+    .journa_has_anchartag{
+        font-size: large;
+    }
+} 
 
 
 

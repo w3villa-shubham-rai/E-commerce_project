@@ -34,6 +34,9 @@ $("#whyus").owlCarousel({
       }
 });
 
+
+
+
 $("#feature-product").owlCarousel({
   loop: true,
   margin: 20,
@@ -41,11 +44,26 @@ $("#feature-product").owlCarousel({
   // autoplay:true,
   responsive: {
     0: {
-      items: 4,
+      items: 1,
     },
+    550: {
+      items: 2,
+    },
+
+    850:{
+      items:3,
+    },
+    1126:{
+      items:4,
+    },
+    1252:{
+      items:4
+    }
+   
   },
 });
 
+1094
 
 
 // ******************************************feature Product *******************
