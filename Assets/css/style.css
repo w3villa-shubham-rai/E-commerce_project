@@ -3,6 +3,13 @@
     padding: 0%;
     margin: 0%;
 }
+/* *********************************utily class***************************************/
+/* ************************************************************************************/
+:root{
+    --blue:blue;
+    --white:white;
+}
+
 
 .container
 {  
@@ -66,8 +73,8 @@ select{
 #item
 {
   height: 30px;
-  color: white;
-  background: blue;
+  color: var(--white);
+  background: var(--blue);
   width: 50px;
 }
 .search_bar input
@@ -80,7 +87,7 @@ select{
 }
 .search i{
     font-size: 15px;
-    color: white;
+    color: var(--white);
     position: relative;
     top: 4px;
    
@@ -89,7 +96,7 @@ select{
 {
     height: 30px;
     width: 26px;
-    background: blue;
+    background: var(--blue);
     text-align: center;
 }
 .logo
@@ -154,7 +161,7 @@ select{
     font-size: smaller;
     border-radius: 2px;
     width: 31px;
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 .multilevel{
@@ -185,7 +192,7 @@ select{
 }
 .alldepartment_menu
 {
-    background-color: blue;
+    background-color: var(--blue);
 }
 
 .call
@@ -269,7 +276,7 @@ select{
 
 .mobilenavigation_color
 {
-    background: blue;
+    background: var(--blue);
 }
 .mobilenavigation
 {
@@ -315,24 +322,24 @@ select{
     display: flex;
 }
 .navlogin_register i{
-    background: white;
-    color: blue;
+    background: var(--white);
+    color: var(--blue);
     border-radius: 50%;
     padding: 7px;
 }
 .nav_doller_language{
-    color: white;
+    color: var(--white);
 }
 .txt
 {
-    color: white;
+    color: var(--white);
     font-size: large;
 }
 #m-dollar, #m-lanuage{
     outline: none;
     border: none;
-    color: white;
-    background-color: blue;
+    color:var(--white);
+    background-color:var(--blue);
     font-size: 23px;
 }
 .mobile_doller{
@@ -424,7 +431,6 @@ select{
 
 .herosection{
     display: flex;
-    /* border: 2px solid red; */
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: space-between;
@@ -433,7 +439,6 @@ select{
 .leftpart_herosection
 {
     width: 71%;
-    /* border: 2px solid rgb(102, 255, 0); */
     height: 500px;
     border-radius: 30px;
     position: relative;
@@ -454,14 +459,14 @@ select{
 }
 .mobile_learn_more button{
     width: 114px;
-    border: 1px solid #281c1c;;
-    border-radius: 6px;
+    border: 1px solid #5f5e5e;;
+    border-radius: 4px;
     color: #281c1c;
     height: 30px;
 
 }
 .mobile{
-    background: blue;
+    background: var(--blue);
     width: 50px;
     padding: 2px;
     border-radius: 4px;
@@ -476,9 +481,7 @@ select{
 
 }
 .rightpart_herosection{
-    width: 27%;
-    /* border: 2px solid rgb(0, 89, 255); */
-  
+    width: 27%; 
 
 }
 .rightwatch_tv
@@ -594,20 +597,20 @@ select{
         padding-top: 4px;
     }
     .mobile {
-        background: blue;
+        background: var(--blue);
         width: 30px;
         padding: 2px;
         border-radius: 4px;
         text-align: center;
-        color: white;
+        color: var(--white);
     }
     
     .mobile_learn_more button {
-        width: 100px;
-        border: 1px solid #281c1c;
-        border-radius: 6px;
-        color: #281c1c;
-        height: 15px;
+        width: 87px;
+       border: 1px solid #281c1c;
+       border-radius: 3px;
+       color: #281c1c;
+       height: 24px;
     }
 }
 
@@ -778,9 +781,10 @@ select{
     }
     .mobile_learn_more {
         left: 8%;
+        top: 37px;
     }
     .mobile{
-        width: 45px;
+        width: 55px;
     }
 }
 @media screen and (max-width:444px)
@@ -896,10 +900,7 @@ select{
 /* media query of serve part */
 @media  screen and (max-width: 1014px)
 {
-    /* .service_all_logo
-    {
-        padding: 14px;
-    }    */
+   
     .log_description p {
         font-size: 14px;
     }
@@ -1261,14 +1262,14 @@ select{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: var(--white);
     height: 54px;
 }
 #browser{
     width: 41px;
     height: 16px;
     /* font-size: 9px; */
-    color: white;
+    color: var(--white);
     border: none;
     border-radius: 4px;
 }
@@ -1278,8 +1279,8 @@ select{
     font-size: 10px;
     font-weight: bold;
     margin-right: 46px;
-    background: blue;
-    color: white;
+    background:var(--blue);
+    color: var(--white);
     border: none;
     border-radius: 4px;
 
@@ -1397,7 +1398,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 155px;
     position: relative;
     border-radius: 5px;
-    background: blue;
+    background: var(--blue);
 
 }
 
@@ -1451,7 +1452,10 @@ input[type=number]::-webkit-outer-spin-button {
     /* padding-top: 10px; */
     font-weight: bold;
     margin-left: 5px;
-}
+} /* .service_all_logo
+{
+    padding: 14px;
+}    */
 .acc_dress_pants_T_shirts{
     padding: 12px;
 }
@@ -1494,7 +1498,7 @@ input[type=number]::-webkit-outer-spin-button {
 .bdncross{
     padding-top: 9px;
     margin-left: 10px;
-    color: blue;
+    color: var(--blue);
   
 }
 .bdn-doller{
@@ -1509,8 +1513,8 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
 }
 .btn_addcart_fashion button{
-    background-color: blue;
-    color: white;
+    background-color: var(--blue);
+    color: var(--white);
     height: 23px;
     width: 77px;
     margin-right: 17px;
@@ -1622,7 +1626,7 @@ input[type=number]::-webkit-outer-spin-button {
     {
         width: 145px;
         height: 125px;
-        padding: 12px;
+        /* padding: 12px; */
     }
     .fashion1 {
         width: 25%;
@@ -1634,7 +1638,7 @@ input[type=number]::-webkit-outer-spin-button {
     {
         width: 145px;
         height: 125px;
-        padding: 12px;
+        /* padding: 12px; */
     }
     .fashion1 {
         width: 40%;
@@ -1646,7 +1650,7 @@ input[type=number]::-webkit-outer-spin-button {
     {
         width: 140px;
         height: 120px;
-        padding: 8px;
+        /* padding: 8px; */
     }
     .fashion1 {
         width: 40%;
@@ -1665,7 +1669,7 @@ input[type=number]::-webkit-outer-spin-button {
    .imgfashion {
     width: 377px;
     height: 209px;
-    padding: 12px;
+    /* padding: 12px; */
    }
 }
 @media screen and (max-width: 504px)
@@ -1676,9 +1680,9 @@ input[type=number]::-webkit-outer-spin-button {
 
    }
     .imgfashion {
-        width: 265px;
-        height: 183px;
-        padding: 22px;
+        width: 295px;
+        height: 189px;
+        /* padding: 22px; */
        }
 }
 
@@ -1690,9 +1694,9 @@ input[type=number]::-webkit-outer-spin-button {
 
    }
     .imgfashion {
-        width: 264px;
+    width: 303px;
     height: 260px;
-    padding: 11px;
+    /* padding: 11px; */
        }
 }
 @media screen and (max-width: 434px)
@@ -1703,9 +1707,23 @@ input[type=number]::-webkit-outer-spin-button {
  
     }
      .imgfashion {
-     width: 200px;
+     width: 250px;
      height: 260px;
-     padding: 11px;
+     padding: 15px;
+        }
+}
+
+@media screen and (max-width: 358px)
+{
+    .fashion1
+    {
+     width: 85%;
+ 
+    }
+     .imgfashion {
+     width: 210px;
+     height: 260px;
+     padding: 15px;
         }
 }
 @media screen and (max-width: 740px)
@@ -1762,7 +1780,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #ig{
-    color: white;
+    color: var(--white);
     margin-right: 31px;
 
 }
@@ -1971,8 +1989,6 @@ color:  #767171;
 
 
 
-hkklkjiojiuyhuhyuhgughghbhbh
-
 /************************People Saying about us section Start*****************************/
 /* *************************************************************************************** */
 /* *************************************************************************************** */
@@ -2036,7 +2052,7 @@ hkklkjiojiuyhuhyuhgughghbhbh
 .sunglasses{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 3px;
     width: 100%;
 }
@@ -2110,8 +2126,8 @@ hkklkjiojiuyhuhyuhgughghbhbh
     font-size: 20px;
     /* border: 2px solid red; */
     border-radius: 50%;
-    background-color: blue;
-    color: white;
+    background-color: var(--blue);
+    color: var(--white);
 }
 /* media query of social media logo */
 /* ******************************************************************************** */
@@ -2158,7 +2174,7 @@ hkklkjiojiuyhuhyuhgughghbhbh
 
 }
 footer{
-    background: white;
+    background: var(--white);
     padding-bottom: 11px;
 }
 .footer_about_us:nth-child(4) {
@@ -2198,7 +2214,7 @@ footer{
     position: absolute;
     height: 29px;
     width: 56px;
-    color: white;
+    color: var(--white);
     right: 6px;
     top: 3px;
     border: none;
@@ -2286,7 +2302,7 @@ footer{
         position: absolute;
         height: 29px;
         width: 56px;
-        color: white;
+        color: var(--white);
         right: 6px;
         top: 3px;
         border: none;
@@ -2342,7 +2358,7 @@ footer{
     padding-top: 5px;
 }
 .copyright-andlogo p{
-    color: white;
+    color:var(--white);
     padding-top: 10px;
 }
 
@@ -2387,7 +2403,7 @@ footer{
     position: fixed;
     bottom: 18px;
     font-size: 24px;
-    color: white;
+    color: var(--white);
     right: 6px;
     text-align: center;
 }
