@@ -1205,7 +1205,7 @@ select{
 
 .product-us{
 
-    background: #fff;
+    background: #f7f2f2;
     margin-top: 15px;  
     padding-top: 27px;
 
@@ -1215,7 +1215,6 @@ select{
     padding-top: 20px;
     padding-bottom: 87px;
     text-align: center;
-    background: #eaf0f0;
 }
 .product-us-headphone-camera h1{
     margin-top: 10px;
@@ -1410,7 +1409,7 @@ input[type=number]::-webkit-outer-spin-button {
 .featuresectioncategories{
     margin-top: 30px;
     padding-bottom: 60px;
-    background-color: #eaecec;
+    background-color: #ebebeb;
 }
 .crouselpartfeaturecategories
 {
@@ -1444,7 +1443,7 @@ input[type=number]::-webkit-outer-spin-button {
 .newfashion{
     width: 80%;
     margin-left: 13px;
-    background-color: rgb(252, 243, 243);
+    background-color: #fff;
 }
 .fash{
     font-size: large;
@@ -1919,7 +1918,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .ourblog-jurnal-book-section{
     text-align: center;
-    background: #f9f5f5;
     padding-top: 30px;
 }
 .blog_img_1
