@@ -189,10 +189,19 @@ $("#mostviewd").owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  autoplay: true,
+  // autoplay: true,
   responsive: {
     0: {
-      items: 4,
+      items: 1,
     },
+    500:{
+      items: 2,
+    },
+    940:{
+      items:3
+    },
+    1218:{
+      items:4
+    }
   },
 });

@@ -107,7 +107,7 @@ select{
     padding: 7px;
 }
 .add_to_cart i{
-    border-radius: 50%;
+    border-radius: 4%;
     padding: 7px;
     background: rgb(5, 5, 197);
     color: white;
@@ -437,7 +437,6 @@ select{
     height: 500px;
     border-radius: 30px;
     position: relative;
-    padding: 10px;
 }
 .mobile_learn_more
 {
@@ -493,7 +492,7 @@ select{
 }
 .watch
 {
-    height: 250px;
+    height: 242px;
     border-radius: 15px;
     display: flex;
     background-color: #e2e7e7;
@@ -513,7 +512,7 @@ select{
 .tv
 {
 
-    height: 250px;
+    height: 242px;
     border-radius: 15px;
     background-color: #e2e7e7;
     display: flex;
