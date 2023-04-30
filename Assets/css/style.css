@@ -1311,6 +1311,7 @@ select{
     border: 2px solid #c0bbbb;
     border-radius: 50%;
     padding: 3px;
+    color: #c0bbbb;;
     font-size: 11px;
     
 }
@@ -1417,9 +1418,9 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 35px;
 }
 .imgfashion {
-    width: 200px;
-    height: 210px;
-    padding: 6px;
+    width: 186px;
+    height: 175px;
+    padding: 12px;
 }
 .fashiondesk{
     width: 75px;
@@ -1453,7 +1454,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 5px;
 }
 .acc_dress_pants_T_shirts{
-    padding: 10px;
+    padding: 12px;
 }
 .newfashion p{
     font-size: large;
@@ -1479,11 +1480,12 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 4px;
 }
 .item_fashin_crowesl {
-    height: 360px;
+    height: 300px;
+    border: 1px  solid #c0bbbb;
     margin: auto;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 4px;
     /* border: 2px solid red; */
 }
 .fashion1{
@@ -1505,13 +1507,36 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     justify-content: space-around;
     margin-top: 12px;
+    align-items: center;
 }
 .btn_addcart_fashion button{
     background-color: blue;
     color: white;
+    height: 23px;
+    width: 77px;
+    margin-right: 17px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
 }
+.btn_addcart_fashion 
+{
+    margin-top: 21px;
+}
+.fashion_addcart_whislist{
+    display: flex;
+    column-gap: 16px;
+}
+#heartimage-logo{
+    font-size: 21px;
+    color: #c0bbbb;
+}
+.img-dresssweter img{
+    height: 60%;
+    object-fit: cover;
+}
+
+
+
 
 
 
@@ -1552,7 +1577,143 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: large;
     }
 } 
+@media screen and (max-width: 1004px)
+{
+    .newfashion
+    {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 844px)
+{
+    .newfashion
+    {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 706px)
+{
+    .newfashion
+    {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 610px)
+{
+    .newfashion
+    {
+        width: 55%;
+    }
+}
 
+
+@media screen and (max-width: 1148px)
+{
+    .imgfashion
+    {
+        width: 180px;
+        height: 170px;
+        padding: 4px;
+    }
+}
+@media screen and (max-width: 1076px)
+{
+    .imgfashion
+    {
+        width: 145px;
+        height: 125px;
+        padding: 12px;
+    }
+    .fashion1 {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 756px)
+{
+    .imgfashion
+    {
+        width: 145px;
+        height: 125px;
+        padding: 12px;
+    }
+    .fashion1 {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 408px)
+{
+    .imgfashion
+    {
+        width: 140px;
+        height: 120px;
+        padding: 8px;
+    }
+    .fashion1 {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 514px)
+{
+   .newfashion{
+    display:none;
+   }
+   .fashion1
+   {
+    width: 100%;
+
+   }
+   .imgfashion {
+    width: 377px;
+    height: 209px;
+    padding: 12px;
+   }
+}
+@media screen and (max-width: 504px)
+{
+    .fashion1
+   {
+    width: 80%;
+
+   }
+    .imgfashion {
+        width: 265px;
+        height: 183px;
+        padding: 22px;
+       }
+}
+
+@media screen and (max-width: 474px)
+{
+    .fashion1
+   {
+    width: 85%;
+
+   }
+    .imgfashion {
+        width: 264px;
+    height: 260px;
+    padding: 11px;
+       }
+}
+@media screen and (max-width: 434px)
+{
+    .fashion1
+    {
+     width: 85%;
+ 
+    }
+     .imgfashion {
+     width: 200px;
+     height: 260px;
+     padding: 11px;
+        }
+}
+@media screen and (max-width: 740px)
+{
+    .featured-para{
+        text-align: start;
+    }
+}
 
 
 /* *************************Shop by brand  section start**********************************/
