@@ -1033,6 +1033,7 @@ select{
     color: #a7b1b1;
     margin-top: 8px;
 }
+
 .topcategoreis_fashion {
     display: flex;
     justify-content: center;
@@ -1393,7 +1394,7 @@ input[type=number]::-webkit-outer-spin-button {
     color: #f4f6fc;
     text-align: center;
     height: 36px;
-    top: 61px;
+    top: 25px;
     width: 155px;
     position: relative;
     border-radius: 5px;
@@ -1574,6 +1575,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .journa_has_anchartag{
         font-size: large;
+        text-align: start;
     }
 } 
 @media screen and (max-width: 1004px)
@@ -1712,6 +1714,13 @@ input[type=number]::-webkit-outer-spin-button {
     .featured-para{
         text-align: start;
     }
+}
+@media screen and (max-width: 500px)
+{
+   .topcategories_labels{
+    width: 50%;
+    padding: 10px 0px;
+   }
 }
 
 
@@ -1934,7 +1943,7 @@ input[type=number]::-webkit-outer-spin-button {
 .jurnal-blog-p{
     font-size: large;
     font-weight: bold;
-    padding: 10px;
+    padding: 7px;
 }
 .junrnal-blog-longpara{
    color:  #767171;
@@ -1943,7 +1952,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: #fff;
 }
 .blog-anchar{
-padding: 10px;
+padding: 7px;
 color:  #767171;
 }
 .blog-anchar i{
