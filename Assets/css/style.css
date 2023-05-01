@@ -84,7 +84,8 @@ select{
   height: 30px;
   color: var(--white);
   background: var(--blue);
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   width: 50px;
 }
 .search_bar input
@@ -105,10 +106,14 @@ select{
 .search_glass
 {
     height: 30px;
-    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     width: 26px;
     background: var(--blue);
     text-align: center;
+}
+.search_glass i{
+    padding: 4px;
 }
 .logo
 {
@@ -1142,7 +1147,8 @@ select{
     width: 104px;
     margin: auto;
     border-radius: 3px;
-    bottom: 27px;
+    bottom: 37px;
+    padding: 5px;
 
 }
 
@@ -1264,6 +1270,9 @@ select{
 .headphone
 {
     height: 427px;
+    border: 1px solid #998f8f;
+    border-radius: 4px;
+    background: #ebe4e4;
 }
 .image{
         height: 240px;
@@ -1364,7 +1373,8 @@ select{
     justify-content: space-around;
     column-gap: 120px;
     font-size: smaller;
-    margin-top: 10px;
+    margin-top: 15px;
+    
 }
 .buynow-doller-symbal
 {
@@ -1372,11 +1382,13 @@ select{
 }
 .buy-now i{
     font-size: 6px;
+    width: 5px;
     padding: 34px;
     border: 1px solid red;
     padding: 3px;
     border-radius: 50%;
 }
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
@@ -1387,10 +1399,10 @@ input[type=number]::-webkit-outer-spin-button {
 {
     position: absolute;
     rotate: -37deg;
-    top: 33px;
+    top: 31px;
     font-size: 12px;
     text-align: center;
-    width: 150px;
+    width: 156px;
     overflow: hidden;
     left: -28px;
     background: #0032ff;
@@ -1514,9 +1526,21 @@ input[type=number]::-webkit-outer-spin-button {
 {
     padding: 14px;
 }    */
-.acc_dress_pants_T_shirts{
+.acc_dress_pants_T_shirts
+{
+    display: flex;
     padding: 12px;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'Allerta';
+    color: #4d4545;
+    
 }
+.acc_dress_pants_T_shirts a
+{
+    color: var(--blue);
+}
+
 .newfashion p{
     font-size: large;
     font-weight: bold;
@@ -1534,11 +1558,11 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: center;
 }
 .customlabels_newfashion{
-    position: absolute;
+   position: absolute;
     rotate: -37deg;
-    top: 17px;
+    top: 24px;
     font-size: 12px;
-    width: 181px;
+    width: 158px;
     overflow: hidden;
     left: -42px;
     text-align: center;
@@ -1987,7 +2011,8 @@ input[type=number]::-webkit-outer-spin-button {
 /* ************************Blog section css*************************************** */
 /* **************************************************************************************/
 .bolg-section{
-    background: #f7f3f3
+    background: #f7f3f3;
+    padding-bottom: 16px;
 }
 
 .topcategories-blog
@@ -2021,7 +2046,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .blog_img_1
 {
-    height: 500px;
+    border-radius: 5px;
+    border-radius: 5px;
+    height: 100%;
     
 }
 .jornalblog_img{
@@ -2052,9 +2079,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .jurnal-p-long-para{
     background: #fff;
+    border-radius: 5px;
 }
 .blog-anchar{
-padding: 7px;
+padding: 3px;
 color:  #767171;
 }
 .blog-anchar i{
@@ -2301,10 +2329,12 @@ footer{
 .footer_about_us ul li{
     list-style: none;
     padding: 8px;
+    font-family: 'Allerta';
 }
 .footer_about_us ul li a{
     text-decoration: none;
     color: #2b28f1;
+    font-family: 'Allerta';
 } 
 
 .footer-main-part{
