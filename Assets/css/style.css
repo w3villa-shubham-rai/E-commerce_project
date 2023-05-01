@@ -75,6 +75,7 @@ select{
   height: 30px;
   color: var(--white);
   background: var(--blue);
+  border-radius: 3px;
   width: 50px;
 }
 .search_bar input
@@ -95,6 +96,7 @@ select{
 .search_glass
 {
     height: 30px;
+    border-radius: 3px;
     width: 26px;
     background: var(--blue);
     text-align: center;
@@ -109,7 +111,7 @@ select{
     font-size: 10px;
 }
 .logo i {
-    background: rgb(66, 66, 241);
+    background: var(--blue);
     border-radius: 50%;
     padding: 7px;
 }
@@ -1020,11 +1022,12 @@ select{
 
 .text_desk{
     width: 75px;
-    height: 4px;
+    height: 3px;
     background: #f5591c;
     margin: auto;
+    border: none;
     margin-top: 8px;
-    border-radius: 5px;
+    border-radius: 9px;
 }
 .whyustopcategorieshomedecore{
     text-align: center;
@@ -1177,7 +1180,7 @@ select{
     }
     .text_desk {
         width: 70px;
-        height: 3px;
+        height: 2px;
         margin: 0px;
         border-radius: 5px;
     }
@@ -1424,10 +1427,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .fashiondesk{
     width: 75px;
-    height: 4px;
+    height: 3px;
     background: #f5591c;
     margin-top: 5px;
     margin-left: 5px;
+    border: none;
     border-radius: 5px;
 }
 .imgfashion img{
@@ -1908,6 +1912,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* ************************Blog section css*************************************** */
 /* **************************************************************************************/
+.bolg-section{
+    background: #f7f3f3
+}
 
 .topcategories-blog
 {
@@ -2096,11 +2103,14 @@ color:  #767171;
     font-size: medium;
     padding-bottom: 32px;
 }
+.mostviewed-desk-section h1{
+    color: var(--white);
+}
 .text_desk_most_view{
     width: 75px;
-    height: 3px;
+    height: 2px;
     background: #f5591c;
-    /* margin: auto; */
+    border: none;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -2147,11 +2157,10 @@ color:  #767171;
 /* ********************************************************************************* */
 .text_desk_footer{
     width: 42px;
-    height: 3px;
+    height: 2px;
     background: #f5591c;
     margin-top: -2px;
-    /* padding-left: 8pxx;
-    padding-right: 5pxxx; */
+    border: none;
     margin-left: 9px;
     margin-bottom: 5px;
     border-radius: 5px;
