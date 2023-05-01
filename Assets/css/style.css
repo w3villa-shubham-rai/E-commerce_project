@@ -48,7 +48,12 @@
     display: flex;
     column-gap: 10px;
 }
-
+.login-register-border{
+    /* border: 1px solid green;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 50%; */
+}
 .delivery_moremenu
 {
     display: flex;
@@ -57,6 +62,7 @@
 select{
     outline: none;
     border: none;
+    background: #fff;
 }
 
 /* user Toolbar  */
@@ -82,10 +88,10 @@ select{
 }
 .search_bar input
 {
-   
     height: 30px;
     width: 490px;
     outline: none;
+    padding: 8px;
     border: none;
 }
 .search i{
@@ -112,12 +118,16 @@ select{
 {
     font-size: 10px;
     text-align: center;
+    color: rgb(121, 117, 117);
 }
 .logo i {
-    display: flex;
-    column-gap: 10px;
+    font-size: 11px;
     text-align: center;
-    justify-content: center;
+    padding: 7px;
+    color:  rgb(121, 117, 117);
+    border-radius: 50%;
+    border: 2px solid rgb(175, 164, 164);
+    text-align: center;
 }
 .add_to_cart i{
     border-radius: 4%;
@@ -1010,7 +1020,7 @@ select{
 
 .why-us
 {
-    margin-top: 50px;
+    margin-top: 45px;
 }
 #whyus.owl-theme .owl-dots .owl-dot span {
     width: 6px;
@@ -1214,19 +1224,23 @@ select{
 
     background: #f7f2f2;
     margin-top: 15px;  
-    padding-top: 27px;
+    padding-top: 11px;
 
 }
 
 .product-us-headphone-camera {
     padding-top: 20px;
     padding-bottom: 87px;
-    text-align: center;
+   
 }
 .product-us-headphone-camera h1{
     margin-top: 10px;
+    text-align: center;
 }
-
+.journa_has_anchartag
+{
+    text-align: center;
+}
 .headphone
 {
     height: 427px;
@@ -1243,30 +1257,29 @@ select{
 }
 .erykson{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 30px;
-    column-gap: 98px;
+    padding-left: 12px;
     color: #ccc7c7;
     background: #a7a0a0;
+
+}
+.model{
+    padding-right: 6px;
 }
 .headphone-txt
 {
-    text-align: center;
-    padding: 5px;
+    padding: 8px;
     background: #fff;
-    /* color: white; */
-    padding-right: 159px;
 }
 .htxt{
-    margin-right: 21px;
-    padding: 5px;
-    font-size: 15px;
-    font-weight: bold;
+   padding-left: 3px;
+   font-weight: bold;
 }
 .favcart{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: var(--white);
     height: 54px;
@@ -1297,7 +1310,8 @@ select{
     height: 25px;
     border: 2px solid #cfcbcb;
     outline: none;
-    margin-left: 10px;
+    margin-left: 5px;
+    font-size: 15px;
     border-radius: 4px;
 
 }
@@ -1305,7 +1319,6 @@ select{
 .whislist{
     gap: 15px;
     display: flex;
-    padding-right: 13px;
     color: #c0bbbb;
 }
 #fav-whislist{
@@ -1324,11 +1337,12 @@ select{
 .strike{
     color: #706767;
     font-size: 15px;
+    padding: 3px;
 }
 .buy-now{
     display: flex;
     justify-content: space-around;
-    column-gap: 105px;
+    column-gap: 120px;
     font-size: smaller;
     margin-top: 10px;
 }
@@ -1346,6 +1360,7 @@ select{
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
+  height: 25px;
 }
 
 .customlabels
@@ -1397,16 +1412,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .seeallproducd-btn button{
     border: none;
-    color: #f4f6fc;
+    color: rgb(244, 246, 252);
     text-align: center;
     height: 36px;
-    top: 25px;
+    top: 25px;   
     width: 155px;
     position: relative;
     border-radius: 5px;
     background: var(--blue);
-
 }
+
+
 
 
 .featuresection{
@@ -1424,8 +1440,8 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 35px;
 }
 .imgfashion {
-    width: 186px;
-    height: 175px;
+    width: 90%;
+    height: 192px;
     padding: 12px;
 }
 .fashiondesk{
@@ -1449,14 +1465,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .newfashion{
-    width: 80%;
+    width: 77%;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: 13px;
     background-color: #fff;
 }
 .fash{
     font-size: large;
     padding-bottom: -27px;
-    /* padding-top: 10px; */
+    padding-top: 5px;
     font-weight: bold;
     margin-left: 5px;
 } /* .service_all_logo
@@ -1469,13 +1487,18 @@ input[type=number]::-webkit-outer-spin-button {
 .newfashion p{
     font-size: large;
     font-weight: bold;
-    margin-left: 6px;
+    margin-left: 4px;
+    padding-top: 2px;
 }
 .newfashioncrowesl{
     padding-top: 6px;
     position: relative;
     overflow: hidden;
 
+}
+.seeallproducd-btn
+{
+    text-align: center;
 }
 .customlabels_newfashion{
     position: absolute;
@@ -1500,7 +1523,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .fashion1{
     background: #e8dddd;
-    width: 19%;
+    width: 21%;
 }
 .bdncross{
     padding-top: 9px;
@@ -1571,10 +1594,7 @@ input[type=number]::-webkit-outer-spin-button {
     {
         width: 33px;
     }
-    .strike
-    {
-        font-size: 12px;
-    }
+
 }
 
  @media screen and (max-width: 740px)
@@ -1618,7 +1638,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-@media screen and (max-width: 1148px)
+/* @media screen and (max-width: 1148px)
 {
     .imgfashion
     {
@@ -1626,60 +1646,54 @@ input[type=number]::-webkit-outer-spin-button {
         height: 170px;
         padding: 4px;
     }
-}
-@media screen and (max-width: 1076px)
+} */
+@media screen and (max-width: 1105px)
 {
-    .imgfashion
-    {
-        width: 145px;
-        height: 125px;
-        /* padding: 12px; */
-    }
+    
     .fashion1 {
-        width: 25%;
+        width: 300px;
     }
 }
-@media screen and (max-width: 756px)
+@media screen and (max-width: 510px)
+{
+    
+    .fashion1 {
+        width: 100%;
+    }
+}
+/* @media screen and (max-width: 756px)
 {
     .imgfashion
     {
         width: 145px;
         height: 125px;
-        /* padding: 12px; */
+        padding: 12px; 
     }
     .fashion1 {
         width: 40%;
     }
-}
-@media screen and (max-width: 408px)
+} */
+/* @media screen and (max-width: 408px)
 {
     .imgfashion
     {
         width: 140px;
         height: 120px;
-        /* padding: 8px; */
+        
     }
     .fashion1 {
         width: 40%;
     }
-}
+} */
 @media screen and (max-width: 514px)
 {
    .newfashion{
     display:none;
    }
-   .fashion1
-   {
-    width: 100%;
+   
 
-   }
-   .imgfashion {
-    width: 377px;
-    height: 209px;
-    /* padding: 12px; */
-   }
 }
-@media screen and (max-width: 504px)
+/* @media screen and (max-width: 504px)
 {
     .fashion1
    {
@@ -1689,11 +1703,11 @@ input[type=number]::-webkit-outer-spin-button {
     .imgfashion {
         width: 295px;
         height: 189px;
-        /* padding: 22px; */
+        
        }
-}
+} */
 
-@media screen and (max-width: 474px)
+/* @media screen and (max-width: 474px)
 {
     .fashion1
    {
@@ -1703,10 +1717,10 @@ input[type=number]::-webkit-outer-spin-button {
     .imgfashion {
     width: 303px;
     height: 260px;
-    /* padding: 11px; */
+   
        }
-}
-@media screen and (max-width: 434px)
+} */
+/* @media screen and (max-width: 434px)
 {
     .fashion1
     {
@@ -1718,9 +1732,9 @@ input[type=number]::-webkit-outer-spin-button {
      height: 260px;
      padding: 15px;
         }
-}
+} */
 
-@media screen and (max-width: 358px)
+/* @media screen and (max-width: 358px)
 {
     .fashion1
     {
@@ -1732,7 +1746,7 @@ input[type=number]::-webkit-outer-spin-button {
      height: 260px;
      padding: 15px;
         }
-}
+} */
 @media screen and (max-width: 740px)
 {
     .featured-para{
@@ -1752,8 +1766,9 @@ input[type=number]::-webkit-outer-spin-button {
 /* ************************************************************************************* */
 
 .palm{
-    width: 105px;
-    height: 105px;
+    width: 112px;
+    height: 112px;
+    margin: auto;
     border-radius: 8px;
     border: 2px solid rgb(160, 156, 156);
 }
@@ -1793,7 +1808,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .featuresection-improved-gallery{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 45px;
 }
 .image-gallery-module-box{
     padding-top: 40px;
@@ -1808,8 +1823,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #img-gallery-sizing{
-    width: 105px;
-    height: 105px;
+    width: 110px;
+    height: 125px;
     border-radius: 8px;
     border: 2px solid rgb(160, 156, 156);
 }
@@ -1946,7 +1961,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .ourblog-jurnal-book-section{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 45px;
 }
 .blog_img_1
 {
@@ -1963,8 +1978,9 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: cover;
 }
 .adminmessage{
-    background: #9c9a9a;
+    background: #d5cece;
     color: #565858;
+    padding: 7px;
 }
 .jurnal-blog-p{
     font-size: large;
@@ -2005,7 +2021,7 @@ color:  #767171;
 
 .saying_about_us
 {
-    padding-top: 30px;
+    padding-top: 45px;
 }
 #comma-symbal {
     font-size: 51px;
@@ -2018,8 +2034,6 @@ color:  #767171;
 
 .saying-anoutus-section{
     text-align: center;
-    /* background: #f9f5f5; */
-    padding-top: 10px;
 }
 
 .saying-about-carousel{

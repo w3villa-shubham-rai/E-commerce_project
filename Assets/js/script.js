@@ -108,31 +108,34 @@ $("#shop_brand").owlCarousel({
     0: {
       items: 1,
     },
+    200:{
+      items: 1,
+    },
     300:
     {
         items:2,
     },
-    478:{
+    450:{
         items:3,
     },
-    500:{
-        items: 3,
+    586:{
+        items: 4,
     },
-    600: {
-      items: 4,
-    },
-    728: {
+    740: {
       items: 5,
     },
-    862:
-    {
-        items: 6,
+    864: {
+      items: 6,
     },
-    988: {
-      items: 7,
+    1032:
+    {
+        items: 7,
+    },
+    1100: {
+      items: 8,
     },
     1248: {
-      items: 8,
+      items: 9,
     },
   },
 });
