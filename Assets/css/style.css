@@ -27,7 +27,7 @@
 {
     display: flex;
     justify-content: space-between;
-    font-size: 12px; 
+    /* font-size: 12px;  */
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -58,6 +58,8 @@
 {
     display: flex;
     column-gap: 10px;
+    text-align: center;
+    justify-content: center;
 }
 select{
     outline: none;
@@ -130,7 +132,7 @@ select{
     text-align: center;
 }
 .add_to_cart i{
-    border-radius: 4%;
+    border-radius: 10%;
     padding: 7px;
     background: rgb(5, 5, 197);
     color: white;
@@ -384,6 +386,14 @@ select{
 
 /* media query of mobile responsive */
 
+@media screen and (max-width:600px)
+{
+    
+    .jurnal_m
+    {
+        font-size: 25px;
+    }
+}
 @media screen and (max-width:575px)
 {
     .cart_search{
@@ -423,7 +433,7 @@ select{
     }
     .navlogin_register i {
         border-radius: 50%;
-        padding: 2px;
+        padding: 1px;
         font-size: 12px;
     }
     #m-dollar, #m-lanuage, .mobile_doller {
@@ -588,6 +598,10 @@ select{
     .leftpart_herosection{
         height: 442px;
     }
+    .leftpart_herosection {
+        width: 99%;
+    }
+    
 }
 @media screen and (max-width:820px)
 {
@@ -662,7 +676,7 @@ select{
     }
     .watch
     {
-        width: 48%;
+        width: 50%;
     }
     .tv
     {
@@ -1858,7 +1872,7 @@ input[type=number]::-webkit-outer-spin-button {
         justify-content: space-between;
     }
     #img-gallery-sizing{
-        width: 186px;
+        width: 17%;
     }
 
 }
