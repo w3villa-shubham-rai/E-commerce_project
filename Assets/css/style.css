@@ -28,11 +28,13 @@
     display: flex;
     justify-content: space-between;
     /* font-size: 12px;  */
+    color: #686666;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .websitename h1
 {
+    font-family: 'Anek Bangla';
     font-size: 45px;
     font-weight: bold;
 }
@@ -48,22 +50,19 @@
     display: flex;
     column-gap: 10px;
 }
-.login-register-border{
-    /* border: 1px solid green;
-    font-size: 10px;
-    padding: 5px;
-    border-radius: 50%; */
-}
+
 .delivery_moremenu
 {
     display: flex;
     column-gap: 10px;
+    color: #686666;
     text-align: center;
     justify-content: center;
 }
 select{
     outline: none;
     border: none;
+    color: #686666;
     background: #fff;
 }
 
@@ -149,6 +148,7 @@ select{
     padding-top: 17px;
     padding-bottom: 17px;
     height: 10px;
+    font-family: 'Bakbak One';
    
 }
 .alldepartment
@@ -163,7 +163,7 @@ select{
 .dpt
 {
     background-color: rgb(235, 213, 20);
-    width: 215px;
+    width: 221px;
     height: 44px;
     display: flex;
     align-items: center;
@@ -174,7 +174,7 @@ select{
 {
     position: absolute;
     top: -8px;
-    left: 177px;
+    left: 185px;
     background-color: red;
     font-size: smaller;
     border-radius: 2px;
@@ -479,6 +479,7 @@ select{
 .mobile_learn_more h1{
     font-size: 38px;
     padding-top: 8px;
+    font-family: 'Roboto Condensed'
 }
 .learn_more{
     padding-top: 8px;
@@ -493,8 +494,8 @@ select{
 }
 .mobile{
     background: var(--blue);
-    width: 50px;
-    padding: 2px;
+    width: 71px;
+    padding: 4px;
     border-radius: 4px;
     text-align: center;
     color: white;
@@ -563,6 +564,7 @@ select{
 .rightwatch_tv .p2{
     font-weight: bold;
     margin-left: 13px;
+    padding: 3px;
 }
 
 
@@ -628,9 +630,10 @@ select{
     }
     .mobile {
         background: var(--blue);
-        width: 30px;
+        width: 60px;
         padding: 2px;
         border-radius: 4px;
+        font-size: small;
         text-align: center;
         color: var(--white);
     }
@@ -692,6 +695,7 @@ select{
         font-weight: bold;
         font-size: 28px;
         margin-left: -3px;
+        font-family: 'Open Sans';
     }
     .p1 {
         color: #2b28f1;
@@ -1142,7 +1146,9 @@ select{
 
 }
 
-
+.whyus-heading{
+    font-family: 'Open Sans';
+}
 
 
 /* ***************************************************************************** */
@@ -1383,6 +1389,7 @@ input[type=number]::-webkit-outer-spin-button {
     rotate: -37deg;
     top: 33px;
     font-size: 12px;
+    text-align: center;
     width: 150px;
     overflow: hidden;
     left: -28px;
@@ -1398,6 +1405,7 @@ input[type=number]::-webkit-outer-spin-button {
 .prcent,.hot
 {
     border-radius: 3px;
+    text-align: center;
 }
 .prcent{
  background-color: red;
@@ -1435,9 +1443,20 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 5px;
     background: var(--blue);
 }
+#feature-product.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
 
+}
 
-
+/* ***********************************feature categories start************************** */
+/* ************************************************************************************** */
 
 .featuresection{
     text-align: center;
@@ -1582,7 +1601,17 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: cover;
 }
 
+#feature-categories.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
 
+}
 
 
 
@@ -1794,6 +1823,19 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: cover;
    
 }
+#shop_brand.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
+
+}
+
+
 .shop_by_brand_crowser{
     margin-top: 38px;
 }
@@ -1992,9 +2034,13 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: cover;
 }
 .adminmessage{
-    background: #d5cece;
+    background: #e9e7e7;
     color: #565858;
     padding: 7px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
 }
 .jurnal-blog-p{
     font-size: large;
@@ -2013,6 +2059,17 @@ color:  #767171;
 }
 .blog-anchar i{
     color:  #767171;
+}
+.blogcr_cr.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
+
 }
 
 /********************** Blog section media Query *********************************/
@@ -2053,6 +2110,17 @@ color:  #767171;
 .saying-about-carousel{
     padding-top: 30px;
     padding-bottom: 10px;
+}
+.saying_about-us.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
+
 }
 
 
@@ -2107,7 +2175,7 @@ color:  #767171;
     /* border-radius: 5px; */
 }
 .most-viewed{
-    background-color: #494545;
+    background-color: #605d5d;
 }
 .aboutus-para{
     font-size: small;
@@ -2126,8 +2194,8 @@ color:  #767171;
     display: flex;
 }
 .oversized-sunglasses{
-    padding-left: 3px;
-    width: 70%;
+    padding-left: 10px;
+    width: 66%;
 }
 .mostviewed-desk-section{
     padding-top: 30px;
@@ -2146,7 +2214,17 @@ color:  #767171;
     margin-bottom: 5px;
     border-radius: 5px;
 }
+#mostviewd.owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 1px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    background-color: orangered;
 
+}
 
 
 /****************************** Social media logo section css Designing start ************/
