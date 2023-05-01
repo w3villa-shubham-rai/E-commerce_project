@@ -39,6 +39,8 @@
 .contact{
     display: flex;
     column-gap: 10px;
+    text-align: center;
+    justify-content: center;
 
 }
 
@@ -109,11 +111,13 @@ select{
 .logo p
 {
     font-size: 10px;
+    text-align: center;
 }
 .logo i {
-    background: var(--blue);
-    border-radius: 50%;
-    padding: 7px;
+    display: flex;
+    column-gap: 10px;
+    text-align: center;
+    justify-content: center;
 }
 .add_to_cart i{
     border-radius: 4%;
@@ -436,11 +440,11 @@ select{
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: space-between;
-    column-gap: 10px;
+    column-gap: 8px;
 }
 .leftpart_herosection
 {
-    width: 71%;
+    width: 72%;
     height: 500px;
     border-radius: 30px;
     position: relative;
@@ -491,7 +495,7 @@ select{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 15px;   
+    row-gap: 12px;   
     border-radius: 8px;
 
 }
@@ -1102,17 +1106,16 @@ select{
 }
 .whyus_crowsel p{
     position: relative;
-    top: -28px;
-    display: flex;
     padding: 2px;
     font-size: small;
-    justify-content: center;
     color: rgb(14, 13, 13);
     background-color: #ebf3f3;
     text-align: center;
     width: 104px;
+    margin: auto;
     border-radius: 3px;
-    margin-left: 50px;
+    bottom: 27px;
+
 }
 
 
@@ -1120,7 +1123,7 @@ select{
 
 /* ***************************************************************************** */
 /************************** Why us part media Query*********************************** */
-@media  screen and (max-width: 1124px)
+/* @media  screen and (max-width: 1124px)
 {
     .whyus_crowsel p {
         margin-left: 38px;
@@ -1132,7 +1135,7 @@ select{
     .whyus_crowsel p {
         margin-left: 62px;
     }
-}
+} */
 @media  screen and (max-width: 741px)
 {
     .whyus-heading
@@ -1141,7 +1144,7 @@ select{
     }
 }
 
-@media screen and (max-width: 688px)
+/* @media screen and (max-width: 688px)
 {
    .whyus_crowsel p {
     margin-left: 90px;
@@ -1171,7 +1174,7 @@ select{
     .whyus_crowsel p {
         margin-left: 85px;
     }
-}
+} */
 
 @media screen and (max-width: 494px)
 {

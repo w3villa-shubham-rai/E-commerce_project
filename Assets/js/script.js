@@ -101,7 +101,7 @@ $("#feature-categories").owlCarousel({
 
 $("#shop_brand").owlCarousel({
   loop: true,
-  margin: 20,
+  margin: 5,
   nav: false,
   // autoplay:true,
   responsive: {
