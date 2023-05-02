@@ -25,7 +25,7 @@
 /* ******************************Header part css************************************** */
 .usertoolbarcolor
 {
-    background-color: #e2e7e7;
+    background-color: rgb(240 243 243);
 }
 .about_navbar
 {
@@ -38,8 +38,9 @@
 }
 .websitename h1
 {
-     font-size: 45px;
+     font-size: 40px;
     font-weight: bold;
+    font-family: 'Akshar';
 }
 .contact{
     display: flex;
@@ -387,11 +388,11 @@ select{
     justify-content: center;
     align-items: center;
 }
-.mobile_jurnal
+.mobile_jurnal 
 {
     background-color: #e2e7e7;
 }
-.jurnal_m
+.jurnal_m 
 {
     font-size: 32px;
 }
@@ -503,7 +504,7 @@ select{
 }
 .mobile_learn_more h1{
     font-size: 38px;
-    padding-top: 8px;
+    font-family: 'Akshar';
  }
 .learn_more{
     padding-top: 4px;
@@ -912,7 +913,7 @@ select{
 .free-return_logo
 {
     border-radius: 51%;
-    padding: 20px 23px;
+    padding: 18px 23px;
     border: 2px solid rgb(16, 16, 190);
 }
 
@@ -926,7 +927,7 @@ select{
 .secureshoping_logo
 {
     border-radius: 51%;
-    padding: 20px 23px;
+    padding: 18px 23px;
     border: 2px solid rgb(16, 16, 190);
 }
 .unlimeted_block
@@ -938,7 +939,7 @@ select{
 
 .unlimitedblock_logo{
     border-radius: 51%;
-    padding: 20px 23px;
+    padding: 18px 23px;
     border: 2px solid rgb(16, 16, 190);
 }
 .service_all_logo i{ 
@@ -1291,8 +1292,8 @@ select{
     align-items: center;
     height: 30px;
     padding-left: 7px;
-    color: #ccc7c7;
-    background: #a7a0a0;
+    color: #4e4c4c;
+    background: #ebebeb;
 
 }
 .model{
@@ -1378,21 +1379,31 @@ select{
     column-gap: 120px;
     font-size: smaller;
     margin-top: 6px;
+    background: #ebebeb;
     
 }
 .buynow-doller-symbal
 {
     font-size: 10px;
 }
-.buy-now i{
+.byu-now-doller i {
     font-size: 6px;
     width: 5px;
     padding: 34px;
-    border: 1px solid red;
+    border: 1px solid green;
     padding: 3px;
+    color: green;
     border-radius: 50%;
 }
-
+.question i{
+    font-size: 6px;
+    width: 5px;
+    padding: 34px;
+    border: 1px solid hsl(0, 93%, 37%);
+    padding: 3px;
+    color: hsl(0, 93%, 37%);
+    border-radius: 50%;
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
@@ -1487,7 +1498,6 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 45px;
 }
 .featuresectioncategories{
-    margin-top: 30px;
     padding-bottom: 60px;
     background-color: #ebebeb;
 }
@@ -2373,9 +2383,11 @@ footer{
 .footer_about_us:nth-child(4) {
     border: none;
   }
+ 
 .footer_about_us ul li{
     list-style: none;
-    padding: 8px;
+    padding: 4px;
+    margin-left: 6px;
  }
 .footer_about_us ul li a{
     text-decoration: none;
@@ -2396,6 +2408,7 @@ footer{
     width: 97%;
     border: 3px solid #e5e1e1;
     border-radius: 5px;
+    padding-left: 3px;
 }
 .input-footer-email{
     padding-left: 8px;
@@ -2511,6 +2524,10 @@ footer{
     .checkbox-newsleter {
         font-size: 15px;
     }
+    .footer_about_us ul li{
+        padding: 4px;
+        margin-left: 0px;
+     }
 }
 
 /* @media screen and (max-width: 480px) {
@@ -2597,7 +2614,7 @@ footer{
     bottom: 18px;
     font-size: 24px;
     color: var(--white);
-    right: 6px;
+    right: 1px;
     text-align: center;
     z-index: 3;
 }
