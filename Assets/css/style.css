@@ -112,13 +112,11 @@ select{
     height: 30px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    width: 26px;
+    width: 28px;
     background: var(--blue);
     text-align: center;
 }
-.search_glass i{
-    padding: 4px;
-}
+
 .logo
 {
     display: flex;
@@ -187,7 +185,7 @@ select{
     top: -8px;
     left: 185px;
     background-color: red;
-    font-size: smaller;
+    font-size: 10px;
     border-radius: 2px;
     width: 31px;
     color: var(--white);
@@ -203,16 +201,16 @@ select{
 #new
 {
     position: absolute;
-    top: -22px;
-    /* height: 21px; */
+    top: -16px;
     left: 198px;
     background: hsl(60, 100%, 50%);
-    font-size: smaller;
+    font-size: 10px;
     color: black;
     border-radius: 2px;
-    width: 44px;
-    height: 21px;
+    width: 38px;
+    height: 16px;
     text-align: center;
+
 }
 
 .blog_phone
@@ -286,7 +284,7 @@ select{
     align-items: flex-end;
 }
 
-@media screen and (max-width:983px)
+@media screen and (max-width:1011px)
 {
     .usertoolbarcolor,.alldepartment_menu,.about_navbar
     {
@@ -1083,11 +1081,8 @@ select{
     justify-content: center;
     margin-top: 25px;
     flex-wrap: wrap;
-    /* text-align: center; */
     margin-bottom: 20px;
     z-index: 2;
-     text-align: center;
-    column-gap: 1px;
     text-align: center;
 }
 .rectangle{
@@ -1231,7 +1226,7 @@ select{
     .topcategoreis_fashion
     {
         width: 100%;
-        column-gap: 0px;
+        /* column-gap: 0px; */
 
     }
     .btn-group {
@@ -2110,11 +2105,31 @@ input[type=number]::-webkit-outer-spin-button {
 .jornalblog_img{
     height: 250px;
     border-radius: 8px;
+    position: relative;
 }
 .jornalblog_img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.aug{
+
+    width: 70px;
+    background-color: blue;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--white);
+    border-radius: 5px;
+}
+.number-two{
+    font-size: 26px;
+    padding-bottom: -8px;
+    padding-top: -10px;
+    margin-bottom: -16px;
+    font-weight: bold;
+    margin-top: -3px;
 }
 .adminmessage{
     background: #e9e7e7;
@@ -2607,12 +2622,12 @@ footer{
 /* arrow symbol */
 
 .fixed-arrow {
-    width: 30px;
-    height: 27px;
+    width: 33px;
+    height: 33px;
     background-color: #0032ff;
     position: fixed;
     bottom: 18px;
-    font-size: 24px;
+    font-size: 21px;
     color: var(--white);
     right: 1px;
     text-align: center;
