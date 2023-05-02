@@ -1103,11 +1103,15 @@ select{
     padding: 8px 10px;
     font-size: small;
     z-index: 2;
+    border: none;
+    outline: none;
     position: relative;
     color: #ebf3f3;
 }
 #tc-btn-grp{
     background: #2b28f1;
+    outline: none;
+    border: none;
 }
 
 .btn-group{
@@ -1115,6 +1119,8 @@ select{
     background: #aeb8b8;
     font-size: small;   
     color: #ebf3f3;
+    outline: none;
+    border: none;
     /* background: #2b28f1; */
 }
 
@@ -2071,6 +2077,8 @@ input[type=number]::-webkit-outer-spin-button {
     background: #2b28f1;
     padding: 8px 10px;
     font-size: small;
+    border: none;
+    outline: none;
     z-index: 2;
     position: relative;
     color: #ebf3f3;
@@ -2293,6 +2301,7 @@ color:  #767171;
 .most-viewed-whishlist_add-tocart_comapare{
     column-gap: 18px;
     display: flex;
+    color: #5a5858;
 }
 .oversized-sunglasses{
     padding-left: 10px;
