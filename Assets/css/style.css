@@ -1,7 +1,11 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;500;600&display=swap');
+
 *
 {
     padding: 0%;
     margin: 0%;
+    font-family: 'Mukta', sans-serif;
 }
 /* *********************************utily class***************************************/
 /* ************************************************************************************/
@@ -27,15 +31,14 @@
 {
     display: flex;
     justify-content: space-between;
-    /* font-size: 12px;  */
+    font-size: 12px; 
     color: #686666;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .websitename h1
 {
-    font-family: 'Anek Bangla';
-    font-size: 45px;
+     font-size: 45px;
     font-weight: bold;
 }
 .contact{
@@ -142,6 +145,9 @@ select{
     color: white;
    
 }
+.item-cart-s{
+    color: rgb(121, 117, 117);
+}
 
 
 /* All Department part last part of header */
@@ -153,8 +159,7 @@ select{
     padding-top: 17px;
     padding-bottom: 17px;
     height: 10px;
-    font-family: 'Bakbak One';
-   
+    
 }
 .alldepartment
 {
@@ -197,13 +202,15 @@ select{
 #new
 {
     position: absolute;
-    top: -23px;
-    left: 228px;
+    top: -22px;
+    /* height: 21px; */
+    left: 198px;
     background: hsl(60, 100%, 50%);
     font-size: smaller;
     color: black;
     border-radius: 2px;
-    width: 31px;
+    width: 44px;
+    height: 21px;
     text-align: center;
 }
 
@@ -221,8 +228,7 @@ select{
 .call
 {
     color: #e2e7e7;
-    display: flex;
-    gap: 5px;
+    padding: 2px;
 }
 .blog
 {
@@ -245,6 +251,11 @@ select{
 }
 
 /* media query for header part */
+
+@media screen and (max-width:565px)
+{
+
+}
 
 @media screen and (max-width:1150px)
 {
@@ -270,7 +281,7 @@ select{
 
 .login_mobile
 {
-    display: flex;
+    /* display: flex; */
     align-items: flex-end;
 }
 
@@ -454,7 +465,16 @@ select{
     }
 
 }
-
+@media screen and (max-width:962px)
+{
+    .login_mobile{
+        column-gap: 5px;
+    }
+}
+@media screen and (max-width:581px)
+{
+    
+}
 
 
 /************************************** Hero section start********************************** */
@@ -484,10 +504,9 @@ select{
 .mobile_learn_more h1{
     font-size: 38px;
     padding-top: 8px;
-    font-family: 'Roboto Condensed'
-}
+ }
 .learn_more{
-    padding-top: 8px;
+    padding-top: 4px;
 }
 .mobile_learn_more button{
     width: 114px;
@@ -588,7 +607,6 @@ select{
     transition: opacity .2s ease;
     border-radius: 30px;
     background-color: orangered;
-
 }
 
 /************************************media query of hero-section************************* */
@@ -606,7 +624,7 @@ select{
         height: 442px;
     }
     .leftpart_herosection {
-        width: 99%;
+        width: 100%;
     }
     
 }
@@ -670,7 +688,7 @@ select{
         
     }
     .leftpart_herosection {
-        width: 97%;
+        width: 100%;
     }
     .rightwatch_tv {
         display: flex;
@@ -700,8 +718,7 @@ select{
         font-weight: bold;
         font-size: 28px;
         margin-left: -3px;
-        font-family: 'Open Sans';
-    }
+     }
     .p1 {
         color: #2b28f1;
         font-size: 17px;
@@ -883,7 +900,7 @@ select{
 }
 .shiping_logo{
     border-radius: 51%;
-    padding: 20px;
+    padding: 20px 23px;
     border: 2px solid rgb(16, 16, 190);
 }
 .free_return
@@ -895,7 +912,7 @@ select{
 .free-return_logo
 {
     border-radius: 51%;
-    padding: 20px;
+    padding: 20px 23px;
     border: 2px solid rgb(16, 16, 190);
 }
 
@@ -909,7 +926,7 @@ select{
 .secureshoping_logo
 {
     border-radius: 51%;
-    padding: 20px;
+    padding: 20px 23px;
     border: 2px solid rgb(16, 16, 190);
 }
 .unlimeted_block
@@ -921,7 +938,7 @@ select{
 
 .unlimitedblock_logo{
     border-radius: 51%;
-    padding: 20px;
+    padding: 20px 23px;
     border: 2px solid rgb(16, 16, 190);
 }
 .service_all_logo i{ 
@@ -944,17 +961,17 @@ select{
         font-size: 14px;
     }
     .shiping_logo{
-        padding: 14px;
+        padding: 12px 14px;
     }
     .free-return_logo
     {
-        padding: 14px;
+        padding: 12px 16px;
     }
     .secureshoping_logo{
-        padding: 14px;
+        padding: 12px 16px;
     }
     .unlimitedblock_logo{
-        padding: 14px;
+        padding: 12px 16px;
     }
 }
 @media  screen and (max-width: 890px)
@@ -986,42 +1003,27 @@ select{
         font-size: 11px;
     } 
     .shiping_logo{
-        padding: 10px;
+        padding: 7px 11px;
     }
     .free-return_logo
     {
-        padding: 10px;
+        padding: 6px 11px;
     }
     .secureshoping_logo{
-        padding: 10px;
+        padding: 6px 11px;
     }
     .unlimitedblock_logo{
-        padding: 10px;
+        padding: 6px 11px;
     }  
 }
 
-@media  screen and (max-width: 438px)
-{
-    .shiping_logo{
-        padding: 5px;
-    }
-    .free-return_logo
-    {
-        padding: 5px;
-    }
-    .secureshoping_logo{
-        padding: 5px;
-    }
-    .unlimitedblock_logo{
-        padding: 5px;
-    }  
-}
+
 @media  screen and (max-width: 336px)
 {
     .log_description p {
-        font-size: 9px;
+        font-size: 7px;
     } 
-    .shiping_logo{
+    /* .shiping_logo{
         padding: 4px;
     }
     .free-return_logo
@@ -1033,7 +1035,7 @@ select{
     }
     .unlimitedblock_logo{
         padding: 4px;
-    }  
+    }   */
 }
 
 
@@ -1094,7 +1096,7 @@ select{
     position: absolute;
     bottom: -5px;
     z-index:-1;
-    right: 55px;
+    right: 45px;
     rotate: -48deg;
 }
 .topcategories::after{
@@ -1148,13 +1150,11 @@ select{
     margin: auto;
     border-radius: 3px;
     bottom: 37px;
-    padding: 5px;
 
 }
 
 .whyus-heading{
-    font-family: 'Open Sans';
-}
+ }
 
 
 /* ***************************************************************************** */
@@ -1177,6 +1177,7 @@ select{
     .whyus-heading
     {
         text-align: start;
+        padding-bottom: 10px;
     }
 }
 
@@ -1289,7 +1290,7 @@ select{
     justify-content: space-between;
     align-items: center;
     height: 30px;
-    padding-left: 12px;
+    padding-left: 7px;
     color: #ccc7c7;
     background: #a7a0a0;
 
@@ -1303,15 +1304,19 @@ select{
     background: #fff;
 }
 .htxt{
-   padding-left: 3px;
    font-weight: bold;
 }
 .favcart{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: var(--white);
     height: 54px;
+}
+.input-addtocart{
+    display: flex;
+    column-gap: 12px;
+    margin-left: 5px;
 }
 #browser{
     width: 41px;
@@ -1325,9 +1330,8 @@ select{
     width: 84px;
     height: 29px;
     font-size: 10px;
-    font-weight: bold;
-    margin-right: 46px;
-    background:var(--blue);
+    font-weight: bold;   
+    background: var(--blue);
     color: var(--white);
     border: none;
     border-radius: 4px;
@@ -1349,6 +1353,7 @@ select{
     gap: 15px;
     display: flex;
     color: #c0bbbb;
+    margin-right: 6px;
 }
 #fav-whislist{
     font-size: 22px;
@@ -1366,14 +1371,13 @@ select{
 .strike{
     color: #706767;
     font-size: 15px;
-    padding: 3px;
 }
 .buy-now{
     display: flex;
     justify-content: space-around;
     column-gap: 120px;
     font-size: smaller;
-    margin-top: 15px;
+    margin-top: 6px;
     
 }
 .buynow-doller-symbal
@@ -1464,7 +1468,15 @@ input[type=number]::-webkit-outer-spin-button {
     transition: opacity .2s ease;
     border-radius: 30px;
     background-color: orangered;
-
+}
+@media screen and (max-width: 740px)
+{
+    .product-us-headphone-camera h1
+    {
+        text-align: start;
+        padding-bottom: 10px;
+    }
+    
 }
 
 /* ***********************************feature categories start************************** */
@@ -1531,9 +1543,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     padding: 12px;
     flex-direction: column;
-    gap: 6px;
-    font-family: 'Allerta';
-    color: #4d4545;
+     color: #4d4545;
     
 }
 .acc_dress_pants_T_shirts a
@@ -1596,7 +1606,6 @@ input[type=number]::-webkit-outer-spin-button {
 .btn_addcart_fashion{
     display: flex;
     justify-content: space-around;
-    margin-top: 12px;
     align-items: center;
 }
 .btn_addcart_fashion button{
@@ -1610,7 +1619,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .btn_addcart_fashion 
 {
-    margin-top: 21px;
+    margin-top: 16px;
 }
 .fashion_addcart_whislist{
     display: flex;
@@ -1650,7 +1659,35 @@ input[type=number]::-webkit-outer-spin-button {
     
 }
 
-@media screen and (max-width: 1206px)
+@media screen and (max-width: 1250px)
+{
+    /* .favcart button
+    {
+        width: 70px;
+        font-size: 8px;
+    } */
+    /* #input-number-favcart input 
+    {
+        width: 35px;
+    } */
+
+}
+@media screen and (max-width: 1130px)
+{
+    /* .favcart button
+    {
+        width: 70px;
+        margin-right: 68px;
+       font-size: 8px;
+    } */
+    /* #input-number-favcart input 
+    {
+        width: 38px;
+    } */
+
+}
+
+/* @media screen and (max-width: 1206px)
 {
     .favcart button
     {
@@ -1662,7 +1699,7 @@ input[type=number]::-webkit-outer-spin-button {
         width: 33px;
     }
 
-}
+} */
 
  @media screen and (max-width: 740px)
 {
@@ -1818,6 +1855,7 @@ input[type=number]::-webkit-outer-spin-button {
 {
     .featured-para{
         text-align: start;
+        padding-bottom: 10px;
     }
 }
 @media screen and (max-width: 500px)
@@ -1825,6 +1863,10 @@ input[type=number]::-webkit-outer-spin-button {
    .topcategories_labels{
     width: 50%;
     padding: 10px 0px;
+   }
+   .rectangle {
+    right: 85px;
+    
    }
 }
 
@@ -1958,7 +2000,11 @@ input[type=number]::-webkit-outer-spin-button {
     {
         padding-top: 15px;
         text-align: start;
+        
 
+    }
+    #ig{
+        padding-bottom: 10px;
     }
     
     .text_desk {
@@ -2033,7 +2079,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     bottom: -5px;
     z-index: -1;
-    right: 55px;
+    right: 40px;
     rotate: -48deg;
 }
 .topcategories-blog::after{
@@ -2068,6 +2114,9 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
     text-align: center;
     gap: 8px;
+}
+.adminmessage i{
+    padding-top: 6px;
 }
 .jurnal-blog-p{
     font-size: large;
@@ -2109,6 +2158,7 @@ color:  #767171;
     .our_blog_para
     {
         text-align: start;
+        padding-bottom: 10px;
     }
 }
 
@@ -2158,6 +2208,7 @@ color:  #767171;
     #saying-about-us
     {
         text-align: start;
+        padding-bottom: 10px;
     }
 }
 
@@ -2211,13 +2262,10 @@ color:  #767171;
     padding-top: 5px;
 }
 .most-viewed-doller{
-    padding-top: 3px;
     color: #6d6868;
-    font-size: medium;
 }
 
 .most-viewed-whishlist_add-tocart_comapare{
-    padding-top: 10px;
     column-gap: 18px;
     display: flex;
 }
@@ -2238,8 +2286,7 @@ color:  #767171;
     height: 2px;
     background: #f5591c;
     border: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 #mostviewd.owl-theme .owl-dots .owl-dot span {
@@ -2329,13 +2376,11 @@ footer{
 .footer_about_us ul li{
     list-style: none;
     padding: 8px;
-    font-family: 'Allerta';
-}
+ }
 .footer_about_us ul li a{
     text-decoration: none;
     color: #2b28f1;
-    font-family: 'Allerta';
-} 
+ } 
 
 .footer-main-part{
     display: flex;
@@ -2554,4 +2599,5 @@ footer{
     color: var(--white);
     right: 6px;
     text-align: center;
+    z-index: 3;
 }
