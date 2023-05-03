@@ -13,8 +13,10 @@
     --blue:blue;
     --white:white;
 }
+/* top categories java script */
+ 
 
-
+/* top categories java script */
 .container
 {  
    padding-left: 50px;
@@ -1085,17 +1087,37 @@ select{
     z-index: 2;
     text-align: center;
 }
-.rectangle{
+
+.btn-group{
+    padding: 8px 10px;
+    background: #aeb8b8;
+    font-size: small;   
+    color: #ebf3f3;
+    outline: none;
+    border: none;
+    border-right: 1px solid #bdbdb7;
+}
+
+.active_btn_toogle{
     background: #2b28f1;
+    position: relative;
+    /* z-index: 2; */
+}
+.active_btn_toogle::after {
+    content: "";
+    background: rgb(43, 40, 241);
     width: 18px;
     height: 18px;
     position: absolute;
-    bottom: -5px;
-    z-index:-1;
-    right: 45px;
-    rotate: -48deg;
+    bottom: 0px;
+    /* z-index: -1; */
+    transform: translateX(-50%);
+    left: 50%;
+    /* right: 50%; */
+    rotate: -45deg;
 }
-.topcategories::after{
+
+/* .topcategories::after{
     content: rectangle;
 }
 .topcategories{
@@ -1107,22 +1129,8 @@ select{
     outline: none;
     position: relative;
     color: #ebf3f3;
-}
-#tc-btn-grp{
-    background: #2b28f1;
-    outline: none;
-    border: none;
-}
+} */
 
-.btn-group{
-    padding: 8px 10px;
-    background: #aeb8b8;
-    font-size: small;   
-    color: #ebf3f3;
-    outline: none;
-    border: none;
-    /* background: #2b28f1; */
-}
 
 /* owl crosel why us part */
 .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8
@@ -1376,10 +1384,12 @@ select{
 }
 .buy-now{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     column-gap: 120px;
     font-size: smaller;
     margin-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
     background: #ebebeb;
     
 }
@@ -1616,8 +1626,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .btn_addcart_fashion{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .btn_addcart_fashion button{
     background-color: var(--blue);

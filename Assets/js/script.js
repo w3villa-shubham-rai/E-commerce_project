@@ -219,4 +219,35 @@ function Electronic_beuty_fashion(elem) {
 
 }
 
+
+var header = document.getElementById("myDIV");
+function myFunction_btn_group() {
+  var btns = header.getElementsByClassName("btn-group");
+  for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = header.getElementsByClassName("active_btn_toogle");
+  current[0].className = current[0].className.replace(" active_btn_toogle", "");
+  this.className += " active_btn_toogle";
+  });
+
+}
   
+}
+
+  
+// onclick="Electronic_beuty_fashion(this)"
+var header = document.getElementById("myDIV_feature_product");
+function myFunction_feature_product()
+{
+  var btns = header.getElementsByClassName("btn-group");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = header.getElementsByClassName("active_btn_toogle");
+  current[0].className = current[0].className.replace(" active_btn_toogle", "");
+  this.className += " active_btn_toogle";
+  });
+
+}
+}
+
+
