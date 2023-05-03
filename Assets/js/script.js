@@ -220,34 +220,42 @@ function Electronic_beuty_fashion(elem) {
 }
 
 
-var header = document.getElementById("myDIV");
-function myFunction_btn_group() {
-  var btns = header.getElementsByClassName("btn-group");
-  for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = header.getElementsByClassName("active_btn_toogle");
-  current[0].className = current[0].className.replace(" active_btn_toogle", "");
-  this.className += " active_btn_toogle";
-  });
+// var header = document.getElementById("myDIV");
+// myFunction_btn_group(header)
+// var header = document.getElementById("myDIV_feature_product");
+// // myFunction_btn_group(header)
+// var header = document.getElementById("myDIV_our_blog");
+// // myFunction_btn_group(header)
 
-}
+
+// function myFunction_btn_group(parent_id) {
+//   var btns = parent_id.getElementsByClassName("btn-group");
+//   for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//   var current = header.getElementsByClassName("active_btn_toogle");
+//   current[0].className = current[0].className.replace(" active_btn_toogle", "");
+//   this.className += " active_btn_toogle";
+//   });
+
+// }
   
+// }
+function toggleTopCategories(elem){
+  let prevElem = document.getElementsByClassName("active_btn_toogle_categories")[0];
+  prevElem.classList.remove("active_btn_toogle_categories");
+  elem.classList.add("active_btn_toogle_categories")
 }
+ function toogle_featureproduct(elemtop)
+ {
+  let previouselement=document.getElementsByClassName("active_btn_toogle_top_categories")[0];
+  previouselement.classList.remove("active_btn_toogle_top_categories");
+  elemtop.classList.add("active_btn_toogle_top_categories");
+ }
 
-  
-// onclick="Electronic_beuty_fashion(this)"
-var header = document.getElementById("myDIV_feature_product");
-function myFunction_feature_product()
-{
-  var btns = header.getElementsByClassName("btn-group");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = header.getElementsByClassName("active_btn_toogle");
-  current[0].className = current[0].className.replace(" active_btn_toogle", "");
-  this.className += " active_btn_toogle";
-  });
-
-}
-}
-
+ function toogle_ourblog(blogelement)
+ {
+    let previousblogele=document.getElementsByClassName("active_btn_toogle_blog")[0];
+    previousblogele.classList.remove("active_btn_toogle_blog");
+    blogelement.classList.add("active_btn_toogle_blog");
+ }
 

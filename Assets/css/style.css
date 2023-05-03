@@ -1089,30 +1089,38 @@ select{
 }
 
 .btn-group{
-    padding: 8px 10px;
+    padding: 5px;
     background: #aeb8b8;
     font-size: small;   
+    width: 110px;
     color: #ebf3f3;
+    /* z-index: 2; */
     outline: none;
     border: none;
     border-right: 1px solid #bdbdb7;
 }
+.btn-group p{
+    z-index: 2;
+    position: relative;
+}
 
-.active_btn_toogle{
+
+.active_btn_toogle_categories,.active_btn_toogle_top_categories,.active_btn_toogle_blog{
     background: #2b28f1;
     position: relative;
     /* z-index: 2; */
 }
-.active_btn_toogle::after {
+ 
+.active_btn_toogle_categories::after ,.active_btn_toogle_top_categories::after ,.active_btn_toogle_blog::after{
     content: "";
     background: rgb(43, 40, 241);
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     position: absolute;
     bottom: 0px;
     /* z-index: -1; */
     transform: translateX(-50%);
-    left: 50%;
+    left: 49%;
     /* right: 50%; */
     rotate: -45deg;
 }
