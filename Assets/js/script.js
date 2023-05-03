@@ -209,12 +209,13 @@ $("#mostviewd").owlCarousel({
   },
 });
 
-function Electronic_beuty_fashion() {
-  alert("Hello! I am an alert box!");
-  var result=document.getElementsByClassName("btn-group").value;
+function Electronic_beuty_fashion(elem) {
+  // elem.style.background = "blue"; 
+  
+  // var result=document.getElementsByClassName("btn-group").value;
   // console.log(result); 
 
-  document.querySelector(result).className="topcategories";
+  // document.querySelector(result).className="topcategories";
 
 }
 

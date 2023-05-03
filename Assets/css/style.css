@@ -1275,7 +1275,7 @@ select{
     height: 427px;
     border: 1px solid #998f8f;
     border-radius: 4px;
-    background: #ebe4e4;
+    background: #ebebeb;
 }
 .image{
         height: 240px;
@@ -2110,6 +2110,9 @@ input[type=number]::-webkit-outer-spin-button {
     height: 100%;
     
 }
+.blog_img_1 :hover{
+    background-color: #c0bdbd;
+}
 .jornalblog_img{
     height: 250px;
     border-radius: 8px;
@@ -2430,9 +2433,10 @@ footer{
 {
     height: 30px;
     width: 97%;
-    border: 3px solid #e5e1e1;
+    border: 2px solid #e5e1e1;
     border-radius: 5px;
     padding-left: 3px;
+    outline: none;
 }
 .input-footer-email{
     padding-left: 8px;
