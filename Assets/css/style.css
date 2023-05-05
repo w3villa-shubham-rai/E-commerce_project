@@ -68,6 +68,7 @@
 select{
     outline: none;
     border: none;
+    font-size: 12px;
     color: #686666;
     background: #fff;
 }
@@ -90,8 +91,8 @@ select{
   height: 30px;
   color: var(--white);
   background: var(--blue);
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   width: 50px;
 }
 .search_bar input
@@ -112,8 +113,8 @@ select{
 .search_glass
 {
     height: 30px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
     width: 28px;
     background: var(--blue);
     text-align: center;
@@ -123,6 +124,9 @@ select{
 {
     display: flex;
     column-gap: 10px;
+}
+.logo-regisrter-heart-icon{
+    text-align: center;
 }
 .logo p
 {
@@ -140,7 +144,7 @@ select{
     text-align: center;
 }
 .add_to_cart i{
-    border-radius: 10%;
+    border-radius: 4px;
     padding: 7px;
     background: rgb(5, 5, 197);
     color: white;
@@ -188,14 +192,13 @@ select{
     left: 185px;
     background-color: red;
     font-size: 10px;
-    border-radius: 2px;
     width: 31px;
     color: var(--white);
     text-align: center;
 }
 .multilevel{
     display: flex;
-    column-gap: 30px;
+    column-gap: 35px;
     padding-left: 30px;
     position: relative;
     color: #e2e7e7;
@@ -203,13 +206,12 @@ select{
 #new
 {
     position: absolute;
-    top: -16px;
-    left: 198px;
+    top: -17px;
+    left: 202px;
     background: hsl(60, 100%, 50%);
     font-size: 10px;
     color: black;
-    border-radius: 2px;
-    width: 38px;
+    width: 35px;
     height: 16px;
     text-align: center;
 
@@ -509,18 +511,23 @@ select{
 .learn_more{
     padding-top: 4px;
 }
+.learn_more button i{
+    padding-left: 2px;
+}
+
 .mobile_learn_more button{
-    width: 114px;
-    border: 1px solid #5f5e5e;;
+    width: 119px;
+    border: 2px solid #8d8888;
     border-radius: 4px;
-    color: #281c1c;
-    height: 30px;
+    color: #363535;
+    height: 37px;
 
 }
 .mobile{
     background: var(--blue);
-    width: 71px;
-    padding: 4px;
+    width: 70px;
+    padding: 2px;
+    font-size: 15px;
     border-radius: 4px;
     text-align: center;
     color: white;
@@ -560,8 +567,10 @@ select{
     padding-left: 30px;
 }
 .p1{
-    color: #2b28f1;
-    margin-left: 13px;
+    color: rgb(43, 40, 241);
+}
+.log_description .p2-freedelivery{
+    font-size: 13px;
 }
 
 .tv
@@ -580,17 +589,14 @@ select{
 }
 .tv .p1{
     color: #2b28f1;
-    margin-left: 13px;
+    margin-left: 7px;
 }
 .tv .p2{
-    font-weight: bold;
-    margin-left: 13px;
+    margin-left: 7px;
 }
-.rightwatch_tv .p2{
-    font-weight: bold;
-    margin-left: 13px;
-    padding: 3px;
-}
+/* .rightwatch_tv .p2{
+    margin-left: 8px;
+} */
 
 
 /* owl crowesel css */
@@ -655,7 +661,6 @@ select{
     .mobile {
         background: var(--blue);
         width: 60px;
-        padding: 2px;
         border-radius: 4px;
         font-size: small;
         text-align: center;
@@ -663,10 +668,11 @@ select{
     }
     
     .mobile_learn_more button {
-        width: 87px;
+       width: 80px;
        border: 1px solid #281c1c;
        border-radius: 3px;
        color: #281c1c;
+       font-size: 10px;
        height: 24px;
     }
 }
@@ -717,7 +723,7 @@ select{
     }
     .rightwatch_tv .p2 {
         font-weight: bold;
-        font-size: 28px;
+        font-size: 20px;
         margin-left: -3px;
      }
     .p1 {
@@ -889,9 +895,9 @@ select{
 .service_all_logo
 {
     display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
     align-items: center;
 }
 .freeshipng{
@@ -901,7 +907,7 @@ select{
 }
 .shiping_logo{
     border-radius: 51%;
-    padding: 20px 23px;
+    padding: 14px 14px;
     border: 2px solid rgb(16, 16, 190);
 }
 .free_return
@@ -913,7 +919,7 @@ select{
 .free-return_logo
 {
     border-radius: 51%;
-    padding: 18px 23px;
+    padding: 14px 16px;
     border: 2px solid rgb(16, 16, 190);
 }
 
@@ -927,7 +933,7 @@ select{
 .secureshoping_logo
 {
     border-radius: 51%;
-    padding: 18px 23px;
+    padding: 14px 16px;
     border: 2px solid rgb(16, 16, 190);
 }
 .unlimeted_block
@@ -939,11 +945,12 @@ select{
 
 .unlimitedblock_logo{
     border-radius: 51%;
-    padding: 18px 23px;
+    padding: 14px 16px;
     border: 2px solid rgb(16, 16, 190);
 }
 .service_all_logo i{ 
     color: orangered;
+    font-size: 25px;
 }
 .log_description .p1
 {
@@ -957,22 +964,24 @@ select{
 /* media query of serve part */
 @media  screen and (max-width: 1014px)
 {
-   
+    .service_all_logo i{
+        font-size: 15px;
+    }
     .log_description p {
         font-size: 14px;
     }
     .shiping_logo{
-        padding: 12px 14px;
+        padding: 10px 14px;
     }
     .free-return_logo
     {
-        padding: 12px 16px;
+        padding: 10px 15px;
     }
     .secureshoping_logo{
-        padding: 12px 16px;
+        padding: 10px 15px;
     }
     .unlimitedblock_logo{
-        padding: 12px 16px;
+        padding: 10px 15px;
     }
 }
 @media  screen and (max-width: 890px)
@@ -1099,6 +1108,13 @@ select{
     border: none;
     border-right: 1px solid #bdbdb7;
 }
+.btn-group-right-radius
+{
+    border-radius: 0px 4px 4px 0px;
+}
+.btn-left-radius{
+    border-radius: 4px 0px 0px 4px;
+}
 .btn-group p{
     z-index: 2;
     position: relative;
@@ -1124,20 +1140,6 @@ select{
     /* right: 50%; */
     rotate: -45deg;
 }
-
-/* .topcategories::after{
-    content: rectangle;
-}
-.topcategories{
-    background: #2b28f1;
-    padding: 8px 10px;
-    font-size: small;
-    z-index: 2;
-    border: none;
-    outline: none;
-    position: relative;
-    color: #ebf3f3;
-} */
 
 
 /* owl crosel why us part */
@@ -1171,25 +1173,8 @@ select{
 
 }
 
-.whyus-heading{
- }
 
 
-/* ***************************************************************************** */
-/************************** Why us part media Query*********************************** */
-/* @media  screen and (max-width: 1124px)
-{
-    .whyus_crowsel p {
-        margin-left: 38px;
-    }
-    
-}
-@media  screen and (max-width: 1124px)
-{
-    .whyus_crowsel p {
-        margin-left: 62px;
-    }
-} */
 @media  screen and (max-width: 741px)
 {
     .whyus-heading
@@ -1199,37 +1184,7 @@ select{
     }
 }
 
-/* @media screen and (max-width: 688px)
-{
-   .whyus_crowsel p {
-    margin-left: 90px;
-  }
-}
-@media screen and (max-width: 575px)
-{
-    .whyus_crowsel p {
-        margin-left: 58px;
-    }
-    
-}
-@media screen and (max-width: 488px)
-{
-    .whyus_crowsel p {
-        margin-left: 43px;
-    }
-}
-@media screen and (max-width: 424px)
-{
-    .whyus_crowsel p {
-        margin-left: 105px;
-    }
-}
-@media screen and (max-width: 314px)
-{
-    .whyus_crowsel p {
-        margin-left: 85px;
-    }
-} */
+
 
 @media screen and (max-width: 494px)
 {
@@ -1357,14 +1312,14 @@ select{
 }
 #input-number-favcart input
 {
-    width: 43px;
-    height: 25px;
-    border: 2px solid #cfcbcb;
+    width: 35px;
+    height: 6px;
+    border: 2px solid rgb(207, 203, 203);
     outline: none;
     margin-left: 5px;
+    padding: 10px 0 10px 10px;
     font-size: 15px;
     border-radius: 4px;
-
 }
 
 .whislist{
@@ -1407,21 +1362,19 @@ select{
 }
 .byu-now-doller i {
     font-size: 6px;
-    width: 5px;
     padding: 34px;
     border: 1px solid green;
-    padding: 3px;
+    padding: 3px 4px;
     color: green;
     border-radius: 50%;
 }
 .question i{
     font-size: 6px;
-    width: 5px;
     padding: 34px;
-    border: 1px solid hsl(0, 93%, 37%);
-    padding: 3px;
-    color: hsl(0, 93%, 37%);
+    padding: 3px 4px;
     border-radius: 50%;
+    border: 1px solid hsl(0, 93%, 37%);
+    color: hsl(0, 93%, 37%);
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
@@ -1439,6 +1392,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 156px;
     overflow: hidden;
     left: -28px;
+    color: var(--white);
     background: #0032ff;
     border-radius: 4px;
 }
@@ -1526,9 +1480,10 @@ input[type=number]::-webkit-outer-spin-button {
     padding-top: 35px;
 }
 .imgfashion {
-    width: 90%;
-    height: 192px;
-    padding: 12px;
+    width: 96%;
+    height: 183px;
+    padding: 4px;
+    border-radius: 4px;
 }
 .fashiondesk{
     width: 75px;
@@ -1542,6 +1497,7 @@ input[type=number]::-webkit-outer-spin-button {
 .imgfashion img{
     width: 100%;
     height: 100%;
+    border-radius: 4px;
     object-fit: cover;
 }
 .fashion   
@@ -1615,7 +1571,6 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
-    /* border: 2px solid red; */
 }
 .fashion1{
     background: #e8dddd;
@@ -1690,47 +1645,7 @@ input[type=number]::-webkit-outer-spin-button {
     
 }
 
-@media screen and (max-width: 1250px)
-{
-    /* .favcart button
-    {
-        width: 70px;
-        font-size: 8px;
-    } */
-    /* #input-number-favcart input 
-    {
-        width: 35px;
-    } */
 
-}
-@media screen and (max-width: 1130px)
-{
-    /* .favcart button
-    {
-        width: 70px;
-        margin-right: 68px;
-       font-size: 8px;
-    } */
-    /* #input-number-favcart input 
-    {
-        width: 38px;
-    } */
-
-}
-
-/* @media screen and (max-width: 1206px)
-{
-    .favcart button
-    {
-        width: 74px;
-        font-size: 8px;
-    }
-    #input-number-favcart input 
-    {
-        width: 33px;
-    }
-
-} */
 
  @media screen and (max-width: 740px)
 {
@@ -1773,15 +1688,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-/* @media screen and (max-width: 1148px)
-{
-    .imgfashion
-    {
-        width: 180px;
-        height: 170px;
-        padding: 4px;
-    }
-} */
 @media screen and (max-width: 1105px)
 {
     
@@ -1796,30 +1702,7 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100%;
     }
 }
-/* @media screen and (max-width: 756px)
-{
-    .imgfashion
-    {
-        width: 145px;
-        height: 125px;
-        padding: 12px; 
-    }
-    .fashion1 {
-        width: 40%;
-    }
-} */
-/* @media screen and (max-width: 408px)
-{
-    .imgfashion
-    {
-        width: 140px;
-        height: 120px;
-        
-    }
-    .fashion1 {
-        width: 40%;
-    }
-} */
+
 @media screen and (max-width: 514px)
 {
    .newfashion{
@@ -1828,60 +1711,7 @@ input[type=number]::-webkit-outer-spin-button {
    
 
 }
-/* @media screen and (max-width: 504px)
-{
-    .fashion1
-   {
-    width: 80%;
 
-   }
-    .imgfashion {
-        width: 295px;
-        height: 189px;
-        
-       }
-} */
-
-/* @media screen and (max-width: 474px)
-{
-    .fashion1
-   {
-    width: 85%;
-
-   }
-    .imgfashion {
-    width: 303px;
-    height: 260px;
-   
-       }
-} */
-/* @media screen and (max-width: 434px)
-{
-    .fashion1
-    {
-     width: 85%;
- 
-    }
-     .imgfashion {
-     width: 250px;
-     height: 260px;
-     padding: 15px;
-        }
-} */
-
-/* @media screen and (max-width: 358px)
-{
-    .fashion1
-    {
-     width: 85%;
- 
-    }
-     .imgfashion {
-     width: 210px;
-     height: 260px;
-     padding: 15px;
-        }
-} */
 @media screen and (max-width: 740px)
 {
     .featured-para{
@@ -1977,13 +1807,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 #img-gallery-sizing{
     width: 110px;
-    height: 125px;
+    height: 110px;
     border-radius: 8px;
-    border: 2px solid rgb(160, 156, 156);
 }
 #img-gallery-sizing img{
     width: 100%;
     height: 100%;
+    border-radius: 8px;
     object-fit: cover;
 }
 
@@ -1994,8 +1824,6 @@ input[type=number]::-webkit-outer-spin-button {
     #img-gallery-sizing {
         width: 138px;
         height: 127px;
-        border-radius: 8px;
-        border: 2px solid rgb(160, 156, 156);
     }
     
 }
@@ -2141,26 +1969,31 @@ input[type=number]::-webkit-outer-spin-button {
 .jornalblog_img img{
     height: 100%;
     width: 100%;
+    border-radius: 5px 5px 0 0;
     object-fit: cover;
 }
 .aug{
 
-    width: 70px;
+    width: 60px;
     background-color: blue;
-    height: 50px;
+    height: 40px;
     position: absolute;
     top: 10px;
     left: 10px;
     color: var(--white);
     border-radius: 5px;
 }
+.aug .month
+{
+    font-size: 13px;
+}
 .number-two{
-    font-size: 26px;
+    font-size: 24px;
     padding-bottom: -8px;
     padding-top: -10px;
     margin-bottom: -16px;
     font-weight: bold;
-    margin-top: -3px;
+    margin-top: -6px;
 }
 .adminmessage{
     background: #e9e7e7;
@@ -2180,11 +2013,11 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 7px;
 }
 .junrnal-blog-longpara{
-   color:  #767171;
+   color:  rgb(68 65 65);
 }
 .jurnal-p-long-para{
     background: #fff;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
 }
 .blog-anchar{
 padding: 3px;
@@ -2307,6 +2140,7 @@ color:  #767171;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 3px 0px 0px 3px;
     /* border-radius: 5px; */
 }
 .most-viewed{
@@ -2412,14 +2246,15 @@ color:  #767171;
 }
 
 .mostviewed-desk-footer p{
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 20px;
     padding: 8px;
 }
 
 .footer_about_us
 {
     width: 25%;
-    border-right: 2px solid #dcd7d7;
+    border-right: 1px solid #dcd7d7;
 
 
 }
@@ -2647,22 +2482,21 @@ footer{
    
      
 }
-/* display: flex;
-    justify-content: space-between;
-    text-align: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap; */
-/* arrow symbol */
+
 
 .fixed-arrow {
     width: 33px;
-    height: 33px;
+    height: 36px;
     background-color: #0032ff;
     position: fixed;
     bottom: 18px;
     font-size: 21px;
     color: var(--white);
-    right: 1px;
+    right: 50px;
+    color: white;
     text-align: center;
     z-index: 3;
+}
+.fixed-arrow i{
+    color: white;
 }

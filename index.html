@@ -83,16 +83,18 @@
 
           <div class="delivery_moremenu">
             <div>
-              <i class="fa-solid fa-user"></i>
-              <i class="fa-solid fa-bars"></i>
+              <span>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-bars"></i>
+              </span>
+             
+              <select id="menu">
+                <option value="menu1">More menu</option>
+                <option value="menu2">menu1</option>
+                <option value="menu3">menu2</option>
+                <option value="menu4">menu3</option>
+              </select>
             </div>
-           
-            <select id="menu">
-              <option value="menu1">More menu</option>
-              <option value="menu2">menu1</option>
-              <option value="menu3">menu2</option>
-              <option value="menu4">menu3</option>
-            </select>
 
             <div class="delivery">
               <i class="fa-solid fa-truck"></i>
@@ -131,19 +133,19 @@
             </div>
 
             <div class="logo">
-              <div class="login ">
+              <div class="login logo-regisrter-heart-icon">
                 <i class="fa-regular fa-user"></i>
                 <p>login</p>
               </div>
-              <div class="Register">
+              <div class="Register logo-regisrter-heart-icon">
                 <i class="fa-solid fa-pencil"></i>
                 <p>Register</p>
               </div>
-              <div class="whishlist">
+              <div class="whishlist logo-regisrter-heart-icon">
                 <i class="fa-regular fa-heart"></i>
                 <p>whishlist</p>
               </div>
-              <div class="compare">
+              <div class="compare logo-regisrter-heart-icon">
                 <div class="compare_circle">
                   <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 </div>
@@ -265,7 +267,7 @@
               </h1>
               <div class="learn_more">
                 <button>
-                  learnmore <i class="fa-solid fa-arrow-right"></i>
+                  LEARN MORE<i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
             </div>
@@ -336,7 +338,7 @@
               </div>
               <div class="log_description">
                 <p class="p1">Free shiping</p>
-                <p>Free delivery over $100</p>
+                <p class="p2-freedelivery">Free delivery over $100</p>
               </div>
             </div>
 
@@ -346,7 +348,7 @@
               </div>
               <div class="log_description">
                 <p class="p1">Free shiping</p>
-                <p>Free delivery over $100</p>
+                <p class="p2-freedelivery">Free delivery over $100</p>
               </div>
 
               <!-- </div> -->
@@ -359,7 +361,7 @@
               </div>
               <div class="log_description">
                 <p class="p1">Free shiping</p>
-                <p>Free delivery over $100</p>
+                <p class="p2-freedelivery">Free delivery over $100</p>
               </div>
             </div>
 
@@ -369,7 +371,7 @@
               </div>
               <div class="log_description">
                 <p class="p1">Free shiping</p>
-                <p>Free delivery over $100</p>
+                <p class="p2-freedelivery">Free delivery over $100</p>
               </div>
             </div>
             <!-- </div> -->
@@ -394,7 +396,7 @@
               modi ab!<a href="">learn more</a>
             </p>
             <div class="topcategoreis_fashion" id="myDIV">
-              <button class="btn-group active_btn_toogle_categories" onclick="toggleTopCategories(this)">
+              <button class="btn-group btn-left-radius active_btn_toogle_categories" onclick="toggleTopCategories(this)">
                 <p>TOP CATEGORIES</p>
                </button>
 
@@ -404,7 +406,7 @@
               <button class="btn-group" onclick="toggleTopCategories(this)">
                 <p>BEAUTY</p>
               </button>
-              <button class="btn-group" onclick="toggleTopCategories(this)">
+              <button class="btn-group btn-group-right-radius" onclick="toggleTopCategories(this)">
                 <p>FASHION</p>
               </button>
             </div>
@@ -456,7 +458,7 @@
               modi ab!<a href="">learn more</a>
             </p>
             <div class="topcategoreis_fashion" id="myDIV_feature_product">
-              <button class="btn-group active_btn_toogle_top_categories " onclick="toogle_featureproduct(this)">
+              <button class="btn-group  btn-left-radius active_btn_toogle_top_categories " onclick="toogle_featureproduct(this)">
                 <p>TOP CATEGORIES</p>
               </button>
 
@@ -466,7 +468,7 @@
               <button class="btn-group" onclick="toogle_featureproduct(this)">
                 <p>BEAUTY</p>
               </button>
-              <button class="btn-group" onclick="toogle_featureproduct(this)">
+              <button class="btn-group btn-group-right-radius" onclick="toogle_featureproduct(this)">
                 <p>FASHION</p>
               </button>
             </div>
@@ -478,7 +480,7 @@
                     <div class="customlabels">CUSTOM LABELS</div>
                     <div class="hot_per">
                       <div class="prcent">-70%</div>
-                      <div class="hot">hot</div>
+                      <div class="hot">HOT</div>
                     </div>
                   </div>
                   <div class="erykson">
@@ -524,7 +526,7 @@
                     <div class="customlabels">CUSTOM LABELS</div>
                     <div class="hot_per">
                       <div class="prcent">-70%</div>
-                      <div class="hot">hot</div>
+                      <div class="hot">HOT</div>
                     </div>
                   </div>
                   <div class="erykson">
@@ -621,7 +623,7 @@
                       <!-- <div class="prcent">
                                         -70%
                                     </div> -->
-                      <div class="hot">hot</div>
+                      <div class="hot">HOT</div>
                     </div>
                   </div>
                   <div class="erykson">
@@ -666,7 +668,7 @@
                     <div class="customlabels">CUSTOM LABELS</div>
                     <div class="hot_per">
                       <div class="prcent">-70%</div>
-                      <div class="hot">hot</div>
+                      <div class="hot">HOT</div>
                     </div>
                   </div>
                   <div class="erykson">
@@ -711,7 +713,7 @@
                     <div class="customlabels">CUSTOM LABELS</div>
                     <div class="hot_per">
                       <div class="prcent">-70%</div>
-                      <div class="hot">hot</div>
+                      <div class="hot">HOT</div>
                     </div>
                   </div>
                   <div class="erykson">
@@ -1066,11 +1068,11 @@
                 dolorum earum impedit autem ipsam animi quam, accusamus modi ab
               </p>
               <div class="topcategoreis_fashion" id="myDIV_blog">
-                <button class="btn-group active_btn_toogle_blog" onclick="toogle_ourblog(this)">
+                <button class="btn-group btn-left-radius active_btn_toogle_blog" onclick="toogle_ourblog(this)">
                   <p>TOP CATEGORIES</p>
                 </button>
   
-                <button  class="btn-group" onclick="toogle_ourblog(this)">
+                <button  class="btn-group btn-group-right-radius"  onclick="toogle_ourblog(this)">
                   <p>ELECTRONICS</p>
                 </button>
               </div>
@@ -1082,7 +1084,7 @@
                         <img src="./Assets/images/book.avif" alt="" />
                         <div class="aug">
                           <p class="number-two">02</p>
-                          <p>Aug</p>
+                          <p class="month">Aug</p>
                         </div>
                       </div>
                       <div class="adminmessage">
@@ -1115,7 +1117,7 @@
                         <img src="./Assets/images/lather.avif" alt="" />
                         <div class="aug">
                           <p class="number-two">02</p>
-                          <p>Aug</p>
+                          <p class="month">Aug</p>
                         </div>
                       </div>
                       <div class="adminmessage">
@@ -1148,7 +1150,7 @@
                         <img src="./Assets/images/bloggirl.avif" alt="" />
                         <div class="aug">
                           <p class="number-two">02</p>
-                          <p>Aug</p>
+                          <p class="month">Aug</p>
                         </div>
                       </div>
                       <div class="adminmessage">
