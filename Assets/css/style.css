@@ -906,8 +906,12 @@ select{
     gap: 10px;
 }
 .shiping_logo{
-    border-radius: 51%;
-    padding: 14px 14px;
+    border-radius: 50%;
+    width: 65px;
+    display: flex;
+    height: 65px;
+    justify-content: space-around;
+    align-items: center;
     border: 2px solid rgb(16, 16, 190);
 }
 .free_return
@@ -918,8 +922,12 @@ select{
 }
 .free-return_logo
 {
-    border-radius: 51%;
-    padding: 14px 16px;
+    border-radius: 50%;
+    width: 65px;
+    display: flex;
+    height: 65px;
+    justify-content: space-around;
+    align-items: center;
     border: 2px solid rgb(16, 16, 190);
 }
 
@@ -932,8 +940,12 @@ select{
 
 .secureshoping_logo
 {
-    border-radius: 51%;
-    padding: 14px 16px;
+    border-radius: 50%;
+    width: 65px;
+    display: flex;
+    height: 65px;
+    justify-content: space-around;
+    align-items: center;
     border: 2px solid rgb(16, 16, 190);
 }
 .unlimeted_block
@@ -944,8 +956,12 @@ select{
 }
 
 .unlimitedblock_logo{
-    border-radius: 51%;
-    padding: 14px 16px;
+    border-radius: 50%;
+    width: 65px;
+    display: flex;
+    height: 65px;
+    justify-content: space-around;
+    align-items: center;
     border: 2px solid rgb(16, 16, 190);
 }
 .service_all_logo i{ 
@@ -971,17 +987,21 @@ select{
         font-size: 14px;
     }
     .shiping_logo{
-        padding: 10px 14px;
+        width: 55px;
+        height: 55px;
     }
     .free-return_logo
     {
-        padding: 10px 15px;
+        width: 55px;
+        height: 55px;
     }
     .secureshoping_logo{
-        padding: 10px 15px;
+        width: 55px;
+        height: 55px;
     }
     .unlimitedblock_logo{
-        padding: 10px 15px;
+        width: 55px;
+        height: 55px;
     }
 }
 @media  screen and (max-width: 890px)
@@ -1009,21 +1029,30 @@ select{
 
 @media  screen and (max-width: 500px)
 {
+    .log_description .p2-freedelivery 
+    {
+        font-size: 10px;
+    }
+
     .log_description p {
         font-size: 11px;
     } 
     .shiping_logo{
-        padding: 7px 11px;
+       width: 40px;
+       height: 40px;
     }
     .free-return_logo
     {
-        padding: 6px 11px;
+      width: 40px;
+      height: 40px;
     }
     .secureshoping_logo{
-        padding: 6px 11px;
+        width: 40px;
+        height: 40px;
     }
     .unlimitedblock_logo{
-        padding: 6px 11px;
+        width: 40px;
+        height: 40px;
     }  
 }
 
@@ -1031,21 +1060,11 @@ select{
 @media  screen and (max-width: 336px)
 {
     .log_description p {
-        font-size: 7px;
+        font-size: 8px;
     } 
-    /* .shiping_logo{
-        padding: 4px;
+    .log_description .p2-freedelivery {
+        font-size: 8px;
     }
-    .free-return_logo
-    {
-        padding: 4px;
-    }
-    .secureshoping_logo{
-        padding: 4px;
-    }
-    .unlimitedblock_logo{
-        padding: 4px;
-    }   */
 }
 
 
