@@ -19,11 +19,14 @@
 /* top categories java script */
 .container
 {  
-   padding-left: 50px;
-   padding-right: 50px;
-   max-width: 1900px;
+   padding-left: 80px;
+   padding-right: 80px;
+   max-width: 1440px;
    margin: auto;
 }
+ 
+
+
 /* ******************************Header part css************************************** */
 .usertoolbarcolor
 {
@@ -94,6 +97,7 @@ select{
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   width: 50px;
+  padding: 4px;
 }
 .search_bar input
 {
@@ -260,10 +264,13 @@ select{
 
 }
 
-@media screen and (max-width:1150px)
+@media screen and (max-width:1230px)
 {
+    .logo{
+        column-gap: 3px;
+    }
     .search_bar input{
-        width: 300px;
+        width: 280px;
     }
     .search{
         padding-left: 15px;
@@ -557,9 +564,10 @@ select{
     height: 242px;
     border-radius: 15px;
     display: flex;
+    padding-left: 15px;
     background-color: #e2e7e7;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around ;
 }
 .watch img{
     width: 160px;
@@ -581,7 +589,8 @@ select{
     background-color: #e2e7e7;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 15px;
+    justify-content: space-around;
 }
 .tv img{
     width: 160px;
@@ -1271,6 +1280,7 @@ select{
 .image img{
     height: 240px;
     border-radius: 4px;
+    object-fit: cover;
 }
 .erykson{
     display: flex;
@@ -1495,7 +1505,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .imgfashion {
     width: 96%;
-    height: 183px;
+    height: 240px;
     padding: 4px;
     border-radius: 4px;
 }
