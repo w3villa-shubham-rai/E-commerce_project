@@ -150,7 +150,7 @@ $(".blogcr_cr").owlCarousel({
     0: {
       items: 1,
     },
-    700:{
+    800:{
         items: 2,
     },
     950:{
@@ -176,10 +176,10 @@ $(".saying_about-us").owlCarousel({
       items:1,
     },
 
-    600:{
+    700:{
       items:2,
     },
-    700:{
+    800:{
       items:3,
     }
   },

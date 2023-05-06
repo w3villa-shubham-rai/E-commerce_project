@@ -19,8 +19,8 @@
 /* top categories java script */
 .container
 {  
-   padding-left: 80px;
-   padding-right: 80px;
+   padding-left: 50px;
+   padding-right: 50px;
    max-width: 1440px;
    margin: auto;
 }
@@ -403,7 +403,7 @@ select{
 }
 .jurnal_m 
 {
-    font-size: 32px;
+    font-size: 22px;
 }
 .cart_search{
     font-size: 35px;
@@ -543,7 +543,7 @@ select{
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 
 }
 .rightpart_herosection{
@@ -562,7 +562,7 @@ select{
 .watch
 {
     height: 242px;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     padding-left: 15px;
     background-color: #e2e7e7;
@@ -585,7 +585,7 @@ select{
 {
 
     height: 242px;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #e2e7e7;
     display: flex;
     align-items: center;
@@ -620,7 +620,6 @@ select{
     display: block;
     transition: opacity .2s ease;
     border-radius: 30px;
-    background-color: orangered;
 }
 
 /************************************media query of hero-section************************* */
@@ -710,17 +709,18 @@ select{
         justify-content: space-between;
         border-radius: 8px;
         margin-top: 20px;
+        gap: 10px;
     }
     .rightpart_herosection {
         width: 100%;
     }
     .watch
     {
-        width: 50%;
+        width: 423px;
     }
     .tv
     {
-        width: 48%;
+        width: 423px;
     }
     .watch img {
         width: 201px;
@@ -776,7 +776,7 @@ select{
         margin-left: -2px;
     }
     .rightwatch_tv{
-        gap: 39px;
+        gap: 10px;
     }
 }
 @media screen and (max-width:826px)
@@ -876,8 +876,8 @@ select{
         width: 65px;
     }
      .rightwatch_tv .p2 {
-        font-size: 11px;
-        margin-right: -7px;
+        font-size: 10px;
+        
     }
     .p1{
         font-size: 7px;
@@ -1083,17 +1083,7 @@ select{
 {
     margin-top: 45px;
 }
-#whyus.owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    display: block;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    background-color: orangered;
 
-}
 
 .text_desk{
     width: 75px;
@@ -1252,7 +1242,7 @@ select{
 }
 
 .product-us-headphone-camera {
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 87px;
    
 }
@@ -1467,7 +1457,11 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 5px;
     background: var(--blue);
 }
-#feature-product.owl-theme .owl-dots .owl-dot span {
+.owl-dot.active span{
+    background-color : orangered !important;
+    }
+
+/* #feature-product.owl-theme .owl-dots .owl-dot span {
     width: 6px;
     height: 6px;
     margin: 1px 7px;
@@ -1475,8 +1469,9 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     transition: opacity .2s ease;
     border-radius: 30px;
+    color: orangered;
     background-color: orangered;
-}
+} */
 @media screen and (max-width: 740px)
 {
     .product-us-headphone-camera h1
@@ -1505,7 +1500,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .imgfashion {
     width: 96%;
-    height: 240px;
+    height: 182px;
     padding: 4px;
     border-radius: 4px;
 }
@@ -1641,17 +1636,6 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: cover;
 }
 
-#feature-categories.owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    display: block;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    background-color: orangered;
-
-}
 
 
 
@@ -1771,17 +1755,6 @@ input[type=number]::-webkit-outer-spin-button {
     object-fit: cover;
    
 }
-#shop_brand.owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    display: block;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    background-color: orangered;
-
-}
 
 
 .shop_by_brand_crowser{
@@ -1802,7 +1775,7 @@ input[type=number]::-webkit-outer-spin-button {
 .improved-gallery{
     background-color: rgb(51, 50, 50);
     margin-top: 30px;
-    padding-bottom: 37px;
+    padding-bottom: 45px;
 }
 
 #ig{
@@ -1952,7 +1925,9 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     color: #ebf3f3;
 }
-
+.blog-crowsel{
+padding-top: 30px;
+}
 
 .rectangle-blog{
     background: #2b28f1;
@@ -2047,17 +2022,7 @@ color:  #767171;
 .blog-anchar i{
     color:  #767171;
 }
-.blogcr_cr.owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    display: block;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    background-color: orangered;
 
-}
 
 /********************** Blog section media Query *********************************/
 /* ************************************************************************************* * */
@@ -2099,17 +2064,7 @@ color:  #767171;
     padding-top: 30px;
     padding-bottom: 10px;
 }
-.saying_about-us.owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    display: block;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    background-color: orangered;
 
-}
 
 
 /*****************media query about us section start ****************/
@@ -2201,17 +2156,7 @@ color:  #767171;
     margin-bottom: 10px;
     border-radius: 5px;
 }
-#mostviewd.owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    display: block;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    background-color: orangered;
 
-}
 
 
 /****************************** Social media logo section css Designing start ************/
