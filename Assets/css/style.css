@@ -606,7 +606,11 @@ select{
     width: 101px;
     line-height: 28px;
 }
-
+.watch .p2{
+    font-size: 20px;git 
+    width: 100px;
+    line-height: 28px;
+}
 
 
 /* owl crowesel css */
@@ -800,11 +804,7 @@ select{
     .tv img{
         width: 124px ;
     }
-    .watch .p2{
-        font-size: 20px;
-        width: 100px;
-        line-height: 28px;
-    }
+   
   
     .rightwatch_tv .p2 {
         font-weight: bold;
