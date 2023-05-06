@@ -82,10 +82,10 @@ $("#feature-categories").owlCarousel({
     400:{
       items:1,
     },
-    600:{
+    700:{
       items:2,
     },
-    800:{
+    890:{
       items:3
     },
     1100:{

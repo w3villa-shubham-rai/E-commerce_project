@@ -404,6 +404,7 @@ select{
 .jurnal_m 
 {
     font-size: 22px;
+    font-family: 'Akshar';
 }
 .cart_search{
     font-size: 35px;
@@ -417,7 +418,8 @@ select{
     
     .jurnal_m
     {
-        font-size: 25px;
+        font-size: 25px;        
+        font-family: 'Akshar';
     }
 }
 @media screen and (max-width:575px)
@@ -564,10 +566,10 @@ select{
     height: 242px;
     border-radius: 10px;
     display: flex;
-    padding-left: 15px;
+    padding: 0 25px;
     background-color: #e2e7e7;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-between;
 }
 .watch img{
     width: 160px;
@@ -586,11 +588,11 @@ select{
 
     height: 242px;
     border-radius: 10px;
-    background-color: #e2e7e7;
     display: flex;
+    padding: 0 25px;
+    background-color: #e2e7e7;
     align-items: center;
-    padding-left: 15px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .tv img{
     width: 160px;
@@ -598,10 +600,11 @@ select{
 }
 .tv .p1{
     color: #2b28f1;
-    margin-left: 7px;
 }
 .tv .p2{
-    margin-left: 7px;
+    font-size: 20px;
+    width: 101px;
+    line-height: 28px;
 }
 
 
@@ -797,6 +800,12 @@ select{
     .tv img{
         width: 124px ;
     }
+    .watch .p2{
+        font-size: 20px;
+        width: 100px;
+        line-height: 28px;
+    }
+  
     .rightwatch_tv .p2 {
         font-weight: bold;
         font-size: 16px;
@@ -808,7 +817,6 @@ select{
     }
     .tv .p1 {
         color: #2b28f1;
-        margin-left: -2px;
     }
     .rightwatch_tv{
         gap: 10px;
@@ -1500,7 +1508,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .imgfashion {
     width: 96%;
-    height: 182px;
+    height: 221px;
     padding: 4px;
     border-radius: 4px;
 }
@@ -1581,9 +1589,10 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 4px;
 }
 .item_fashin_crowesl {
-    height: 300px;
+    height: 360px;
     border: 1px  solid #c0bbbb;
     margin: auto;
+    padding: 5px;
     position: relative;
     overflow: hidden;
     border-radius: 4px;
@@ -1613,15 +1622,15 @@ input[type=number]::-webkit-outer-spin-button {
 .btn_addcart_fashion button{
     background-color: var(--blue);
     color: var(--white);
-    height: 23px;
-    width: 77px;
+    height: 35px;
+    width: 80px;
     margin-right: 17px;
     border: none;
     border-radius: 4px;
 }
 .btn_addcart_fashion 
 {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 .fashion_addcart_whislist{
     display: flex;
@@ -1670,6 +1679,22 @@ input[type=number]::-webkit-outer-spin-button {
         width: 75%;
     }
 }
+
+@media screen and (max-width: 858px)
+{
+    .btn_addcart_fashion button {
+
+        height: 35px;
+        width: 90px;
+        font-size: 12px;
+    }
+    .fashion_addcart_whislist {
+        display: flex;
+        column-gap: 8px;
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 844px)
 {
     .newfashion
@@ -1996,6 +2021,7 @@ padding-top: 30px;
     color: #565858;
     padding: 7px;
     display: flex;
+    font-size: 15px;
     justify-content: center;
     text-align: center;
     gap: 8px;
