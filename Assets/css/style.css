@@ -12,6 +12,8 @@
 :root{
     --blue:blue;
     --white:white;
+    --yello: rgb(235, 213, 20);
+    --red:red;
 }
 /* top categories java script */
  
@@ -183,7 +185,7 @@ select{
 }
 .dpt
 {
-    background-color: rgb(235, 213, 20);
+    background-color:var(--yello);
     width: 221px;
     height: 44px;
     display: flex;
@@ -196,7 +198,7 @@ select{
     position: absolute;
     top: -8px;
     left: 185px;
-    background-color: red;
+    background-color:var(--red);
     font-size: 10px;
     width: 31px;
     color: var(--white);
@@ -485,10 +487,7 @@ select{
         column-gap: 5px;
     }
 }
-@media screen and (max-width:581px)
-{
-    
-}
+
 
 
 /************************************** Hero section start********************************** */
@@ -634,19 +633,11 @@ select{
 /************************************media query of hero-section************************* */
 /* *************************************************************************************** */
 @media screen and (max-width:1280px){
-    /* .watch .p2 {
-        font-size: 18px;
-        width: 77px;
-        line-height: 24px;
-    } */
+    
     .watch img {
         width: 130px;
     }
-    /* .tv .p2 {
-        font-size: 17px;
-        width: 77px;
-        line-height: 24px;
-    } */
+    
     .tv img {
         width: 135px;
     }
@@ -1607,17 +1598,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color : orangered !important;
     }
 
-/* #feature-product.owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    margin: 1px 7px;
-    background: #D6D6D6;
-    display: block;
-    transition: opacity .2s ease;
-    border-radius: 30px;
-    color: orangered;
-    background-color: orangered;
-} */
+
 @media screen and (max-width: 740px)
 {
     .product-us-headphone-camera h1
@@ -2283,7 +2264,6 @@ color:  #767171;
     height: 100%;
     object-fit: cover;
     border-radius: 3px 0px 0px 3px;
-    /* border-radius: 5px; */
 }
 .most-viewed{
     background-color: #605d5d;
@@ -2342,7 +2322,6 @@ color:  #767171;
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
-    /* border: 2px solid red; */
     border-radius: 50%;
     background-color: var(--blue);
     color: var(--white);
@@ -2618,7 +2597,7 @@ footer{
     bottom: 18px;
     font-size: 21px;
     color: var(--white);
-    right: 50px;
+    right: 10px;
     color: white;
     text-align: center;
     z-index: 3;

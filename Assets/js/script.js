@@ -2,7 +2,7 @@ $("#cr").owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  autoplay: false ,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,
@@ -41,7 +41,7 @@ $("#feature-product").owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  // autoplay:true,
+  autoplay:true,
   responsive: {
     0: {
       items: 1,
@@ -63,7 +63,7 @@ $("#feature-product").owlCarousel({
   },
 });
 
-1094
+
 
 
 // ******************************************feature Product *******************
@@ -73,7 +73,7 @@ $("#feature-categories").owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  // autoplay: true,
+  autoplay: true,
   responsive: {
     0: {
       items: 0,
@@ -103,7 +103,7 @@ $("#shop_brand").owlCarousel({
   loop: true,
   margin: 5,
   nav: false,
-  // autoplay:true,
+  autoplay:true,
   responsive: {
     0: {
       items: 1,
@@ -145,7 +145,7 @@ $(".blogcr_cr").owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-//   autoplay: true,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,
@@ -168,6 +168,7 @@ $(".saying_about-us").owlCarousel({
   loop: true,
   margin: 10,
   // nav:true,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,
@@ -192,7 +193,7 @@ $("#mostviewd").owlCarousel({
   loop: true,
   margin: 20,
   nav: false,
-  // autoplay: true,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,
@@ -209,7 +210,12 @@ $("#mostviewd").owlCarousel({
   },
 });
 
-function Electronic_beuty_fashion(elem) {
+
+
+// this code for learning purpose
+
+
+// function Electronic_beuty_fashion(elem) {
   // elem.style.background = "blue"; 
   
   // var result=document.getElementsByClassName("btn-group").value;
@@ -217,7 +223,7 @@ function Electronic_beuty_fashion(elem) {
 
   // document.querySelector(result).className="topcategories";
 
-}
+// }
 
 
 // var header = document.getElementById("myDIV");
