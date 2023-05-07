@@ -52,6 +52,7 @@
     column-gap: 10px;
     text-align: center;
     justify-content: center;
+    cursor: pointer;
 
 }
 
@@ -146,6 +147,7 @@ select{
     border-radius: 50%;
     border: 2px solid rgb(175, 164, 164);
     text-align: center;
+    cursor: pointer;
 }
 .add_to_cart i{
     border-radius: 4px;
@@ -870,18 +872,18 @@ select{
 @media screen and (max-width:580px)
 {
     .watch {
-        width: 40%;
+        width: 38%;
         height: 182px;
     }
     .tv {
-        width: 37%;
+        width: 36%;
         height: 182px;
     }
     .watch img {
         width: 90px;
     }
     .tv img {
-        width: 90px;
+        width: 100px;
     }
     .watch .p2{
         width: 44px;
@@ -893,11 +895,11 @@ select{
        line-height: 18px;
     }
     .watch img {
-        width: 82px;
+        width: 100px;
     
     }
     .tv img{
-        width: 84px;
+        width: 100px;
        
     }
    
@@ -906,50 +908,50 @@ select{
 @media screen and (max-width:524px)
 {
     .watch {
-        width: 40%;
+        width: 36%;
         height: 147px;
     }
     .tv {
-        width: 37%;
+        width: 36%;
         height: 145px;
     }
     
     .watch img {
-        width: 74px;
+        width: 70px;
     }
     .tv img {
-        width: 74px;
+        width: 70px;
     }
     .watch .p2{
         width: 35px;
         font-size: 8px;
         width: 40px;
-       line-height: 18px;
+       line-height: 10px;
     }
     .tv .p2{
         width: 35px;
         font-size: 8px;
         width: 40px;
-       line-height: 18px;
+       line-height: 10px;
     }
    
 }
 @media screen and (max-width:504px)
 {
     .watch {
-        width: 35%;
+        width: 36%;
         height: 110px;
     }
     .tv {
-        width: 35%;
+        width: 36%;
         height: 110px;
     }
     
     .watch img {
-        width: 40px;
+        width: 60px;
     }
     .tv img {
-        width: 40px;
+        width: 70px;
     }
     .p1 {
         font-size: 8px;
@@ -961,30 +963,27 @@ select{
        line-height: 12px;
     }
     .tv .p2{
-        width: 35px;
         font-size: 8px;
-        width: 40px;
-       line-height: 12px;
+        width: 36px;
+        line-height: 10px;
     }
    
 }
-/* /lmgvjhkmk */
-@media screen and (max-width:360px)
-{
+@media screen and (max-width:454px){
     .watch {
-        width: 32%;
+        width: 33%;
         height: 100px;
     }
     .tv {
-        width: 32%;
+        width: 34%;
         height: 100px;
     }
     
     .watch img {
-        width: 30px;
+        width: 50px;
     }
     .tv img {
-        width: 30px;
+        width: 50px;
     }
     .p1 {
         font-size: 6px;
@@ -1001,6 +1000,40 @@ select{
         width: 36px;
        line-height: 12px;
     }
+}
+/* /lmgvjhkmk */
+@media screen and (max-width:334px)
+{
+    .watch {
+        width: 30%;
+        height: 100px;
+    }
+    .tv {
+        width: 30%;
+        height: 100px;
+    }
+    
+     .watch img {
+        width: 50px;
+    }
+    .tv img {
+        width: 50px;
+    } 
+    .p1 {
+        font-size: 6px;
+    }
+    .watch .p2{
+        width: 30px;
+        font-size: 4px;
+        width: 36px;
+       line-height: 12px;
+    }
+    .tv .p2{
+        width: 30px;
+        font-size: 4px;
+        width: 36px;
+       line-height: 12px;
+    } 
     
 }
 
@@ -2306,6 +2339,7 @@ color:  #767171;
     padding-bottom: 15px;
 }
 .socialmedia-logo i{
+    cursor: pointer;
     padding: 10px;
     font-size: 20px;
     /* border: 2px solid red; */
