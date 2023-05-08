@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search page</title>
+    <link rel="stylesheet" href="./Assets/css/searchpage.css">
+
+    <!-- font family -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril Fatface"
+      rel="stylesheet"
+    />
+    <!-- fontawesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+     <!-- ows crowsel -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+    />
+
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+    />
+    <!-- owl crosel end -->
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container" id="arrow-connect">
+        <div class="about_navbar">
+          <div class="contact">
+            <div class="home">
+              <i class="fa-solid fa-house"></i>
+              <span>Home</span>
+            </div>
+            <div class="about_us">
+              <i class="fa-regular fa-user"></i>
+              <span>About us</span>
+            </div>
+            <div class="contact_part">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </div>
+
+            <div class="faq">
+              <i class="fa-regular fa-circle-question"></i>
+              <select id="faq">
+                <option value="FAQ">FAQ</option>
+                <option value="FAQ1">FAQ1</option>
+                <option value="FAQ2">FAQ2</option>
+                <option value="FAQ3">FAQ3</option>
+              </select>
+            </div>
+          </div>
+          <div class="language_dollar">
+            <div class="language">
+              <i class="fa-solid fa-flag-usa"></i>
+              <select id="lanuage">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Bhojpuri">Bhojpuri</option>
+                <option value="French">French</option>
+              </select>
+            </div>
+            <div class="dollar">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <select id="dollar">
+                <option value="dollar1">US Dollar</option>
+                <option value="dollar2">Rupiya</option>
+                <option value="dollar3">currency</option>
+                <option value="dollar4">bit quin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="delivery_moremenu">
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <select id="menu">
+              <option value="menu1">More menu</option>
+              <option value="menu2">menu1</option>
+              <option value="menu3">menu2</option>
+              <option value="menu4">menu3</option>
+            </select>
+
+            <div class="delivery">
+              <i class="fa-solid fa-truck"></i>
+              <span>Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- secand header part Start  journal part-->
+      <!--************ user toolbar *****************************-->
+      <div class="usertoolbarcolor">
+        <div class="container">
+          <div class="usertoolbar">
+            <div class="websitename">
+              <h1>JOURNAL</h1>
+            </div>
+            <div class="search">
+              <select id="item">
+                <option value="ALL">ALL</option>
+                <option value="item1">item1</option>
+                <option value="item2">item2</option>
+                <option value="item3">item3</option>
+              </select>
+              <div class="search_bar">
+                <input
+                  type="search"
+                  name="search"
+                  id="serch_item"
+                  placeholder="Search Here..."
+                />
+              </div>
+              <div class="search_glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <div class="logo">
+              <div class="login">
+                <i class="fa-regular fa-user"></i>
+                <p>login</p>
+              </div>
+              <div class="Register">
+                <i class="fa-solid fa-pencil"></i>
+                <p>Register</p>
+              </div>
+              <div class="whishlist">
+                <i class="fa-regular fa-heart"></i>
+                <p>whishlist</p>
+              </div>
+              <div class="compare">
+                <div class="compare_circle">
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <p>compare</p>
+              </div>
+            </div>
+
+            <div class="add_to_cart">
+              <span class="item-cart-s"> 0 item(s)-$0.00 </span>
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Department last part Header -->
+
+      <div class="alldepartment_menu">
+        <div class="container">
+          <div class="alldepartment_Blog">
+            <div class="alldepartment">
+              <div class="dpt">
+                <i class="fa-solid fa-bars"></i>
+                <span>ALL DEPARTMENTS</span>
+                <span id="sale_lgo">Sale</span>
+              </div>
+
+              <div class="multilevel">
+                <p>MULTILEVEL</p>
+                <div>
+                  <p>MEGAMENU</p>
+                  <span id="new"> New</span>
+                </div>
+                <p>FULLWIDTH</p>
+              </div>
+            </div>
+            <div class="blog_phone">
+              <div class="call">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>1.2445.557678.78</span>
+              </div>
+              <div class="blog">
+                <i class="fa-regular fa-message"></i>
+                <span>BLOG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile Screen Navigation -->
+      <div class="mobilenavigation_color">
+        <div class="container">
+          <div class="mobilenavigation">
+            <div class="mobile_login_register">
+              <div class="navlogin_register">
+                <div class="login_mobile">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="txt">Login</span>
+                </div>
+
+                <div class="register_mobile">
+                  <i class="fa-solid fa-pencil"></i>
+                  <span class="txt">Register</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav_doller_language">
+              <div class="mobile_doller">
+                <span>$</span>
+                <select id="m-dollar">
+                  <option value="m-dollar1">US Dollar</option>
+                  <option value="m-dollar2">Rupiya</option>
+                  <option value="m-dollar3">currency</option>
+                  <option value="m-dollar4">bit quin</option>
+                </select>
+              </div>
+              <div class="mobile_language">
+                <img src="./Assets/images/flag.png" alt="" />
+                <select id="m-lanuage">
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Bhojpuri">Bhojpuri</option>
+                  <option value="French">French</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile_jurnal">
+        <div class="container">
+          <div class="mobile_jurnal_cart">
+            <div class="jurnal_m">
+              <h1>JOURNAL</h1>
+            </div>
+            <div class="cart_search">
+              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- /******************Search page HTML start***************************************/
+ /************************************************************************************** */ -->
+
+    <section>
+      <div class="home-serach-header">
+        <div class="container">
+          <div class="searchhome-logo">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>Search</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="search-camera">
+        <div class="container">
+          <div class="search-camera-item">
+            <h2>Search-camera</h2>
+          </div>
+          <hr id="search-camera-desk">
+          <hr>
+          <div class="search-product-right-left">
+            <div class="search-left_part">
+              <div class="filter-clear-search">
+                <div class="filter-clear">
+                  <p>Filter</p>
+                  <button class="clear-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                    Clear
+                  </button>
+                </div>
+                <hr id="producdsearch_deskbar" />                
+              </div>
+              <div class="search-price-range" style="padding-bottom: 55px;">
+                <div class="priceranfe avilable-minus">
+                  <p>Price</p>
+                  <i class="fa-solid fa-minus"></i>                 
+                </div>
+                <div class="slidecontainer">
+                  <div class="flex relative justify-center items-center h-20 w-full mx-auto rounded">
+                    <div class="range-slider">
+                      <!-- <div class="progress"></div> -->
+                      <span class="range-min-wrapper">
+                        <input class="range-min" type="range" min="0" max="100" value="25">
+                        <!-- <span class="range-min-value">0</span> -->
+                      </span>
+                      <span class="range-max-wrapper">
+                        <input class="range-max" type="range" min="0" max="100" value="100">
+                        <!-- <span class="range-max-value">100</span> -->
+                      </span>
+                      <div class="input_of_range">
+                        <div class="range-left-doller">
+                          <input type="number" value="1">
+                          <i class="fa-solid fa-euro-sign"></i>
+                        </div>
+                        <div class="range-right-doller">
+                          <input type="number" value="1">
+                          <i class="fa-solid fa-euro-sign"></i>
+                        </div>                      
+                      </div>                      
+                    </div>
+                  </div>                 
+                </div>
+              </div>
+              <hr class="search-section-underline">
+              <div class="avilabilty">
+                <div class="avilable-minus">
+                  <p>AVAILABILITY</p>
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="search-checkbox-stack">
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> In Stock</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> Out of Stack</label><br>
+                </div>               
+              </div>
+              <hr class="search-section-underline">
+
+              <!-- Subcategories part -->
+              <div class=" Subcategories avilabilty">
+                <div class="avilable-minus">
+                  <p>SUBCATEGORIES</p>
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="item-electronic-search">
+                 <div class="img-electronic">
+                  <img src="./Assets/images/pluck.avif" alt="">
+                 </div>
+                 <span>electronic</span>
+                </div>               
+              </div>
+              <hr class="search-section-underline">
+
+              <!-- Brand Section Html -->
+              <div class="brand avilabilty">
+                <div class="avilable-minus">
+                  <p>Brands</p>
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="item-electronic-search">
+                 <div class="img-electronic brands">
+                  <img src="./Assets/images/applelogo.webp" alt="">
+                 </div>
+                 <div class="img-electronic brands">
+                  <img src="./Assets/images/Canon-logo.jpg" alt="">
+                 </div>
+                 <div class="img-electronic brands">
+                  <img src="./Assets/images/signaturelogo.avif" alt="">
+                 </div>                 
+                </div>               
+              </div>
+              <hr class="search-section-underline">
+
+              <!-- Select option section start -->
+              <div class="Select avilabilty">
+                <div class="avilable-minus">
+                  <p>Select</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>          
+              </div>
+              <hr class="search-section-underline">
+
+              <!-- Radio section -->
+              <div class="radio avilabilty">
+                <div class="avilable-minus">
+                  <p>RADIO</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>          
+              </div>
+              <hr class="search-section-underline">
+
+              <!-- color section -->
+
+              <div class="brand avilabilty">
+                <div class="avilable-minus">
+                  <p>Color</p>
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="item-electronic-search">
+                 <div class="img-electronic select-color_one">
+                  
+                 </div>
+                 <div class="img-electronic select-color_two">
+                  
+                 </div>
+                 <div class="img-electronic select-color_three">
+                 
+                 </div>   
+                 <div class="img-electronic select-color_four">
+                 
+                 </div>                 
+                </div>               
+              </div>
+              <hr class="search-section-underline">
+
+              <!-- clockspeeed section start -->
+              <div class="colockspeed avilabilty">
+                <div class="avilable-minus">
+                  <p>Colockspeed</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>          
+              </div>
+              <hr class="search-section-underline">
+              <!-- Test1 section -->
+              <div class="test avilabilty">
+                <div class="avilable-minus">
+                  <p>TEST1</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>          
+              </div>
+              <hr class="search-section-underline">
+              <!-- number of core -->
+              <div class="numberofcore avilabilty">
+                <div class="avilable-minus">
+                  <p>No. of Cores</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>          
+              </div>
+              <hr class="search-section-underline">
+
+              <!-- Style section-->
+              <div class="style-section-last avilabilty">
+                <div class="avilable-minus">
+                  <p>Style</p>
+                  <i class="fa-solid fa-plus"></i>
+                </div>          
+              </div>
+              <hr class="search-section-underline">
+
+
+            </div>
+
+            <div class="search-right_part">
+              <div class="search-categories-input">
+                <div class="search-item-input">
+                  <input type="search" name="" id="" placeholder="camera" />
+                </div>
+                <div class="search-select-categories">
+                  <select name="Phone" id="Phone">
+                    <option value="Realme">Realme</option>
+                    <option value="Redmi">Redmi</option>
+                    <option value="Iphone">Iphone</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search-checkbok">
+                <input
+                  type="checkbox"
+                  id="vehicle1"
+                  name="vehicle1"
+                  value="Bike"
+                />
+                <label for="vehicle1">Search in subcategories</label><br />
+                <input
+                  type="checkbox"
+                  id="vehicle2"
+                  name="vehicle2"
+                  value="Car"
+                />
+                <label for="vehicle2"> Search in product description</label>
+              </div>
+              <button id="Search-button">SEARCH</button>
+
+              <!-- product meeting the searcg cateria -->
+              <div class="product-meeting-cateria">
+                <p>Product meeting the search criteria</p>
+                <hr id="producdsearch_deskbar" />
+              </div>
+
+              <!-- products comapare, sort by and show item count-->
+              <hr>
+              <div class="comapreproduct-default-show">
+                <div class="search-compare-cheatsheet-compact">
+                  <div class="searchnavemenu">
+                    <i  class="fa-solid fa-table-cells"></i>
+                    <i class="fa-solid fa-bars"></i>
+                  </div>                
+                  <div class="search-comapare-all-logo">
+                    <i id="search-compare" class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <p>Product Compare</p>
+                  </div>                 
+                </div>
+                <div class="search-sortby-show">
+                  <div class="sort-show sort-show-label ">
+                    <label id="sort_id" for="item">Sort By:</label>
+                    <select name="items" id="items">
+                      <option value="volvo">Default</option>
+                      <option value="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                  <div class="search-show sort-show-label">                   
+                      <label for="show-item">Sort By:</label>
+                      <select name="show-item" id="show-item">
+                        <option value="volvo">12</option>
+                        <option value="saab">11</option>
+                        <option value="opel">10</option>
+                        <option value="audi">9</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+              <hr>
+
+              <!-- Add item and show  all item section start -->
+              <div class="allitem_TV_cmera_canon">
+                <div class="search-televesion">
+                   <div class="search-tv-apple">
+                    <img src="./Assets/images/applecinema30.jpg" alt="">
+                    <div class="search-hot ">
+                      HOT
+                    </div>
+                    <div class="search-percent ">
+                      -10%
+                    </div>
+                   </div>
+                   <div class="producd-name_model">
+                    <p> <u>Apple</u></p>
+                    <p>Product 15</p>
+                   </div>
+                   <div class="productname-price">
+                    <p>Apple Cinema 30"</p>
+                    <span id="Search-price">70.61$ </span> 
+                    <span id="strike-price"><strike>78.46$</strike></span>
+                   </div>
+                   <div class="searchadd_to_cart">
+                      <div class="favcart">
+                          <div class="input-addtocart">
+                            <div class="section" id="input-number-favcart">
+                              <input type="number" max="10" min="1" value="1" />
+                            </div>
+                            <button>ADD TO CART</button>
+                          </div>
+                        
+                          <div class="whislist">
+                            <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                            <i
+                              id="compare-product"
+                              class="fa-solid fa-arrow-right-arrow-left"
+                            ></i>
+                          </div>
+                      </div>
+                    <!--favcart-end  -->
+
+                    </div>
+                    <!-- searchadd_to_cart end -->
+
+                   <div class="search-buynow-question">
+                    <div class="search_Buy_Now">
+                      <i class="fa-regular fa-dollar-sign"></i>
+                      <span id="buy-now">Buy Now</span>
+                    </div>
+                    <div class="search_Question">
+                      <i class="fa-solid fa-question"></i>
+                      <span id="question-txt">Question</span>
+                    </div>
+                   </div>
+
+                </div>
+                <!-- search-televesion end -->
+                <div class="Leica-digital-camera">
+                  <div class="search-tv-apple">
+                    <img src="./Assets/images/camera_search.avif" alt="">
+                    <div class="camera-preorder">
+                      HOT
+                    </div>
+                    <div class="preorder-ribon">
+                      PRE-ORDER
+                    </div>
+                   </div>
+                   <div class="producd-name_model">
+                    <p> <u>Apple</u></p>
+                    <p>Product 15</p>
+                   </div>
+                   <div class="productname-price">
+                    <p>Apple Cinema 30"</p>
+                    <span id="Search-price">70.61$ </span> 
+                    <span id="strike-price"><strike>78.46$</strike></span>
+                   </div>
+                   <div class="searchadd_to_cart">
+                      <div class="favcart">
+                          <div class="input-addtocart">
+                            <div class="section" id="input-number-favcart">
+                              <input type="number" max="10" min="1" value="1" />
+                            </div>
+                            <button>ADD TO CART</button>
+                          </div>
+                        
+                          <div class="whislist">
+                            <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                            <i
+                              id="compare-product"
+                              class="fa-solid fa-arrow-right-arrow-left"
+                            ></i>
+                          </div>
+                      </div>
+                    <!--favcart-end  -->
+
+                    </div>
+                    <!-- searchadd_to_cart end -->
+
+                   <div class="search-buynow-question">
+                    <div class="search_Buy_Now">
+                      <i class="fa-regular fa-dollar-sign"></i>
+                      <span id="buy-now">Buy Now</span>
+                    </div>
+                    <div class="search_Question">
+                      <i class="fa-solid fa-question"></i>
+                      <span id="question-txt">Question</span>
+                    </div>
+                   </div>
+                </div>
+                <div class="search-canon-camera">
+                  <div class="search-tv-apple">
+                    <img src="./Assets/images/camera.avif" alt="">
+                    <div class="search-percent ">
+                      -10%
+                    </div>
+                   </div>
+                   <div class="producd-name_model">
+                    <p> <u>Apple</u></p>
+                    <p>Product 15</p>
+                   </div>
+                   <div class="productname-price">
+                    <p>Apple Cinema 30"</p>
+                    <span id="Search-price">70.61$ </span> 
+                    <span id="strike-price"><strike>78.46$</strike></span>
+                   </div>
+                   <div class="searchadd_to_cart">
+                      <div class="favcart">
+                          <div class="input-addtocart">
+                            <div class="section" id="input-number-favcart">
+                              <input type="number" max="10" min="1" value="1" />
+                            </div>
+                            <button>ADD TO CART</button>
+                          </div>
+                        
+                          <div class="whislist">
+                            <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                            <i
+                              id="compare-product"
+                              class="fa-solid fa-arrow-right-arrow-left"
+                            ></i>
+                          </div>
+                      </div>
+                    <!--favcart-end  -->
+
+                    </div>
+                    <!-- searchadd_to_cart end -->
+
+                   <div class="search-buynow-question">
+                    <div class="search_Buy_Now">
+                      <i class="fa-regular fa-dollar-sign"></i>
+                      <span id="buy-now">Buy Now</span>
+                    </div>
+                    <div class="search_Question">
+                      <i class="fa-solid fa-question"></i>
+                      <span id="question-txt">Question</span>
+                    </div>
+                   </div>
+                </div>
+              </div>
+              <!-- all itemtv camera end -->
+              <hr class="last-search-line">
+
+              <p class="user-notify" >You have reached the end of the list</p>
+            </div>
+            <!-- right part end -->
+            
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <!--********************************footer part********************************-->
+    <!-- ****************************************************************************** -->
+
+
+
+    <section>
+      <div class="most-viewed">
+        <div class="container">
+          <div class="mostviewed-desk-section">
+            <h1>MOST VIWED</h1>
+            <hr class="text_desk_most_view" />
+
+            <div>
+              <div class="mostvied-main-section">
+                <div class="owl-carousel owl-theme" id="mostviewd">
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">
+                        Oversized Sunglas for Lon...
+                      </p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img
+                        src="./Assets/images/mostviewheadphone.avif"
+                        alt=""
+                      />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Headphone</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewwatch.avif" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Womens maria</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Sport Watch</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Sport Watch</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************************Social media logo start Html desiging******************** -->
+    <!-- *********************************************************************************** -->
+
+    <section>
+      <div class="socialmediallog-footer">
+        <div class="container">
+          <div class="socialmedia-logo">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-skype"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer part HTML  -->
+    <footer>
+      <div class="container">
+        <div class="footer-main-part">
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>News leter</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <div class="newsletter">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                quam deleniti error iure dignissimos.
+              </p>
+            </div>
+            <div class="input-footer-email">
+              <input type="email" name="" id="" placeholder="Your email" />
+              <button>
+                <i class="fa-regular fa-envelope"></i>
+                <span id="sentbtn">send</span>
+              </button>
+            </div>
+            <div class="checkbox-newsleter">
+              <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike"
+              />
+              <label for="vehicle1">
+                I have read and agree to the
+                <a href="">privacy policy</a></label
+              ><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section>
+      <div class="copywright">
+        <div class="container">
+          <div class="copyright-andlogo">
+            <div>
+              <p>copy @ 2023,Your Store,Created by w3villa-shubham_rai</p>
+            </div>
+            <div class="payment_logo">
+              <div class="visa">
+                <img src="./Assets/images/visacard.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/Mastercard_logo.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/paypal.webp" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/strip1.png" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/Mastercard_logo.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/strip1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="toparrow-fixed">
+            <div class="fixed-arrow">
+              <a href="#arrow-connect">
+                <i class="fa-solid fa-arrow-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./Assets/js/script.js"></script>
+  </body>
+</html>
