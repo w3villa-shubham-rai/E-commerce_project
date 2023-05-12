@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search page</title>
-    <link rel="stylesheet" href="./Assets/css/searchpage.css">
 
     <!-- font family -->
     <link
@@ -36,6 +35,7 @@
     />
     <!-- owl crosel end -->
     <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/css/searchpage.css">
   </head>
   <body>
     <header>
@@ -492,8 +492,8 @@
               <div class="comapreproduct-default-show">
                 <div class="search-compare-cheatsheet-compact">
                   <div class="searchnavemenu">
-                    <i  class="fa-solid fa-table-cells"></i>
-                    <i class="fa-solid fa-bars"></i>
+                    <i id="gridview" class="fa-solid fa-table-cells"></i>
+                    <i id="listview" class="fa-solid fa-bars"></i>
                   </div>                
                   <div class="search-comapare-all-logo">
                     <i id="search-compare" class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -524,10 +524,10 @@
               <hr>
 
               <!-- Add item and show  all item section start -->
-              <div class="allitem_TV_cmera_canon">
+              <div id="se-te" class="allitem_TV_cmera_canon-grid">
                 <div class="search-televesion">
                    <div class="search-tv-apple">
-                    <img src="./Assets/images/applecinema30.jpg" alt="">
+                    <img src="./Assets/images/searchimg1.avif" alt="">
                     <div class="search-hot ">
                       HOT
                     </div>
@@ -535,53 +535,103 @@
                       -10%
                     </div>
                    </div>
-                   <div class="producd-name_model">
-                    <p> <u>Apple</u></p>
-                    <p>Product 15</p>
-                   </div>
-                   <div class="productname-price">
-                    <p>Apple Cinema 30"</p>
-                    <span id="Search-price">70.61$ </span> 
-                    <span id="strike-price"><strike>78.46$</strike></span>
-                   </div>
-                   <div class="searchadd_to_cart">
-                      <div class="favcart">
-                          <div class="input-addtocart">
-                            <div class="section" id="input-number-favcart">
-                              <input type="number" max="10" min="1" value="1" />
-                            </div>
-                            <button>ADD TO CART</button>
-                          </div>
-                        
-                          <div class="whislist">
-                            <i id="fav-whislist" class="fa-regular fa-heart"></i>
-                            <i
-                              id="compare-product"
-                              class="fa-solid fa-arrow-right-arrow-left"
-                            ></i>
-                          </div>
+                   <div class="search-grid-buttom">
+                      <div class="producd-name_model">
+                        <p> <u>Apple</u></p>
+                        <p>Product 15</p>
                       </div>
-                    <!--favcart-end  -->
-
+                      <div class="productname-price">
+                       <p>Apple Cinema 30"</p>
+                       <span id="Search-price">70.61$ </span> 
+                       <span id="strike-price"><strike>78.46$</strike></span>
+                      </div>
+                     <div class="searchadd_to_cart">
+                        <div class="favcart">
+                            <div class="input-addtocart">
+                              <div class="section" id="input-number-favcart">
+                                <input type="number" max="10" min="1" value="1" />
+                              </div>
+                              <button>ADD TO CART</button>
+                            </div>
+                          
+                            <div class="whislist">
+                              <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                              <i
+                                id="compare-product"
+                                class="fa-solid fa-arrow-right-arrow-left"
+                              ></i>
+                            </div>
+                        </div>
+                      <!--favcart-end  -->  
+                      </div>
+                      <!-- searchadd_to_cart end -->
+  
+                     <div class="search-buynow-question">
+                        <div class="search_Buy_Now">
+                          <i class="fa-regular fa-dollar-sign"></i>
+                          <span id="buy-now">Buy Now</span>
+                        </div>
+                        <div class="search_Question">
+                          <i class="fa-solid fa-question"></i>
+                          <span id="question-txt">Question</span>
+                        </div>
+                     </div>
+                   </div>  
+                   
+                   <div class="search-listview">
+                    <div class="listview-brand_model">
+                       <div class="ls-brand">
+                         <span>Brand: <u id="ls-bd">Apple</u></span>
+                       </div>
+                       <div class="ls-product">
+                         <span>Model:Product 15</span>
+                       </div>
                     </div>
-                    <!-- searchadd_to_cart end -->
-
-                   <div class="search-buynow-question">
-                    <div class="search_Buy_Now">
-                      <i class="fa-regular fa-dollar-sign"></i>
-                      <span id="buy-now">Buy Now</span>
+                    <div class="ls-cinemapara">
+                     <h1>Apple Cinema 30"</h1>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam, eius, voluptate tempore recusandae alias exercitationem repellat porro suscipit magnam enim, assumenda nihil ratione repudiandae quia ullam impedit debitis. Reprehenderit voluptas pariatur ipsa voluptate officiis aliquid saepe fugiat sapiente hic!</p>
                     </div>
-                    <div class="search_Question">
-                      <i class="fa-solid fa-question"></i>
-                      <span id="question-txt">Question</span>
+                    <div class="ls-doller-price-euro">
+                     <span id="euro-first">2345.60<i class="fa-solid fa-euro-sign"></i></span>
+                     <span id="euro-second"><strike>2345.60<i class="fa-solid fa-euro-sign"></i></strike></span>
                     </div>
-                   </div>
+                    <div class="extra-tax">
+                     <p>Ex Tax:234:50<i class="fa-solid fa-euro-sign"></i></p>
+                    </div>
+                    <div class="ls-btn-part">
+                       <div class="ls-section" id="ls-section-input">
+                         <input type="number" max="10" min="1" value="1" />
+                       </div>
+                       <div class="ls-addcart">
+                         <button class="ls-addtocart-btn">
+                           <i class="fa-solid fa-cart-shopping"></i>
+                           ADD TO CART
+                         </button>
+                       </div>
+                       <div class="ls-whishlist">
+                         <i class="fa-regular fa-heart"></i>
+                       </div>
+                       <div class="ls-compare">
+                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                       </div>
+                    </div>
+                    <div class="search-buynow-question">
+                       <div class="search_Buy_Now">
+                         <i class="fa-regular fa-dollar-sign"></i>
+                         <span id="buy-now">Buy Now</span>
+                       </div>
+                       <div class="search_Question">
+                         <i class="fa-solid fa-question"></i>
+                         <span id="question-txt">Question</span>
+                       </div>
+                    </div>
+                  </div>
 
                 </div>
-                <!-- search-televesion end -->
-                <div class="Leica-digital-camera">
-                  <div class="search-tv-apple">
-                    <img src="./Assets/images/camera_search.avif" alt="">
+                <!-- search-televesion-li end -->
+              <div class="search-televesion">
+                   <div class="search-tv-apple">
+                    <img src="./Assets/images/searchimg4.avif" alt="">
                     <div class="camera-preorder">
                       HOT
                     </div>
@@ -589,102 +639,204 @@
                       PRE-ORDER
                     </div>
                    </div>
-                   <div class="producd-name_model">
-                    <p> <u>Apple</u></p>
-                    <p>Product 15</p>
-                   </div>
-                   <div class="productname-price">
-                    <p>Apple Cinema 30"</p>
-                    <span id="Search-price">70.61$ </span> 
-                    <span id="strike-price"><strike>78.46$</strike></span>
-                   </div>
-                   <div class="searchadd_to_cart">
-                      <div class="favcart">
-                          <div class="input-addtocart">
-                            <div class="section" id="input-number-favcart">
-                              <input type="number" max="10" min="1" value="1" />
-                            </div>
-                            <button>ADD TO CART</button>
-                          </div>
-                        
-                          <div class="whislist">
-                            <i id="fav-whislist" class="fa-regular fa-heart"></i>
-                            <i
-                              id="compare-product"
-                              class="fa-solid fa-arrow-right-arrow-left"
-                            ></i>
-                          </div>
+                   <div class="search-grid-buttom">
+                      <div class="producd-name_model">
+                        <p> <u>Apple</u></p>
+                        <p>Product 15</p>
                       </div>
-                    <!--favcart-end  -->
+                      <div class="productname-price">
+                       <p>Apple Cinema 30"</p>
+                       <span id="Search-price">70.61$ </span> 
+                       <span id="strike-price"><strike>78.46$</strike></span>
+                      </div>
+                     <div class="searchadd_to_cart">
+                        <div class="favcart">
+                            <div class="input-addtocart">
+                              <div class="section" id="input-number-favcart">
+                                <input type="number" max="10" min="1" value="1" />
+                              </div>
+                              <button>ADD TO CART</button>
+                            </div>
+                          
+                            <div class="whislist">
+                              <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                              <i
+                                id="compare-product"
+                                class="fa-solid fa-arrow-right-arrow-left"
+                              ></i>
+                            </div>
+                        </div>
+                      <!--favcart-end  -->  
+                      </div>
+                      <!-- searchadd_to_cart end -->
+  
+                     <div class="search-buynow-question">
+                        <div class="search_Buy_Now">
+                          <i class="fa-regular fa-dollar-sign"></i>
+                          <span id="buy-now">Buy Now</span>
+                        </div>
+                        <div class="search_Question">
+                          <i class="fa-solid fa-question"></i>
+                          <span id="question-txt">Question</span>
+                        </div>
+                     </div>
+                   </div>  
+                   
+                   <div class="search-listview">
+                    <div class="listview-brand_model">
+                       <div class="ls-brand">
+                         <span>Brand: <u id="ls-bd">Apple</u></span>
+                       </div>
+                       <div class="ls-product">
+                         <span>Model:Product 15</span>
+                       </div>
+                    </div>
+                    <div class="ls-cinemapara">
+                     <h1>Apple Cinema 30"</h1>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam, eius, voluptate tempore recusandae alias exercitationem repellat porro suscipit magnam enim, assumenda nihil ratione repudiandae quia ullam impedit debitis. Reprehenderit voluptas pariatur ipsa voluptate officiis aliquid saepe fugiat sapiente hic!</p>
+                    </div>
+                    <div class="ls-doller-price-euro">
+                     <span id="euro-first">2345.60<i class="fa-solid fa-euro-sign"></i></span>
+                     <span id="euro-second"><strike>2345.60<i class="fa-solid fa-euro-sign"></i></strike></span>
+                    </div>
+                    <div class="extra-tax">
+                     <p>Ex Tax:234:50<i class="fa-solid fa-euro-sign"></i></p>
+                    </div>
+                    <div class="ls-btn-part">
+                       <div class="ls-section" id="ls-section-input">
+                         <input type="number" max="10" min="1" value="1" />
+                       </div>
+                       <div class="ls-addcart">
+                         <button class="ls-addtocart-btn">
+                           <i class="fa-solid fa-cart-shopping"></i>
+                           ADD TO CART
+                         </button>
+                       </div>
+                       <div class="ls-whishlist">
+                         <i class="fa-regular fa-heart"></i>
+                       </div>
+                       <div class="ls-compare">
+                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                       </div>
+                    </div>
+                    <div class="search-buynow-question">
+                       <div class="search_Buy_Now">
+                         <i class="fa-regular fa-dollar-sign"></i>
+                         <span id="buy-now">Buy Now</span>
+                       </div>
+                       <div class="search_Question">
+                         <i class="fa-solid fa-question"></i>
+                         <span id="question-txt">Question</span>
+                       </div>
+                    </div>
+                  </div>
 
-                    </div>
-                    <!-- searchadd_to_cart end -->
-
-                   <div class="search-buynow-question">
-                    <div class="search_Buy_Now">
-                      <i class="fa-regular fa-dollar-sign"></i>
-                      <span id="buy-now">Buy Now</span>
-                    </div>
-                    <div class="search_Question">
-                      <i class="fa-solid fa-question"></i>
-                      <span id="question-txt">Question</span>
-                    </div>
-                   </div>
                 </div>
-                <div class="search-canon-camera">
+
+                <div class="search-televesion">
                   <div class="search-tv-apple">
-                    <img src="./Assets/images/camera.avif" alt="">
+                    <img src="./Assets/images/searchimg3.avif" alt="">
                     <div class="search-percent ">
                       -10%
                     </div>
-                   </div>
-                   <div class="producd-name_model">
-                    <p> <u>Apple</u></p>
-                    <p>Product 15</p>
-                   </div>
-                   <div class="productname-price">
-                    <p>Apple Cinema 30"</p>
-                    <span id="Search-price">70.61$ </span> 
-                    <span id="strike-price"><strike>78.46$</strike></span>
-                   </div>
-                   <div class="searchadd_to_cart">
-                      <div class="favcart">
-                          <div class="input-addtocart">
-                            <div class="section" id="input-number-favcart">
-                              <input type="number" max="10" min="1" value="1" />
-                            </div>
-                            <button>ADD TO CART</button>
-                          </div>
-                        
-                          <div class="whislist">
-                            <i id="fav-whislist" class="fa-regular fa-heart"></i>
-                            <i
-                              id="compare-product"
-                              class="fa-solid fa-arrow-right-arrow-left"
-                            ></i>
-                          </div>
+                  </div>
+                  <div class="search-grid-buttom">
+                     <div class="producd-name_model">
+                       <p> <u>Apple</u></p>
+                       <p>Product 15</p>
+                     </div>
+                     <div class="productname-price">
+                      <p>Apple Cinema 30"</p>
+                      <span id="Search-price">70.61$ </span> 
+                      <span id="strike-price"><strike>78.46$</strike></span>
+                     </div>
+                    <div class="searchadd_to_cart">
+                       <div class="favcart">
+                           <div class="input-addtocart">
+                             <div class="section" id="input-number-favcart">
+                               <input type="number" max="10" min="1" value="1" />
+                             </div>
+                             <button>ADD TO CART</button>
+                           </div>
+                         
+                           <div class="whislist">
+                             <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                             <i
+                               id="compare-product"
+                               class="fa-solid fa-arrow-right-arrow-left"
+                             ></i>
+                           </div>
+                       </div>
+                     <!--favcart-end  -->  
+                     </div>
+                     <!-- searchadd_to_cart end -->
+ 
+                    <div class="search-buynow-question">
+                       <div class="search_Buy_Now">
+                         <i class="fa-regular fa-dollar-sign"></i>
+                         <span id="buy-now">Buy Now</span>
+                       </div>
+                       <div class="search_Question">
+                         <i class="fa-solid fa-question"></i>
+                         <span id="question-txt">Question</span>
+                       </div>
+                    </div>
+                  </div>  
+                  
+                 <div class="search-listview">
+                   <div class="listview-brand_model">
+                      <div class="ls-brand">
+                        <span>Brand: <u id="ls-bd">Apple</u></span>
                       </div>
-                    <!--favcart-end  -->
-
-                    </div>
-                    <!-- searchadd_to_cart end -->
-
-                   <div class="search-buynow-question">
-                    <div class="search_Buy_Now">
-                      <i class="fa-regular fa-dollar-sign"></i>
-                      <span id="buy-now">Buy Now</span>
-                    </div>
-                    <div class="search_Question">
-                      <i class="fa-solid fa-question"></i>
-                      <span id="question-txt">Question</span>
-                    </div>
+                      <div class="ls-product">
+                        <span>Model:Product 15</span>
+                      </div>
                    </div>
-                </div>
+                   <div class="ls-cinemapara">
+                    <h1>Apple Cinema 30"</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam, eius, voluptate tempore recusandae alias exercitationem repellat porro suscipit magnam enim, assumenda nihil ratione repudiandae quia ullam impedit debitis. Reprehenderit voluptas pariatur ipsa voluptate officiis aliquid saepe fugiat sapiente hic!</p>
+                   </div>
+                   <div class="ls-doller-price-euro">
+                    <span id="euro-first">2345.60<i class="fa-solid fa-euro-sign"></i></span>
+                    <span id="euro-second"><strike>2345.60<i class="fa-solid fa-euro-sign"></i></strike></span>
+                   </div>
+                   <div class="extra-tax">
+                    <p>Ex Tax:234:50<i class="fa-solid fa-euro-sign"></i></p>
+                   </div>
+                   <div class="ls-btn-part">
+                      <div class="ls-section" id="ls-section-input">
+                        <input type="number" max="10" min="1" value="1" />
+                      </div>
+                      <div class="ls-addcart">
+                        <button class="ls-addtocart-btn">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          ADD TO CART
+                        </button>
+                      </div>
+                      <div class="ls-whishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="ls-compare">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                   </div>
+                   <div class="search-buynow-question">
+                      <div class="search_Buy_Now">
+                        <i class="fa-regular fa-dollar-sign"></i>
+                        <span id="buy-now">Buy Now</span>
+                      </div>
+                      <div class="search_Question">
+                        <i class="fa-solid fa-question"></i>
+                        <span id="question-txt">Question</span>
+                      </div>
+                   </div>
+                 </div> 
+               </div>
               </div>
               <!-- all itemtv camera end -->
               <hr class="last-search-line">
-
-              <p class="user-notify" >You have reached the end of the list</p>
+             
+              <p class="user-notify "  id="ls-user-notify" >You have reached the end of the list</p>
             </div>
             <!-- right part end -->
             
@@ -833,7 +985,7 @@
             </ul>
           </div>
 
-          <div class="footer_about_us">
+          <div class="footer_about_us  replace-border">
             <div class="mostviewed-desk-footer">
               <p>About Us</p>
               <hr class="text_desk_footer" />

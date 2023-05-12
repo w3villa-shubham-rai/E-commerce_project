@@ -265,3 +265,50 @@ function toggleTopCategories(elem){
     blogelement.classList.add("active_btn_toogle_blog");
  }
 
+document.getElementById("gridview").addEventListener("click",function()
+{
+  let b=document.getElementById("se-te");
+  if(b.classList.contains("allitem_TV_cmera_canon-li"))
+  {
+    b.classList.remove("allitem_TV_cmera_canon-li");
+    b.classList.add("allitem_TV_cmera_canon-grid");
+  }
+  
+
+
+  let c =document.getElementsByClassName("search-grid-buttom")
+ 
+  for(j=0;j<c.length;j++)
+  {
+    c[j].style.setProperty("display","block");     
+  }
+  let d=document.getElementsByClassName("search-listview");
+  for(j=0;j<d.length;j++)
+  {
+    d[j].style.setProperty("display","none");     
+  }
+});
+
+ document.getElementById("listview").addEventListener("click", function() {
+  let b=document.getElementById("se-te");
+  if(b.classList.contains("allitem_TV_cmera_canon-grid"))
+  {
+    b.classList.remove("allitem_TV_cmera_canon-grid");
+    b.classList.add("allitem_TV_cmera_canon-li");
+  }
+
+
+  let c =document.getElementsByClassName("search-grid-buttom")
+ 
+  for(j=0;j<c.length;j++)
+  {
+    c[j].style.setProperty("display","none");     
+  }
+  let d=document.getElementsByClassName("search-listview");
+  for(j=0;j<d.length;j++)
+  {
+    d[j].style.setProperty("display","block");     
+  }
+
+    
+});

@@ -495,6 +495,10 @@ select{
 
 /************* Search page css stylileng start*****************************************/
 /************************************************************************************** */
+.search-camera{
+    background: #f8f8f8;
+    padding-top: 20px;
+}
 
 .search-camera-item h2{
     font-size: 30px;
@@ -508,13 +512,14 @@ select{
     background: #ff4700;
 }
 .searchhome-logo {
-    color: #686666;
+    color: -namergb(157 153 153);
     font-size: 15px;
     padding-top: 5px;
-    padding-bottom: 5px;
     display: flex;
-    column-gap: 10px;
+    column-gap: 8px;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .search-product-right-left{
     display: flex;
@@ -592,7 +597,7 @@ select{
     column-gap: 10px;
     font-size: 22px;
     align-items: center;
-    color:#504e4e;
+    color:#807878;
 }
 
 
@@ -659,33 +664,28 @@ select{
 }
 
 /*  Add item and show  all item section start  css styleing  */
-.allitem_TV_cmera_canon{
+.allitem_TV_cmera_canon-grid{
     display: flex;
     column-gap: 20px;
     margin-top: 20px;
+    flex-direction: row;
+    gap: 20px;
 }
-.search-televesion{
+
+.allitem_TV_cmera_canon-grid .search-televesion{
     width: 32%;
     border: 1px solid rgb(145, 141, 141);
     border-radius: 3px;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .search-tv-apple{
     /* border: 2px solid red; */
-    height: 285px;
-    margin-top: 13px;
+    height: 300px;
 }
-.Leica-digital-camera{
-    width: 32%;
-    border: 1px solid rgb(145, 141, 141);
-    position: relative;
-    overflow: hidden;
-}
-.search-canon-camera{
-    width: 32%;
-    border: 1px solid rgb(145, 141, 141);
-    position: relative;
-}
+
 
 
 .search-tv-apple img{
@@ -699,20 +699,24 @@ select{
     padding-right: 10px;
     justify-content: space-between;
     color: #686666;
-    background-color:  #c7c2c2;
+    align-items: center;
+    height: 40px;
+    background-color: #e1e1e1;
 }
 .productname-price
 {
     margin-top: 10px;
     padding-left: 10px;
+    font-size: 17px;
+    background-color: var(--white);
 }  
 
 #Search-price
 {
-    color: #686666;
+    color: rgb(146 141 141);
 }
 #strike-price{
-    color: #686666;
+    color: rgb(146 141 141);
 }
 
 .favcart{
@@ -720,7 +724,7 @@ select{
     justify-content: space-between;
     align-items: center;
     background: var(--white);
-    height: 54px;
+    height: 70px;
 }
 .input-addtocart{
     display: flex;
@@ -729,10 +733,10 @@ select{
 }
 
 .favcart button{
-    width: 84px;
-    height: 29px;
-    font-size: 10px;
-    font-weight: bold;   
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: bold;
     background: var(--blue);
     color: var(--white);
     border: none;
@@ -741,15 +745,14 @@ select{
 }
 #input-number-favcart input
 {
-    width: 20px;
-    height: 5px;
-    padding: 11px;
-    border: 2px solid #cfcbcb;
+    width: 30px;
+    height: 6px;
+    border: 2px solid rgb(207, 203, 203);
     outline: none;
     margin-left: 5px;
+    padding: 12px 0 12px 15px;
     font-size: 15px;
     border-radius: 4px;
-
 }
 
 .whislist{
@@ -775,8 +778,10 @@ select{
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
+    height: 40px;
     padding-right: 10px;
-    background: #c7c2c2;
+    align-items: center;
+    background: #e1e1e1;
 }
 .search_Buy_Now i{
     border: 1px solid hsl(120, 100%, 25%);
@@ -872,6 +877,7 @@ select{
     color: var(--blue);
     align-items: center;
     padding-top: 10px;
+    font-weight:bolder;
 }
 .clear-btn i{
     width: 6px;
@@ -898,9 +904,13 @@ select{
     background: var(--blue);
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  height: 35px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  /* appearance: auto; */
 }
 .slidecontainer{
     margin-top: 25px;
@@ -978,11 +988,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .search-checkbox-stack{
     padding-top: 20px;
+    font-weight: 300;
+    color: #585555;
 }
 .img-electronic{
     width: 35px;
     height: 35px;
-    /* border: 2px solid red; */
 }
 .img-electronic img{
   width: 100%;
@@ -1219,6 +1230,22 @@ footer{
 
 
 /* ******************************footer part media Query */
+
+@media screen and (max-width: 1011px)
+{
+    .footer-main-part{
+        width: 100%;
+        flex-wrap: wrap;
+       
+    }
+    .footer_about_us{
+        width: 49%;
+        padding-left: 5px;
+    }
+    .replace-border{
+        border: none;
+    }
+}
 @media screen and (max-width: 890px)
 {
     .input-footer-email input
@@ -1393,3 +1420,355 @@ footer{
     color: white;
 }
 
+/* list view */
+.allitem_TV_cmera_canon-li{
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+.allitem_TV_cmera_canon-li .search-televesion{
+    width: 100%;
+    border-bottom: 1px solid rgb(145, 141, 141);
+    border-radius: 3px;
+    /* position: relative; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.search-listview
+{
+    display: none;
+    width: 68%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#ls-bd
+{
+    color: var(--blue);
+}
+/* Search listview css */
+.listview-brand_model{
+    display: flex;
+    column-gap: 15px;
+    font-size: 18px;
+    color: #423e3e;
+}
+.ls-cinemapara h1{
+    font-size: 25px;
+    padding-top: 5px;
+}
+.ls-cinemapara p{
+    padding-top: 5px;
+    font-weight: 300;
+    color: #3c3939;
+}
+#euro-first{
+    font-size: 30px;
+    color: orangered;
+    font-weight: bolder;
+}
+#euro-first i{
+    font-size: 25px;
+}
+.ls-doller-price-euro{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+#euro-second{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #716b6b;
+}
+#euro-second i
+{
+    font-size: 17px;  
+}
+.extra-tax{
+    color: #686666;
+}
+.extra-tax i{
+    font-size: 13px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  height: 25px;
+}
+.ls-btn-part{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding-top: 20px;
+}
+.ls-section input{
+    height: 35px;
+    text-align: center;
+}
+.ls-addcart button{
+    height: 38px;
+    width: 150px;
+    background: blue;
+    outline: none;
+    color: var(--white);
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.ls-whishlist
+{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border: 1px solid #858383;
+    border-radius: 3px;
+
+}
+.ls-compare{
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border: 1px solid #858383;
+    border-radius: 3px;
+}
+.ls-whishlist i{
+    margin-top: 10px;
+}
+.ls-compare i{
+    border: 2px solid #4d4949;
+    border-radius: 50%;
+    padding: 4px;
+    color: #4d4949;
+    font-size: 9px;
+    margin-top: 8px;
+}
+
+.allitem_TV_cmera_canon-li .search-buynow-question {
+    justify-content:start;
+    background: none;
+    align-items: center;
+    padding-top: 10px;
+    column-gap: 20px;
+    padding-bottom: 10px;
+}
+.allitem_TV_cmera_canon-li .search_Buy_Now i {
+    padding: 2px 4px;
+    font-size: 11px;
+    border-radius: 50%;
+    font-weight: 900;
+    border: 2px solid hsl(120, 100%, 25%);  
+}
+.allitem_TV_cmera_canon-li #buy-now{
+    font-size: 15px;
+    font-weight: 300;
+    color: #3c3939;
+}
+
+.allitem_TV_cmera_canon-li .search_Question i {
+    padding: 2px 4px;
+    font-size: 11px;
+    border-radius: 50%;
+    font-weight: 900;
+    border:2px solid hsl(0deg 75.35% 52.08%);  
+}
+.allitem_TV_cmera_canon-li #question-txt{
+    font-size: 15px;
+    font-weight: 300;
+    color: #3c3939;
+}
+.allitem_TV_cmera_canon-li .search_Buy_Now{
+    margin-left: -9px;
+}
+
+.allitem_TV_cmera_canon-li .search-percent{
+    top: 5px;
+    /* left: 240px; */
+}
+.allitem_TV_cmera_canon-li .search-hot
+{
+    top: 31px;
+    /* left: 240px; */
+}
+.allitem_TV_cmera_canon-li .camera-preorder
+{
+    top: 5px;
+    /* left: 240px; */
+}
+   
+.allitem_TV_cmera_canon-li .search-tv-apple{
+    height: 290px;
+    margin-top: 22px;
+    width: 35%;
+    overflow: hidden;
+    margin-left: 20px;
+    border: 1px solid #bfb5b5;
+    border-radius: 3px;
+    position: relative;
+}
+#ls-user-notify
+{
+    padding-bottom: 30px;
+}
+
+
+
+
+/*************************media query styeling using css*******************************/
+/* *************************************************************************************/
+
+
+
+@media screen and (max-width: 1260px) 
+{
+    
+    .search-left_part{
+        display: none;
+    }
+    .search-right_part{
+        width: 100%;
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
+@media screen and (max-width:1011px)
+{
+    .allitem_TV_cmera_canon-grid{
+        width: 100%;
+    }
+    .allitem_TV_cmera_canon-grid
+    {
+        flex-wrap: wrap;
+    }
+    .search-item-input input 
+    {
+      width: 330px;  
+    }
+    .allitem_TV_cmera_canon-grid .search-televesion{
+        width: 48%;
+    }
+}
+@media screen and (max-width:808px)
+{
+    .search-select-categories select
+    {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:700px)
+{
+    .search-select-categories select
+    {
+        width: 200px;
+    }
+    .search-tv-apple{
+        height: 240px;
+    }
+    .allitem_TV_cmera_canon-grid .search-televesion {
+        width: 46%;
+    }
+    .allitem_TV_cmera_canon-grid{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:640px)
+{
+    #input-number-favcart input{
+        padding: 10px 0px 10px 8px;
+    }
+    .favcart button{
+        width: 77px;
+        height: 29px;
+         font-size: 10px;
+    }
+    .search-tv-apple {
+        height: 178px;
+    }
+    .whislist{
+        gap: 8px;
+    }
+    .search-item-input input{
+        width: 260px;
+    }
+    .search-select-categories select{
+        width: 180px;
+    }
+    .sort-show select{
+        width: 85px;
+    }
+    .sort-show-label label{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width:550px)
+{
+    .allitem_TV_cmera_canon-grid .search-televesion {
+        width: 100%;
+    }
+    .search-tv-apple
+    {
+        height: 382px;
+    }
+    #input-number-favcart input {
+    padding: 12px 0 12px 15px;
+    }
+    .favcart button{
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .whislist{
+        gap: 20px;
+    }
+    .search-item-input{
+        width: 100%;
+    }
+    .search-categories-input{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .search-item-input input{
+        width: 100%;
+    }
+    .search-select-categories{
+        width: 100%;
+    }
+
+    .search-select-categories select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #a19c9c;
+    }
+    .search-comapare-all-logo p{
+        font-size: 15px;
+    }
+    .search-compare-cheatsheet-compact{
+        column-gap: 10px;
+    }
+}
+@media screen and (max-width:450px)
+{
+    .search-comapare-all-logo p{
+        display: none;
+    }
+}
+
+
+/**************************** list view media query*****************************************/
+/* *************************************************************************************** */
+@media screen and(max-width:1006)
+{
+    .ls-cinemapara h1{
+        padding-top: none;
+    }
+}

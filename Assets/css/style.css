@@ -1468,7 +1468,7 @@ select{
     border: 2px solid rgb(207, 203, 203);
     outline: none;
     margin-left: 5px;
-    padding: 10px 0 10px 10px;
+    padding: 9px 0 8px 15px;
     font-size: 15px;
     border-radius: 4px;
 }
@@ -1530,7 +1530,7 @@ select{
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
-  height: 25px;
+  height: 35px;
 }
 
 .customlabels
