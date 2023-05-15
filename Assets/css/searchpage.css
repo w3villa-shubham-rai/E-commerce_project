@@ -54,6 +54,7 @@
     text-decoration: none;
     color: black;
 }
+
 .contact{
     display: flex;
     column-gap: 10px;
@@ -325,6 +326,15 @@ select{
     {
         display: block;
         background: var(--white);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .jurnal_m h1
+    {
+        font-family: 'Akshar';
+    }
+    .searchhome-logo{
+        padding-top: 10px;
     }
     
 }
@@ -710,7 +720,8 @@ select{
 }
 .search-tv-apple{
     /* border: 2px solid red; */
-    height: 300px;
+    height: 290px;
+    
 }
 
 
@@ -1038,7 +1049,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     align-items: center;
     column-gap: 7px;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .brands{
@@ -1779,7 +1790,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .search-tv-apple
     {
-        height: 382px;
+        height: 280px;
     }
     #input-number-favcart input {
     padding: 12px 0 12px 15px;
@@ -1822,6 +1833,12 @@ input[type=number]::-webkit-outer-spin-button {
 {
     .search-comapare-all-logo p{
         display: none;
+    }
+}
+@media screen and (max-width:478px)
+{
+    .search-tv-apple{
+        height: 250px;
     }
 }
 
@@ -1916,6 +1933,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .ls-addcart button {
         width: 118px;
+    }
+}
+@media screen and (max-width:478px)
+{
+    .search-tv-apple{
+        height: 250px;
     }
 }
 
