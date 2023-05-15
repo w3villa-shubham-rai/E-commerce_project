@@ -43,8 +43,11 @@
         <div class="about_navbar">
           <div class="contact">
             <div class="home">
-              <i class="fa-solid fa-house"></i>
-              <span>Home</span>
+              <a href="./index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+              </a>
+              
             </div>
             <div class="about_us">
               <i class="fa-regular fa-user"></i>
@@ -113,7 +116,7 @@
         <div class="container">
           <div class="usertoolbar">
             <div class="websitename">
-              <h1>JOURNAL</h1>
+             <a href="./index.html"><h1>JOURNAL</h1></a> 
             </div>
             <div class="search">
               <select id="item">
@@ -262,7 +265,7 @@
       <div class="home-serach-header">
         <div class="container">
           <div class="searchhome-logo">
-            <i class="fa-solid fa-house"></i>
+           <a href="./index.html"><i class="fa-solid fa-house"></i></a> 
             <i class="fa-solid fa-arrow-right"></i>
             <span>Search</span>
           </div>
@@ -290,13 +293,14 @@
                 </div>
                 <hr id="producdsearch_deskbar" />                
               </div>
-              <div class="search-price-range" style="padding-bottom: 55px;">
-                <div class="priceranfe avilable-minus">
+              <div class="search-price-range">
+                <div class="priceranfe avilable-minus" onclick="ftoggleavminus(this)">
                   <p>Price</p>
-                  <i class="fa-solid fa-minus"></i>                 
+                  <i id="rangeminus" class="fa-solid fa-minus"></i>   
+                  <i id="rangeplus" class="fa-solid fa-plus"></i>              
                 </div>
                 <div class="slidecontainer">
-                  <div class="flex relative justify-center items-center h-20 w-full mx-auto rounded">
+                  <div>
                     <div class="range-slider">
                       <!-- <div class="progress"></div> -->
                       <span class="range-min-wrapper">
@@ -323,9 +327,10 @@
               </div>
               <hr class="search-section-underline">
               <div class="avilabilty">
-                <div class="avilable-minus">
+                <div class="avilable-minus avilable-colortoggle" onclick="fttoggleavstock(this)">
                   <p>AVAILABILITY</p>
-                  <i class="fa-solid fa-minus"></i>
+                  <i id="minus-click_av" class="fa-solid fa-minus  mca"></i>   
+                  <i id="plus-click_av" class="fa-solid fa-plus mcap"></i>       
                 </div>
                 <div class="search-checkbox-stack">
                   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -337,10 +342,11 @@
               <hr class="search-section-underline">
 
               <!-- Subcategories part -->
-              <div class=" Subcategories avilabilty">
-                <div class="avilable-minus">
+              <div class=" Subcategories avilabilty ">
+                <div class="avilable-minus avilable-categories" onclick="fn_Subcategories(this)">
                   <p>SUBCATEGORIES</p>
-                  <i class="fa-solid fa-minus"></i>
+                  <i id="subcat-minus" class="fa-solid fa-minus"></i>   
+                  <i id="subcat-plus" class="fa-solid fa-plus"></i>       
                 </div>
                 <div class="item-electronic-search">
                  <div class="img-electronic">
@@ -352,12 +358,13 @@
               <hr class="search-section-underline">
 
               <!-- Brand Section Html -->
-              <div class="brand avilabilty">
-                <div class="avilable-minus">
+              <div class="brand avilabilty  ">
+                <div class="avilable-minus avilable-color" onclick="fn_brandnamelogo(this)" >
                   <p>Brands</p>
-                  <i class="fa-solid fa-minus"></i>
+                  <i id="brandminus1" class="fa-solid fa-minus"></i>   
+                  <i id="brandplus1" class="fa-solid fa-plus"></i>       
                 </div>
-                <div class="item-electronic-search">
+                <div class="item-electronic-search brand_logo">
                  <div class="img-electronic brands">
                   <img src="./Assets/images/applelogo.webp" alt="">
                  </div>
@@ -372,19 +379,21 @@
               <hr class="search-section-underline">
 
               <!-- Select option section start -->
-              <div class="Select avilabilty">
-                <div class="avilable-minus">
+              <div class="avilabilty" >
+                <div class="avilable-minus Select" onclick="fn_select()">
                   <p>Select</p>
-                  <i class="fa-solid fa-plus"></i>
+                  <i id="selectminus" class="fa-solid fa-minus"></i>   
+                  <i id="selectplus1" class="fa-solid fa-plus"></i>       
                 </div>          
               </div>
               <hr class="search-section-underline">
 
               <!-- Radio section -->
               <div class="radio avilabilty">
-                <div class="avilable-minus">
+                <div class="avilable-minus radio-select" onclick="fn_selectradio()">
                   <p>RADIO</p>
-                  <i class="fa-solid fa-plus"></i>
+                  <i id="radiominus" class="fa-solid fa-minus" ></i>   
+                  <i id="radioplus1" class="fa-solid fa-plus"></i>       
                 </div>          
               </div>
               <hr class="search-section-underline">
@@ -392,11 +401,12 @@
               <!-- color section -->
 
               <div class="brand avilabilty">
-                <div class="avilable-minus">
+                <div class="avilable-minus color-colortoggle" onclick="fn_color()">
                   <p>Color</p>
-                  <i class="fa-solid fa-minus"></i>
+                  <i  class="fa-solid fa-minus"></i>   
+                  <i  class="fa-solid fa-plus"></i>       
                 </div>
-                <div class="item-electronic-search">
+                <div class="item-electronic-search colorserach">
                  <div class="img-electronic select-color_one">
                   
                  </div>
@@ -414,38 +424,42 @@
               <hr class="search-section-underline">
 
               <!-- clockspeeed section start -->
-              <div class="colockspeed avilabilty">
-                <div class="avilable-minus">
+              <div class="colockspeed avilabilty " >
+                <div class="avilable-minus clock_speedclick" onclick="fn_clockspeed()">
                   <p>Colockspeed</p>
-                  <i class="fa-solid fa-plus"></i>
+                  <i id="clockminus" class="fa-solid fa-minus"></i>   
+                  <i id="clockplus1" class="fa-solid fa-plus"></i>       
                 </div>          
               </div>
               <hr class="search-section-underline">
               <!-- Test1 section -->
               <div class="test avilabilty">
-                <div class="avilable-minus">
+                <div class="avilable-minus test_one" onclick="fn_test()">
                   <p>TEST1</p>
-                  <i class="fa-solid fa-plus"></i>
+                  <i id="testminus" class="fa-solid fa-minus"></i>   
+                  <i id="testplus1" class="fa-solid fa-plus"></i>       
                 </div>          
               </div>
               <hr class="search-section-underline">
               <!-- number of core -->
               <div class="numberofcore avilabilty">
-                <div class="avilable-minus">
+                <div class="avilable-minus no_core" onclick="fn_cores()">
                   <p>No. of Cores</p>
-                  <i class="fa-solid fa-plus"></i>
+                  <i id="coreminus" class="fa-solid fa-minus"></i>   
+                  <i id="coreplus1" class="fa-solid fa-plus"></i>       
                 </div>          
               </div>
               <hr class="search-section-underline">
 
               <!-- Style section-->
               <div class="style-section-last avilabilty">
-                <div class="avilable-minus">
+                <div class="avilable-minus  style_part_nv" onclick="fn_style()">
                   <p>Style</p>
-                  <i class="fa-solid fa-plus"></i>
+                  <i id="styleminus" class="fa-solid fa-minus"></i>   
+                  <i id="styleplus1" class="fa-solid fa-plus"></i>       
                 </div>          
               </div>
-              <hr class="search-section-underline">
+              <!-- <hr class="search-section-underline"> -->
 
 
             </div>
@@ -855,8 +869,40 @@
       <div class="most-viewed">
         <div class="container">
           <div class="mostviewed-desk-section">
-            <h1>MOST VIWED</h1>
-            <hr class="text_desk_most_view" />
+            <div class="most-view-title">
+              <h1 onclick="recentViewed()" class="recenttxt">RECENTVIEWD</h1>
+              <div class="mostview-section" >
+                <h1 id="mostviewed" onclick="mostViewed()">MOST VIWED</h1> 
+                <hr  id="mostviewdesk" class="text_desk_most_view" />
+              </div>    
+            
+            </div>
+            <div class="mostview-recentview">
+              <div class="recentview-section">
+                <div class="recentviewcontainer">
+                  <!-- <h1 onclick="recentViewed()" class="recenttxt">RECENTVIEWD</h1> -->
+                  <hr id="recentdesk" class="text_desk_most_view recentdesk" />
+                  <div class="sunglasses " id="recentsunglass">
+                    <div class="image-sunglass">
+                      <img
+                        src="./Assets/images/mostviewheadphone.avif"
+                        alt=""
+                      />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Headphone</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>           
+              </div>
+                   
+            </div>         
 
             <div>
               <div class="mostvied-main-section">
@@ -867,7 +913,7 @@
                     </div>
                     <div class="oversized-sunglasses">
                       <p class="aboutus-para">
-                        Oversized Sunglas for Lon...
+                        Oversized Sunglas Lon...
                       </p>
                       <p class="most-viewed-doller">$369.0</p>
                       <div class="most-viewed-whishlist_add-tocart_comapare">
