@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product page</title>
+
+    <!-- font family -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril Fatface"
+      rel="stylesheet"
+    />
+    <!-- fontawesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+     <!-- ows crowsel -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+    />
+
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+    />
+    <!-- owl crosel end -->
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/css/searchpage.css">
+    <link rel="stylesheet" href="./Assets/css/productpage.css">
+  </head>
+  <body>
+    <header>
+      <div class="container" id="arrow-connect">
+        <div class="about_navbar">
+          <div class="contact">
+            <div class="home">
+              <a href="./index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+              </a>
+              
+            </div>
+            <div class="about_us">
+              <i class="fa-regular fa-user"></i>
+              <span>About us</span>
+            </div>
+            <div class="contact_part">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </div>
+
+            <div class="faq">
+              <i class="fa-regular fa-circle-question"></i>
+              <select id="faq">
+                <option value="FAQ">FAQ</option>
+                <option value="FAQ1">FAQ1</option>
+                <option value="FAQ2">FAQ2</option>
+                <option value="FAQ3">FAQ3</option>
+              </select>
+            </div>
+          </div>
+          <div class="language_dollar">
+            <div class="language">
+              <i class="fa-solid fa-flag-usa"></i>
+              <select id="lanuage">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Bhojpuri">Bhojpuri</option>
+                <option value="French">French</option>
+              </select>
+            </div>
+            <div class="dollar">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <select id="dollar">
+                <option value="dollar1">US Dollar</option>
+                <option value="dollar2">Rupiya</option>
+                <option value="dollar3">currency</option>
+                <option value="dollar4">bit quin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="delivery_moremenu">
+            <div>
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <select id="menu">
+              <option value="menu1">More menu</option>
+              <option value="menu2">menu1</option>
+              <option value="menu3">menu2</option>
+              <option value="menu4">menu3</option>
+            </select>
+
+            <div class="delivery">
+              <i class="fa-solid fa-truck"></i>
+              <span>Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- secand header part Start  journal part-->
+      <!--************ user toolbar *****************************-->
+      <div class="usertoolbarcolor">
+        <div class="container">
+          <div class="usertoolbar">
+            <div class="websitename">
+             <a href="./index.html"><h1>JOURNAL</h1></a> 
+            </div>
+            <div class="search">
+              <select id="item">
+                <option value="ALL">ALL</option>
+                <option value="item1">item1</option>
+                <option value="item2">item2</option>
+                <option value="item3">item3</option>
+              </select>
+              <div class="search_bar">
+                <input
+                  type="search"
+                  name="search"
+                  id="serch_item"
+                  placeholder="Search Here..."
+                />
+              </div>
+              <div class="search_glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <div class="logo">
+              <div class="login">
+                <i class="fa-regular fa-user"></i>
+                <p>login</p>
+              </div>
+              <div class="Register">
+                <i class="fa-solid fa-pencil"></i>
+                <p>Register</p>
+              </div>
+              <div class="whishlist">
+                <i class="fa-regular fa-heart"></i>
+                <p>whishlist</p>
+              </div>
+              <div class="compare">
+                <div class="compare_circle">
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <p>compare</p>
+              </div>
+            </div>
+
+            <div class="add_to_cart">
+              <span class="item-cart-s"> 0 item(s)-$0.00 </span>
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- All Department last part Header -->
+
+      <div class="alldepartment_menu">
+        <div class="container">
+          <div class="alldepartment_Blog">
+            <div class="alldepartment">
+              <div class="dpt">
+                <i class="fa-solid fa-bars"></i>
+                <span>ALL DEPARTMENTS</span>
+                <span id="sale_lgo">Sale</span>
+              </div>
+
+              <div class="multilevel">
+                <p>MULTILEVEL</p>
+                <div>
+                  <p>MEGAMENU</p>
+                  <span id="new"> New</span>
+                </div>
+                <p>FULLWIDTH</p>
+              </div>
+            </div>
+            <div class="blog_phone">
+              <div class="call">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>1.2445.557678.78</span>
+              </div>
+              <div class="blog">
+                <i class="fa-regular fa-message"></i>
+                <span>BLOG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile Screen Navigation -->
+      <div class="mobilenavigation_color">
+        <div class="container">
+          <div class="mobilenavigation">
+            <div class="mobile_login_register">
+              <div class="navlogin_register">
+                <div class="login_mobile">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="txt">Login</span>
+                </div>
+
+                <div class="register_mobile">
+                  <i class="fa-solid fa-pencil"></i>
+                  <span class="txt">Register</span>
+                </div>
+              </div>
+            </div>
+            <div class="nav_doller_language">
+              <div class="mobile_doller">
+                <span>$</span>
+                <select id="m-dollar">
+                  <option value="m-dollar1">US Dollar</option>
+                  <option value="m-dollar2">Rupiya</option>
+                  <option value="m-dollar3">currency</option>
+                  <option value="m-dollar4">bit quin</option>
+                </select>
+              </div>
+              <div class="mobile_language">
+                <img src="./Assets/images/flag.png" alt="" />
+                <select id="m-lanuage">
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Bhojpuri">Bhojpuri</option>
+                  <option value="French">French</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile_jurnal">
+            <div class="container">
+                <div class="mobile_jurnal_cart">
+                  <div class="jurnal_m">
+                    <h1>JOURNAL</h1>
+                  </div>
+                  <div class="cart_search">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </header>
+
+    <!-- product page Html start -->
+    <section>
+        <div class="home-serach-header">
+            <div class="container">
+               <div class="searchhome-logo">
+               <a href="./index.html"><i class="fa-solid fa-house"></i></a> 
+                <i class="fa-solid fa-arrow-right"></i>
+                <span><u>Search</u></span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <span>Apple Cinema 30"</span>
+               </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="product-apple-cinema">
+            <div class="container">
+                <div class="search-camera-item">
+                    <h2>Search-camera</h2>
+                </div>
+                <hr id="search-camera-desk">
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!-- product divided part -->
+    <section>  
+        <div class="product-maincontainer">
+            <div class="container">
+                <div class="product-left-right-part">
+                    <div class="product-left-part">
+                        <div class="product-smalllarge-image">
+                            <div class="left-smallproduct-image">
+                                <div class="demo-img">
+                                    <img src="./Assets/images/applecinema30.jpg" alt="">
+                                </div>
+                                <div class="demo-img">
+                                    <img src="./Assets/images/searchimg4.avif" alt="">
+                                </div>
+                                <div class="demo-img">
+                                    <img src="./Assets/images/laptop1.avif" alt="">
+                                </div>
+                                <div class="demo-img">
+                                    <img src="./Assets/images/applecinema30.jpg" alt="">
+                                </div>
+                                <div class="demo-img">
+                                    <img src="./Assets/images/applecinema30.jpg" alt="">
+                                </div>
+                                <div class="demo-img">
+                                    <img src="./Assets/images/applecinema30.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="left-large-image">
+                               <div class="largeproductimage">
+                                    <img src="./Assets/images/searchimg1.avif" alt="">
+                                    <div class="search-hot ">
+                                      HOT
+                                    </div>
+                                    <div class="search-percent ">
+                                      -10%
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producuct-right-part">
+                        <div class="right-heading">
+                            <p onclick="tglRightHeading(this)" class="desc-active desc">DESCRIPTION</p>
+                            <p onclick="tglRightHeading(this)" class="desc">SPECIFICATION</p>
+                            <p onclick="tglRightHeading(this)" class="desc">REVIEWS</p>
+                            <p onclick="tglRightHeading(this)" class="desc">CUSTOM TABS</p>
+                        </div>
+
+                        <!-- show-more part -->
+                        <div class="showmore" id="showmoreid">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita aperiam, velit nihil aliquam doloribus dolor esse libero vero molestias quaerat quia consequuntur dolore provident, iusto inventore natus beatae impedit? Delectus quidem suscipit illum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, at! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, eos. dolorum vel quia architecto hic, fugiat sed, voluptatem 
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum officiis repellat eveniet commodi veniam quisquam doloremque, id suscipit vel et.
+                            </p>
+                            <button onclick="fnshowmore()" id="product-showmore"><i class="fa-solid fa-angle-down"></i> show-more</button>
+                            <button onclick="fnshowless()" id="product-showless"><i class="fa-solid fa-angle-up"></i> show-less</button>
+                        </div>
+                      
+                        <div class="product-star">
+                            <i id="starcolor" class="fa-solid fa-star"></i>
+                            <i id="starcolor" class="fa-solid fa-star"></i>
+                            <i id="starcolor" class="fa-solid fa-star"></i>
+                            <i id="starcolor" class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <a href="">Based on 1 reviews</a> -
+                            <a href="">Write a review</a>
+                        </div>
+
+                       
+                        <div class="pricestock">
+                            <div class="pricedescription">
+                                <div class="previous-updated-prce">
+                                    <h2 id="previous-p"><strike>78.46</strike><i class="fa-solid fa-euro-sign"></i></h2> 
+                                    <h1 id="updated-p">70.61 <i class="fa-solid fa-euro-sign"></i></h1>
+                                </div>                              
+                               <h3>Ex Tax:70.61 <i id="ex-tax" class="fa-solid fa-euro-sign"></i></h3>
+                               <p>Price in reward point:400</p>
+                               <p>10 or more 69.04 <i class="fa-solid fa-euro-sign"></i></p>
+                               <p>20 or more 60.04 <i class="fa-solid fa-euro-sign"></i></p>
+                               <p>30 or more 51.78 <i class="fa-solid fa-euro-sign"></i></p>
+                            </div>
+                            <div class="stockpricemarket">
+                                <div class="in-stock">
+                                    <p ><i class="fa-solid fa-check"></i> IN STOCK</p>
+                                    <ul>
+                                        <li>Reward Points:100</li>
+                                        <li>Model:product 15</li>
+                                        <li>Weight:12.50kg</li>
+                                        <li>Dimensions:1.00cm*2.00cm*3.00cm</li>
+                                    </ul>
+                                </div>
+                                <div class="stock-img">
+                                    <div class="applestack">
+                                      <img src="./Assets/images/applelogo.webp" alt="">
+                                    </div>
+                                    <a href="">Apple</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-----------------select part start---------------------------->
+                        <div class="anotherselect">
+                          <label class="required-red" for="pet-select">Another Select</label><br>
+                          <select name="pets" id="pet-select">
+                              <option value="">--Please select--</option>
+                              <option value="dog">Dog</option>
+                              <option value="cat">Cat</option>
+                              <option value="hamster">Hamster</option>
+                              <option value="parrot">Parrot</option>
+                              <option value="spider">Spider</option>
+                              <option value="goldfish">Goldfish</option>
+                          </select>
+                        </div>
+
+                        <div class="anotherselect">
+                          <label class="required-red" for="pet-select">Another Select</label><br>
+                          <select name="pets" id="pet-select">
+                              <option value="">--Please select--</option>
+                              <option value="dog">Dog</option>
+                              <option value="cat">Cat</option>
+                              <option value="hamster">Hamster</option>
+                              <option value="parrot">Parrot</option>
+                              <option value="spider">Spider</option>
+                              <option value="goldfish">Goldfish</option>
+                          </select>
+                        </div>
+                        <div class="radio-btn">
+                          <label class="required-red" for="pet-select">Another Select</label><br>
+                          <button>Small (+7.85<i class="fa-solid fa-euro-sign"></i>)</i></button>
+                          <button>Medium (+15.69<i class="fa-solid fa-euro-sign"></i>)</i></button>
+                          <button>Large(+23.54<i class="fa-solid fa-euro-sign"></i>)</i></button>
+                        </div>
+                        <div class="product-circle">
+                          <label class="required-red" for="pet-select">Single choice(with image)</label>
+              
+                          <div class="circle-color-choice"> 
+                            <div id="b-1" class="circle-one">
+
+                            </div>
+                            <div id="b-2" class="circle-one">
+                              
+                            </div>
+                            <div id="b-3" class="circle-one">
+                              
+                            </div>
+                            <div id="b-4" class="circle-one">
+                              
+                            </div>
+                          </div> 
+                         
+                        </div>
+
+                        <!-- input section start -->
+                        <div class="input-text">
+                          <div class="inputtext-padding">
+                            <label class="required-red" for="inputtext">Text</label><br>
+                            <input id="inputtext" type="text" placeholder="test"> <br>
+                          </div>
+                          <div class="textarea-padding">
+                            <label class="required-red" for="inputtextlarge">Textarea</label><br>
+                            <textarea name="largearea" id="inputtextlarge" ></textarea>
+                          </div>
+                        </div>
+                        <!-- file part -->   
+                        <div class="uploadfile">
+                          <label class="inputfilelab" for="inputfile">file</label><br>
+                          <button id="inputfile"><i class="fa-solid fa-arrow-up-from-bracket"></i> UPLOAD FILE</button>
+                        </div>                     
+                        <!-- Date time section start -->
+                        <div class="date">
+                          <div class="date-padding">
+                            <label class="required-red" for="inputtext">Date</label><br>
+                            <div class="date-calenderlogo">
+                              <div class="time-inpiut-time">
+                               <input id="inputtexttime" type="text" placeholder="22:25">
+                              </div>
+                              <div class="claender-icon">
+                               <i class="fa-regular fa-calendar-days"></i>
+                              </div>
+                           </div>
+                          </div>
+                         
+                          <!-- time -->
+                          <div class="time-padding">
+                            <label class="required-red" for="inputtext">Time</label><br>
+                            <div class="date-calenderlogo">
+                               <div class="time-inpiut-time">
+                                <input id="inputtexttime" type="text" placeholder="22:25">
+                               </div>
+                               <div class="claender-icon">
+                                <i class="fa-regular fa-calendar-days"></i>
+                               </div>
+                            </div>
+                          </div>
+                         
+                          <!-- Date & time -->
+                          <div class="date-time-padding">
+                          <label class="required-red" for="inputtext">Date &Time</label><br>
+                          <div class="date-calenderlogo">
+                            <div class="time-inpiut-time">
+                             <input id="inputtexttime" type="text" placeholder="22:25">
+                            </div>
+                            <div class="claender-icon">
+                             <i class="fa-regular fa-calendar-days"></i>
+                            </div>
+                         </div>        
+                          </div>
+                                    
+                        </div>
+
+                        <!-- Add to cart Buy Now and input question  section start-->
+                        <div class="input-addcart-buynow">
+                          <div class="input-count">
+                            <input type="number">
+                          </div>
+                          <div class="last_addtocartbtn">
+                            <button><i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
+                          </div>
+                          <div class="product-buynow">
+                            <button><i class="fa-solid fa-dollar-sign"></i>BUY NOW</button>
+                          </div>
+                          <div class="question-ans">
+                            <i class="fa-solid fa-question"></i>
+                          </div>
+                        </div>
+                      <!-- add to whish list and comare this product-->
+                      <div class="add-whishlist-compare-product">
+                        <div class="addwishlist">
+                          <i class="fa-regular fa-heart"></i> <span>ADD to whish List</span>
+                        </div>
+                        <div class="compare-product">
+                          <i class="fa-solid fa-arrow-right-arrow-left"></i> <span>Compare this Product</span>
+                        </div>
+                      </div>
+                      <!-- this section describe quantity of product -->
+                      <div class="min-max-quantity">
+                        <i class="fa-solid fa-info"></i> <span>This Product has a minimum quantity of 2</span>
+                      </div>
+
+                      <!-- social media logo -->
+                      <div class="productpage-socialmedialogo">
+                        <div class="socialmedia-product-logo">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="socialmedia-product-logo">
+                          <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="socialmedia-product-logo">
+                          <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="socialmedia-product-logo">
+                          <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="socialmedia-product-logo-last">
+                          <i id="seven-text" class="fa-solid fa-plus"></i><i id="seven" class="fa-solid fa-7"></i>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>            
+        </div>       
+        
+    </section>
+
+    <!--Related product section  start-->
+
+    <section>
+      <div class="relatedproduct-bought-main">
+        <div class="container">
+          <div class="related-bought">
+            <div class="related">
+              <h2 id="relatedproductid" onclick="fnrelatedproduct()">RELATED PRODUCTS</h2>
+              <hr class="relatedproducd_desk relatedproducd-peoplebought_desk">
+            </div>
+            <div class="people-bought">
+              <h2 onclick="fnpeoplealso()" id="peoplealsoid">PEOPLE ALSO BOUGHT</h2>
+              <hr class="people_desk relatedproducd-peoplebought_desk">
+            </div>
+          </div>
+           <!-- card for related product -->
+          <div class="relatedproduct-maincontainer">
+            <div class="relatedprod-width">
+              <div class="item_fashin_relatedproduct img-relatet-p">
+                <img src="./Assets/images/peplesay1.avif" alt="" />
+                <div class="customlabels_newfashion">2-3 DAYS</div>
+                <div class="bodycorndressfirst">
+                  <div class="bdncross">Bodycorn Dress</div>
+                  <div class="bdn-doller">$399.00</div>
+                  <hr />
+                  <div class="btnbd_addto_cart">
+                    <div class="btn_addcart_fashion btn-add-people">
+                      <button>Add to cart</button>
+                      <div class="fashion_addcart_whislist">
+                        <i
+                          id="heartimage-logo"
+                          class="fa-regular fa-heart"
+                        ></i>
+                        <i
+                          id="compare-product"
+                          class="fa-solid fa-arrow-right-arrow-left"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="item_fashin_relatedproduct img-relatet-p">
+                <img src="./Assets/images/bodycondress.jpeg" alt="" />
+                <div class="customlabels_newfashion">2-3 DAYS</div>
+                <div class="bodycorndressfirst">
+                  <div class="bdncross">Bodycorn Dress</div>
+                  <div class="bdn-doller">$399.00</div>
+                  <hr />
+                  <div class="btnbd_addto_cart">
+                    <div class="btn_addcart_fashion btn-add-people">
+                      <button>Add to cart</button>
+                      <div class="fashion_addcart_whislist">
+                        <i
+                          id="heartimage-logo"
+                          class="fa-regular fa-heart"
+                        ></i>
+                        <i
+                          id="compare-product"
+                          class="fa-solid fa-arrow-right-arrow-left"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+
+          <!-- people also bought -->
+        
+          <div class="relatedproduct-maincontainer " id="peoplealso-bought-default" >
+            <div class="relatedprod-width">
+              <div class="item_fashin_relatedproduct img-relatet-p">
+                <img src="./Assets/images/bodycondress.jpeg" alt="" />
+                <div class="customlabels_newfashion">2-3 DAYS</div>
+                <div class="bodycorndressfirst">
+                  <div class="bdncross">Bodycorn Dress</div>
+                  <div class="bdn-doller">$399.00</div>
+                  <hr />
+                  <div class="btnbd_addto_cart">
+                    <div class="btn_addcart_fashion btn-add-people">
+                      <button>Add to cart</button>
+                      <div class="fashion_addcart_whislist">
+                        <i
+                          id="heartimage-logo"
+                          class="fa-regular fa-heart"
+                        ></i>
+                        <i
+                          id="compare-product"
+                          class="fa-solid fa-arrow-right-arrow-left"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="item_fashin_relatedproduct img-relatet-p">
+                <img src="./Assets/images/bodycondress.jpeg" alt="" />
+                <div class="customlabels_newfashion">2-3 DAYS</div>
+                <div class="bodycorndressfirst">
+                  <div class="bdncross">Bodycorn Dress</div>
+                  <div class="bdn-doller">$399.00</div>
+                  <hr />
+                  <div class="btnbd_addto_cart">
+                    <div class="btn_addcart_fashion btn-add-people">
+                      <button>Add to cart</button>
+                      <div class="fashion_addcart_whislist">
+                        <i
+                          id="heartimage-logo"
+                          class="fa-regular fa-heart"
+                        ></i>
+                        <i
+                          id="compare-product"
+                          class="fa-solid fa-arrow-right-arrow-left"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+
+        </div>  
+     
+      
+      </div>
+    </section>
+
+
+    
+<!-- main most view -->
+    <section>
+      <div class="most-viewed">
+        <div class="container">
+          <div class="mostviewed-desk-section">
+            <div class="most-view-title">
+              <h1 onclick="recentViewed()" class="recenttxt">RECENTVIEWD</h1>
+              <div class="mostview-section" >
+                <h1 id="mostviewed" onclick="mostViewed()">MOST VIWED</h1> 
+                <hr  id="mostviewdesk" class="text_desk_most_view" />
+              </div>    
+            
+            </div>
+            <div class="mostview-recentview">
+              <div class="recentview-section">
+                <div class="recentviewcontainer">
+                  <!-- <h1 onclick="recentViewed()" class="recenttxt">RECENTVIEWD</h1> -->
+                  <hr id="recentdesk" class="text_desk_most_view recentdesk" />
+                  <div class="sunglasses " id="recentsunglass">
+                    <div class="image-sunglass">
+                      <img
+                        src="./Assets/images/mostviewheadphone.avif"
+                        alt=""
+                      />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Headphone</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>           
+              </div>
+                   
+            </div>         
+
+            <div>
+              <div class="mostvied-main-section">
+                <div class="owl-carousel owl-theme" id="mostviewd">
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">
+                        Oversized Sunglas Lon...
+                      </p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img
+                        src="./Assets/images/mostviewheadphone.avif"
+                        alt=""
+                      />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Headphone</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewwatch.avif" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Womens maria</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Sport Watch</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sunglasses">
+                    <div class="image-sunglass">
+                      <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
+                    </div>
+                    <div class="oversized-sunglasses">
+                      <p class="aboutus-para">Sport Watch</p>
+                      <p class="most-viewed-doller">$369.0</p>
+                      <div class="most-viewed-whishlist_add-tocart_comapare">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- ************************Social media logo start Html desiging******************** -->
+    <!-- *********************************************************************************** -->
+
+    <section>
+      <div class="socialmediallog-footer">
+        <div class="container">
+          <div class="socialmedia-logo">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-skype"></i>
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer part HTML  -->
+    <footer>
+      <div class="container">
+        <div class="footer-main-part">
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_about_us  replace-border">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>About Us</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Privacy Police</a></li>
+              <li><a href="">Term & Conditions</a></li>
+              <li><a href="">Coustom Links</a></li>
+            </ul>
+          </div>
+          <div class="footer_about_us">
+            <div class="mostviewed-desk-footer">
+              <p>News leter</p>
+              <hr class="text_desk_footer" />
+            </div>
+            <div class="newsletter">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                quam deleniti error iure dignissimos.
+              </p>
+            </div>
+            <div class="input-footer-email">
+              <input type="email" name="" id="" placeholder="Your email" />
+              <button>
+                <i class="fa-regular fa-envelope"></i>
+                <span id="sentbtn">send</span>
+              </button>
+            </div>
+            <div class="checkbox-newsleter">
+              <input
+                type="checkbox"
+                id="vehicle1"
+                name="vehicle1"
+                value="Bike"
+              />
+              <label for="vehicle1">
+                I have read and agree to the
+                <a href="">privacy policy</a></label
+              ><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section>
+      <div class="copywright">
+        <div class="container">
+          <div class="copyright-andlogo">
+            <div>
+              <p>copy @ 2023,Your Store,Created by w3villa-shubham_rai</p>
+            </div>
+            <div class="payment_logo">
+              <div class="visa">
+                <img src="./Assets/images/visacard.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/Mastercard_logo.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/paypal.webp" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/strip1.png" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/Mastercard_logo.jpg" alt="" />
+              </div>
+              <div class="visa">
+                <img src="./Assets/images/strip1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="toparrow-fixed">
+            <div class="fixed-arrow">
+              <a href="#arrow-connect">
+                <i class="fa-solid fa-arrow-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./Assets/js/serch.js"></script>
+</body>
+</html>

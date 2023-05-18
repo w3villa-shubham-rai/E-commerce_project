@@ -393,3 +393,71 @@ function mostViewed(){
 
 }
 
+function fnrelatedproduct()
+{
+  
+  let relatedproducd_desk=document.getElementsByClassName("relatedproducd_desk")[0];
+  relatedproducd_desk.style.display="block";
+  let  relatedproductid=document.getElementById("relatedproductid");
+  relatedproductid.style.color="black";
+  let relatedproductmaincontainer=document.getElementsByClassName("relatedproduct-maincontainer")[0];
+  relatedproductmaincontainer.style.display="block";
+
+
+  let peoplealsoid=document.getElementById("peoplealsoid");
+  let people_desk=document.getElementsByClassName("people_desk")[0];
+  peoplealsoid.style.color="#b1a8a8";
+  people_desk.style.display="none";
+  let peoplealsoboughtdefault=document.getElementById("peoplealso-bought-default");
+  peoplealsoboughtdefault.style.display="none";
+  
+}
+
+function fnpeoplealso()
+{
+  let relatedproductmaincontainer=document.getElementsByClassName("relatedproduct-maincontainer")[0];
+  relatedproductmaincontainer.style.display="none";
+  let peoplealsoboughtdefault=document.getElementById("peoplealso-bought-default");
+  peoplealsoboughtdefault.style.display="block";
+  let relatedproductid=document.getElementById("relatedproductid");
+  relatedproductid.style.color="#b1a8a8"
+  let relatedproducddesk=document.getElementsByClassName("relatedproducd_desk")[0];
+  relatedproducddesk.style.display="none";
+  let people_desk=document.getElementsByClassName("people_desk")[0];
+  people_desk.style.display="block";
+  let peoplealsoid=document.getElementById("peoplealsoid");
+  peoplealsoid.style.color="black";
+
+}
+
+function fnshowmore()
+{
+  let showmoreid=document.getElementById("showmoreid");
+  showmoreid.style.height="auto";
+  let productshowless=document.getElementById("product-showless");
+  productshowless.style.display="block";
+
+  let productshowmore=document.getElementById("product-showmore");
+  productshowmore.style.display="none";
+  let 
+  
+  // document.getElementById("showmoreid").style.height = "auto";
+}
+
+function fnshowless()
+{
+  let productshowmore=document.getElementById("product-showmore");
+  productshowmore.style.display="block";
+  let showmoreid=document.getElementById("showmoreid");
+  showmoreid.style.height="100px";
+  let productshowless=document.getElementById("product-showless");
+  productshowless.style.display="none";
+  
+}
+
+function tglRightHeading(self) {
+  const current = document.querySelector('.desc-active')
+
+  current.classList.remove('desc-active')
+  self.classList.add('desc-active')
+}
