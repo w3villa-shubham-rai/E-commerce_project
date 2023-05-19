@@ -439,7 +439,8 @@ function fnshowmore()
 
   let productshowmore=document.getElementById("product-showmore");
   productshowmore.style.display="none";
-  let 
+  let showmoreshadow=document.getElementById("showmore-shadow");
+  showmoreshadow.style.color="black";
   
   // document.getElementById("showmoreid").style.height = "auto";
 }
@@ -452,12 +453,13 @@ function fnshowless()
   showmoreid.style.height="100px";
   let productshowless=document.getElementById("product-showless");
   productshowless.style.display="none";
+  let showmoreshadow=document.getElementById("showmore-shadow");
+  showmoreshadow.style.color="rgb(165, 163, 163)";
   
 }
 
 function tglRightHeading(self) {
   const current = document.querySelector('.desc-active')
-
   current.classList.remove('desc-active')
   self.classList.add('desc-active')
 }

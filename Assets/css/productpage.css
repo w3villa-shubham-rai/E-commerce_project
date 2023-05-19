@@ -28,6 +28,506 @@
    max-width: 1440px;
    margin: auto;
 }
+
+
+/* header part css */
+
+.container
+{  
+   padding-left: 50px;
+   padding-right: 50px;
+   max-width: 1440px;
+   margin: auto;
+}
+ 
+
+.usertoolbarcolor
+{
+    background-color: rgb(240 243 243);
+}
+.about_navbar
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px; 
+    color: #686666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.websitename h1
+{
+     font-size: 40px;
+    font-weight: bold;
+    font-family: 'Akshar';
+    cursor: pointer;
+}
+.websitename a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact{
+    display: flex;
+    column-gap: 10px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.language_dollar {
+    display: flex;
+    column-gap: 10px;
+}
+
+.delivery_moremenu
+{
+    display: flex;
+    column-gap: 10px;
+    color: #686666;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+select{
+    outline: none;
+    border: none;
+    font-size: 12px;
+    color: #686666;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* user Toolbar  */
+.usertoolbar
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+.search
+{
+    display: flex;
+}
+#item
+{
+  height: 30px;
+  color: var(--white);
+  background: var(--blue);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 50px;
+  padding: 4px;
+}
+.search_bar input
+{
+    height: 30px;
+    width: 490px;
+    outline: none;
+    padding: 8px;
+    border: none;
+}
+.search i{
+    font-size: 15px;
+    color: var(--white);
+    position: relative;
+    top: 4px;
+   
+}
+.search_glass
+{
+    height: 30px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 28px;
+    background: var(--blue);
+    text-align: center;
+    cursor: pointer;
+}
+
+.logo
+{
+    display: flex;
+    column-gap: 10px;
+}
+.logo-regisrter-heart-icon{
+    text-align: center;
+}
+.logo p
+{
+    font-size: 10px;
+    text-align: center;
+    color: rgb(121, 117, 117);
+}
+.logo i {
+    font-size: 11px;
+    text-align: center;
+    padding: 7px;
+    color:  rgb(121, 117, 117);
+    border-radius: 50%;
+    border: 2px solid rgb(175, 164, 164);
+    text-align: center;
+    cursor: pointer;
+}
+.add_to_cart i{
+    border-radius: 4px;
+    padding: 7px;
+    background: rgb(5, 5, 197);
+    color: white;
+    cursor: pointer;
+   
+}
+.item-cart-s{
+    color: rgb(121, 117, 117);
+}
+
+
+/* All Department part last part of header */
+
+.alldepartment_Blog
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    height: 10px;
+    
+}
+.alldepartment
+{
+    display: flex;
+     position: relative;
+    align-items: center;
+}
+.alldepartment i{
+    padding-left: 8px;
+}
+.dpt
+{
+    background-color:var(--yello);
+    width: 221px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    column-gap: 10px;
+    cursor: pointer;
+}
+#sale_lgo
+{
+    position: absolute;
+    top: -8px;
+    left: 185px;
+    background-color:var(--red);
+    font-size: 10px;
+    width: 31px;
+    color: var(--white);
+    text-align: center;
+}
+.multilevel{
+    display: flex;
+    column-gap: 35px;
+    padding-left: 30px;
+    position: relative;
+    color: #e2e7e7;
+    cursor: pointer;
+}
+#new
+{
+    position: absolute;
+    top: -17px;
+    left: 202px;
+    background: hsl(60, 100%, 50%);
+    font-size: 10px;
+    color: black;
+    width: 35px;
+    height: 16px;
+    text-align: center;
+
+}
+
+.blog_phone
+{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    cursor: pointer;
+}
+.alldepartment_menu
+{
+    background-color: var(--blue);
+}
+
+.call
+{
+    color: #e2e7e7;
+    padding: 2px;
+}
+.blog
+{
+    background-color: rgb(235, 213, 20);
+    width: 100px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    
+}
+.mobilenavigation_color
+{
+    display: none;
+}
+.mobile_jurnal
+{
+    display: none;
+}
+
+/* media query for header part */
+
+@media screen and (max-width:565px)
+{
+
+}
+
+@media screen and (max-width:1230px)
+{
+    .logo{
+        column-gap: 3px;
+    }
+    .search_bar input{
+        width: 280px;
+    }
+    .search{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .call
+    {
+        padding-left: 30px;
+    }
+    .blog
+    {
+        padding-right: 30px;
+    }
+
+    
+}
+/* mobile responsive */
+
+.login_mobile
+{
+    /* display: flex; */
+    align-items: flex-end;
+}
+
+@media screen and (max-width:1011px)
+{
+    .usertoolbarcolor,.alldepartment_menu,.about_navbar
+    {
+        display: none;
+    }
+    .mobilenavigation_color
+    {
+        display: block;
+    }
+    .mobile_jurnal
+    {
+        display: block;
+        background: var(--white);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .jurnal_m h1
+    {
+        font-family: 'Akshar';
+    }
+    .searchhome-logo{
+        padding-top: 10px;
+    }
+    
+}
+
+
+ 
+
+
+/* mobile navigation bar  code  (firat part of header)*/
+
+.mobilenavigation_color
+{
+    background: var(--blue);
+}
+.mobilenavigation
+{
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+    align-items: center;
+}
+.navlogin_register
+{
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav_doller_language
+{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.nav_doller_language img{
+    width: 20px;
+    height:15px;
+}
+
+
+/* jurnol code */
+.mobile_jurnal
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mobile_jurnal_cart
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 44px;
+}
+.cart_search i{
+    gap: 10px;
+    letter-spacing: 10px;
+    display: flex;
+}
+.navlogin_register i{
+    background: var(--white);
+    color: var(--blue);
+    border-radius: 50%;
+    padding: 7px;
+}
+.nav_doller_language{
+    color: var(--white);
+}
+.txt
+{
+    color: var(--white);
+    font-size: large;
+}
+#m-dollar, #m-lanuage{
+    outline: none;
+    border: none;
+    color:var(--white);
+    background-color:var(--blue);
+    font-size: 23px;
+}
+.mobile_doller{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_jurnal 
+{
+    background-color: #ffff;
+
+}
+
+
+.jurnal_m 
+{
+    font-size: 22px;
+    font-family: 'Akshar';
+}
+.cart_search{
+    font-size: 35px;
+    display: flex;
+}
+.websitename {
+    font-weight: bold;
+    font-family: 'Akshar';
+}
+/* media query of mobile responsive */
+
+@media screen and (max-width:600px)
+{
+    
+    .jurnal_m h1
+    {
+        font-size: 25px;        
+        font-family: 'Akshar';
+    }
+}
+@media screen and (max-width:575px)
+{
+    .cart_search{
+        font-size: 25px;
+    }
+    .jurnal_m
+    {
+        font-size: 15px;
+    }
+    #m-dollar, #m-lanuage ,.mobile_doller{
+        font-size: 12px;
+    }
+    .navlogin_register i
+    {
+        border-radius: 50%;
+        padding: 3px;
+    }
+    .txt{
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .navlogin_register
+    {
+        column-gap: 10px;
+    }
+    .nav_doller_language
+    {
+      column-gap: 5px;
+    }
+}
+
+@media screen and (max-width:412px)
+{
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navlogin_register i {
+        border-radius: 50%;
+        padding: 1px;
+        font-size: 12px;
+    }
+    #m-dollar, #m-lanuage, .mobile_doller {
+        font-size: 10px;
+    }
+    .nav_doller_language img {
+        width: 10px;
+        height: 7px;
+    }
+    .mobilenavigation
+    {
+        height: 32px;
+    }
+
+}
+@media screen and (max-width:962px)
+{
+    .login_mobile{
+        column-gap: 5px;
+    }
+}
+
  
 
 
@@ -110,10 +610,17 @@
     height: 100px;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(#fdfcfc, #d9d9db);
     padding-top: 20px;
-    padding-bottom: 20px;
-   
+    padding-bottom: 20px;   
+}
+#showmore-shadow
+{
+    color: rgb(165, 163, 163);
+}
+.fashion_addcart_whislist {
+    display: flex;
+    column-gap: 30px;
+    font-size: 10px;
 }
 
 #product-showmore{
@@ -355,8 +862,10 @@ border: 1px solid gainsboro;
 .input-count input {
     width: 100%;
     height: 40px;
+    text-align: center;
     outline: none;
-    border: 2px solid rgb(182, 182, 182);
+    font-size: 20px;
+    border: 2px solid rgb(221 219 219);
 }
 .last_addtocartbtn{
     width: 59%;
@@ -548,6 +1057,7 @@ border: 1px solid gainsboro;
     width: 297px;
     border: 1px solid #c0bbbb;
     padding: 5px;
+    background: var(--white);
     position: relative;
     overflow: hidden;
     border-radius: 4px;
@@ -583,6 +1093,7 @@ border: 1px solid gainsboro;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    display: none;
 }
 
 .desc{
@@ -593,6 +1104,9 @@ color: #979494;
     color: black;
     border-bottom: 2px solid orangered;
 }
+
+
+
 
 /* media query satrt */
 /* @media screen and (max-width: 494px) */
@@ -734,6 +1248,10 @@ color: #979494;
     .related-bought{
         font-size: 13px;
     }
+    .anotherselect select
+    {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width:476px)
 {
@@ -777,7 +1295,23 @@ color: #979494;
     .compare-product span{
         font-size: 13px;
     }
+    .anotherselect select
+    {
+        font-size: 10px;
+    }
+    #product-showless
+    {
+        width: 114px;
+        font-size: 14px;
+    }
+    #product-showmore{
+        width: 114px;
+        font-size: 14px;
+    }
+
+   
 }
+
 @media screen and (max-width:408px)
 {
     .demo-img {
@@ -800,5 +1334,29 @@ color: #979494;
     }
     .related-bought{
         font-size: 7px;
+    }
+    .last_addtocartbtn{
+        width: 45%;
+    }
+    .last_addtocartbtn button{
+        font-size: 10px;
+    }
+    .product-buynow button
+    {
+        font-size: 13px;
+    }
+    .product-buynow i {
+        padding: 1px 2px;
+        font-size: 8px;
+    }
+    .min-max-quantity{
+        font-size: 12px;
+    }
+    .copyright-andlogo p{
+        font-size: 12px;
+    }
+    .stockpricemarket
+    {
+        padding-left: 4px;
     }
 }
