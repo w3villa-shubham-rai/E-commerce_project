@@ -558,6 +558,7 @@ select{
 }
 .search-product-right-left{
     display: flex;
+    padding-top: 30px;
     
 }
 .search-left_part{
@@ -571,19 +572,25 @@ select{
 }
 .search-categories-input{
     display: flex;
-    padding-top: 20px;
     align-items: center;
     justify-content: space-between;
+    column-gap: 20px;
+}
+.search-item-input{
+    width: 60%;
 }
 .search-item-input input{
-    width: 550px;
+    width: 100%;
     padding: 5px;
     border-radius: 3px;
     border: 1px solid #a19c9c;
     outline: none;
 }
+.search-select-categories {
+    width: 40%;
+}
 .search-select-categories select{
-    width: 350px;
+    width: 100%;
     padding: 2px;
     border-radius: 3px;
     border: 1px solid #a19c9c;
@@ -602,6 +609,7 @@ select{
     outline: none;
     margin-top: 20px;
     border-radius: 3px;
+    cursor: pointer;
 }
 .product-meeting-cateria{
     padding-top: 10px;
@@ -800,6 +808,7 @@ select{
     display: flex;
     color: #c0bbbb;
     margin-right: 10px;
+    cursor: pointer;
 }
 #fav-whislist{
     font-size: 22px;
@@ -829,6 +838,7 @@ select{
     color: hsl(120, 100%, 25%);
     font-size: 7px;
     border-radius: 50%;
+    cursor: pointer;
 
 }
 #buy-now{
@@ -841,6 +851,7 @@ select{
     color: hsl(0deg 75.35% 52.08%);
     font-size: 7px;
     border-radius: 50%;
+    cursor: pointer;
 }
 #question-txt
 {
@@ -908,7 +919,6 @@ select{
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
-    padding-top: 20px;
 }
 .avilable-minus {
     display: flex;
@@ -1692,7 +1702,18 @@ input[type=number]::-webkit-outer-spin-button {
     padding-bottom: 40px;
 }
 
+#rangeminus,#minus-click_av,#subcat-minus,#brandminus1,#minus-click_color{
+    display: block;
+}
+#rangeplus,#plus-click_av,#subcat-plus,#brandplus1,#plus-click_color{
+    display: none;
+}
 
+
+.color-colortoggle,.avilable-color,.avilable-categories,.avilable-colortoggle,.priceranfe
+{
+    color: blue;
+}
 
 /*************************media query styeling using css*******************************/
 /* *************************************************************************************/
@@ -1721,28 +1742,15 @@ input[type=number]::-webkit-outer-spin-button {
     {
         flex-wrap: wrap;
     }
-    .search-item-input input 
-    {
-      width: 330px;  
-    }
+    
     .allitem_TV_cmera_canon-grid .search-televesion{
         width: 48%;
-    }
-}
-@media screen and (max-width:808px)
-{
-    .search-select-categories select
-    {
-        width: 200px;
     }
 }
 
 @media screen and (max-width:700px)
 {
-    .search-select-categories select
-    {
-        width: 200px;
-    }
+   
     .search-tv-apple{
         height: 240px;
     }
@@ -1768,12 +1776,7 @@ input[type=number]::-webkit-outer-spin-button {
     .whislist{
         gap: 8px;
     }
-    .search-item-input input{
-        width: 260px;
-    }
-    .search-select-categories select{
-        width: 180px;
-    }
+   
     .sort-show select{
         width: 85px;
     }
@@ -1960,4 +1963,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* the end css styeling of Search page */
+
+
+
 

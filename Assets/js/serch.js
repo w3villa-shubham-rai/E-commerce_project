@@ -107,13 +107,13 @@ function toggleTopCategories(elem){
   {
 
     rangecontainer.style.setProperty("display","block");
-    rangecolortogle.style.setProperty("color","#78787d");
+    rangecolortogle.style.setProperty("color","blue");
     containerrangeplus.style.setProperty("display","none");
     containerrangeminus.style.setProperty("display","block");
   }
   else{
     rangecontainer.style.setProperty("display","none");
-    rangecolortogle.style.setProperty("color","blue");
+    rangecolortogle.style.setProperty("color","#78787d");
     containerrangeplus.style.setProperty("display","block");
     containerrangeminus.style.setProperty("display","none");
   }
@@ -130,13 +130,13 @@ function toggleTopCategories(elem){
    if (container.style.display == 'none') {
 
     container.style.setProperty("display","block");
-    avilablecolortogle.style.setProperty("color","#78787d");
+    avilablecolortogle.style.setProperty("color","blue");
     container2.style.setProperty("display","none");
     container1.style.setProperty("display","block");
    }
    else {   
     container.style.setProperty("display","none");
-    avilablecolortogle.style.setProperty("color","blue");
+    avilablecolortogle.style.setProperty("color","#78787d");
     container2.style.setProperty("display","block");
     container1.style.setProperty("display","none");
    } 
@@ -160,7 +160,7 @@ function fn_Subcategories()
   if(Subcategories1.style.display=='none')
   {
     Subcategories1.style.setProperty("display","flex");
-    avilablesubcategories.style.setProperty("color","#78787d");
+   
     console.log(avilablesubcategories);
     // Subcategories1.style.setProperty("color","blue")
     subcatplus1.style.setProperty("display","none", );
@@ -169,10 +169,11 @@ function fn_Subcategories()
     //   color: red;
     // `
     subcatminus1.style.setProperty("display","block");
+    avilablesubcategories.style.setProperty("color","blue");
   }
   else{
     Subcategories1.style.setProperty("display","none");
-    avilablesubcategories.style.setProperty("color","blue");
+    avilablesubcategories.style.setProperty("color","#78787d");
     subcatplus1.style.setProperty("display","block");
     subcatminus1.style.setProperty("display","none")
 
@@ -189,13 +190,13 @@ function fn_brandnamelogo()
   {
 
     brandname.style.setProperty("display","flex");
-    avilablecolor.style.setProperty("color","#78787d");
+    avilablecolor.style.setProperty("color","blue");
     brandplus1.style.setProperty("display","block");
     brandminus1.style.setProperty("display","none");
   }
   else{
-    brandname.style.setProperty("display","none");
-    avilablecolor.style.setProperty("color","blue");
+    brandname.style.setProperty("display","none");   
+    avilablecolor.style.setProperty("color","#78787d");
     brandplus1.style.setProperty("display","none");
     brandminus1.style.setProperty("display","block");
   }
@@ -258,13 +259,13 @@ function fn_color()
    let container=document.getElementsByClassName("colorserach")[0];
    if (container.style.display == 'none') {
     container.style.setProperty("display","flex");
-    colortogle.style.setProperty("color","#78787d");
+    colortogle.style.setProperty("color","blue");
     pluscolor.style.setProperty("display","none");
     minuscolor1.style.setProperty("display","block");
    }
    else {   
     container.style.setProperty("display","none");
-    colortogle.style.setProperty("color","blue");
+    colortogle.style.setProperty("color","#78787d");
     pluscolor.style.setProperty("display","block");
     minuscolor1.style.setProperty("display","none");
    } 
