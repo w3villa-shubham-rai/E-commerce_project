@@ -1501,13 +1501,13 @@ footer{
 
 .allitem_TV_cmera_canon-li .search-televesion{
     width: 100%;
-    border-bottom: 1px solid rgb(145, 141, 141);
+    /* border-bottom: 1px solid rgb(145, 141, 141); */
     border-radius: 3px;
     /* position: relative; */
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
 }
 
 .search-listview
