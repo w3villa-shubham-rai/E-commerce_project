@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce project</title>
+    <!-- lotti animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
    <!-- font family -->
    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
     <!-- fontawesome CDN link -->
@@ -133,7 +136,7 @@
             </div>
 
             <div class="logo">
-              <div class="login logo-regisrter-heart-icon">
+              <div class="login logo-regisrter-heart-icon" onclick="showmudal()">
                 <i class="fa-regular fa-user"></i>
                 <p>login</p>
               </div>
@@ -1520,6 +1523,50 @@
         </div>
         
       </div>
+    </section>
+
+
+    <!--*******************here Login HTML start*****************************************-->
+    <!-- ******************************************************************************** -->
+
+    <section>
+      
+        <div class="overlay"></div>
+
+        <div class="container">
+          <div class="loginform">
+            <div class="handdescription">
+              <p>Returning Customer</p>
+              <div class="hand-img"> <img src="./Assets/images/hand.gif" alt=""></div>     
+            </div>                 
+            <div class="crosssymol" onclick="closemudal()">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+              <form action="">
+                  <div class="email">
+                    <label for="e-mail">E-Mail Address</label>
+                    <input type="email" name="" id="e-mail">
+                  </div>
+                  <div class="password">
+                    <label for="password-type">password</label>
+                    <input type="password" name="" id="password-type">
+                  </div>              
+                  <div class="forgetpass">
+                    <div class="recoverpass">
+                     <a href="">Forgottten password</a>
+                    </div> 
+                    <div class="registeroption">
+                     <a href="">Register!</a>
+                    </div>
+                  </div>
+                  <div class="loginbtn">
+                    <button>LOGIN</button>
+                  </div>
+              
+              </form>
+          </div>
+        </div>
+      
     </section>
 
     <script

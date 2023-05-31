@@ -265,3 +265,15 @@ function toggleTopCategories(elem){
     blogelement.classList.add("active_btn_toogle_blog");
  }
 
+// login form show logic
+
+function showmudal()
+{
+  document.querySelector('.overlay').classList.add('showlay');
+  document.querySelector('.loginform').classList.add('showloginform');
+}
+function closemudal()
+{
+  document.querySelector('.overlay').classList.remove('showlay');
+  document.querySelector('.loginform').classList.remove('showloginform');
+}
