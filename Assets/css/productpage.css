@@ -1186,8 +1186,11 @@ cursor: pointer;
     .pricedescription{
         border: none;
     }
+   
     .stockpricemarket{
         width: 100%;
+        border-bottom: 2px solid rgb(235, 228, 228);
+        padding-bottom: 20px;
     }
     .pricedescription
     {
