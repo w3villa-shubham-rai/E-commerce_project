@@ -16,9 +16,12 @@
     --skyblue:rgb(14, 170, 231);
     --brinjalcolor: rgb(94, 9, 151);
     --losesky:rgb(6, 68, 139);
+    --gray:rgb(231, 231, 231);
 }
 /* top categories java script */
- 
+ body{
+    background: #faf9f9;
+ }
 
 /* top categories java script */
 .container
@@ -29,7 +32,9 @@
    margin: auto;
 }
 
-
+#arrow-connect{
+ background: var(--white);
+}
 /* header part css */
 
 .container
@@ -170,6 +175,9 @@ select{
     border: 2px solid rgb(175, 164, 164);
     text-align: center;
     cursor: pointer;
+}
+.logo .login i:hover{
+    transform: scale(0.99);
 }
 .add_to_cart i{
     border-radius: 4px;
@@ -552,6 +560,10 @@ select{
     height: 100%;
     position: relative;
 }
+.product-maincontainer,.product-apple-cinema{
+    background: #faf9f9;
+}
+
 .product-smalllarge-image{
     display: flex;
     justify-content: space-between;
@@ -563,41 +575,51 @@ select{
     display: flex;
     width: 13%;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .demo-img {
     width: 100%;
-    height: 12%;
-    border: 1px solid #c5b6b6;
-    border-radius: 3px;
+    height: 11%;
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+    cursor: pointer;
  }
 
 .demo-img img{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .left-large-image{
     width: 85%;
     height: 100%;
 }
+.left-large-image:hover{
+    transform: scale(0.99);
+}
 .largeproductimage{
     width: 100%;
-    height: 92%;
+    height: 88%;
     position: relative;
     border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--white);
+    border: 2px solid var(--gray);
+    border-radius: 5px;
 }
 .largeproductimage img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 3px;
+    object-position: center;
+    border-radius: 5px;
 }
 .right-heading{
     display: flex;
-    column-gap: 10px;
+    column-gap: 15px;
 }
 #description_desk{
     width: 90px;
@@ -611,7 +633,8 @@ select{
     overflow: hidden;
     position: relative;
     padding-top: 20px;
-    padding-bottom: 20px;   
+    padding-bottom: 20px; 
+    line-height: 23px;  
 }
 #showmore-shadow
 {
@@ -636,6 +659,7 @@ select{
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    cursor: pointer;
 }
 
 
@@ -659,9 +683,10 @@ select{
 }
 .pricedescription
 {
-    width: 30%;
+    width: 35%;
     /* border: 2px solid red; */
     border-right: 2px solid rgb(235, 228, 228);
+    font-size: 16px;
 }
 .stockpricemarket{
     width: 70%;
@@ -674,25 +699,27 @@ select{
 .in-stock ul li{
     list-style-position: inside;   
     color: #3a3939; 
+    font-size: 14px
    
 }
 
 .stock-img {
-        width: 30%;
-        height: 177px;
         text-align: center;
-        border: 1px solid rgb(219, 219, 219);
-        border-radius: 3px;
+        border: 2px solid var(--gray);
+        border-radius: 5px;
+        width: 94px;
+        height: 55%;
  }
 
 .applestack
 {
-    height: 85%;
+    height: 80%;
 }
 .applestack img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 .in-stock p
 {
@@ -743,7 +770,7 @@ select{
     color: #686666;
     background: #fff;
     text-align: center;
-    border: 1px solid #8e8989;
+    border: 2px solid var(--gray);
     width: 30%;
     height: 40px;
     cursor: pointer;
@@ -761,7 +788,7 @@ select{
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: 1px solid #d0cccc;
+    border:2px solid var(--gray);
 }
 #b-1{
     background-color: rgb(5, 175, 197);
@@ -779,12 +806,13 @@ select{
     width: 100%;
 }
 .radio-btn button{
-    border: 1px solid #d9d3d3;
+    border: 2px solid var(--gray);
     font-size: 18px;
     width: 150px;
     height: 40px;
     color: #737070;
     border-radius: 3px;
+    cursor: pointer;
 }
 .radio-btn button i{
     font-size: 16px;
@@ -805,12 +833,14 @@ select{
     border: 2px solid #e7e7e7;
     border-radius: 4px;
     padding-left: 8px;
+    outline: none;
 }
 #inputtextlarge{
     width: 99%;
     height: 100px;
     border: 2px solid #e7e7e7;
     border-radius: 4px;
+    outline: none;
 }
 .uploadfile button{
     width: 100%;
@@ -821,7 +851,8 @@ select{
     text-align: center;
     border: 1px solid #c1bcbc;
     outline: none;
-    border-radius: 3px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 .date-calenderlogo{
     display: flex;
@@ -834,6 +865,7 @@ select{
     background-color: rgb(7 7 166);
     border-radius: 3px;
     text-align: center;
+    cursor: pointer;
 }
 .claender-icon i{
  margin-top: 10px;
@@ -880,6 +912,7 @@ border: 1px solid gainsboro;
     border: 1px solid #c1bcbc;
     outline: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 .last_addtocartbtn button i{
  padding-right: 10px;
@@ -906,6 +939,7 @@ border: 1px solid gainsboro;
     border: 1px solid var(--white);
     background-color: #10a103;
     white-space: 3px;
+    cursor: pointer;
 }
 .question-ans{
     width: 47px;
@@ -913,6 +947,7 @@ border: 1px solid gainsboro;
     background: red;
     text-align: center;
     border-radius: 3px;
+    cursor: pointer;
 }
 .question-ans i
 {
@@ -945,16 +980,17 @@ border: 1px solid gainsboro;
 .socialmedia-product-logo{
     width: 40px;
     height: 40px;
-    /* border: 2px solid#c5bebe; */
     border-radius: 3px;
     text-align: center;
     align-items: center;
     display: flex;
     text-align: center;
-    background-color: #c0b9b9
+    background-color: #c0b9b9;
+    cursor: pointer;
+    
 }
 .socialmedia-product-logo i{
-  padding-left: 15px;
+  padding-left: 13px;
   color: var(--white);
 }
 .productpage-socialmedialogo{
@@ -994,9 +1030,11 @@ border: 1px solid gainsboro;
     border: 2px solid #e7e7e7;
     border-radius: 4px;
     padding-left: 8px;
+    outline: none;
 }
 .addwishlist i{
     color: var(--red);
+    cursor: pointer;
 }
 .addwishlist,.compare-product span{
     color: #5a5a5a;
@@ -1008,6 +1046,7 @@ border: 1px solid gainsboro;
     color: var(--blue);
     border-radius: 50%;
     font-size: 11px;
+    cursor: pointer;
 }
 .socialmedia-product-logo-last {
     width: 85px;
@@ -1018,11 +1057,12 @@ border: 1px solid gainsboro;
     align-items: center;
     display: flex;
     text-align: center;
-    background-color: #c0b9b9
+    background-color: #c0b9b9;
+    cursor: pointer;
 }
 #seven-text {
-    padding-left: 15px;
-   color: var(--white);
+   padding-left: 23px;
+   color: var(--white);                                                        
 }
 #seven{
     color: white;
@@ -1031,7 +1071,7 @@ border: 1px solid gainsboro;
     background-color: #f0efef
 }
 .relatedproduct-bought-main{
-    background-color: #ebe8e8;
+    background-color: #f5f2f2;
    margin-top: 70px;
 }
 .related-bought{
@@ -1039,9 +1079,17 @@ border: 1px solid gainsboro;
     column-gap: 20px;
     padding-top: 40px;
 }
+.related{
+    cursor: pointer;
+    font-size: 13px;
+}
 
 #peoplealsoid{
     color: #b1a8a8;
+    cursor: pointer;
+}
+.people-bought h2{
+    font-size: 20px;
 }
 .people_desk{
     display: none;
@@ -1063,7 +1111,7 @@ border: 1px solid gainsboro;
     border-radius: 4px;
 }
 .img-relatet-p img{
-    height: 350px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
 }
@@ -1094,10 +1142,12 @@ border: 1px solid gainsboro;
     transform: translateX(-50%);
     bottom: 0;
     display: none;
+    cursor: pointer;
 }
 
 .desc{
 color: #979494;
+cursor: pointer;
 }
 
 .desc-active{
@@ -1108,18 +1158,24 @@ color: #979494;
 
 
 
-/* media query satrt */
-/* @media screen and (max-width: 494px) */
-@media screen and (max-width:1272px)
+/* *********************************media query satrt ************************************************************/
+@media screen and (max-width:1282px)
 {
-    .stock-img{
-        width: 28%;
-    }
+
     .in-stock ul {
         font-size: 13px;
     }
     .product-buynow i {
         margin-right: 4px;
+    }
+}
+@media screen and (max-width: 1195px)
+{
+    .in-stock ul li{ 
+        font-size: 10px;
+    }
+    .pricedescription p {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 1050px)
@@ -1137,11 +1193,14 @@ color: #979494;
     {
         width: 100%;
     }
-    .in-stock ul {
-        font-size: 18px;
+    .in-stock ul li{
+        font-size: 15px;
     }
     .largeproductimage{
         height: 72%;
+    }
+    .pricedescription p {
+        font-size: 15px;
     }
     .demo-img{
         height: 9%;
@@ -1156,11 +1215,19 @@ color: #979494;
    .product-buynow{
     width: 20%;
    }
-
+   #last-btn-doller{
+    margin-top: 4px;
+   }
+   #updated-p{
+    font-size: 36px;
+   }
+   #previous-p{
+    font-size: 26px;
+   }
 }
 @media screen and (max-width:988px)
 {
-    .in-stock ul {
+    .in-stock ul li{
         font-size: 14px;
     }
     .right-heading{
@@ -1177,6 +1244,9 @@ color: #979494;
     }
     .largeproductimage{
         height: 67%;
+    }
+    .stock-img{
+        width: 80px;
     }
 }
 
@@ -1232,16 +1302,12 @@ color: #979494;
 }
 @media screen and (max-width:565px)
 {
-    /* .related-bought {
-        font-size: 13px;
-    } */
+    
     .relatedprod-width
     {
         flex-direction: column;
     }
-    /* .item_fashin_relatedproduct{
-        width: 100%;
-    } */
+    
     .item_fashin_relatedproduct{
         width: 100%;
     }
@@ -1251,6 +1317,9 @@ color: #979494;
     .anotherselect select
     {
         font-size: 12px;
+    }
+    #relatedproductid,#peoplealsoid{
+        font-size: 13px;
     }
 }
 @media screen and (max-width:476px)
@@ -1263,7 +1332,7 @@ color: #979494;
         font-size: 13px;
         column-gap: 5px;
     }
-    .in-stock ul{
+    .in-stock ul li{
         font-size: 13px;
     }
     .product-star
@@ -1308,6 +1377,9 @@ color: #979494;
         width: 114px;
         font-size: 14px;
     }
+    .stock-img{
+        width: 80px;
+    }
 
    
 }
@@ -1320,14 +1392,8 @@ color: #979494;
     .right-heading{
         font-size: 10px;
     }
-    .in-stock ul {
-        font-size: 10px;
-    }
-    .stock-img{
-        height: 128px;
-    }
-    .applestack {
-        height: 75%;
+    .in-stock ul li {
+        font-size: 14px;
     }
     .product-star{
         font-size: 10px;
@@ -1359,4 +1425,20 @@ color: #979494;
     {
         padding-left: 4px;
     }
+    #medium-btn-doller{
+        margin-top: 4px;
+    }
 }
+@media screen and (max-width:359px)
+{
+    .stock-img
+    {
+        width: 70px;
+    }
+    .in-stock ul li{
+        font-size: 11px;
+    }
+}
+
+
+/******************************Product page styleing css end******************************** */
