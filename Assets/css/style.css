@@ -139,6 +139,9 @@ select{
     display: flex;
     column-gap: 10px;
 }
+.logout{
+    display: none;
+}
 .logo-regisrter-heart-icon{
     text-align: center;
 }
@@ -2620,7 +2623,8 @@ footer{
 
 
 
-/* login form css start */
+/*************************login form css start ***********************************************/
+/* *******************************************************************************************/
 
 
 .overlay{
@@ -2641,7 +2645,7 @@ footer{
     z-index: 1;
 }
 
-.loginform{
+.showmodal{
     z-index: 2;
     position: absolute;
     top: -50%;
@@ -2659,28 +2663,25 @@ footer{
 .showloginform{
     top: 50%;
 }
-.loginform input{
+.showmodal input{
     width: 60%;
     height: 35px;
     border: 2px solid var(--gray);
     outline: none;
     border-radius: 5px;
 }
-.email,.password,.forgetpass
+.email,.password,.forgetpass, .username,.confirmpassword
 {
     display: flex;
-    gap: 60px;
+   justify-content: space-between;
     margin-top: 31px;
 }
-#password-type
-{
-    margin-left: 41px;
-}
-.loginform label{
+
+.showmodal label{
     font-size: 19px;
     color: #4e4c4c;
 }
-.loginform p{
+.showmodal p{
     font-size: 25px;
     border-bottom: 2px solid var(--oranged);
     width: 47%;
@@ -2723,4 +2724,94 @@ footer{
     right: 3%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1243px)
+{
+    .showmodal p {
+        font-size: 14px;
+        width: 122px;
+    }
+    .hand-img {
+        width: 7%;
+        height: 32px;
+    }
+    .showmodal label{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 907px)
+{
+    .crosssymol{
+        font-size: 18px;
+    }
+    .showmodal input
+    {
+        height: 25px;
+    }
+   
+    
+}
+@media screen and (max-width: 719px)
+{
+    .showmodal input{
+        height: 20px;
+    }
+    .showmodal label{
+        font-size: 11px;
+    }
+    #password-type {
+        margin-left: 24px;
+    }
+    .forgetpass{
+        font-size: 13px;
+    }
+    .email, .password, .forgetpass,.username ,.confirmpassword{
+        margin-top: 18px;
+    }
+    .hand-img {
+        width: 12%;
+        height: 28px;
+    }
+  
+}
+@media screen and (max-width: 623px)
+{
+    .email, .password, .forgetpass,.username,.confirmpassword{
+        margin-top: 10px;
+    }
+    .showmodal label{
+        font-size: 9px;
+    }
+    .showmodal input {
+        width: 54%;
+    }
+  
+    .forgetpass{
+        font-size: 10px;
+    }
+    .loginbtn button{
+        margin-top: 15px;
+    }
+    .crosssymol{
+        right: 10px;
+    }
+  
+}
+@media screen and (max-width: 469px)
+{
+    .showmodal p {
+        font-size: 10px;
+        width: 88px;
+    }
+    .hand-img {
+        width: 13%;
+        height: 20px;
+    }
+    .forgetpass{
+        font-size: 8px;
+    }
+  
+}
+
 /* End css of page */

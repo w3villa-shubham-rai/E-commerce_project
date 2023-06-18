@@ -35,7 +35,7 @@
     <!-- owl crosel end -->
     <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
-  <body>
+  <body onload="showusername_login_reg()">
     <header>
       <div class="container" id="arrow-connect">
         <div class="about_navbar">
@@ -136,13 +136,17 @@
             </div>
 
             <div class="logo">
-              <div class="login logo-regisrter-heart-icon" onclick="showmudal()">
+              <div class="login logo-regisrter-heart-icon" onclick="showmudal(this)">
                 <i class="fa-regular fa-user"></i>
-                <p>login</p>
+                <p id="dispusername">login</p>
               </div>
-              <div class="Register logo-regisrter-heart-icon">
+              <div id="userregistericon" class="Register logo-regisrter-heart-icon" onclick="showmudal(this)">
                 <i class="fa-solid fa-pencil"></i>
                 <p>Register</p>
+              </div>
+              <div onclick="logoutuser()" id="userlogout" class="logout logo-regisrter-heart-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>logout</p>
               </div>
               <div class="whishlist logo-regisrter-heart-icon">
                 <i class="fa-regular fa-heart"></i>
@@ -205,12 +209,12 @@
           <div class="mobilenavigation">
             <div class="mobile_login_register">
               <div class="navlogin_register">
-                <div class="login_mobile">
+                <div class="login_mobile" onclick="showmudal()">
                   <i class="fa-solid fa-user"></i>
                   <span class="txt">Login</span>
                 </div>
 
-                <div class="register_mobile">
+                <div class="register_mobile" onclick="showmudal(this)">
                   <i class="fa-solid fa-pencil"></i>
                   <span class="txt">Register</span>
                 </div>
@@ -1534,40 +1538,80 @@
         <div class="overlay"></div>
 
         <div class="container">
-          <div class="loginform">
-            <div class="handdescription">
-              <p>Returning Customer</p>
-              <div class="hand-img"> <img src="./Assets/images/hand.gif" alt=""></div>     
-            </div>                 
-            <div class="crosssymol" onclick="closemudal()">
-              <i class="fa-regular fa-circle-xmark"></i>
-            </div>
-              <form action="">
-                  <div class="email">
-                    <label for="e-mail">E-Mail Address</label>
-                    <input type="email" name="" id="e-mail">
-                  </div>
-                  <div class="password">
-                    <label for="password-type">password</label>
-                    <input type="password" name="" id="password-type">
-                  </div>              
-                  <div class="forgetpass">
-                    <div class="recoverpass">
-                     <a href="">Forgottten password</a>
-                    </div> 
-                    <div class="registeroption">
-                     <a href="">Register!</a>
+
+            <div id="loginform" class="showmodal">
+              <div class="handdescription">
+                <p>Returning Customer</p>
+                <div class="hand-img"> <img src="./Assets/images/hand.gif" alt=""></div>     
+              </div>                 
+              <div class="crosssymol" onclick="closemudal()">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+                <form action="">
+                    <div class="email">
+                      <label for="e-mail">E-Mail Address</label>
+                      <input type="email" name="" id="e-mail">
                     </div>
-                  </div>
-                  <div class="loginbtn">
-                    <button>LOGIN</button>
-                  </div>
-              
-              </form>
-          </div>
+                    <div class="password">
+                      <label for="password-type">password</label>
+                      <input type="password" name="" id="password-type">
+                    </div>              
+                    <div class="forgetpass">
+                      <div class="recoverpass">
+                       <a href="">Forgottten password</a>
+                      </div> 
+                      <div class="registeroption">
+                       <a href="">Register!</a>
+                      </div>
+                    </div>
+                    <div class="loginbtn">
+                      <button type="submit" onclick="login_fn()">LOGIN</button>
+                    </div>
+                
+                </form>
+            </div>
+
+            <div id="registerform" class="showmodal">
+              <div class="handdescription">
+                <p>Your Personal Detail</p>
+                <div class="hand-img"> <img src="./Assets/images/hand.gif" alt=""></div>     
+              </div>                 
+              <div class="crosssymol" onclick="closemudal()">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+                <form action="">
+                    <div class="username">
+                     <label for="username">User-Name</label>
+                     <input type="text" name="" id="user-name" value="">
+                    </div>
+                    <div class="email">
+                      <label for="e-mail-reg">E-Mail Address</label>
+                      <input type="email" name="" id="e-mail-reg" value="">
+                    </div>
+                    <div class="password">
+                      <label for="password-type-reg">password</label>
+                      <input type="password" name="" id="password-type-reg" value="">
+                    </div> 
+                    <div class="confirmpassword">
+                      <label for="confirm-password">Password Confirm</label>
+                      <input type="text" name="" id="confirm-password" value="">
+                     </div>
+
+                    <div class="loginbtn">
+                      <button type="submit" onclick="registeruser()" >Register</button>
+                    </div>
+                
+                </form>
+            </div>
+
         </div>
       
     </section>
+    
+    <!--**************************registration html ******************************* -->
+    <!-- ****************************************************************************** -->
+
+    
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"

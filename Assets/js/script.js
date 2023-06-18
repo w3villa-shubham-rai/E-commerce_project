@@ -267,13 +267,174 @@ function toggleTopCategories(elem){
 
 // login form show logic
 
-function showmudal()
+function showmudal(self)
 {
   document.querySelector('.overlay').classList.add('showlay');
-  document.querySelector('.loginform').classList.add('showloginform');
+
+  if (self.classList.contains('login')) {
+    document.querySelector('#loginform').classList.add('showloginform');
+  } else {
+    document.querySelector('#registerform').classList.add('showloginform'); 
+  }
+
 }
+
 function closemudal()
 {
+  const loginhide = document.querySelector('#loginform')
+  const registerhide = document.querySelector('#registerform')
+
   document.querySelector('.overlay').classList.remove('showlay');
-  document.querySelector('.loginform').classList.remove('showloginform');
+  
+  if (loginhide.classList.contains('showloginform')) {
+    loginhide.classList.remove('showloginform');
+  } else {
+    registerhide.classList.remove('showloginform');
+  }
+
+
 }
+
+
+// let a=prompt("enter the key")
+// let b=prompt("enter the value")
+
+// localStorage.setItem(a,b);
+
+// console.log(`the key is ${a} is ${localStorage.getItem(key)}`)
+
+// registration process
+
+function registeruser()
+{
+  //  let name=document.getElementById('user-name').value;
+  // let username,email,password,confirmpassword
+  // localStorage.setItem("username",username)
+  // localStorage.setItem("email",email)
+  // localStorage.setItem("password",password)
+  // localStorage.setItem("confirm",confirmpassword)
+  let username,email,password,confirmpassword
+  username=document.getElementById("user-name").value,
+  email=document.getElementById("e-mail-reg").value,
+  password=document.getElementById("password-type-reg").value,
+  confirmpassword=document.getElementById("confirm-password").value
+
+    if(password == confirmpassword)
+    {
+        let dict={
+         "username": username,
+          "email":email,
+          "password":password,
+          "loginstaus":false,
+        }
+      
+      dict = JSON.stringify(dict)  
+      localStorage.setItem("user",dict)
+    }
+     else
+     {
+     alert("plese enter the correct password");
+     }
+
+  }
+
+  
+ 
+
+// function login_fn()
+// {
+  
+
+  // let myobj=JSON.parse(localStorage.getItem("user"));
+  // // console.log(myobj);
+  // // console.log(myobj.username,myobj.password);
+  // let usernamelogin=myobj.email;
+  // let userpassword=myobj.password;
+  // let loginGmail=document.getElementById("e-mail").value,
+  // let loginpassword=document.getElementById("password-type").value
+ 
+  // if(userpassword == loginpassword && usernamelogin== loginGmail)
+  // {
+  //   alert("user login");
+  // }
+  
+// }
+// let myobj=JSON.parse(localStorage.getItem("user"));
+//   // console.log(myobj);
+//   // console.log(myobj.username,myobj.password);
+//   let usernamelogin=myobj.username;
+//   console.log(usernamelogin);
+//   let userpassword=myobj.password;
+//   console.log(userpassword);
+
+
+function login_fn()
+{
+  let myobj=JSON.parse(localStorage.getItem("user"));
+  let useremailreg=myobj.email;
+  let userregpassword=myobj.password;
+  let loginform=document.getElementById("loginform");
+  let userregname=myobj.username;  
+  let loginstaus=myobj.loginstaus;
+  let logingmail,loginpassword;
+  logingmail=document.getElementById("e-mail").value,
+  loginpassword=document.getElementById("password-type").value
+
+
+  if(logingmail ==useremailreg &&  loginpassword  ==  userregpassword)
+  {
+    alert("user successfully login");
+    let dict={
+        "username":userregname,
+        "email":useremailreg,
+        "password":userregpassword,
+        "loginstaus":true,
+     }
+   
+      dictlogin = JSON.stringify(dict)  
+      localStorage.setItem("user",dictlogin)
+ 
+   
+  }
+  else{
+    alert("user not login");
+  }
+ 
+
+}
+
+function showusername_login_reg()
+  {
+    let myobj=JSON.parse(localStorage.getItem("user"));
+    let userregname=myobj.username; 
+    let userlogout=document.getElementById("userlogout");
+    let userregistericon=document.getElementById("userregistericon");
+    
+
+    let status=myobj.loginstaus;
+    if(status==true)
+    {
+      let displayusername=document.getElementById("dispusername");
+      displayusername.innerHTML=userregname;  
+      userlogout.style.display="block";
+      userregistericon.style.display="none";
+    }
+   
+
+  
+   
+  }
+function logoutuser()
+{
+
+  let myobj=JSON.parse(localStorage.getItem("user"));
+  let status=myobj.loginstaus; 
+  let userregistericon=document.getElementById("userregistericon");
+  userregistericon.style.display="block";
+  let userlogout=document.getElementById("userlogout");
+  userlogout.style.display="none";  
+  let displayusername=document.getElementById("dispusername");
+  displayusername.innerHTML="login"; 
+
+}
+
