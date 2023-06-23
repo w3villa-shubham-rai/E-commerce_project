@@ -35,7 +35,8 @@
     <!-- owl crosel end -->
     <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
-  <body onload="showusername_login_reg()">
+  <!-- onload="showusername_login_reg()" -->
+  <body>
     <header>
       <div class="container" id="arrow-connect">
         <div class="about_navbar">
@@ -391,24 +392,24 @@
               modi ab!<a href="">learn more</a>
             </p>
             <div class="topcategoreis_fashion" id="myDIV">
-              <button class="btn-group btn-left-radius active_btn_toogle_categories" onclick="toggleTopCategories(this)">
+              <button class="btn-group btn-left-radius active_btn_toogle_categories" onclick="toggleTopCategories(this);dataadd('topCategory')">
                 <p>TOP CATEGORIES</p>
                </button>
 
-              <button  class="btn-group" onclick="toggleTopCategories(this)">
+              <button  class="btn-group" onclick="toggleTopCategories(this); dataadd('electronic');">
                 <p>ELECTRONICS</p>
               </button>
-              <button class="btn-group" onclick="toggleTopCategories(this)">
+              <button class="btn-group" onclick="toggleTopCategories(this);dataadd('beauty')">
                 <p>BEAUTY</p>
               </button>
-              <button class="btn-group btn-group-right-radius" onclick="toggleTopCategories(this)">
+              <button class="btn-group btn-group-right-radius" onclick="toggleTopCategories(this);dataadd('fashion')">
                 <p>FASHION</p>
               </button>
             </div>
 
             <div class="whyus_crowsel">
-              <div class="owl-carousel owl-theme" id="whyus">
-                <div class="item1 img-topcategories">
+              <!-- <div class="owl-carousel owl-theme" id="whyus"> -->
+                <!-- <div class="item1 img-topcategories">
                   <img src="./Assets/images/girlcapim2.jpeg" alt="" />
                   <p>FASHION</p>
                 </div>
@@ -431,8 +432,8 @@
                 <div class="item6 img-topcategories">
                   <img src="./Assets/images/bags.jpg" alt="" />
                   <p>FOOTWEAR</p>
-                </div>
-              </div>
+                </div> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -453,22 +454,22 @@
               modi ab!<a href="">learn more</a>
             </p>
             <div class="topcategoreis_fashion" id="myDIV_feature_product">
-              <button class="btn-group  btn-left-radius active_btn_toogle_top_categories " onclick="toogle_featureproduct(this)">
-                <p>TOP CATEGORIES</p>
+              <button class="btn-group  btn-left-radius active_btn_toogle_top_categories " onclick="toogle_featureproduct(this);featurproductadd('topCategory')">
+                <p>Featured</p>
               </button>
 
-              <button  class="btn-group" onclick="toogle_featureproduct(this)">
-                <p>ELECTRONICS</p>
+              <button  class="btn-group" onclick="toogle_featureproduct(this);featurproductadd('latest')">
+                <p>Latest</p>
               </button>
-              <button class="btn-group" onclick="toogle_featureproduct(this)">
-                <p>BEAUTY</p>
+              <button class="btn-group" onclick="toogle_featureproduct(this);featurproductadd('bestselers')">
+                <p>Bestsellers</p>
               </button>
-              <button class="btn-group btn-group-right-radius" onclick="toogle_featureproduct(this)">
-                <p>FASHION</p>
+              <button class="btn-group btn-group-right-radius" onclick="toogle_featureproduct(this);featurproductadd('special')">
+                <p>Specials</p>
               </button>
             </div>
-            <div class="whyus_crowsel">
-              <div class="owl-carousel owl-theme" id="feature-product">
+            <div class="whyus_crowsel featureproductcat-container">
+              <!-- <div class="owl-carousel owl-theme" id="feature-product">
                 <div class="headphone">
                   <div class="image">
                     <img src="./Assets/images/headphone3.avif" alt="" />
@@ -565,15 +566,7 @@
                     <img src="./Assets/images/smarttv.jpg" alt="" />
                     <div class="customlabels">2-3 DAYS</div>
                     <div class="free">FREE</div>
-                    <!-- <div class="hot_per">
-                                
-                                    <div class="prcent">
-                                        -70%
-                                    </div>
-                                    <div class="hot">
-                                        hot
-                Why buy                    </div>
-                                </div>                            -->
+        
                   </div>
                   <div class="erykson">
                     <div>Erickson</div>
@@ -615,9 +608,7 @@
                     <img src="./Assets/images/camera.jpg" alt="" />
                     <div class="customlabels">PRE ORDER</div>
                     <div class="hot_per">
-                      <!-- <div class="prcent">
-                                        -70%
-                                    </div> -->
+                      
                       <div class="hot">HOT</div>
                     </div>
                   </div>
@@ -744,7 +735,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div class="seeallproducd-btn">

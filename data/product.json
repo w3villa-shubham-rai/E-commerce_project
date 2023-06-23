@@ -1,0 +1,120 @@
+{
+"topCategory" : [
+    {
+        "img":"./Assets/images/footwear.jpeg",
+        "name":"BAGS"
+    },
+    {
+        "img":"./Assets/images/bags.jpg",
+        "name":"BAGS"
+    },
+    {
+        "img":"./Assets/images/footwear.jpeg",
+        "name":"Footwear"
+    },
+    {
+        "img":"./Assets/images/healthbeauty.jpeg",
+        "name":"Beauty"
+    },
+    {
+        "img":"./Assets/images/healthbeauty.jpeg",
+        "name":"HEALTH"
+    },
+    {
+        "img":"./Assets/images/healthbeauty.jpeg",
+        "name":"HOMEDECORE"
+    }
+   
+
+
+
+],
+
+
+"electronic":[
+    {
+        "img":"./Assets/images/elect1.avif",
+        "name":"CAMERA"
+    },
+    {
+        "img":"./Assets/images/elect2.avif",
+        "name":"HEADPHONE"
+    },
+    {
+        "img":"./Assets/images/elect3.avif",
+        "name":"DESKTOP"
+    },
+    {
+        "img":"./Assets/images/elect4.avif",
+        "name":"SPEAKER"
+    },
+    {
+        "img":"./Assets/images/elect5.avif",
+        "name":"MUSICPLAYER"
+    },
+    {
+        "img":"./Assets/images/elect1.avif",
+        "name":"CAMERA"
+    }
+
+],
+
+    "beauty":[
+        
+            {
+                "img":"./Assets/images/beauty1.avif",
+                "name":"BRUSH"
+            },
+            {
+                "img":"./Assets/images/beauty2.avif",
+                "name":"TREE"
+            },
+            {
+                "img":"./Assets/images/beauty3.avif",
+                "name":"BEAUTY"
+            },
+            {
+                "img":"./Assets/images/beauty4.avif",
+                "name":"BAGS"
+            },
+            {
+                "img":"./Assets/images/beauty5.avif",
+                "name":"MAKEYPBOX"
+            },
+            {
+                "img":"./Assets/images/beauty1.avif",
+                "name":"BRUSH"
+            }
+        
+    ],
+    "fashion":[
+
+        {
+            "img":"./Assets/images/fashion1.avif",
+            "name":"SWEATER"
+        },
+        {
+            "img":"./Assets/images/fashion2.avif",
+            "name":"SHOES"
+        },
+        {
+            "img":"./Assets/images/fashion3.avif",
+            "name":"CAP"
+        },
+        {
+            "img":"./Assets/images/fashion4.avif",
+            "name":"TOWEL"
+        },
+        {
+            "img":"./Assets/images/fashion5.jpeg",
+            "name":"JACKET"
+        },
+        {
+            "img":"./Assets/images/fashion1.avif",
+            "name":"SWEATER"
+        }
+        
+    ]
+
+
+}
