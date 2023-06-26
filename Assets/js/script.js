@@ -75,30 +75,34 @@ function featureproduct()
 // ******************************************feature Product *******************
 // *****************************************************************************************
 
-$("#feature-categories").owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: false,
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 0,
+function featuredcategoriesowl()
+{
+  $("#feature-categories").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 0,
+      },
+      
+      400:{
+        items:1,
+      },
+      700:{
+        items:2,
+      },
+      890:{
+        items:3
+      },
+      1100:{
+        items:4
+      }
     },
-    
-    400:{
-      items:1,
-    },
-    700:{
-      items:2,
-    },
-    890:{
-      items:3
-    },
-    1100:{
-      items:4
-    }
-  },
-});
+  });
+}
+
 
 
 
@@ -147,74 +151,85 @@ $("#shop_brand").owlCarousel({
 });
 // **********************************blog section**************************************
 
-$(".blogcr_cr").owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: false,
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 1,
+function ourblog()
+{
+  $(".blogcr_cr").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      800:{
+          items: 2,
+      },
+      950:{
+          items: 3,
+      },
     },
-    800:{
-        items: 2,
+  });
+}
+
+
+
+
+
+function peoplesayingaboutcrosel()
+{
+  $(".saying_about-us").owlCarousel({
+    loop: true,
+    margin: 10,
+    // nav:true,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      300:{
+        items:1,
+      },
+  
+      700:{
+        items:2,
+      },
+      800:{
+        items:3,
+      }
     },
-    950:{
-        items: 3,
-    },
-  },
-});
+  });
+  
+}
 
-
-
-
-
-
-$(".saying_about-us").owlCarousel({
-  loop: true,
-  margin: 10,
-  // nav:true,
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    300:{
-      items:1,
-    },
-
-    700:{
-      items:2,
-    },
-    800:{
-      items:3,
-    }
-  },
-});
 
 
 // most viewd section owl crausal
+function mostviecroselfunction()
+{
+  $("#mostviewd").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      500:{
+        items: 2,
+      },
+      940:{
+        items:3
+      },
+      1218:{
+        items:4
+      }
+    },
+  });
+}
 
-$("#mostviewd").owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: false,
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    500:{
-      items: 2,
-    },
-    940:{
-      items:3
-    },
-    1218:{
-      items:4
-    }
-  },
-});
+
 
 
 
@@ -496,6 +511,10 @@ function toggleTopCategories(elem){
 let a=document.getElementsByClassName("whyus_crowsel")[0];
 let b=document.querySelector(".whyus_crowsel");
 let featureproductcat=document.querySelector(".featureproductcat-container");
+let newfashioncrowesl=document.querySelector(".newfashioncrowesl"); 
+let blogcrowsel=document.querySelector(".blog-crowsel");
+let sayingaboutcarousel=document.querySelector(".saying-about-carousel");
+let mostviedmainsection=document.querySelector(".mostvied-main-section");
 
 
 async function dataadd(category)
@@ -625,3 +644,188 @@ async function featurproductadd(productdata)
 }
 
 featurproductadd(productdata = "topCategory")
+
+
+
+// new fasion datapart
+
+
+async function newfasionadddata(category)
+{
+
+  let response=await fetch("./data/featureproduct.json");
+  let data=await response.json();
+  let content = data[category]
+  
+  ihtml=`<div class="owl-carousel owl-theme" id="feature-categories">`
+  for(i in content)
+  {
+    ihtml +=`
+    <div class="item_fashin_crowesl img-dresssweter">
+        <img src="${content[i].img}" alt="" />
+            <div class="customlabels_newfashion">2-3 DAYS</div>
+            <div class="bodycorndressfirst">
+               <div class="bdncross">${content[i].productname}</div>
+               <div class="bdn-doller">${content[i].price}</div>
+                <hr />
+              <div class="btnbd_addto_cart">
+                   <div class="btn_addcart_fashion">
+                     <button>Add to cart</button>
+                     <div class="fashion_addcart_whislist">
+                       <i
+                         id="heartimage-logo"
+                         class="fa-regular fa-heart"
+                       ></i>
+                       <i
+                         id="compare-product"
+                         class="fa-solid fa-arrow-right-arrow-left"
+                       ></i>
+                     </div>
+                   </div>
+              </div>
+            </div>
+  </div>
+
+    `
+  }
+
+  ihtml += `</div>`
+  newfashioncrowesl.innerHTML=ihtml;
+  featuredcategoriesowl()
+}
+
+newfasionadddata(category = "newfashion")
+
+
+// our blog section
+
+
+async function addblogdata(category)
+{
+
+  let response=await fetch("./data/blog.json");
+  let data=await response.json();
+  let content = data[category]
+  
+  ihtml=`<div class="owl-carousel owl-theme blogcr_cr">`
+  for(i in content)
+  {
+    ihtml +=`
+    
+           <div class="blog_img_1">
+                  <div class="jornalblog_img">
+                    <img src="${content[i].img}" alt="" />
+                    <div class="aug">
+                      <p class="number-two">02</p>
+                      <p class="month">Aug</p>
+                    </div>
+                  </div>
+                  <div class="adminmessage">
+                    <i class="fa-solid fa-user"></i>
+                    <span>admin</span>
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <span>${content[i].comment}</span>
+                    <i class="fa-solid fa-eye"></i>
+                    <span>${content[i].view}</span>
+                  </div>
+                  <div class="jurnal-p-long-para">
+                    <p class="jurnal-blog-p">Jornal Blog</p>
+                    <p class="junrnal-blog-longpara">
+                      ${content[i].descriptionheadin}
+                    </p>
+                    <div class="blog-anchar">
+                      <a href="">Read More</a>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+          </div>
+
+    `
+  }
+
+  ihtml += `</div>`
+  blogcrowsel.innerHTML=ihtml;
+  ourblog()
+}
+
+addblogdata(category = "latestpost")
+
+
+
+// people saying section start
+
+async function peoplefeedbackdata(category)
+{
+
+  let response=await fetch("./data/blog.json");
+  let data=await response.json();
+  let content = data[category]
+  
+  ihtml=`<div class="owl-carousel owl-theme saying_about-us owl-loaded owl-drag">`
+  for(i in content)
+  {
+    ihtml +=`
+    <div class="item-saying-about-comma">
+    <div class="comma">
+      <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
+      <p class="junrnal-blog-longpara">
+       ${content[i].statement}
+      </p>
+
+      <p id="user">- ${content[i].name}</p>
+    </div>
+  </div>   
+          
+
+    `
+  }
+
+  ihtml += `</div>`
+  sayingaboutcarousel.innerHTML=ihtml;
+  peoplesayingaboutcrosel()
+}
+
+peoplefeedbackdata(category = "feedback")
+
+// Mostviewd section Start dynamic data
+
+
+async function mostviewddata(category)
+{
+
+  let response=await fetch("./data/featureproduct.json");
+  let data=await response.json();
+  let content = data[category]
+  
+  ihtml=`<div class="owl-carousel owl-theme" id="mostviewd">`
+  for(i in content)
+  {
+    ihtml +=`      
+    <div class="sunglasses">
+    <div class="image-sunglass">
+      <img src="${content[i].img}" alt="" />
+    </div>
+    <div class="oversized-sunglasses">
+      <p class="aboutus-para">
+        ${content[i].productname}
+      </p>
+      <p class="most-viewed-doller">${content[i].price}</p>
+      <div class="most-viewed-whishlist_add-tocart_comapare">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+      </div>
+    </div>
+  </div>
+          
+
+    `
+  }
+
+  ihtml += `</div>`
+  mostviedmainsection.innerHTML=ihtml;
+  mostviecroselfunction()
+}
+
+mostviewddata(category = "mostviewd")
+

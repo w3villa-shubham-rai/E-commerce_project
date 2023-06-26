@@ -187,7 +187,82 @@
             "discount":"$3299"
         }
 
+    ],
+    "newfashion":[
+        {
+            "img":"./Assets/images/fashionimg1.jpg",
+            "productname":"Bodycorn Dress",
+            "price":"$199"
+        },
+        {
+            "img":"./Assets/images/fashionimg2.jpg",
+            "productname":"Jacob Turtleneck Sweater",
+            "price":"$99"
+        },
+        {
+            "img":"./Assets/images/fashionimg3.jpg",
+            "productname":"Black Vintage T-Shirt",
+            "price":"$392"
+        },
+        {
+            "img":"./Assets/images/fashionimg4.jpg",
+            "productname":"Jacob Turtleneck Sweater",
+            "price":"$199"
+        },
+        {
+            "img":"./Assets/images/fashionimg5.jpg",
+            "productname":"Elegant Silk Pants",
+            "price":"$199"
+        },
+        {
+            "img":"./Assets/images/fashionimg6.jpg",
+            "productname":"Jacob Turtleneck Sweater",
+            "price":"$589.00"
+        }
+    ],
+
+    "mostviewd":
+    [
+        {
+            "img":"./Assets/images/mostviewsunglass.jpg",
+            "productname":"Sunglass",
+            "price":"$369"
+          
+
+        },
+
+        {
+            "img":"./Assets/images/mostviewwatch.avif",
+            "productname":"Watch",
+            "price":"$669"
+          
+
+        },
+        {
+            "img":"./Assets/images/mostviewheadphone.avif",
+            "productname":"Headphone",
+            "price":"$669"
+          
+
+        },
+        {
+            "img":"./Assets/images/mostviewd1.jpg",
+            "productname":"blackdress",
+            "price":"$589"
+          
+
+        },
+        {
+            "img":"./Assets/images/mostviewsunglass.jpg",
+            "productname":"Sunglass",
+            "price":"$369"          
+
+        }
+
+        
     ]
+
+    
 
   
 }
