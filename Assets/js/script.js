@@ -829,3 +829,138 @@ async function mostviewddata(category)
 
 mostviewddata(category = "mostviewd")
 
+
+
+
+// search function 
+
+
+
+
+// async function searchproductfunction(category)
+// {
+
+//   let filter_user=document.querySelector('#serch_item').value;
+//    console.log(filter_user);
+//   let response=await fetch("./data/featureproduct.json");
+//   let data=await response.json();
+//   let content = data[category]
+//   for(i in content)
+//   {
+//     if(filter_user==content[i].productname)
+//     {
+//       console.log("item find sucees")
+//     }
+//     else{
+//       console.log("item not find");
+//     }
+//   }
+  
+// }
+
+// searchproductfunction(category = "topCategory");
+
+
+
+
+
+
+// let productparent=document.querySelector('#se-te');
+// const userArrdata=[];
+
+
+// const getuserdata= async()=>{
+
+//   try {
+//     let response=await fetch("./data/featureproduct.json");
+//   let data=await response.json();
+//   let content = data[productdata]
+  
+//   ihtml=` <div class="owl-carousel owl-theme" id="feature-product">`
+//   for(i in content)
+//   {     
+//           ihtml +=`
+//           <div class="headphone">
+//           <div class="image">
+//             <img src="${content[i].img}"" alt="" />
+//             <div class="customlabels">CUSTOM LABELS</div>
+//             <div class="hot_per">
+//               <div class="prcent">-70%</div>
+//               <div class="hot">HOT</div>
+//             </div>
+//           </div>
+//           <div class="erykson">
+//             <div>${content[i].companyname}</div>
+//             <div class="model">${content[i].modal}</div>
+//           </div>
+//           <div class="headphone-txt">
+//             <div class="htxt">${content[i].productname}</div>
+//             <div class="strike">${content[i].price} <strike>${content[i].discount}</strike></div>
+//           </div>
+//           <div class="favcart">
+//             <div class="input-addtocart">
+//               <div class="section" id="input-number-favcart">
+//                 <input type="number" max="10" min="1" value="1" />
+//               </div>
+//               <button>ADD TO CART</button>
+//             </div>
+           
+//             <div class="whislist">
+//               <i id="fav-whislist" class="fa-regular fa-heart"></i>
+//               <i
+//                 id="compare-product"
+//                 class="fa-solid fa-arrow-right-arrow-left"
+//               ></i>
+//             </div>
+//           </div>
+
+//           <div class="buy-now">
+//             <div class="byu-now-doller">
+//               <i  class="fa-solid fa-dollar-sign"></i>
+//               <span class="buynow-doller-symbal">buy now</span>
+//             </div>
+//             <div class="question">
+//               <i class="fa-solid fa-question"></i>
+//               <span class="buynow-doller-symbal">Question</span>
+//             </div>
+//           </div>
+//         </div>
+
+//           `
+//   }
+
+//   ihtml += `</div>`
+ 
+//     featureproductcat.innerHTML=ihtml; 
+//   featureproduct()
+//   userArrdata.push(ihtml);
+  
+//   console.log(userArrdata.length);
+//   } 
+//   catch (error) {
+//     console.log(error);
+//   }
+
+// }
+
+// filter_user.addEventListener('input',(e)=>{
+//   const val=e.target.value;
+//   console.log(val);
+//   userArrdata.map((curelem)=>{
+//     console.log(curelem.innerText);
+//   })
+// })
+
+
+// getuserdata();
+
+
+
+let searchprodctid=document.querySelector("#searchprodctid");
+let userinput=document.getElementById('serch_item').value.toLowerCase;
+function searchproduct()
+{
+  let userinput=document.getElementById('serch_item').value;
+  console.log(userinput);
+  window.location = "searchpage.html" + "?product=Camera";
+}

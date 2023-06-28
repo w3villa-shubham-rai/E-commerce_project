@@ -1,0 +1,197 @@
+{
+  "searchproduct":[ {
+                        "id":1,
+                        "img":"./Assets/images/footwear.jpeg",
+                        "companyname":"Addidas",
+                        "modal":"modal 420",
+                        "productname":"footwear",
+                        "price":"$999",
+                        "discount":"$32999",
+                        "category": "topCategory"
+
+                    },
+                    {
+                        "id":2,
+                        "img":"./Assets/images/smarttv.jpg",
+                        "companyname":"LG",
+                        "modal":"modal 434",
+                        "productname":"TELEVISION",
+                        "price":"$93599",
+                        "discount":"$3445"
+                    
+                    },
+                    {
+                        "id":3,
+                        "img":"./Assets/images/headphone.jpg",
+                        "companyname":"Sony",
+                        "modal":"modal 231",
+                        "productname":"Headphone",
+                        "price":"$99",
+                        "discount":"$999"
+                    
+                    },
+                    {
+                        "id":4,
+                        "img":"./Assets/images/camera.jpg",
+                        "companyname":"Cannon",
+                        "modal":"modal 4120",
+                        "productname":"Camera",
+                        "price":"$1229",
+                        "discount":"$39"
+                    
+                    },
+                    {
+                        "id":5,
+                        "img":"./Assets/images/headphone3.avif",
+                        "companyname":"Addidas",
+                        "modal":"modal 420",
+                        "productname":"footwear",
+                        "price":"$999",
+                        "discount":"$32999"
+                    
+                    },
+                    {
+                        "id":6,
+                        "img":"./Assets/images/latest1.png",
+                        "companyname":"Fort Cane",
+                        "modal":"modal 420",
+                        "productname":"yellow modern chair",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":7,
+                        "img":"./Assets/images/latest2.png",
+                        "companyname":"Sarah Bloom",
+                        "modal":"modal 420",
+                        "productname":"gray armchair",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":8,
+                        "img":"./Assets/images/latest3.png",
+                        "companyname":"Fort Cane",
+                        "modal":"modal 420",
+                        "productname":"chair",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":9,
+                        "img":"./Assets/images/latest2.png",
+                        "companyname":"Addidas",
+                        "modal":"modal 420",
+                        "productname":"flower chair",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":10,
+                        "img":"./Assets/images/latest5.png",
+                        "companyname":"Sarah Bloom",
+                        "modal":"modal 420",
+                        "productname":"modernchair",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":11,
+                        "img":"./Assets/images/bestseller1.jpg",
+                        "companyname":"Apple",
+                        "modal":"modal 420",
+                        "productname":"macbook",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+            
+                    {
+                        "id":12,
+                        "img":"./Assets/images/bestselers7.jpg",
+                        "companyname":"reban",
+                        "modal":"modal 220",
+                        "productname":"Sunglass",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+            
+                    {
+                        "id":13,
+                        "img":"./Assets/images/bestseller3.jpg",
+                        "companyname":"Addidas",
+                        "modal":"modal 10",
+                        "productname":"flower chair",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+            
+                    {
+                        "id":14,
+                        "img":"./Assets/images/bestseller4.jpg",
+                        "companyname":"Addidas",
+                        "modal":"modal 42",
+                        "productname":"flower chair",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+            
+                    {
+                        "id":15,
+                        "img":"./Assets/images/bestselers6.jpg",
+                        "companyname":"Addidas",
+                        "modal":"modal 20",
+                        "productname":"Canon",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":16,
+                        "img":"./Assets/images/bestseller1.jpg",
+                        "companyname":"Addidas",
+                        "modal":"modal 20",
+                        "productname":"Canon",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":17,
+                        "img":"./Assets/images/camera.jpg",
+                        "companyname":"Addidas",
+                        "modal":"modal 20",
+                        "productname":"Canon",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":18,
+                        "img":"./Assets/images/special3.jpg",
+                        "companyname":"Olivia Smith",
+                        "modal":"modal 20",
+                        "productname":"Bodyoil",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":19,
+                        "img":"./Assets/images/special4.jpg",
+                        "companyname":"Addidas",
+                        "modal":"modal 20",
+                        "productname":"Canon",
+                        "price":"$999",
+                        "discount":"$32999"
+                    },
+                    {
+                        "id":20,
+                        "img":"./Assets/images/special5.jpg",
+                        "companyname":"Dell",
+                        "modal":"modal 2",
+                        "productname":"Laptop",
+                        "price":"$199",
+                        "discount":"$3299"
+                    }            
+            
+            
+            
+                 
+                ]
+}

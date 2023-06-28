@@ -1,3 +1,180 @@
+
+let sete=document.querySelector("#se-te");
+
+async function searchitemfun(category)
+{
+  
+  const search = new window.URLSearchParams(window.location.search);
+  const product = search.get("product");
+  let response=await fetch("./data/searchdata.json");
+  let data=await response.json();
+  let content=data[category]
+ 
+  for(i in content)
+  {
+    let a=content[i].productname;
+
+    if(a.includes(product))  
+    {
+      showdataonproductpage(content[i])
+    }
+    else{
+      console.log("item not found")
+    }
+   
+  }
+
+}
+
+searchitemfun(category = "searchproduct")
+
+
+async function showdataonproductpage(search_data)
+{
+  
+  ihtml=``
+      ihtml+=`
+      <div class="search-televesion">
+      <div class="search-tv-apple">
+       <img src="${search_data.img}">
+       <div class="search-hot ">
+         HOT
+       </div>
+       <div class="search-percent ">
+         -10%
+       </div>
+      </div>
+      <div class="search-grid-buttom">
+         <div class="producd-name_model">
+           <p> <u>"${search_data.companyname}"</u></p>
+           <p>"${search_data.modal}"</p>
+         </div>
+         <div class="productname-price">
+          <p>"${search_data.productname}"</p>
+          <span id="Search-price">"${search_data.price}"</span> 
+          <span id="strike-price"><strike>"${search_data.discount}"</strike></span>
+         </div>
+        <div class="searchadd_to_cart">
+           <div class="favcart">
+               <div class="input-addtocart">
+                 <div class="section" id="input-number-favcart">
+                   <input type="number" max="10" min="1" value="1" />
+                 </div>
+                 <button>ADD TO CART</button>
+               </div>
+             
+               <div class="whislist">
+                 <i id="fav-whislist" class="fa-regular fa-heart"></i>
+                 <i
+                   id="compare-product"
+                   class="fa-solid fa-arrow-right-arrow-left"
+                 ></i>
+               </div>
+           </div>
+         <!--favcart-end  -->  
+         </div>
+         <!-- searchadd_to_cart end -->
+
+        <div class="search-buynow-question">
+           <div class="search_Buy_Now">
+             <i class="fa-regular fa-dollar-sign"></i>
+             <span id="buy-now">Buy Now</span>
+           </div>
+           <div class="search_Question">
+             <i class="fa-solid fa-question"></i>
+             <span id="question-txt">Question</span>
+           </div>
+        </div>
+      </div>  
+      
+      <div class="search-listview">
+       <div class="listview-brand_model">
+          <div class="ls-brand">
+            <span>Brand: <u id="ls-bd">Apple</u></span>
+          </div>
+          <div class="ls-product">
+            <span>Model:Product 15</span>
+          </div>
+       </div>
+       <div class="ls-cinemapara">
+        <h1>Apple Cinema 30"</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam, eius, voluptate tempore recusandae alias exercitationem repellat porro suscipit magnam enim, assumenda nihil ratione repudiandae quia ullam impedit debitis. Reprehenderit voluptas pariatur ipsa voluptate officiis aliquid saepe fugiat sapiente hic!</p>
+       </div>
+       <div class="ls-doller-price-euro">
+        <span id="euro-first">2345.60<i class="fa-solid fa-euro-sign"></i></span>
+        <span id="euro-second"><strike>2345.60<i class="fa-solid fa-euro-sign"></i></strike></span>
+       </div>
+       <div class="extra-tax">
+        <p>Ex Tax:234:50<i class="fa-solid fa-euro-sign"></i></p>
+       </div>
+       <div class="ls-btn-part">
+          <div class="ls-section" id="ls-section-input">
+            <input type="number" max="10" min="1" value="1" />
+          </div>
+          <div class="ls-addcart">
+            <button class="ls-addtocart-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              ADD TO CART
+            </button>
+          </div>
+          <div class="ls-whishlist">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="ls-compare">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          </div>
+       </div>
+       <div class="search-buynow-question">
+          <div class="search_Buy_Now">
+            <i class="fa-regular fa-dollar-sign"></i>
+            <span id="buy-now">Buy Now</span>
+          </div>
+          <div class="search_Question">
+            <i class="fa-solid fa-question"></i>
+            <span id="question-txt">Question</span>
+          </div>
+       </div>
+     </div>
+
+   </div>
+      `
+
+sete.innerHTML=ihtml;
+  
+  
+}
+// showdataonproductpage()
+
+// async function dataadd(category)
+// {
+
+//   let response=await fetch("./data/product.json");
+//   let data=await response.json();
+//   let content = data[category]
+  
+//   ihtml=`<div class="owl-carousel owl-theme" id="whyus">`
+//   for(i in content)
+//   {
+//     ihtml +=`
+//     <div class="item1 img-topcategories">
+//     <img src="${content[i].img}" alt="" />
+//     <p>${content[i].name}</p>
+//     </div>
+
+//     `
+//   }
+
+//   ihtml += `</div>`
+//   b.innerHTML=ihtml;
+//   whyusCarousel()
+// }
+
+// dataadd(category = "topCategory")
+
+
+
+
+
 $("#mostviewd").owlCarousel({
     loop: true,
     margin: 20,
@@ -161,7 +338,6 @@ function fn_Subcategories()
   {
     Subcategories1.style.setProperty("display","flex");
    
-    console.log(avilablesubcategories);
     // Subcategories1.style.setProperty("color","blue")
     subcatplus1.style.setProperty("display","none", );
     // subcatplus1.style.cssText = `
