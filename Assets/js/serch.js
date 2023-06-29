@@ -19,7 +19,7 @@ async function searchitemfun(category)
       showdataonproductpage(content[i])
     }
     else{
-      console.log("item not found")
+     
     }
    
   }
@@ -29,9 +29,9 @@ async function searchitemfun(category)
 searchitemfun(category = "searchproduct")
 
 
-async function showdataonproductpage(search_data)
+ function showdataonproductpage(search_data)
 {
-  
+  finaldiv=''
   ihtml=``
       ihtml+=`
       <div class="search-televesion">
@@ -46,13 +46,13 @@ async function showdataonproductpage(search_data)
       </div>
       <div class="search-grid-buttom">
          <div class="producd-name_model">
-           <p> <u>"${search_data.companyname}"</u></p>
-           <p>"${search_data.modal}"</p>
+           <p> <u>${search_data.companyname}</u></p>
+           <p>${search_data.modal}</p>
          </div>
          <div class="productname-price">
-          <p>"${search_data.productname}"</p>
-          <span id="Search-price">"${search_data.price}"</span> 
-          <span id="strike-price"><strike>"${search_data.discount}"</strike></span>
+          <p>${search_data.productname}</p>
+          <span id="Search-price">${search_data.price}</span> 
+          <span id="strike-price"><strike>${search_data.discount}</strike></span>
          </div>
         <div class="searchadd_to_cart">
            <div class="favcart">

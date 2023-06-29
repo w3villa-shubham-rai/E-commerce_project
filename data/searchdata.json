@@ -1,7 +1,7 @@
 {
   "searchproduct":[ {
                         "id":1,
-                        "img":"./Assets/images/footwear.jpeg",
+                        "img":"./Assets/images/jasonfootwear.avif.jpeg",
                         "companyname":"Addidas",
                         "modal":"modal 420",
                         "productname":"footwear",
@@ -35,14 +35,14 @@
                         "img":"./Assets/images/camera.jpg",
                         "companyname":"Cannon",
                         "modal":"modal 4120",
-                        "productname":"Camera",
+                        "productname":"camera",
                         "price":"$1229",
                         "discount":"$39"
                     
                     },
                     {
                         "id":5,
-                        "img":"./Assets/images/headphone3.avif",
+                        "img":"./Assets/images/jsonfootwear2.avif",
                         "companyname":"Addidas",
                         "modal":"modal 420",
                         "productname":"footwear",
@@ -155,10 +155,10 @@
                     },
                     {
                         "id":17,
-                        "img":"./Assets/images/camera.jpg",
+                        "img":"./Assets/images/camera_search.avif",
                         "companyname":"Addidas",
                         "modal":"modal 20",
-                        "productname":"Canon",
+                        "productname":"canon",
                         "price":"$999",
                         "discount":"$32999"
                     },
@@ -167,16 +167,16 @@
                         "img":"./Assets/images/special3.jpg",
                         "companyname":"Olivia Smith",
                         "modal":"modal 20",
-                        "productname":"Bodyoil",
+                        "productname":"bodyoil",
                         "price":"$999",
                         "discount":"$32999"
                     },
                     {
                         "id":19,
-                        "img":"./Assets/images/special4.jpg",
+                        "img":"./Assets/images/camera_search.avif",
                         "companyname":"Addidas",
                         "modal":"modal 20",
-                        "productname":"Canon",
+                        "productname":"canon",
                         "price":"$999",
                         "discount":"$32999"
                     },

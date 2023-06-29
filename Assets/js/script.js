@@ -953,14 +953,19 @@ mostviewddata(category = "mostviewd")
 
 
 // getuserdata();
+// var usersearchitemdata;
+// function userinput()
+// {
+//   let filter_user1=document.getElementById('serch_item').value;
+//   usersearchitemdata=filter_user1;
+//   console.log(usersearchitemdata)
+
+// }
 
 
 
-let searchprodctid=document.querySelector("#searchprodctid");
-let userinput=document.getElementById('serch_item').value.toLowerCase;
 function searchproduct()
 {
-  let userinput=document.getElementById('serch_item').value;
-  console.log(userinput);
-  window.location = "searchpage.html" + "?product=Camera";
+  var ele = document.getElementById('serch_item').value.toLowerCase();
+  window.location = "searchpage.html?product="+ele
 }
