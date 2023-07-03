@@ -1,7 +1,7 @@
 {
   "searchproduct":[ {
                         "id":1,
-                        "img":"./Assets/images/jasonfootwear.avif.jpeg",
+                        "img":"./Assets/images/footwear.jpeg",
                         "companyname":"Addidas",
                         "modal":"modal 420",
                         "productname":"footwear",
@@ -140,27 +140,28 @@
                         "img":"./Assets/images/bestselers6.jpg",
                         "companyname":"Addidas",
                         "modal":"modal 20",
-                        "productname":"Canon",
-                        "price":"$999",
-                        "discount":"$32999"
-                    },
-                    {
-                        "id":16,
-                        "img":"./Assets/images/bestseller1.jpg",
-                        "companyname":"Addidas",
-                        "modal":"modal 20",
-                        "productname":"Canon",
+                        "productname":"canon",
                         "price":"$999",
                         "discount":"$32999"
                     },
                     {
                         "id":17,
-                        "img":"./Assets/images/camera_search.avif",
+                        "img":"./Assets/images/camera.jpg",
                         "companyname":"Addidas",
                         "modal":"modal 20",
                         "productname":"canon",
                         "price":"$999",
                         "discount":"$32999"
+                    },
+                    {
+                        "id":16,
+                        "img":"./Assets/images/camera.avif",
+                        "companyname":"Addidas",
+                        "modal":"modal 20",
+                        "productname":"canon",
+                        "price":"$999",
+                        "discount":"$32999"
+                      
                     },
                     {
                         "id":18,

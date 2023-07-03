@@ -30,10 +30,13 @@ searchitemfun(category = "searchproduct")
 
 
  function showdataonproductpage(search_data)
-{
-  finaldiv=''
-  ihtml=``
-      ihtml+=`
+
+{   
+
+
+      let ihtml = ""
+      
+      ihtml += `
       <div class="search-televesion">
       <div class="search-tv-apple">
        <img src="${search_data.img}">
@@ -139,8 +142,9 @@ searchitemfun(category = "searchproduct")
    </div>
       `
 
-sete.innerHTML=ihtml;
-  
+sete.insertAdjacentHTML("beforeend",ihtml);
+
+
   
 }
 // showdataonproductpage()
