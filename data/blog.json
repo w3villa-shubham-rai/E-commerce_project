@@ -1,0 +1,83 @@
+{
+    "latestpost":[
+        {
+            "img":"./Assets/images/book.avif",
+            "view":20183,
+            "comment":214,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        },
+        {
+            "img":"./Assets/images/homedecor.jpeg",
+            "view":2083,
+            "comment":234,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        },
+        {
+            "img":"./Assets/images/bloggirl.avif",
+            "view":25083,
+            "comment":234,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        },
+        {
+             "img":"./Assets/images/lather.avif",
+            "view":25083,
+            "comment":2344,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        }
+
+
+    
+    ],
+    "mostread":[
+
+        {
+            "img":"./Assets/images/mostread1.jpg",
+            "view":5083,
+            "comment":214,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        },
+        {
+            "img":"./Assets/images/mostread2.jpg",
+            "view":55083,
+            "comment":234,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        },
+        {
+            "img":"./Assets/images/mostread3.jpg",
+            "view":65083,
+            "comment":234,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        },
+        {
+             "img":"./Assets/images/lather.avif",
+            "view":75083,
+            "comment":2344,
+            "descriptionheadin":"he Journal 3 blog has been greatly improved and it now comes with the most advanced set of typography tools, including custom drop-cap support as well as optional newspaper-like fluid columns. You can break up the page in up to 4 columns and change the configuration per breakpoint for the best article layout on any screen width."
+        }
+
+    ],
+    "feedback":[
+        {
+            "statement":"I've purchased hundreds and hundreds of files over the past 7 years. But there is nothing close to this support and professionalism. Not only is theme, simple , useful and modern, but again the support is remarkable.  Very happy I got this theme! ",
+            "name":"shubham"
+        },
+        {
+            "statement":"I am a web developer for many years i haven't seen anything clear clean coded like journal it makes my live so much easier thanks for the great work you have done.useful and modern, but again the support is remarkable.  Very happy I got this theme!",
+            "name":"Ashish"
+        },
+        {
+            "statement":"I am a web developer for many years i haven't seen anything clear clean coded like journal it makes my live so much easier thanks for the great work you have done.useful and modern, but again the support is remarkable.  Very happy I got this theme!",
+            "name":"Anshul"
+        },
+        {
+            "statement":"I've purchased hundreds and hundreds of files over the past 7 years. But there is nothing close to this support and professionalism. Not only is theme, simple , useful and modern, but again the support is remarkable.  Very happy I got this theme!",
+            "name":"Harry"
+        }
+       
+    ]
+
+
+    
+   
+}
+

@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
   <body >
+  <!-- onload="showusername_login_reg()" -->
+  <body>
     <header>
       <div class="container" id="arrow-connect">
         <div class="about_navbar">
@@ -127,11 +129,11 @@
                   type="search"
                   name="search"
                   id="serch_item"
-                  placeholder="Search Here..."
+                  placeholder="Search Here..."                                 
                 />
               </div>
-              <div class="search_glass"> 
-                <a href="./searchpage.html"><i class="fa-solid fa-magnifying-glass"></i></a>                
+              <div id="searchprodctid" class="search_glass" onclick="searchproduct()"> 
+                <i class="fa-solid fa-magnifying-glass"></i>               
               </div>
             </div>
 
@@ -391,24 +393,24 @@
               modi ab!<a href="">learn more</a>
             </p>
             <div class="topcategoreis_fashion" id="myDIV">
-              <button class="btn-group btn-left-radius active_btn_toogle_categories" onclick="toggleTopCategories(this)">
+              <button class="btn-group btn-left-radius active_btn_toogle_categories" onclick="toggleTopCategories(this);dataadd('topCategory')">
                 <p>TOP CATEGORIES</p>
                </button>
 
-              <button  class="btn-group" onclick="toggleTopCategories(this)">
+              <button  class="btn-group" onclick="toggleTopCategories(this); dataadd('electronic');">
                 <p>ELECTRONICS</p>
               </button>
-              <button class="btn-group" onclick="toggleTopCategories(this)">
+              <button class="btn-group" onclick="toggleTopCategories(this);dataadd('beauty')">
                 <p>BEAUTY</p>
               </button>
-              <button class="btn-group btn-group-right-radius" onclick="toggleTopCategories(this)">
+              <button class="btn-group btn-group-right-radius" onclick="toggleTopCategories(this);dataadd('fashion')">
                 <p>FASHION</p>
               </button>
             </div>
 
             <div class="whyus_crowsel">
-              <div class="owl-carousel owl-theme" id="whyus">
-                <div class="item1 img-topcategories">
+              <!-- <div class="owl-carousel owl-theme" id="whyus"> -->
+                <!-- <div class="item1 img-topcategories">
                   <img src="./Assets/images/girlcapim2.jpeg" alt="" />
                   <p>FASHION</p>
                 </div>
@@ -431,8 +433,8 @@
                 <div class="item6 img-topcategories">
                   <img src="./Assets/images/bags.jpg" alt="" />
                   <p>FOOTWEAR</p>
-                </div>
-              </div>
+                </div> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -453,22 +455,22 @@
               modi ab!<a href="">learn more</a>
             </p>
             <div class="topcategoreis_fashion" id="myDIV_feature_product">
-              <button class="btn-group  btn-left-radius active_btn_toogle_top_categories " onclick="toogle_featureproduct(this)">
-                <p>TOP CATEGORIES</p>
+              <button class="btn-group  btn-left-radius active_btn_toogle_top_categories " onclick="toogle_featureproduct(this);featurproductadd('topCategory')">
+                <p>Featured</p>
               </button>
 
-              <button  class="btn-group" onclick="toogle_featureproduct(this)">
-                <p>ELECTRONICS</p>
+              <button  class="btn-group" onclick="toogle_featureproduct(this);featurproductadd('latest')">
+                <p>Latest</p>
               </button>
-              <button class="btn-group" onclick="toogle_featureproduct(this)">
-                <p>BEAUTY</p>
+              <button class="btn-group" onclick="toogle_featureproduct(this);featurproductadd('bestselers')">
+                <p>Bestsellers</p>
               </button>
-              <button class="btn-group btn-group-right-radius" onclick="toogle_featureproduct(this)">
-                <p>FASHION</p>
+              <button class="btn-group btn-group-right-radius" onclick="toogle_featureproduct(this);featurproductadd('special')">
+                <p>Specials</p>
               </button>
             </div>
-            <div class="whyus_crowsel">
-              <div class="owl-carousel owl-theme" id="feature-product">
+            <div class="whyus_crowsel featureproductcat-container">
+              <!-- <div class="owl-carousel owl-theme" id="feature-product">
                 <div class="headphone">
                   <div class="image">
                     <img src="./Assets/images/headphone3.avif" alt="" />
@@ -565,15 +567,7 @@
                     <img src="./Assets/images/smarttv.jpg" alt="" />
                     <div class="customlabels">2-3 DAYS</div>
                     <div class="free">FREE</div>
-                    <!-- <div class="hot_per">
-                                
-                                    <div class="prcent">
-                                        -70%
-                                    </div>
-                                    <div class="hot">
-                                        hot
-                Why buy                    </div>
-                                </div>                            -->
+        
                   </div>
                   <div class="erykson">
                     <div>Erickson</div>
@@ -615,9 +609,7 @@
                     <img src="./Assets/images/camera.jpg" alt="" />
                     <div class="customlabels">PRE ORDER</div>
                     <div class="hot_per">
-                      <!-- <div class="prcent">
-                                        -70%
-                                    </div> -->
+                      
                       <div class="hot">HOT</div>
                     </div>
                   </div>
@@ -744,7 +736,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div class="seeallproducd-btn">
@@ -791,8 +783,8 @@
               <p>New in Fashion</p>
               <div class="fashiondesk"></div>
               <div class="newfashioncrowesl">
-                <div class="owl-carousel owl-theme" id="feature-categories">
-                  <div class="item_fashin_crowesl img-dresssweter">
+                <!-- <div class="owl-carousel owl-theme" id="feature-categories"> -->
+                  <!-- <div class="item_fashin_crowesl img-dresssweter">
                     <img src="./Assets/images/bodycondress.jpeg" alt="" />
                     <div class="customlabels_newfashion">2-3 DAYS</div>
                     <div class="bodycorndressfirst">
@@ -815,8 +807,8 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="item_fashin_crowesl img-dresssweter">
+                  </div> -->
+                  <!-- <div class="item_fashin_crowesl img-dresssweter">
                     <img src="./Assets/images/ladiessweter.jpg" alt="" />
                     <div class="customlabels_newfashion">2-3 DAYS</div>
                     <div class="bodycorndressfirst">
@@ -839,9 +831,9 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <div class="item_fashin_crowesl img-dresssweter">
+                  <!-- <div class="item_fashin_crowesl img-dresssweter">
                     <img src="./Assets/images/ladiessweter1.avif" alt="" />
                     <div class="customlabels_newfashion">2-3 DAYS</div>
                     <div class="bodycorndressfirst">
@@ -864,9 +856,9 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <div class="item_fashin_crowesl img-dresssweter">
+                  <!-- <div class="item_fashin_crowesl img-dresssweter">
                     <img src="./Assets/images/mentshirt.avif" alt="" />
                     <div class="customlabels_newfashion">2-3 DAYS</div>
                     <div class="bodycorndressfirst">
@@ -889,8 +881,8 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-
+                  </div> -->
+<!-- 
                   <div class="item_fashin_crowesl img-dresssweter">
                     <img src="./Assets/images/bodycondress.jpeg" alt="" />
                     <div class="customlabels_newfashion">2-3 DAYS</div>
@@ -914,7 +906,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -1063,18 +1055,18 @@
                 dolorum earum impedit autem ipsam animi quam, accusamus modi ab
               </p>
               <div class="topcategoreis_fashion" id="myDIV_blog">
-                <button class="btn-group btn-left-radius active_btn_toogle_blog" onclick="toogle_ourblog(this)">
-                  <p>TOP CATEGORIES</p>
-                </button>
+                <button class="btn-group btn-left-radius active_btn_toogle_blog" onclick="toogle_ourblog(this); addblogdata('latestpost')">
+                  <p>LATEST POST</p>
+                </button>        
   
-                <button  class="btn-group btn-group-right-radius"  onclick="toogle_ourblog(this)">
-                  <p>ELECTRONICS</p>
+                <button  class="btn-group btn-group-right-radius"  onclick="toogle_ourblog(this);addblogdata('mostread')">
+                  <p>MOST READ</p>
                 </button>
               </div>
               <div>
                 <div class="blog-crowsel">
                   <div class="owl-carousel owl-theme blogcr_cr">
-                    <div class="blog_img_1">
+                    <!-- <div class="blog_img_1">
                       <div class="jornalblog_img">
                         <img src="./Assets/images/book.avif" alt="" />
                         <div class="aug">
@@ -1106,8 +1098,8 @@
                           <i class="fa-solid fa-arrow-right"></i>
                         </div>
                       </div>
-                    </div>
-                    <div class="blog_img_1">
+                    </div> -->
+                    <!-- <div class="blog_img_1">
                       <div class="jornalblog_img">
                         <img src="./Assets/images/lather.avif" alt="" />
                         <div class="aug">
@@ -1139,8 +1131,8 @@
                           <i class="fa-solid fa-arrow-right"></i>
                         </div>
                       </div>
-                    </div>
-                    <div class="blog_img_1">
+                    </div> -->
+                    <!-- <div class="blog_img_1">
                       <div class="jornalblog_img">
                         <img src="./Assets/images/bloggirl.avif" alt="" />
                         <div class="aug">
@@ -1172,8 +1164,8 @@
                           <i class="fa-solid fa-arrow-right"></i>
                         </div>
                       </div>
-                    </div>
-
+                    </div> -->
+<!-- 
                     <div class="blog_img_1">
                       <div class="jornalblog_img">
                         <img src="./Assets/images/homedecor.jpeg" alt="" />
@@ -1202,7 +1194,7 @@
                           <i class="fa-solid fa-arrow-right"></i>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -1222,7 +1214,7 @@
               <div>
                 <div class="saying-about-carousel">
                   <div class="owl-carousel owl-theme saying_about-us">
-                    <div class="item-saying-about-comma">
+                    <!-- <div class="item-saying-about-comma">
                       <div class="comma">
                         <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
                         <p class="junrnal-blog-longpara">
@@ -1236,7 +1228,7 @@
 
                         <p id="user">- Charlibaltimore</p>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="item-saying-about-comma">
                       <div class="comma">
                         <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
@@ -1303,8 +1295,8 @@
 
             <div>
               <div class="mostvied-main-section">
-                <div class="owl-carousel owl-theme" id="mostviewd">
-                  <div class="sunglasses">
+                <!-- <div class="owl-carousel owl-theme" id="mostviewd"> -->
+                  <!-- <div class="sunglasses">
                     <div class="image-sunglass">
                       <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
                     </div>
@@ -1319,9 +1311,9 @@
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <div class="sunglasses">
+                  <!-- <div class="sunglasses">
                     <div class="image-sunglass">
                       <img
                         src="./Assets/images/mostviewheadphone.avif"
@@ -1337,9 +1329,9 @@
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <div class="sunglasses">
+                  <!-- <div class="sunglasses">
                     <div class="image-sunglass">
                       <img src="./Assets/images/mostviewwatch.avif" alt="" />
                     </div>
@@ -1352,8 +1344,8 @@
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                       </div>
                     </div>
-                  </div>
-
+                  </div> -->
+<!-- 
                   <div class="sunglasses">
                     <div class="image-sunglass">
                       <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
@@ -1367,9 +1359,9 @@
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <div class="sunglasses">
+                  <!-- <div class="sunglasses">
                     <div class="image-sunglass">
                       <img src="./Assets/images/mostviewsunglass.jpg" alt="" />
                     </div>
@@ -1382,7 +1374,7 @@
                         <i class="fa-solid fa-arrow-right-arrow-left"></i>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -1628,6 +1620,7 @@
     ></script>
 
     <script src="./Assets/js/script.js"></script>
+    <!-- <script src="./Assets/js/serch.js"></script> -->
   </body>
 </html>
 
