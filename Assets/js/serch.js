@@ -59,7 +59,7 @@ searchitemfun(category = "searchproduct")
          </div>
         <div class="searchadd_to_cart">
            <div class="favcart">
-               <div class="input-addtocart">
+               <div class="input-addtocart" onclick="addtocart()">
                  <div class="section" id="input-number-favcart">
                    <input type="number" max="10" min="1" value="1" />
                  </div>
@@ -174,6 +174,22 @@ sete.insertAdjacentHTML("beforeend",ihtml);
 // }
 
 // dataadd(category = "topCategory")
+
+
+
+// add to cart functionality
+let item_carts=document.querySelector("#cartcount");
+let wish_cart=document.querySelector("#wish_cart");
+console.log(item_carts)
+let count=0;
+function addtocart()
+{
+  count+=1;
+  alert("item add in cart");
+  console.log(count)
+  item_carts.innerHTML=count;
+  wish_cart.innerHTML=count;
+}
 
 
 
