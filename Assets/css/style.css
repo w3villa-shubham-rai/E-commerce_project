@@ -14,6 +14,8 @@
     --white:white;
     --yello: rgb(235, 213, 20);
     --red:red;
+    --gray:rgb(231, 231, 231);
+    --oranged:orangered;
 }
 /* top categories java script */
  
@@ -25,6 +27,7 @@
    padding-right: 50px;
    max-width: 1440px;
    margin: auto;
+   
 }
  
 
@@ -135,6 +138,9 @@ select{
 {
     display: flex;
     column-gap: 10px;
+}
+.logout{
+    display: none;
 }
 .logo-regisrter-heart-icon{
     text-align: center;
@@ -2639,5 +2645,198 @@ footer{
     color: white;
 }
 
+
+
+/*************************login form css start ***********************************************/
+/* *******************************************************************************************/
+
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    /* background:rgba(85, 84, 84, 0.5); */
+    background: #5c5a5a;
+    opacity: 0;
+    z-index:-1;
+    transition: 1s;
+    
+}
+.showlay
+{
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.showmodal{
+    z-index: 2;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    padding: 20px 20px 20px 20px;
+    width: 37%;
+    transform: translate(-50%,-50%);
+    background-color: var(--white);
+    transition: 2s;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 1px var(--gray);
+
+   
+}
+
+.showloginform{
+    top: 50%;
+}
+.showmodal input{
+    width: 60%;
+    height: 35px;
+    border: 2px solid var(--gray);
+    outline: none;
+    border-radius: 5px;
+}
+.email,.password,.forgetpass, .username,.confirmpassword
+{
+    display: flex;
+   justify-content: space-between;
+    margin-top: 31px;
+}
+
+.showmodal label{
+    font-size: 19px;
+    color: #4e4c4c;
+}
+.showmodal p{
+    font-size: 25px;
+    border-bottom: 2px solid var(--oranged);
+    width: 47%;
+}
+.handdescription{
+    display: flex;
+}
+.hand-img{
+    width: 9%;
+    height: 45px;
+}
+.hand-img img{
+    width: 100%;
+    height: 100%;
+}
+.forgetpass a{
+    color: var(--blue);
+}
+.forgetpass{
+    display: flex;
+    justify-content: space-between;
+}
+.loginbtn button{
+    width: 100%;
+    height: 35px;
+    background: var(--blue);
+    outline: none;
+    color: var(--white);
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 2px solid var(--gray);
+}
+.crosssymol{
+    width: 5%;
+    font-size: 21px;
+    position: absolute;
+    top: 2%;
+    color: red;
+    right: 3%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1243px)
+{
+    .showmodal p {
+        font-size: 14px;
+        width: 122px;
+    }
+    .hand-img {
+        width: 7%;
+        height: 32px;
+    }
+    .showmodal label{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 907px)
+{
+    .crosssymol{
+        font-size: 18px;
+    }
+    .showmodal input
+    {
+        height: 25px;
+    }
+   
+    
+}
+@media screen and (max-width: 719px)
+{
+    .showmodal input{
+        height: 20px;
+    }
+    .showmodal label{
+        font-size: 11px;
+    }
+    #password-type {
+        margin-left: 24px;
+    }
+    .forgetpass{
+        font-size: 13px;
+    }
+    .email, .password, .forgetpass,.username ,.confirmpassword{
+        margin-top: 18px;
+    }
+    .hand-img {
+        width: 12%;
+        height: 28px;
+    }
+  
+}
+@media screen and (max-width: 623px)
+{
+    .email, .password, .forgetpass,.username,.confirmpassword{
+        margin-top: 10px;
+    }
+    .showmodal label{
+        font-size: 9px;
+    }
+    .showmodal input {
+        width: 54%;
+    }
+  
+    .forgetpass{
+        font-size: 10px;
+    }
+    .loginbtn button{
+        margin-top: 15px;
+    }
+    .crosssymol{
+        right: 10px;
+    }
+  
+}
+@media screen and (max-width: 469px)
+{
+    .showmodal p {
+        font-size: 10px;
+        width: 88px;
+    }
+    .hand-img {
+        width: 13%;
+        height: 20px;
+    }
+    .forgetpass{
+        font-size: 8px;
+    }
+  
+}
 
 /* End css of page */
