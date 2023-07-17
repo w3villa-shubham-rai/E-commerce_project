@@ -147,34 +147,6 @@ sete.insertAdjacentHTML("beforeend",ihtml);
 
   
 }
-// showdataonproductpage()
-
-// async function dataadd(category)
-// {
-
-//   let response=await fetch("./data/product.json");
-//   let data=await response.json();
-//   let content = data[category]
-  
-//   ihtml=`<div class="owl-carousel owl-theme" id="whyus">`
-//   for(i in content)
-//   {
-//     ihtml +=`
-//     <div class="item1 img-topcategories">
-//     <img src="${content[i].img}" alt="" />
-//     <p>${content[i].name}</p>
-//     </div>
-
-//     `
-//   }
-
-//   ihtml += `</div>`
-//   b.innerHTML=ihtml;
-//   whyusCarousel()
-// }
-
-// dataadd(category = "topCategory")
-
 
 
 // add to cart functionality
@@ -339,11 +311,6 @@ function toggleTopCategories(elem){
    } 
  }
 
-//  function clickonplusavilable(plussymbal)
-//    {
-//     let containerplus=document.getElementsByClassName("search-checkbox-stack")[0];
-//      containerplus.style.setProperty("display","block");
-//    }
 
 
 // Subcategories part javascript 
