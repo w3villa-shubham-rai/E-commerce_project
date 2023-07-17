@@ -16,10 +16,12 @@
     --skyblue:rgb(14, 170, 231);
     --brinjalcolor: rgb(94, 9, 151);
     --losesky:rgb(6, 68, 139);
-    
+    --gray:rgb(231, 231, 231);
 }
 /* top categories java script */
- 
+ body{
+    background: #faf9f9;
+ }
 
 /* top categories java script */
 .container
@@ -30,7 +32,9 @@
    margin: auto;
 }
 
-
+#arrow-connect{
+ background: var(--white);
+}
 /* header part css */
 
 .container
@@ -556,6 +560,10 @@ select{
     height: 100%;
     position: relative;
 }
+.product-maincontainer,.product-apple-cinema{
+    background: #faf9f9;
+}
+
 .product-smalllarge-image{
     display: flex;
     justify-content: space-between;
@@ -593,7 +601,7 @@ select{
 }
 .largeproductimage{
     width: 100%;
-    height: 92%;
+    height: 88%;
     position: relative;
     border-radius: 3px;
     cursor: pointer;
@@ -611,7 +619,7 @@ select{
 }
 .right-heading{
     display: flex;
-    column-gap: 10px;
+    column-gap: 15px;
 }
 #description_desk{
     width: 90px;
@@ -625,7 +633,8 @@ select{
     overflow: hidden;
     position: relative;
     padding-top: 20px;
-    padding-bottom: 20px;   
+    padding-bottom: 20px; 
+    line-height: 23px;  
 }
 #showmore-shadow
 {
@@ -674,9 +683,10 @@ select{
 }
 .pricedescription
 {
-    width: 30%;
+    width: 35%;
     /* border: 2px solid red; */
     border-right: 2px solid rgb(235, 228, 228);
+    font-size: 16px;
 }
 .stockpricemarket{
     width: 70%;
@@ -689,20 +699,21 @@ select{
 .in-stock ul li{
     list-style-position: inside;   
     color: #3a3939; 
+    font-size: 14px
    
 }
 
 .stock-img {
-        width: 30%;
-        height: 177px;
         text-align: center;
         border: 2px solid var(--gray);
         border-radius: 5px;
+        width: 94px;
+        height: 55%;
  }
 
 .applestack
 {
-    height: 85%;
+    height: 80%;
 }
 .applestack img{
     width: 100%;
@@ -970,7 +981,6 @@ border: 1px solid gainsboro;
 .socialmedia-product-logo{
     width: 40px;
     height: 40px;
-    /* border: 2px solid#c5bebe; */
     border-radius: 3px;
     text-align: center;
     align-items: center;
@@ -981,7 +991,7 @@ border: 1px solid gainsboro;
     
 }
 .socialmedia-product-logo i{
-  padding-left: 15px;
+  padding-left: 13px;
   color: var(--white);
 }
 .productpage-socialmedialogo{
@@ -1062,7 +1072,7 @@ border: 1px solid gainsboro;
     background-color: #f0efef
 }
 .relatedproduct-bought-main{
-    background-color: #ebe8e8;
+    background-color: #f5f2f2;
    margin-top: 70px;
 }
 .related-bought{
@@ -1072,11 +1082,15 @@ border: 1px solid gainsboro;
 }
 .related{
     cursor: pointer;
+    font-size: 13px;
 }
 
 #peoplealsoid{
     color: #b1a8a8;
     cursor: pointer;
+}
+.people-bought h2{
+    font-size: 20px;
 }
 .people_desk{
     display: none;
@@ -1098,7 +1112,7 @@ border: 1px solid gainsboro;
     border-radius: 4px;
 }
 .img-relatet-p img{
-    height: 350px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
 }
@@ -1145,18 +1159,24 @@ cursor: pointer;
 
 
 
-/* media query satrt */
-/* @media screen and (max-width: 494px) */
-@media screen and (max-width:1272px)
+/* *********************************media query satrt ************************************************************/
+@media screen and (max-width:1282px)
 {
-    .stock-img{
-        width: 28%;
-    }
+
     .in-stock ul {
         font-size: 13px;
     }
     .product-buynow i {
         margin-right: 4px;
+    }
+}
+@media screen and (max-width: 1195px)
+{
+    .in-stock ul li{ 
+        font-size: 10px;
+    }
+    .pricedescription p {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 1050px)
@@ -1167,18 +1187,24 @@ cursor: pointer;
     .pricedescription{
         border: none;
     }
+   
     .stockpricemarket{
         width: 100%;
+        border-bottom: 2px solid rgb(235, 228, 228);
+        padding-bottom: 20px;
     }
     .pricedescription
     {
         width: 100%;
     }
-    .in-stock ul {
-        font-size: 18px;
+    .in-stock ul li{
+        font-size: 15px;
     }
     .largeproductimage{
         height: 72%;
+    }
+    .pricedescription p {
+        font-size: 15px;
     }
     .demo-img{
         height: 9%;
@@ -1193,11 +1219,19 @@ cursor: pointer;
    .product-buynow{
     width: 20%;
    }
-
+   #last-btn-doller{
+    margin-top: 4px;
+   }
+   #updated-p{
+    font-size: 36px;
+   }
+   #previous-p{
+    font-size: 26px;
+   }
 }
 @media screen and (max-width:988px)
 {
-    .in-stock ul {
+    .in-stock ul li{
         font-size: 14px;
     }
     .right-heading{
@@ -1214,6 +1248,9 @@ cursor: pointer;
     }
     .largeproductimage{
         height: 67%;
+    }
+    .stock-img{
+        width: 80px;
     }
 }
 
@@ -1269,16 +1306,12 @@ cursor: pointer;
 }
 @media screen and (max-width:565px)
 {
-    /* .related-bought {
-        font-size: 13px;
-    } */
+    
     .relatedprod-width
     {
         flex-direction: column;
     }
-    /* .item_fashin_relatedproduct{
-        width: 100%;
-    } */
+    
     .item_fashin_relatedproduct{
         width: 100%;
     }
@@ -1288,6 +1321,9 @@ cursor: pointer;
     .anotherselect select
     {
         font-size: 12px;
+    }
+    #relatedproductid,#peoplealsoid{
+        font-size: 13px;
     }
 }
 @media screen and (max-width:476px)
@@ -1300,7 +1336,7 @@ cursor: pointer;
         font-size: 13px;
         column-gap: 5px;
     }
-    .in-stock ul{
+    .in-stock ul li{
         font-size: 13px;
     }
     .product-star
@@ -1345,6 +1381,9 @@ cursor: pointer;
         width: 114px;
         font-size: 14px;
     }
+    .stock-img{
+        width: 80px;
+    }
 
    
 }
@@ -1357,14 +1396,8 @@ cursor: pointer;
     .right-heading{
         font-size: 10px;
     }
-    .in-stock ul {
-        font-size: 10px;
-    }
-    .stock-img{
-        height: 128px;
-    }
-    .applestack {
-        height: 75%;
+    .in-stock ul li {
+        font-size: 14px;
     }
     .product-star{
         font-size: 10px;
@@ -1396,4 +1429,20 @@ cursor: pointer;
     {
         padding-left: 4px;
     }
+    #medium-btn-doller{
+        margin-top: 4px;
+    }
 }
+@media screen and (max-width:359px)
+{
+    .stock-img
+    {
+        width: 70px;
+    }
+    .in-stock ul li{
+        font-size: 11px;
+    }
+}
+
+
+/******************************Product page styleing css end******************************** */

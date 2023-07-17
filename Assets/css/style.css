@@ -1323,6 +1323,11 @@ select{
     border-radius: 10px;
     object-fit: cover;
 }
+.img-topcategories:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
 .whyus_crowsel p{
     position: relative;
     padding: 2px;
@@ -1411,6 +1416,10 @@ select{
     border: 1px solid #dbd7d7;
     border-radius: 4px;
     background: #ebebeb;
+}
+.headphone .image:hover{
+    transform: scale(0.99);
+    cursor: pointer;
 }
 .image{
         height: 240px;
@@ -1644,6 +1653,11 @@ input[type=number]::-webkit-outer-spin-button {
     height: 221px;
     padding: 4px;
     border-radius: 4px;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.imgfashion img:hover{
+    transform: scale(0.98);
 }
 .fashiondesk{
     width: 75px;
@@ -1730,6 +1744,10 @@ input[type=number]::-webkit-outer-spin-button {
     overflow: hidden;
     border-radius: 4px;
 }
+.item_fashin_crowesl img:hover
+{
+    transform: scale(0.98);
+}
 .fashion1{
     background: #e8dddd;
     width: 21%;
@@ -1776,6 +1794,7 @@ input[type=number]::-webkit-outer-spin-button {
 .img-dresssweter img{
     height: 60%;
     object-fit: cover;
+
 }
 
 
@@ -2341,6 +2360,11 @@ color:  #767171;
     background-color: var(--blue);
     color: var(--white);
 }
+.socialmedia-logo i:hover{
+    transform: scale(1.1);
+
+}
+
 /* media query of social media logo */
 /* ******************************************************************************** */
 
@@ -2660,6 +2684,7 @@ footer{
 
    
 }
+
 .showloginform{
     top: 50%;
 }
