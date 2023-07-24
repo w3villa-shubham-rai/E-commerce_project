@@ -1,21 +1,25 @@
-isUserLogin()
 
-
-
+isUserLogin();
 
 function toggleTopCategories(elem) {
-  let prevElem = document.getElementsByClassName("active_btn_toogle_categories")[0];
+  let prevElem = document.getElementsByClassName(
+    "active_btn_toogle_categories"
+  )[0];
   prevElem.classList.remove("active_btn_toogle_categories");
-  elem.classList.add("active_btn_toogle_categories")
+  elem.classList.add("active_btn_toogle_categories");
 }
 function toogle_featureproduct(elemtop) {
-  let previouselement = document.getElementsByClassName("active_btn_toogle_top_categories")[0];
+  let previouselement = document.getElementsByClassName(
+    "active_btn_toogle_top_categories"
+  )[0];
   previouselement.classList.remove("active_btn_toogle_top_categories");
   elemtop.classList.add("active_btn_toogle_top_categories");
 }
 
 function toogle_ourblog(blogelement) {
-  let previousblogele = document.getElementsByClassName("active_btn_toogle_blog")[0];
+  let previousblogele = document.getElementsByClassName(
+    "active_btn_toogle_blog"
+  )[0];
   previousblogele.classList.remove("active_btn_toogle_blog");
   blogelement.classList.add("active_btn_toogle_blog");
 }
@@ -23,45 +27,41 @@ function toogle_ourblog(blogelement) {
 // login form show logic
 
 function showmudal(self) {
-  document.querySelector('.overlay').classList.add('showlay');
+  document.querySelector(".overlay").classList.add("showlay");
 
-  if (self.classList.contains('login')) {
-    document.querySelector('#loginform').classList.add('showloginform');
+  if (self.classList.contains("login")) {
+    document.querySelector("#loginform").classList.add("showloginform");
   } else {
-    document.querySelector('#registerform').classList.add('showloginform');
+    document.querySelector("#registerform").classList.add("showloginform");
   }
-
 }
 
 function closemudal() {
-  const loginhide = document.querySelector('#loginform')
-  const registerhide = document.querySelector('#registerform')
+  const loginhide = document.querySelector("#loginform");
+  const registerhide = document.querySelector("#registerform");
 
-  document.querySelector('.overlay').classList.remove('showlay');
+  document.querySelector(".overlay").classList.remove("showlay");
 
-  if (loginhide.classList.contains('showloginform')) {
-    loginhide.classList.remove('showloginform');
+  if (loginhide.classList.contains("showloginform")) {
+    loginhide.classList.remove("showloginform");
   } else {
-    registerhide.classList.remove('showloginform');
+    registerhide.classList.remove("showloginform");
   }
-
-
 }
-
 
 function registerUser(event) {
   event.preventDefault();
 
-  var username = document.getElementById('user-name').value;
-  var email = document.getElementById('e-mail-reg').value;
-  var password = document.getElementById('password-type-reg').value;
-  var confirmPassword = document.getElementById('confirm-password').value;
+  var username = document.getElementById("user-name").value;
+  var email = document.getElementById("e-mail-reg").value;
+  var password = document.getElementById("password-type-reg").value;
+  var confirmPassword = document.getElementById("confirm-password").value;
 
   // Check if the username already exists in local storage
   if (localStorage.getItem(username)) {
-    alert('Username already exists!');
+    alert("Username already exists!");
   } else if (password !== confirmPassword) {
-    alert('Passwords do not match!');
+    alert("Passwords do not match!");
   } else {
     let registeredUsers = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -69,41 +69,36 @@ function registerUser(event) {
     var user = {
       username: username,
       email: email,
-      password: password
+      password: password,
     };
     registeredUsers.push(user);
 
     // Store the user object in local storage
     localStorage.setItem("users", JSON.stringify(registeredUsers));
-    alert('Registration successful!');
-    closemudal()
+    alert("Registration successful!");
+    closemudal();
   }
 }
 
-document.getElementById('registerform').addEventListener('submit', registerUser);
-
-
-
-
-
-
-
+document
+  .getElementById("registerform")
+  .addEventListener("submit", registerUser);
 
 // Function to handle login
 function loginFn(event) {
   event.preventDefault();
 
   // Get the input values
-  var email = document.getElementById('e-mail').value;
-  var password = document.getElementById('password-type').value;
+  var email = document.getElementById("e-mail").value;
+  var password = document.getElementById("password-type").value;
 
   // Check if the user exists and the password is correct
   let user = null;
   let fetchusersdata = JSON.parse(localStorage.getItem("users"));
-  console.log(fetchusersdata)
+  console.log(fetchusersdata);
 
   let loggedIn = false;
-  fetchusersdata.forEach(user => {
+  fetchusersdata.forEach((user) => {
     if (user.email === email && user.password === password) {
       loggedIn = true;
       localStorage.setItem("user", JSON.stringify(user));
@@ -111,9 +106,8 @@ function loginFn(event) {
   });
 
   if (loggedIn) {
-
     let userregname = JSON.parse(localStorage.getItem("user")).username;
-    alert('Login successful!');
+    alert("Login successful!");
     let userlogout = document.getElementById("userlogout");
     let userregistericon = document.getElementById("userregistericon");
 
@@ -121,32 +115,22 @@ function loginFn(event) {
     displayusername.innerHTML = userregname;
     userlogout.style.display = "block";
     userregistericon.style.display = "none";
-    closemudal()
-                
-
+    closemudal();
   } else {
-    alert('Invalid email or password!');
+    alert("Invalid email or password!");
   }
 }
 
 // Function to close the modal
 function closeModal() {
-  document.getElementById('loginform').classList.remove('showmodal');
+  document.getElementById("loginform").classList.remove("showmodal");
 }
 
 // Add event listener to the login form
-document.getElementById('loginform').addEventListener('submit', loginFn);
+document.getElementById("loginform").addEventListener("submit", loginFn);
 
-
-function showusername_login_reg() {
-
-
-
-
-}
+function showusername_login_reg() {}
 function logoutuser() {
-
- 
   localStorage.removeItem("user");
   let userregistericon = document.getElementById("userregistericon");
   userregistericon.style.display = "block";
@@ -154,12 +138,11 @@ function logoutuser() {
   userlogout.style.display = "none";
   let displayusername = document.getElementById("dispusername");
   displayusername.innerHTML = "login";
-
 }
 
-function isUserLogin (){
+function isUserLogin() {
   let user = JSON.parse(localStorage.getItem("user"));
-  if(user){
+  if (user) {
     let userlogout = document.getElementById("userlogout");
     let userregistericon = document.getElementById("userregistericon");
 
@@ -169,7 +152,6 @@ function isUserLogin (){
     userregistericon.style.display = "none";
   }
 }
-
 
 $("#cr").owlCarousel({
   loop: true,
@@ -183,40 +165,38 @@ $("#cr").owlCarousel({
   },
 });
 
-function whyusCarousel(){
+function whyusCarousel() {
   $("#whyus").owlCarousel({
     loop: true,
     margin: 20,
     nav: false,
     autoplay: true,
-      responsive: {
-          0: {
-            items: 1
-          },
-          426: {
-            items: 2
-          },
-          700:{
-              items:3
-          },
-          900: {
-            items: 4
-          },
-          1000:{
-              items:5
-          }
-        }
+    responsive: {
+      0: {
+        items: 1,
+      },
+      426: {
+        items: 2,
+      },
+      700: {
+        items: 3,
+      },
+      900: {
+        items: 4,
+      },
+      1000: {
+        items: 5,
+      },
+    },
   });
 }
 
-
-function featureproduct()
-{
+function featureproduct() {
   $("#feature-product").owlCarousel({
     loop: true,
     margin: 20,
     nav: false,
-    autoplay:true,
+    autoplay: true,
     responsive: {
       0: {
         items: 1,
@@ -224,32 +204,24 @@ function featureproduct()
       550: {
         items: 2,
       },
-  
-      850:{
-        items:3,
+
+      850: {
+        items: 3,
       },
-      1126:{
-        items:4,
+      1126: {
+        items: 4,
       },
-      1252:{
-        items:4
-      }
-     
-    }
+      1252: {
+        items: 4,
+      },
+    },
   });
-
 }
-
-
-
-
-
 
 // ******************************************feature Product *******************
 // *****************************************************************************************
 
-function featuredcategoriesowl()
-{
+function featuredcategoriesowl() {
   $("#feature-categories").owlCarousel({
     loop: true,
     margin: 20,
@@ -259,50 +231,43 @@ function featuredcategoriesowl()
       0: {
         items: 0,
       },
-      
-      400:{
-        items:1,
+
+      400: {
+        items: 1,
       },
-      700:{
-        items:2,
+      700: {
+        items: 2,
       },
-      890:{
-        items:3
+      890: {
+        items: 3,
       },
-      1100:{
-        items:4
-      }
+      1100: {
+        items: 4,
+      },
     },
   });
 }
-
-
-
-
-
-
 
 $("#shop_brand").owlCarousel({
   loop: true,
   margin: 5,
   nav: false,
-  autoplay:true,
+  autoplay: true,
   responsive: {
     0: {
       items: 1,
     },
-    200:{
+    200: {
       items: 1,
     },
-    300:
-    {
-        items:2,
+    300: {
+      items: 2,
     },
-    450:{
-        items:3,
+    450: {
+      items: 3,
     },
-    586:{
-        items: 4,
+    586: {
+      items: 4,
     },
     740: {
       items: 5,
@@ -310,9 +275,8 @@ $("#shop_brand").owlCarousel({
     864: {
       items: 6,
     },
-    1032:
-    {
-        items: 7,
+    1032: {
+      items: 7,
     },
     1100: {
       items: 8,
@@ -324,8 +288,7 @@ $("#shop_brand").owlCarousel({
 });
 // **********************************blog section**************************************
 
-function ourblog()
-{
+function ourblog() {
   $(".blogcr_cr").owlCarousel({
     loop: true,
     margin: 20,
@@ -335,22 +298,17 @@ function ourblog()
       0: {
         items: 1,
       },
-      800:{
-          items: 2,
+      800: {
+        items: 2,
       },
-      950:{
-          items: 3,
+      950: {
+        items: 3,
       },
     },
   });
 }
 
-
-
-
-
-function peoplesayingaboutcrosel()
-{
+function peoplesayingaboutcrosel() {
   $(".saying_about-us").owlCarousel({
     loop: true,
     margin: 10,
@@ -360,26 +318,22 @@ function peoplesayingaboutcrosel()
       0: {
         items: 1,
       },
-      300:{
-        items:1,
+      300: {
+        items: 1,
       },
-  
-      700:{
-        items:2,
+
+      700: {
+        items: 2,
       },
-      800:{
-        items:3,
-      }
+      800: {
+        items: 3,
+      },
     },
   });
-  
 }
 
-
-
 // most viewd section owl crausal
-function mostviecroselfunction()
-{
+function mostviecroselfunction() {
   $("#mostviewd").owlCarousel({
     loop: true,
     margin: 20,
@@ -389,98 +343,81 @@ function mostviecroselfunction()
       0: {
         items: 1,
       },
-      500:{
+      500: {
         items: 2,
       },
-      940:{
-        items:3
+      940: {
+        items: 3,
       },
-      1218:{
-        items:4
-      }
+      1218: {
+        items: 4,
+      },
     },
   });
 }
 
-
-
-
-
-
-function toggleTopCategories(elem){
-  let prevElem = document.getElementsByClassName("active_btn_toogle_categories")[0];
+function toggleTopCategories(elem) {
+  let prevElem = document.getElementsByClassName(
+    "active_btn_toogle_categories"
+  )[0];
   prevElem.classList.remove("active_btn_toogle_categories");
-  elem.classList.add("active_btn_toogle_categories")
+  elem.classList.add("active_btn_toogle_categories");
 }
- function toogle_featureproduct(elemtop)
- {
-  let previouselement=document.getElementsByClassName("active_btn_toogle_top_categories")[0];
+function toogle_featureproduct(elemtop) {
+  let previouselement = document.getElementsByClassName(
+    "active_btn_toogle_top_categories"
+  )[0];
   previouselement.classList.remove("active_btn_toogle_top_categories");
   elemtop.classList.add("active_btn_toogle_top_categories");
- }
+}
 
- function toogle_ourblog(blogelement)
- {
-    let previousblogele=document.getElementsByClassName("active_btn_toogle_blog")[0];
-    previousblogele.classList.remove("active_btn_toogle_blog");
-    blogelement.classList.add("active_btn_toogle_blog");
- }
+function toogle_ourblog(blogelement) {
+  let previousblogele = document.getElementsByClassName(
+    "active_btn_toogle_blog"
+  )[0];
+  previousblogele.classList.remove("active_btn_toogle_blog");
+  blogelement.classList.add("active_btn_toogle_blog");
+}
 
+let a = document.getElementsByClassName("whyus_crowsel")[0];
+let b = document.querySelector(".whyus_crowsel");
+let featureproductcat = document.querySelector(".featureproductcat-container");
+let newfashioncrowesl = document.querySelector(".newfashioncrowesl");
+let blogcrowsel = document.querySelector(".blog-crowsel");
+let sayingaboutcarousel = document.querySelector(".saying-about-carousel");
+let mostviedmainsection = document.querySelector(".mostvied-main-section");
 
+async function dataadd(category) {
+  let response = await fetch("./data/product.json");
+  let data = await response.json();
+  let content = data[category];
 
-
-let a=document.getElementsByClassName("whyus_crowsel")[0];
-let b=document.querySelector(".whyus_crowsel");
-let featureproductcat=document.querySelector(".featureproductcat-container");
-let newfashioncrowesl=document.querySelector(".newfashioncrowesl"); 
-let blogcrowsel=document.querySelector(".blog-crowsel");
-let sayingaboutcarousel=document.querySelector(".saying-about-carousel");
-let mostviedmainsection=document.querySelector(".mostvied-main-section");
-
-
-async function dataadd(category)
-{
-
-  let response=await fetch("./data/product.json");
-  let data=await response.json();
-  let content = data[category]
-  
-  ihtml=`<div class="owl-carousel owl-theme" id="whyus">`
-  for(i in content)
-  {
-    ihtml +=`
+  ihtml = `<div class="owl-carousel owl-theme" id="whyus">`;
+  for (i in content) {
+    ihtml += `
     <div class="item1 img-topcategories">
     <img src="${content[i].img}" alt="" />
     <p>${content[i].name}</p>
     </div>
 
-    `
+    `;
   }
 
-  ihtml += `</div>`
-  b.innerHTML=ihtml;
-  whyusCarousel()
+  ihtml += `</div>`;
+  b.innerHTML = ihtml;
+  whyusCarousel();
 }
 
-dataadd(category = "topCategory")
+dataadd((category = "topCategory"));
 
+async function featurproductadd(productdata) {
+  let response = await fetch("./data/featureproduct.json");
+  let data = await response.json();
+  let content = data[productdata];
 
-
-
-
-
-
-async function featurproductadd(productdata)
-{
-
-  let response=await fetch("./data/featureproduct.json");
-  let data=await response.json();
-  let content = data[productdata]
-  
-  ihtml=` <div class="owl-carousel owl-theme" id="feature-product">`
-  for(i in content)
-  {     
-          ihtml +=`
+  ihtml = ` <div class="owl-carousel owl-theme" id="feature-product">`;
+  for (i in content) {
+    ihtml += `
           <div class="headphone">
           <div class="image">
             <img src="${content[i].img}"" alt="" />
@@ -495,7 +432,7 @@ async function featurproductadd(productdata)
             <div class="model">${content[i].modal}</div>
           </div>
           <div class="headphone-txt">
-            <div class="htxt">${content[i].productname}</div>
+            <div id="product-name" class="htxt ">${content[i].productname}</div>
             <div class="strike">${content[i].price} <strike>${content[i].discount}</strike></div>
           </div>
           <div class="favcart">
@@ -503,7 +440,7 @@ async function featurproductadd(productdata)
               <div class="section" id="input-number-favcart">
                 <input type="number" max="10" min="1" value="1" />
               </div>
-              <button>ADD TO CART</button>
+              <button class="shop-item-button" onclick="addToCart(${content[i].id}),refreshPage()" >ADD TO CART</button>
             </div>
            
             <div class="whislist">
@@ -527,32 +464,26 @@ async function featurproductadd(productdata)
           </div>
         </div>
 
-          `
+          `;
   }
 
-  ihtml += `</div>`
-  featureproductcat.innerHTML=ihtml;
-  featureproduct()
+  ihtml += `</div>`;
+  featureproductcat.innerHTML = ihtml;
+  featureproduct();
 }
 
-featurproductadd(productdata = "topCategory")
-
-
+featurproductadd((productdata = "topCategory"));
 
 // new fasion datapart
 
+async function newfasionadddata(category) {
+  let response = await fetch("./data/featureproduct.json");
+  let data = await response.json();
+  let content = data[category];
 
-async function newfasionadddata(category)
-{
-
-  let response=await fetch("./data/featureproduct.json");
-  let data=await response.json();
-  let content = data[category]
-  
-  ihtml=`<div class="owl-carousel owl-theme" id="feature-categories">`
-  for(i in content)
-  {
-    ihtml +=`
+  ihtml = `<div class="owl-carousel owl-theme" id="feature-categories">`;
+  for (i in content) {
+    ihtml += `
     <div class="item_fashin_crowesl img-dresssweter">
         <img src="${content[i].img}" alt="" />
             <div class="customlabels_newfashion">2-3 DAYS</div>
@@ -562,7 +493,7 @@ async function newfasionadddata(category)
                 <hr />
               <div class="btnbd_addto_cart">
                    <div class="btn_addcart_fashion">
-                     <button>Add to cart</button>
+                     <button onclick="addToCart(${content[i].id})">Add to cart</button>
                      <div class="fashion_addcart_whislist">
                        <i
                          id="heartimage-logo"
@@ -578,31 +509,26 @@ async function newfasionadddata(category)
             </div>
   </div>
 
-    `
+    `;
   }
 
-  ihtml += `</div>`
-  newfashioncrowesl.innerHTML=ihtml;
-  featuredcategoriesowl()
+  ihtml += `</div>`;
+  newfashioncrowesl.innerHTML = ihtml;
+  featuredcategoriesowl();
 }
 
-newfasionadddata(category = "newfashion")
-
+newfasionadddata((category = "newfashion"));
 
 // our blog section
 
+async function addblogdata(category) {
+  let response = await fetch("./data/blog.json");
+  let data = await response.json();
+  let content = data[category];
 
-async function addblogdata(category)
-{
-
-  let response=await fetch("./data/blog.json");
-  let data=await response.json();
-  let content = data[category]
-  
-  ihtml=`<div class="owl-carousel owl-theme blogcr_cr">`
-  for(i in content)
-  {
-    ihtml +=`
+  ihtml = `<div class="owl-carousel owl-theme blogcr_cr">`;
+  for (i in content) {
+    ihtml += `
     
            <div class="blog_img_1">
                   <div class="jornalblog_img">
@@ -632,31 +558,26 @@ async function addblogdata(category)
                   </div>
           </div>
 
-    `
+    `;
   }
 
-  ihtml += `</div>`
-  blogcrowsel.innerHTML=ihtml;
-  ourblog()
+  ihtml += `</div>`;
+  blogcrowsel.innerHTML = ihtml;
+  ourblog();
 }
 
-addblogdata(category = "latestpost")
-
-
+addblogdata((category = "latestpost"));
 
 // people saying section start
 
-async function peoplefeedbackdata(category)
-{
+async function peoplefeedbackdata(category) {
+  let response = await fetch("./data/blog.json");
+  let data = await response.json();
+  let content = data[category];
 
-  let response=await fetch("./data/blog.json");
-  let data=await response.json();
-  let content = data[category]
-  
-  ihtml=`<div class="owl-carousel owl-theme saying_about-us owl-loaded owl-drag">`
-  for(i in content)
-  {
-    ihtml +=`
+  ihtml = `<div class="owl-carousel owl-theme saying_about-us owl-loaded owl-drag">`;
+  for (i in content) {
+    ihtml += `
     <div class="item-saying-about-comma">
     <div class="comma">
       <i id="comma-symbal" class="fa-solid fa-quote-left"></i>
@@ -669,30 +590,26 @@ async function peoplefeedbackdata(category)
   </div>   
           
 
-    `
+    `;
   }
 
-  ihtml += `</div>`
-  sayingaboutcarousel.innerHTML=ihtml;
-  peoplesayingaboutcrosel()
+  ihtml += `</div>`;
+  sayingaboutcarousel.innerHTML = ihtml;
+  peoplesayingaboutcrosel();
 }
 
-peoplefeedbackdata(category = "feedback")
+peoplefeedbackdata((category = "feedback"));
 
 // Mostviewd section Start dynamic data
 
+async function mostviewddata(category) {
+  let response = await fetch("./data/featureproduct.json");
+  let data = await response.json();
+  let content = data[category];
 
-async function mostviewddata(category)
-{
-
-  let response=await fetch("./data/featureproduct.json");
-  let data=await response.json();
-  let content = data[category]
-  
-  ihtml=`<div class="owl-carousel owl-theme" id="mostviewd">`
-  for(i in content)
-  {
-    ihtml +=`      
+  ihtml = `<div class="owl-carousel owl-theme" id="mostviewd">`;
+  for (i in content) {
+    ihtml += `      
     <div class="sunglasses">
     <div class="image-sunglass">
       <img src="${content[i].img}" alt="" />
@@ -711,25 +628,62 @@ async function mostviewddata(category)
   </div>
           
 
-    `
+    `;
   }
 
-  ihtml += `</div>`
-  mostviedmainsection.innerHTML=ihtml;
-  mostviecroselfunction()
+  ihtml += `</div>`;
+  mostviedmainsection.innerHTML = ihtml;
+  mostviecroselfunction();
 }
 
-mostviewddata(category = "mostviewd")
+mostviewddata((category = "mostviewd"));
+
+let item_carts = document.querySelector("#cartcount");
+let wish_cart = document.querySelector("#wish_cart");
 
 
+// localStorage.setItem("cart",cartItems)
+function addToCart(a) {
+  const cartItems = [a];
+
+  let local_data = localStorage.getItem("cart");
+
+  if (local_data == null) {
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+  } else {
+    local_data = JSON.parse(local_data);
+    if (!local_data.includes(a)) {
+      local_data.push(a);
+
+      localStorage.setItem("cart", JSON.stringify(local_data));
+      
+     
+      // wish_cart.innerHTML = count;
+    } else {
+      alert("all ready having in cart");
+    }
+  }
+  
+}
 
 
-
-
-
-
-function searchproduct()
+function addtocartcount()
 {
-  var ele = document.getElementById('serch_item').value.toLowerCase();
-  window.location = "searchpage.html?product="+ele
+
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  let count = cart.length;
+  item_carts.innerHTML = count;
+
+  if(count==0)
+  {
+
+  }
+  
 }
+addtocartcount()
+
+
+function refreshPage(){
+  window.scrollTo(0, 0);
+  window.location.reload();
+} 

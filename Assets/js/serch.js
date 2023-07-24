@@ -149,19 +149,6 @@ sete.insertAdjacentHTML("beforeend",ihtml);
 }
 
 
-// add to cart functionality
-let item_carts=document.querySelector("#cartcount");
-let wish_cart=document.querySelector("#wish_cart");
-console.log(item_carts)
-let count=0;
-function addtocart()
-{
-  count+=1;
-  alert("item add in cart");
-  console.log(count)
-  item_carts.innerHTML=count;
-  wish_cart.innerHTML=count;
-}
 
 
 

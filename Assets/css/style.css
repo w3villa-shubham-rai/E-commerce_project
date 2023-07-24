@@ -2840,3 +2840,42 @@ footer{
 }
 
 /* End css of page */
+
+
+/* whislist new logo */
+
+#cartcount {
+    font-size: 12px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 14px;
+    top: -11px;
+    text-align: center;
+    font-weight: bold;
+    right: -9px;
+    border-radius: 50%;
+    padding: 0px 3px;
+}
+
+#wish_cart {
+    font-size: 12px;
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width: 14px;
+    top: -7px;
+    text-align: center;
+    font-weight: bold;
+    right: -1px;
+    border-radius: 50%;
+    padding: 0px 3px;
+}
+
+.whishlist{
+    position: relative;
+}
+.add_to_cart{
+    position: relative;
+}
+

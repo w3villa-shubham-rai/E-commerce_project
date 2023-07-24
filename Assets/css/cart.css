@@ -1,0 +1,48 @@
+#table_parent{
+    width: 100%;
+}
+.addcartlist_template_parent{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.table_data_img {
+    width: 90px;
+}
+
+table th{
+    background-color: #d7dadf;
+}
+
+td{
+    text-align: center;
+    padding: 20px;
+}   
+
+.input_cancel-arrange{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.cancel_btn{
+    width: 34px;
+    border-radius: 4px;
+    color: white;
+    background: red;
+    text-align: center;
+    padding: 5px 0px 5px 1px;
+    border: 2px solid red;
+}                 
+.refresh_btn{
+    width: 34px;
+    border-radius: 4px;
+    color: white;
+    background: rgba(15, 58, 141, 1);
+    text-align: center;
+    padding: 9px 2px 5px 3px;
+    
+}
+.item_num_count{
+    display: none;
+    padding-bottom: 30px;
+}

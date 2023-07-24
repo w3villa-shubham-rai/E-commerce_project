@@ -15,7 +15,7 @@
                         "img":"./Assets/images/smarttv.jpg",
                         "companyname":"LG",
                         "modal":"modal 434",
-                        "productname":"TELEVISION",
+                        "productname":"",
                         "price":"$93599",
                         "discount":"$3445"
                     
@@ -189,7 +189,43 @@
                         "productname":"Laptop",
                         "price":"$199",
                         "discount":"$3299"
-                    }            
+                    } ,
+                    {
+                        "id":21,
+                        "img":"./Assets/images/fashionimg1.jpg",
+                        "productname":"Bodycorn Dress",
+                        "price":"$199"
+                    },
+                    {
+                        "id":22,
+                        "img":"./Assets/images/fashionimg2.jpg",
+                        "productname":"Jacob Turtleneck Sweater",
+                        "price":"$99"
+                    },
+                    {
+                        "id":23,
+                        "img":"./Assets/images/fashionimg3.jpg",
+                        "productname":"Black Vintage T-Shirt",
+                        "price":"$392"
+                    },
+                    {
+                        "id":24,
+                        "img":"./Assets/images/fashionimg4.jpg",
+                        "productname":"Jacob Turtleneck Sweater",
+                        "price":"$199"
+                    },
+                    {
+                        "id":25,
+                        "img":"./Assets/images/fashionimg5.jpg",
+                        "productname":"Elegant Silk Pants",
+                        "price":"$199"
+                    },
+                    {
+                        "id":26,
+                        "img":"./Assets/images/fashionimg6.jpg",
+                        "productname":"Jacob Turtleneck Sweater",
+                        "price":"$589.00"
+                    }           
             
             
             

@@ -172,20 +172,7 @@ select{
 .item-cart-s{
     color: rgb(121, 117, 117);
 }
-#cartcount
-{
-    font-size: 12px;
-    background: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    position: absolute;
-    width: 14px;
-    top: 59px;
-    text-align: center;
-    font-weight: bold;
-    right: 192px;
-    border-radius: 50%;
-    padding: 0px 3px;
-}
+
 
 
 /* All Department part last part of header */
@@ -1644,20 +1631,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .ls-whishlist i{
     margin-top: 10px;
-}
-#wish_cart{
-    font-size: 12px;
-    background: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    position: absolute;
-    width: 14px;
-    top: -7px;
-    text-align: center;
-    font-weight: bold;
-    right: -1px;
-    border-radius: 50%;
-    padding: 0px 3px;
-
 }
 .ls-compare i{
     border: 2px solid #4d4949;
