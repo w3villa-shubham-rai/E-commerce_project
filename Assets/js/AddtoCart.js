@@ -1,4 +1,3 @@
-
 async function showaddtocartdata()
 {
   let response=await fetch("./data/searchdata.json");
@@ -36,21 +35,12 @@ async function showaddtocartdata()
           </td>
           <td>${product.price}</td>
           <td>$300</td>
-        </tr>
-
-
-     
+        </tr>  
 
                   
-    `
-
-  
+    `  
     table_parent.insertAdjacentHTML("beforeend",ihtml)
-  }
-
-  
-
-  
+  }  
  
 }
 
@@ -58,6 +48,11 @@ async function showaddtocartdata()
 }
 
 showaddtocartdata()
+
+
+
+// remove the data from addto cart
+
 
 function replace_item_cart(id) {
   let local_data = JSON.parse(localStorage.getItem('cart'));
@@ -73,6 +68,8 @@ function replace_item_cart(id) {
 let item_carts = document.querySelector("#cartcount");
 let item_num_count=document.querySelector(".item_num_count");
 
+// update the cart value 
+
 window.onload=function()
 {
   
@@ -82,7 +79,92 @@ window.onload=function()
 
   if(count==0)
   {
-    // var itemNumCount = document.getElementById('item_num_count');
+    item_num_count.style.display = 'block';
+  }
+}
+
+
+
+// wishlist implementation 
+
+
+
+
+async function showwislstdata()
+{
+  let response=await fetch("./data/searchdata.json");
+  let data=await response.json();   
+ for (let i = 0; i < data["searchproduct"].length; i++) {
+  const product = data["searchproduct"][i];
+  const productId = product["id"];
+
+  let local_data_whislist = JSON.parse(localStorage.getItem('whishlist'))
+  let table_parent_wish=document.getElementById("table_parent_wish")
+
+    if(local_data_whislist.includes(productId))
+  {
+    
+     let ihtml = `
+     <tr>
+     <td >
+       <img class="table_data_img" src="${product.img}">
+     </td>
+     <td>${product.productname}</td>
+     <td>${product.modal}</td>
+     <td>
+       <div class="input_cancel-arrange">
+         <div class="wishlist_cancel_btn" onclick="remove_item_wishlist(${product.id})">
+           <i class="fa-solid fa-xmark"></i>
+         </div>
+         <div class="wishaddcart_btn">
+           <i class="fa-solid fa-cart-shopping"></i>
+         </div>
+       </div>
+
+     </td>
+     <td>${product.price}</td>
+     
+   </tr>  
+                  
+    `  
+    table_parent_wish.insertAdjacentHTML("beforeend",ihtml)
+  }  
+ 
+}
+
+ 
+}
+
+showwislstdata()
+
+
+
+function remove_item_wishlist(wishitemid)
+{
+  let local_data_wishlist = JSON.parse(localStorage.getItem('whishlist'));
+  if (local_data_wishlist.includes(wishitemid)) {
+    const index = local_data_wishlist.indexOf(wishitemid);
+    local_data_wishlist.splice(index, 1);
+    localStorage.setItem('whishlist', JSON.stringify(local_data_wishlist));
+    location.reload();
+    console.log(`Item with ID ${id} has been removed from the cart.`);
+  } 
+} 
+
+
+
+
+// update the wishlistvalue value 
+let wish_cart = document.querySelector("#wish_cart");
+window.onload=function()
+{
+  
+  let whishlist = JSON.parse(localStorage.getItem("whishlist"));
+  let number = whishlist.length;
+  wish_cart.innerHTML = number;
+
+  if(number==0)
+  {
     item_num_count.style.display = 'block';
   }
 }

@@ -1,4 +1,4 @@
-#table_parent{
+#table_parent,#table_parent_wish{
     width: 100%;
 }
 .addcartlist_template_parent{
@@ -24,7 +24,7 @@ td{
     gap: 10px;
     justify-content: center;
 }
-.cancel_btn{
+.cancel_btn,.wishlist_cancel_btn{
     width: 34px;
     border-radius: 4px;
     color: white;
@@ -33,7 +33,7 @@ td{
     padding: 5px 0px 5px 1px;
     border: 2px solid red;
 }                 
-.refresh_btn{
+.refresh_btn, .wishaddcart_btn{
     width: 34px;
     border-radius: 4px;
     color: white;
@@ -46,3 +46,4 @@ td{
     display: none;
     padding-bottom: 30px;
 }
+

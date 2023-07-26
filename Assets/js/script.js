@@ -1,4 +1,3 @@
-
 isUserLogin();
 
 function toggleTopCategories(elem) {
@@ -444,7 +443,7 @@ async function featurproductadd(productdata) {
             </div>
            
             <div class="whislist">
-              <i id="fav-whislist" class="fa-regular fa-heart"></i>
+              <i id="fav-whislist" class="fa-regular fa-heart"onclick="addToWhishlist(${content[i].id}),refreshPage()"></i> 
               <i
                 id="compare-product"
                 class="fa-solid fa-arrow-right-arrow-left"
@@ -495,10 +494,9 @@ async function newfasionadddata(category) {
                    <div class="btn_addcart_fashion">
                      <button onclick="addToCart(${content[i].id})">Add to cart</button>
                      <div class="fashion_addcart_whislist">
-                       <i
-                         id="heartimage-logo"
-                         class="fa-regular fa-heart"
-                       ></i>
+                     <i
+                     id="heartimage-logo"
+                     class="fa-regular fa-heart" onclick="addToWhishlist(${content[i].id})" ></i>
                        <i
                          id="compare-product"
                          class="fa-solid fa-arrow-right-arrow-left"
@@ -638,9 +636,14 @@ async function mostviewddata(category) {
 
 mostviewddata((category = "mostviewd"));
 
+
+
+
+
+
+
 let item_carts = document.querySelector("#cartcount");
 let wish_cart = document.querySelector("#wish_cart");
-
 
 // localStorage.setItem("cart",cartItems)
 function addToCart(a) {
@@ -656,34 +659,63 @@ function addToCart(a) {
       local_data.push(a);
 
       localStorage.setItem("cart", JSON.stringify(local_data));
-      
-     
+
       // wish_cart.innerHTML = count;
     } else {
       alert("all ready having in cart");
     }
   }
-  
 }
 
-
-function addtocartcount()
-{
-
+function addtocartcount() {
   let cart = JSON.parse(localStorage.getItem("cart"));
   let count = cart.length;
   item_carts.innerHTML = count;
-
-  if(count==0)
-  {
-
-  }
-  
 }
-addtocartcount()
+addtocartcount();
 
 
-function refreshPage(){
+
+function refreshPage() {
   window.scrollTo(0, 0);
   window.location.reload();
-} 
+}
+
+
+
+// whishlist functionality
+
+
+
+function addToWhishlist(wishlist_product_id) {
+
+  const wishlistItems = [wishlist_product_id];
+
+  let local_data_whislist = localStorage.getItem("whishlist");
+
+  if (local_data_whislist == null) {
+    localStorage.setItem("whishlist", JSON.stringify(wishlistItems));
+  } else {
+    local_data_whislist = JSON.parse(local_data_whislist);
+    if (!local_data_whislist.includes(wishlist_product_id)) {
+      local_data_whislist.push(wishlist_product_id);
+
+      localStorage.setItem("whishlist", JSON.stringify(local_data_whislist));
+
+      // wish_cart.innerHTML = count;
+    } else {
+      alert("all ready having in cart");
+    }
+  }
+}
+
+
+
+function whislistcount() {
+  let whishlist = JSON.parse(localStorage.getItem("whishlist"));
+  let number = whishlist.length;
+  wish_cart.innerHTML = number;
+}
+whislistcount();
+
+
