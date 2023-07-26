@@ -67,6 +67,7 @@ function replace_item_cart(id) {
 
 let item_carts = document.querySelector("#cartcount");
 let item_num_count=document.querySelector(".item_num_count");
+let item_num_count_wish=document.querySelector(".item_num_count_wish");
 
 // update the cart value 
 
@@ -165,6 +166,6 @@ window.onload=function()
 
   if(number==0)
   {
-    item_num_count.style.display = 'block';
+    item_num_count_wish.style.display = 'block';
   }
 }
