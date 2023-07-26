@@ -1501,6 +1501,7 @@ select{
     display: flex;
     color: #c0bbbb;
     margin-right: 6px;
+    cursor: pointer;
 }
 #fav-whislist{
     font-size: 22px;
@@ -1786,6 +1787,7 @@ input[type=number]::-webkit-outer-spin-button {
 .fashion_addcart_whislist{
     display: flex;
     column-gap: 16px;
+    cursor: pointer;
 }
 #heartimage-logo{
     font-size: 21px;
@@ -2879,3 +2881,9 @@ footer{
     position: relative;
 }
 
+
+/* cursor propert */
+
+.shop-item-button,#btn-hover{
+    cursor: pointer;
+}

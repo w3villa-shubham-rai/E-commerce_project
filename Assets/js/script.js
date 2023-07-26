@@ -492,7 +492,7 @@ async function newfasionadddata(category) {
                 <hr />
               <div class="btnbd_addto_cart">
                    <div class="btn_addcart_fashion">
-                     <button onclick="addToCart(${content[i].id})">Add to cart</button>
+                     <button id="btn-hover" onclick="addToCart(${content[i].id})">Add to cart</button>
                      <div class="fashion_addcart_whislist">
                      <i
                      id="heartimage-logo"
