@@ -1,4 +1,3 @@
-
 let sete=document.querySelector("#se-te");
 
 async function searchitemfun(category)

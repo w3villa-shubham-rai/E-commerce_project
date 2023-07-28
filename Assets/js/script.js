@@ -23,6 +23,15 @@ function toogle_ourblog(blogelement) {
   blogelement.classList.add("active_btn_toogle_blog");
 }
 
+
+// search part 
+
+
+function searchproduct()
+{
+  var ele = document.getElementById('serch_item').value.toLowerCase();
+  window.location = "searchpage.html?product="+ele
+}
 // login form show logic
 
 function showmudal(self) {
@@ -719,3 +728,15 @@ function whislistcount() {
 whislistcount();
 
 
+function opennav()
+{
+  let menubarmegamenu=document.querySelector(".menubar-megamenu");
+  menubarmegamenu.style.setProperty("display","block");
+
+}
+
+function closenav()
+{
+  let menubarmegamenu=document.querySelector(".menubar-megamenu");
+  menubarmegamenu.style.setProperty("display","none");
+}
