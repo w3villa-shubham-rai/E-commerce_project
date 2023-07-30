@@ -428,7 +428,8 @@ async function featurproductadd(productdata) {
     ihtml += `
           <div class="headphone">
           <div class="image">
-            <img src="${content[i].img}"" alt="" />
+          <a href="productpage.html" onclick="showproductonproductpage(${content[i].id})">
+          <img src="${content[i].img}" alt="" /></a>
             <div class="customlabels">CUSTOM LABELS</div>
             <div class="hot_per">
               <div class="prcent">-70%</div>
@@ -493,7 +494,8 @@ async function newfasionadddata(category) {
   for (i in content) {
     ihtml += `
     <div class="item_fashin_crowesl img-dresssweter">
-        <img src="${content[i].img}" alt="" />
+           <a href="productpage.html" onclick="showproductonproductpage(${content[i].id})">
+            <img src="${content[i].img}" alt="" /></a>
             <div class="customlabels_newfashion">2-3 DAYS</div>
             <div class="bodycorndressfirst">
                <div class="bdncross">${content[i].productname}</div>
@@ -740,3 +742,13 @@ function closenav()
   let menubarmegamenu=document.querySelector(".menubar-megamenu");
   menubarmegamenu.style.setProperty("display","none");
 }
+
+function showproductonproductpage(id_product) {
+  let pid = id_product;
+  // alert(pid); // This will display the id_product value in an alert
+  // window.location.href = "searchpage.html?product=" + pid;
+localStorage.setItem("myValue", pid);
+window.location.href="productpage.html";
+}
+
+
