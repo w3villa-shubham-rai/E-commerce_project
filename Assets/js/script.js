@@ -733,3 +733,23 @@ function searchproduct()
   var ele = document.getElementById('serch_item').value.toLowerCase();
   window.location = "searchpage.html?product="+ele
 }
+
+
+
+
+// const searchInput = document.getElementById("searchInput");
+
+// Function to handle the search action
+function performSearch() {
+  // const searchTerm = searchInput.value;
+  var ele = document.getElementById('searchInput').value.toLowerCase();
+  window.location = "searchpage.html?product="+ele
+  // alert(`You searched for: ${searchTerm}`);
+}
+
+// Event listener for the Enter key press
+searchInput.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    performSearch();
+  }
+});
